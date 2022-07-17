@@ -1,0 +1,142 @@
+h1#Home {
+
+}
+
+h2#Home {
+    
+}
+
+.Header#Home {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    height: 20vw;
+    width: 100vw;
+}
+
+.Name {
+    position: absolute;
+    top: 20vw;
+    width: 100vw;
+}
+
+.Picture {
+    position: absolute;
+    top: 5rem;
+    right: 20rem;
+    width: 25rem;
+    border-radius: 100rem;
+}
+
+/* https://blog.prototypr.io/5-css-animated-backgrounds-to-inspire-your-next-project-97fdb692e852 */
+.Effect {
+    width: 100%;
+    height: 51.8vw;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Tabs {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+/* .Tab:hover {
+    box-shadow: 0px 30px 18px -8px black;
+    transform: scale(1.025, 1.025);
+} */
+
+
+
+
+
+/* FADE IN */ /* https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out */
+
+.fade{
+    position: absolute;
+    top: 0rem;
+    padding-left: 1rem;
+    color: rgb(138, 138, 138);
+    font-size: 10vw;
+    -webkit-animation: fadeinout 5s linear forwards;
+    animation: fadeinout 5s linear forwards;
+    animation-iteration-count: infinite;
+    }
+    
+    @-webkit-keyframes fadeinout {
+      0%,100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    
+    @keyframes fadeinout {
+      0%,100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+
+/* LINKS */
+
+.Tab {
+    color: rgb(145, 62, 62);
+    letter-spacing: 1px;
+    font-size: 2vw;
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.Tab:before,
+.Tab:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+/* Line before hover */
+.Tab:before {
+  bottom: -1rem;
+  display: block;
+  height: 2vw;
+  width: 0%;
+  content: "";
+  background-color: #ffffff;
+}
+
+/* Line after hover */
+.Tab:after {
+  left: 2rem;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+
+.Tab:hover:before,
+.current .Tab:before {
+  opacity: 1;
+  width: 100%;
+}
+
+.Tab:hover:after,
+.current .Tab:after {
+  max-width: 100%;
+}
