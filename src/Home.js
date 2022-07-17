@@ -64,8 +64,8 @@ const Home = () => {
                     link="/education"
                 />
                 <Tab 
-                    title="Projects"
-                    link="/projects"
+                    title="Portfolio"
+                    link="/portfolio"
                 />
                 <Tab
                     title="Upbringing"

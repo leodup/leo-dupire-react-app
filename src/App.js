@@ -7,6 +7,7 @@ import ScrollToTop from "./ScrollToTop";
 import Home from './Home.js';
 import Work from './Work.js';
 import Education from "./Education.js"
+import Portfolio from "./Portfolio.js"
 
 function App() {
 
@@ -38,10 +39,15 @@ function App() {
           <Education />
           <Footer />
         </div>
-        
+        } />
+        <Route path="/portfolio" element={
+          <div>
+            <Portfolio />
+            <Footer />
+          </div>
         } />
       </Routes>
-      </>
+    </>
   );
 }
 
