@@ -49,7 +49,7 @@ const Work = () => {
                                 <ul>
                                     <li>
                                         <a href="" id="IBMSide">
-                                            <i class="fa fa-home fa-2x"></i>
+                                            <i class="fa fa-star fa-2x"></i> {/*https://icons.getbootstrap.com*/}
                                             <span class="nav-text">
                                                 Leadership
                                             </span>
@@ -63,8 +63,8 @@ const Work = () => {
                                 <ul>
                                     <li class="has-subnav">
                                         <a href="#" id="IBMSide">
-                                            <i class="fa fa-laptop fa-2x"></i>
-                                            <span class="nav-text">
+                                            <i class="fa fa-globe fa-2x"></i>
+                                            <span class="nav-calc">
                                                 Data Science
                                             </span>
                                         </a>
@@ -77,9 +77,9 @@ const Work = () => {
                                 <ul>
                                     <li class="has-subnav">
                                         <a href="#" id="IBMSide">
-                                            <i class="fa fa-laptop fa-2x"></i>
+                                            <i class="fa fa-cloud fa-2x"></i>
                                             <span class="nav-text">
-                                                Back End
+                                                Cloud & Back End
                                             </span>
                                         </a>
                                     </li>
@@ -116,9 +116,9 @@ const Work = () => {
                                 <ul>
                                     <li>
                                         <a href="#" id="BROCCSide">
-                                            <i class="fa fa-home fa-2x"></i>
+                                            <i class="fa fa-calendar fa-2x"></i>
                                             <span class="nav-text">
-                                                Independence
+                                                Initiative
                                             </span>
                                         </a>
                                     </li>
@@ -130,9 +130,9 @@ const Work = () => {
                                 <ul>
                                     <li class="has-subnav">
                                         <a href="#" id="BROCCSide">
-                                            <i class="fa fa-laptop fa-2x"></i>
+                                            <i class="fa fa-cloud fa-2x"></i>
                                             <span class="nav-text">
-                                                Back End
+                                                Cloud & Back End
                                             </span>
                                         </a>
                                     </li>
@@ -158,7 +158,7 @@ const Work = () => {
                                 <ul>
                                     <li class="has-subnav">
                                         <a href="#" id="ANALOGICSide">
-                                            <i class="fa fa-laptop fa-2x"></i>
+                                            <i class="fa fa-wrench fa-2x"></i>
                                             <span class="nav-text">
                                                 Mechanical Engineering
                                             </span>
@@ -172,7 +172,7 @@ const Work = () => {
                                 <ul>
                                     <li class="has-subnav">
                                         <a href="#" id="ANALOGICSide">
-                                            <i class="fa fa-laptop fa-2x"></i>
+                                            <i class="fa fa-shield fa-2x"></i>
                                             <span class="nav-text">
                                                 Security
                                             </span>
@@ -186,7 +186,7 @@ const Work = () => {
                                 <ul>
                                     <li class="has-subnav">
                                         <a href="#" id="ANALOGICSide">
-                                            <i class="fa fa-laptop fa-2x"></i>
+                                            <i class="fa fa-medkit fa-2x"></i>
                                             <span class="nav-text">
                                                 Medical
                                             </span>

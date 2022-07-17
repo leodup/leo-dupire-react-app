@@ -22,15 +22,14 @@ function App() {
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/work" element={
-          <div>
-            <Work />
-            <Footer />
-          </div>
-        } />
         <Route path="/" element={
           <div>
             <Home />
+          </div>
+        } />
+        <Route path="/work" element={
+          <div>
+            <Work />
             <Footer />
           </div>
         } />

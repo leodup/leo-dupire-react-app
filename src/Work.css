@@ -93,7 +93,6 @@ p#Experience {
 /* From the internet */
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
 .fa-2x {
 font-size: 2em;
@@ -123,6 +122,8 @@ position:absolute;
 bottom:0;                                 /*Here for HEIGHT of sidebar*/
 right:0;                                    /*Here for left/right of sidebar*/
 width:200px;
+border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
 overflow:hidden;
 -webkit-transition:width .05s linear;
 transition:width .2s linear;
@@ -229,7 +230,7 @@ transition:all .1s linear;
     color:rgb(26, 108, 185);
 }
 .main-menu li>a#PS6Side {
-    color:#dc2728;
+    color:black;
 }
 
 /* MIGHT NOT BE USED */
