@@ -38,6 +38,10 @@
     color: var(--home-color);
 }
 
+h2.HomeName {
+    
+}
+
 .Name#First {
     left: 10rem;
 }
@@ -141,7 +145,6 @@
 }
 
 .Tab {
-    text-decoration: none !important;
     font-weight: bold;
     letter-spacing: 4px;
     font-size: 2vw;
@@ -149,6 +152,8 @@
     width: 100%;
     position: relative;
     text-align: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
 .Tab:before,
@@ -193,6 +198,35 @@
 
   /* BODY */
 
+  h2#Home {
+        padding-top: 2rem;
+        padding-left: 5rem;
+  }
+
+  h3#Home {
+        padding-left: 6rem;
+  }
+
+  p#Home {
+        padding-left: 8rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 85%;
+  }
+
   .body#Home {
 
+  }
+
+.ResumePosition {
+    padding-left: 25%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(0%);
+}
+
+  .ResumePDF {
+    width: 60vw;
+    height: 78vw;
+    max-width: 50rem;
+    max-height: 65rem;
   }
