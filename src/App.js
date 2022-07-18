@@ -8,6 +8,7 @@ import Home from './Home.js';
 import Work from './Work.js';
 import Education from "./Education.js"
 import Portfolio from "./Portfolio.js"
+import Hobbies from "./Hobbies.js"
 
 function App() {
 
@@ -43,6 +44,12 @@ function App() {
         <Route path="/portfolio" element={
           <div>
             <Portfolio />
+            <Footer />
+          </div>
+        } />
+        <Route path="/hobbies" element={
+          <div>
+            <Hobbies />
             <Footer />
           </div>
         } />

@@ -1,30 +1,10 @@
 import './Home.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import LDText from "./images/leo-dupire.svg";
-import LDPicture from "./images/moi.jpg";
+
+import LEO from "./images/LEO.jpg";
 
 const Home = () => {
-
-    const [count, setCount] = useState(0);
-    const greetingLanguages = ["My name is", "Je m'appelle", "Jag heter", "Me llamo"]
-    const greeting = greetingLanguages[count];
-
-    // https://eight-bites.blog/en/2021/05/setinterval-setstate/
-    useEffect(() => {
-        const interval = setInterval(() => {
-            console.log(count);
-
-            console.log(greeting);
-            setCount(prevCount => prevCount + 1) // new
-            if(count > greetingLanguages.length - 2) // I'n not entirely sure why -2
-            {
-                setCount(prevCount => prevCount - prevCount)
-            }
-        }, 5000);
-
-        return () => clearInterval(interval);
-    })
 
     const Tab = (props) => {
         return (
@@ -38,45 +18,56 @@ const Home = () => {
 
     return (
         <>
-            <div className="Effect"></div>
-            <div className="Header" id="Home">
-                <h1 className="fade" id="Home">{greeting}</h1>
-                <div className="NameImage">
-                    <img
-                        className="Name"
-                        src={LDText}
-                        alt="Léo Dupire"
-                    />
+            <div className="Home">
+                <div className="header" id="Home">
+                    <div className="CenterCircle">
+                        <div className="Profile">
+                            <img
+                                className="imageLEO"
+                                src={LEO}
+                                alt="Léo Dupire"
+                            />
+                        </div>
+                        <div className="Name" id="First">
+                            <h2 id="Home">Léo</h2>
+                        </div>
+                        <div className="Name" id="Last">
+                            <h2 id="Home">Dupire</h2>
+                        </div>
+                        <div className="FirstNameBack"></div>
+                        <div className="LastNameBack"></div>
+                    </div>
+                    <div className="Tabs">
+                        <Tab
+                            title="Work"
+                            link="/work"
+                        />
+                        <Tab 
+                            title="Education"
+                            link="/education"
+                        />
+                        <Tab 
+                            title="Portfolio"
+                            link="/portfolio"
+                        />
+                        <Tab
+                            title="Upbringing"
+                            link="/upbringing"
+                        />
+                        <Tab
+                            title="Hobbies"
+                            link="/hobbies"
+                        />
+                    </div>
                 </div>
-                {/* <img
-                    className="Picture"
-                    src={LDPicture}
-                    alt="Léo Dupire"
-                /> */}
+                <div className="body" id="Home">
+                    <h2>About me</h2>
+                    <h3>Who I am</h3>
+                    <h3>What I do</h3>
+                    <h2>Documents!</h2>
+                    <h3>My résumé</h3>
+                </div>
             </div>
-            <div className="Tabs">
-                <Tab
-                    title="Work"
-                    link="/work"
-                />
-                <Tab 
-                    title="Education"
-                    link="/education"
-                />
-                <Tab 
-                    title="Portfolio"
-                    link="/portfolio"
-                />
-                <Tab
-                    title="Upbringing"
-                    link="/upbringing"
-                />
-                <Tab
-                    title="Hobbies"
-                    link="/hobbies"
-                />
-            </div>
-            <h3>About me</h3>
         </>
     )
 }

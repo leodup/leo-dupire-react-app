@@ -1,53 +1,138 @@
-h1#Home {
-
+:root {
+    --padding-top-bottom-header-image: 15rem;
+    --home-color: rgb(91, 176, 182);
+    --animation-time: 3s;
 }
 
-h2#Home {
-    
+.header#Home {
+    background-color: var(--home-color);
 }
 
-.Header#Home {
-    position: absolute;
-    top: 0;
-    background-color: black;
-    height: 20vw;
-    width: 100vw;
+.CenterCircle {
+    position: relative;
+    padding-top: var(--padding-top-bottom-header-image);
+    padding-bottom: var(--padding-top-bottom-header-image);
+
+    -ms-transform: translateX(-50%);
+    transform: translateX(0%);
+}
+
+.Circle {
+    background-color: white;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 100%;
+}
+
+.imageLEO {
+    border: 2rem solid white;
+    width: 17.5rem;
+    border-radius: 100%;
 }
 
 .Name {
+    z-index: 1;
     position: absolute;
-    top: 20vw;
-    width: 100vw;
+    top: 8rem;
+    font-size: 8rem;
+    color: var(--home-color);
 }
 
-.Picture {
-    position: absolute;
-    top: 5rem;
-    right: 20rem;
-    width: 25rem;
-    border-radius: 100rem;
+.Name#First {
+    left: 10rem;
 }
 
-/* https://blog.prototypr.io/5-css-animated-backgrounds-to-inspire-your-next-project-97fdb692e852 */
-.Effect {
-    width: 100%;
-    height: 51.8vw;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+.Name#Last {
+    z-index: -1;
+    right: 10rem;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+/* Profile IMAGE */
+@media (prefers-reduced-motion: no-preference) {
+    .Profile {
+      animation: ProfExpand;
+      animation-duration: var(--animation-time);
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate-reverse;
     }
-    50% {
-        background-position: 100% 50%;
+  }
+  @keyframes ProfExpand {
+    from {
+        padding-left: 40%;
     }
-    100% {
-        background-position: 0% 50%;
+    to {
+        padding-left: 32%;
     }
-}
+  }
+
+/* FIRST NAME */
+@media (prefers-reduced-motion: no-preference) {
+    .FirstNameBack {
+      animation: FNExpand;
+      animation-duration: var(--animation-time);
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate-reverse;
+    }
+  }
+  @keyframes FNExpand {
+    from {
+        z-index: -2;
+        position: absolute;
+        top: calc(var(--padding-top-bottom-header-image) + 2rem);
+        right: 50%;
+        height: 17.5rem;
+        width: 0rem;
+        background-color: white;
+    }
+    to {
+        z-index: -2;
+        position: absolute;
+        top: calc(var(--padding-top-bottom-header-image) + 2rem);
+        right: 50%;
+        width:45%;
+        height: 17.5rem;
+        background-color: white;
+        border-top-left-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+    }
+  }
+
+  /* LAST NAME */
+@media (prefers-reduced-motion: no-preference) {
+    .LastNameBack {
+      animation: LNExpand;
+      animation-duration: var(--animation-time);
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate-reverse;
+    }
+  }
+  @keyframes LNExpand {
+    from {
+        z-index: -2;
+        position: absolute;
+        top: calc(var(--padding-top-bottom-header-image) + 2rem);
+        left: 50%;
+        height: 17.5rem;
+        width: 0rem;
+        background-color: white;
+    }
+    to {
+        z-index: -2;
+        position: absolute;
+        top: calc(var(--padding-top-bottom-header-image) + 2rem);
+        left: 50%;
+        width:45%;
+        height: 17.5rem;
+        background-color: white;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+  }
+
+  /* TABS */
 
 .Tabs {
     width: 100%;
@@ -55,50 +140,15 @@ h2#Home {
     overflow: hidden;
 }
 
-/* .Tab:hover {
-    box-shadow: 0px 30px 18px -8px black;
-    transform: scale(1.025, 1.025);
-} */
-
-
-
-
-
-/* FADE IN */ /* https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out */
-
-.fade{
-    position: absolute;
-    top: 0rem;
-    padding-left: 1rem;
-    color: rgb(138, 138, 138);
-    font-size: 10vw;
-    -webkit-animation: fadeinout 5s linear forwards;
-    animation: fadeinout 5s linear forwards;
-    animation-iteration-count: infinite;
-    }
-    
-    @-webkit-keyframes fadeinout {
-      0%,100% { opacity: 0; }
-      50% { opacity: 1; }
-    }
-    
-    @keyframes fadeinout {
-      0%,100% { opacity: 0; }
-      50% { opacity: 1; }
-    }
-
-
-/* LINKS */
-
 .Tab {
-    color: rgb(145, 62, 62);
-    letter-spacing: 1px;
+    text-decoration: none !important;
+    font-weight: bold;
+    letter-spacing: 4px;
     font-size: 2vw;
     text-decoration: none;
     width: 100%;
     position: relative;
     text-align: center;
-    background-color: rgb(0, 0, 0);
 }
 
 .Tab:before,
@@ -140,3 +190,9 @@ h2#Home {
 .current .Tab:after {
   max-width: 100%;
 }
+
+  /* BODY */
+
+  .body#Home {
+
+  }
