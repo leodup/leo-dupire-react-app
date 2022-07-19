@@ -61,11 +61,11 @@ const Home = () => {
                         <div className="FirstNameBack"></div>
                         <div className="LastNameBack"></div>
                         <div className="LargeExpand">
-                            <img
+                            {/* <img
                                 className="imageHyperloop"
                                 src={galleryCurrent}
                                 alt="Hyperloop Team"
-                            />
+                            /> */}
                         </div>
                     </div>
                     <div className="Tabs">
