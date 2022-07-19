@@ -32,13 +32,14 @@ const Home = () => {
                             />
                         </div>
                         <div className="Name" id="First">
-                            <h2 id="HomeName">Léo</h2>
+                            <h2 className="HomeName">Léo</h2>
                         </div>
                         <div className="Name" id="Last">
-                            <h2 id="HomeName">Dupire</h2>
+                            <h2 className="HomeName">Dupire</h2>
                         </div>
                         <div className="FirstNameBack"></div>
                         <div className="LastNameBack"></div>
+                        <div className="LargeExpand"></div>
                     </div>
                     <div className="Tabs">
                         <Tab
