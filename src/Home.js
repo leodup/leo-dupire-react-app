@@ -12,7 +12,7 @@ import Monta from "./images/Monta.jpg";
 const Home = () => {
 
     const [count, setCount] = useState(0);
-    const gallery = [Hyperloop, DAC, Alphabite, LawnCycle, Monta];
+    const gallery = []// [Hyperloop, DAC, Alphabite, LawnCycle, Monta];
     const galleryCurrent = gallery[count];
 
     useEffect(() => {
