@@ -517,6 +517,14 @@ h2.HomeName {
     }
 }
 
+/* BIG AREA CONTENT */
+
+.imageHyperloop {
+    height: 75%;
+    padding-top: 2.5%;
+    padding-left: 10%;
+}
+
   /* TABS */
 
 .Tabs {
