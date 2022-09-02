@@ -1,7 +1,7 @@
 :root {
     --padding-top-bottom-header-image: 15rem;
     --home-color: rgb(91, 176, 182);
-    --animation-time: 20s;
+    --animation-time: 30s;
     --profile-image-height: 17.5vw;
     --profile-image-max-height: 17.5rem;
     --name-box-border-radius: 10vw;
@@ -31,6 +31,7 @@
 .imageLEO {
     border: 1rem solid white;
     max-height: var(--profile-image-max-height);
+    box-shadow: 0 0 10px grey;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -42,53 +43,28 @@
       /* animation-direction: alternate-reverse; */
     }
   }
-  @keyframes imageSize { /* 0, 20, 25, 30, 50, 55, 60 */
-    0% {
+  @keyframes imageSize {
+    0%, 14% {
         max-height: var(--profile-image-max-height);
         height: var(--profile-image-height);
         border-radius: 100%;
     }
-    17.5% {
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        border-radius: 100%;
-    }
-    22.5% {
+    17.5%, 43% {
         max-height: var(--profile-image-max-height);
         height: calc(var(--profile-image-height) - 8vw);
         border-radius: 30%;
     }
-    42.5% {
-        max-height: var(--profile-image-max-height);
-        height: calc(var(--profile-image-height) - 8vw);
-        border-radius: 30%;
-    }
-    47.5% {
+    46.5%, 64% {
         max-height: var(--profile-image-max-height);
         height: var(--profile-image-height);
         border-radius: 100%;
     }
-    67.5% {
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        border-radius: 100%;
-    }
-    72.5% {
+    67.5%, 93% {
         max-height: var(--profile-image-max-height);
         height: calc(var(--profile-image-height) - 8vw);
         border-radius: 30%;
     }
-    92.5% {
-        max-height: var(--profile-image-max-height);
-        height: calc(var(--profile-image-height) - 8vw);
-        border-radius: 30%;
-    }
-    97.5% {
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        border-radius: 100%;
-    }
-    100% {
+    96.5%, 100% {
         max-height: var(--profile-image-max-height);
         height: var(--profile-image-height);
         border-radius: 100%;
@@ -127,7 +103,7 @@ h2.HomeName {
     right: 10vw;
 }
 
-/* Profile IMAGE */
+/* Profile IMAGE (3.5% increments)*/ 
 @media (prefers-reduced-motion: no-preference) { 
     .Profile {
       animation: ProfExpand;
@@ -142,184 +118,52 @@ h2.HomeName {
         padding-top: var(--padding-top-bottom-header-image); /* CENTER */
         padding-left: 40%;
     }
-    5% {
+    3.5%, 7% {
         padding-top: var(--padding-top-bottom-header-image);
-        padding-left: 32%;
+        padding-left: 33.5%;
     }
-    10% {
-        padding-top: var(--padding-top-bottom-header-image);
-        padding-left: 32%;
-    }
-    15% {
+    10.5%, 14% {
         padding-top: var(--padding-top-bottom-header-image); /* BACK TO CENTER */
         padding-left: 40%;
     }
-    17.5% {
-        padding-top: var(--padding-top-bottom-header-image); /* END CENTER */
-        padding-left: 40%;
-    }
-    22.5% {
+    17.5%, 43% {
         padding-top: 2%;
         padding-left: 2%;
     }
-    42.5% {
-        padding-top: 2%;
-        padding-left: 2%;
-    }
-    47.5% {
+    46.5%, 50% {
         padding-top: var(--padding-top-bottom-header-image); /* BACK TO CENTER */
         padding-left: 40%;
     }
-    50% {
-        padding-top: var(--padding-top-bottom-header-image); /* END CENTER */
-        padding-left: 40%;
-    }
-    55% {
+    53.5%, 57% {
         padding-top: var(--padding-top-bottom-header-image);
-        padding-left: 32%;
+        padding-left: 33.5%;
     }
-    60% {
-        padding-top: var(--padding-top-bottom-header-image);
-        padding-left: 32%;
-    }
-    65% {
+    60.5%, 64% {
         padding-top: var(--padding-top-bottom-header-image); /* BACK TO CENTER */
         padding-left: 40%;
     }
-    67.5% {
-        padding-top: var(--padding-top-bottom-header-image); /* END CENTER */
-        padding-left: 40%;
-    }
-    72.5% {
+    67.5%, 93% {
         padding-top: 2%;
         padding-left: calc(96% - var(--profile-image-height) + 8vw);
     }
-    92.5% {
-        padding-top: 2%;
-        padding-left: calc(96% - var(--profile-image-height) + 8vw);
-    }
-    97.5% {
+    96.5%, 100% {
         padding-top: var(--padding-top-bottom-header-image); /* BACK TO CENTER */
         padding-left: 40%; 
     }
-    100% {
-        padding-top: var(--padding-top-bottom-header-image); /* END AT CENTER */
-        padding-left: 40%;
-    }
   }
 
-/* FIRST NAME */
+/* NAME EXPAND */
 @media (prefers-reduced-motion: no-preference) {
-    .FirstNameBack {
-      animation: FNExpand;
+    .NameBack {
+      animation: Expand;
       animation-duration: var(--animation-time);
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
+      box-shadow: 0 0 10px grey;
       /* animation-direction: alternate-reverse; */
     }
   }
-  @keyframes FNExpand { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
-    0% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        right: 50%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        width: 0rem;
-        background-color: white;
-    }
-    5% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        right: 70%;
-        width: 25%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        background-color: white;
-        border-top-left-radius: var(--name-box-border-radius);
-        border-bottom-left-radius: var(--name-box-border-radius);
-    }
-    10% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        right: 70%;
-        width: 25%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        background-color: white;
-        border-top-left-radius: var(--name-box-border-radius);
-        border-bottom-left-radius: var(--name-box-border-radius);
-    }
-    15% {                                                           /* End Profile expand */
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        right: 50%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        width: 0rem;
-        background-color: white;
-    }
-    50% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        right: 50%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        width: 0rem;
-        background-color: white;
-    }
-    55% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        right: 70%;
-        width: 25%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        background-color: white;
-        border-top-left-radius: var(--name-box-border-radius);
-        border-bottom-left-radius: var(--name-box-border-radius);
-    }
-    60% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        right: 70%;
-        width: 25%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        background-color: white;
-        border-top-left-radius: var(--name-box-border-radius);
-        border-bottom-left-radius: var(--name-box-border-radius);
-    }
-    65% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        right: 50%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        width: 0rem;
-        background-color: white;
-    }
-  }
-
-  /* LAST NAME */
-@media (prefers-reduced-motion: no-preference) {
-    .LastNameBack {
-      animation: LNExpand;
-      animation-duration: var(--animation-time);
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      /* animation-direction: alternate-reverse; */
-    }
-  }
-  @keyframes LNExpand { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
+  @keyframes Expand { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
     0% {
         z-index: -2;
         position: absolute;
@@ -330,31 +174,19 @@ h2.HomeName {
         width: 0rem;
         background-color: white;
     }
-    5% {
+    3.5%, 7.5% {
         z-index: -2;
         position: absolute;
         top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        left: 30%;
-        width: 65%;
+        left: 5%;
+        width: 90%;
         max-height: var(--profile-image-max-height);
         height: var(--profile-image-height);
         background-color: white;
-        border-top-right-radius: var(--name-box-border-radius);
-        border-bottom-right-radius: var(--name-box-border-radius);
+        border-radius: var(--name-box-border-radius);
+        border-radius: var(--name-box-border-radius);
     }
-    10% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        left: 30%;
-        width: 65%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        background-color: white;
-        border-top-right-radius: var(--name-box-border-radius);
-        border-bottom-right-radius: var(--name-box-border-radius);
-    }
-    15% {
+    10.5%, 50% {                                                           /* End Profile expand */
         z-index: -2;
         position: absolute;
         top: calc(var(--padding-top-bottom-header-image) + 1rem);
@@ -364,41 +196,19 @@ h2.HomeName {
         width: 0rem;
         background-color: white;
     }
-    50% {
+    53.5%, 57% {
         z-index: -2;
         position: absolute;
         top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        left: 50%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        width: 0rem;
-        background-color: white;
-    }
-    55% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        left: 30%;
-        width: 65%;
+        left: 5%;
+        width: 90%;
         max-height: var(--profile-image-max-height);
         height: var(--profile-image-height);
         background-color: white;
-        border-top-right-radius: var(--name-box-border-radius);
-        border-bottom-right-radius: var(--name-box-border-radius);
+        border-radius: var(--name-box-border-radius);
+        border-radius: var(--name-box-border-radius);
     }
-    60% {
-        z-index: -2;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 1rem);
-        left: 30%;
-        width: 65%;
-        max-height: var(--profile-image-max-height);
-        height: var(--profile-image-height);
-        background-color: white;
-        border-top-right-radius: var(--name-box-border-radius);
-        border-bottom-right-radius: var(--name-box-border-radius);
-    }
-    65% {
+    60.5% {
         z-index: -2;
         position: absolute;
         top: calc(var(--padding-top-bottom-header-image) + 1rem);
@@ -417,11 +227,12 @@ h2.HomeName {
       animation-duration: var(--animation-time);
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
+      box-shadow: 0 0 20px grey;
       /* animation-direction: alternate-reverse; */
     }
   }
   @keyframes LargeExpand { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
-    0% {
+    0%, 14% {
         z-index: -1;
         position: absolute;
         top: calc(var(--padding-top-bottom-header-image) + 10vw);
@@ -430,16 +241,7 @@ h2.HomeName {
         height: 0%;
         background-color: white;
     }
-    17.5% {
-        z-index: -1;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 10vw);
-        left: 50%;
-        width: 0%;
-        height: 0%;
-        background-color: white;
-    }
-    22.5% {
+    17.5%, 43% {
         z-index: -1;
         position: absolute;
         top: 10%;
@@ -449,7 +251,16 @@ h2.HomeName {
         background-color: white;
         border-radius: 1vw;
     }
-    42.5% {
+    46.5%, 64% {
+        z-index: -1;
+        position: absolute;
+        top: calc(var(--padding-top-bottom-header-image) + 10vw);
+        left: 50%;
+        width: 0%;
+        height: 0%;
+        background-color: white;
+    }
+    67.5%, 93% {
         z-index: -1;
         position: absolute;
         top: 10%;
@@ -459,54 +270,7 @@ h2.HomeName {
         background-color: white;
         border-radius: 1vw;
     }
-    47.5% {
-        z-index: -1;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 10vw);
-        left: 50%;
-        width: 0%;
-        height: 0%;
-        background-color: white;
-    }
-    67.5% {
-        z-index: -1;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 10vw);
-        left: 50%;
-        width: 0%;
-        height: 0%;
-        background-color: white;
-    }
-    72.5% {
-        z-index: -1;
-        position: absolute;
-        top: 10%;
-        left: 5%;
-        width: 90%;
-        height: 85%;
-        background-color: white;
-        border-radius: 1vw;
-    }
-    92.5% {
-        z-index: -1;
-        position: absolute;
-        top: 10%;
-        left: 5%;
-        width: 90%;
-        height: 85%;
-        background-color: white;
-        border-radius: 1vw;
-    }
-    97.5% {
-        z-index: -1;
-        position: absolute;
-        top: calc(var(--padding-top-bottom-header-image) + 10vw);
-        left: 50%;
-        width: 0%;
-        height: 0%;
-        background-color: white;
-    }
-    100% {
+    96.5%, 100% {
         z-index: -1;
         position: absolute;
         top: calc(var(--padding-top-bottom-header-image) + 10vw);
@@ -519,10 +283,74 @@ h2.HomeName {
 
 /* BIG AREA CONTENT */
 
-.imageHyperloop {
-    height: 75%;
-    padding-top: 2.5%;
-    padding-left: 10%;
+.LargeExpand {
+    display: flex;
+}
+
+.imageExpand {
+    padding-top: 10%;
+    padding-left: min(5rem, 5%);
+    height: 55%;
+    border-radius: 70%;
+}
+
+#expandHeader {
+    font-size: min(2vw, 2.5rem);
+    font-weight: 500;
+}
+
+#expandText {
+    font-size: min(1.5vw, 2rem);
+    font-weight: 300;
+    padding-bottom: 0.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) { 
+    .galleryText {
+        padding-top: 5%;
+        padding-left: 4rem;
+        padding-right: 2rem;
+
+        animation: GalleryTextFade;
+        animation-duration: var(--animation-time);
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        /* animation-direction: alternate-reverse; */
+    }
+  }
+  @keyframes GalleryTextFade { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
+    0%, 19% {
+        opacity: 0;
+    }
+    22%, 38.5% {
+        opacity: 1;
+    }
+    41.5%, 69% {
+        opacity: 0;
+    }
+    72%, 88.5% {
+        opacity: 1;
+    }
+    91.5%, 100% {
+        opacity: 0;
+    }
+}
+
+.GalleryButton {
+    border-radius: 5px;
+    background-color: var(--home-color);
+    box-shadow: 0 0 5px grey;
+    color: white;
+    font-size: 1.5rem;
+    width: 7rem;
+}
+
+#GalleryButton {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem
+    
 }
 
   /* TABS */
@@ -537,7 +365,6 @@ h2.HomeName {
     font-weight: bold;
     letter-spacing: 4px;
     font-size: 2vw;
-    text-decoration: none;
     width: 100%;
     position: relative;
     text-align: center;
@@ -555,8 +382,8 @@ h2.HomeName {
 .Tab:before {
   bottom: -1rem;
   display: block;
-  height: 2vw;
-  width: 0%;
+  height: 0vw;
+  width: 100%;
   content: "";
   background-color: #ffffff;
 }
@@ -565,11 +392,10 @@ h2.HomeName {
 .Tab:after {
   left: 2rem;
   top: 0;
-  padding: 0.5em 0;
   position: absolute;
   content: attr(data-hover);
   color: rgb(255, 255, 255);
-  white-space: nowrap;
+  /* white-space: nowrap; */
   max-width: 0%;
   overflow: hidden;
 }
@@ -577,12 +403,7 @@ h2.HomeName {
 .Tab:hover:before,
 .current .Tab:before {
   opacity: 1;
-  width: 100%;
-}
-
-.Tab:hover:after,
-.current .Tab:after {
-  max-width: 100%;
+  height: 2vw;
 }
 
   /* BODY */
