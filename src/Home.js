@@ -63,7 +63,7 @@ const Home = () => {
                                 <h5 id="expandHeader">Resperatory Ventilator</h5>
                                 <p id="expandText">
                                     During the height of the COVID-19 ventilator <b>shortages</b>, I designed and built a ventilator. <br></br> <br></br>
-                                    Ventilators can cost upwards of 10s of thousands of dollars. Using Arduino, some circuitry, and carpentry, this simple product cost about $200.
+                                    Ventilators can cost upwards of 10s of thousands of dollars. Using Arduino, some circuitry, and carpentry, this simple product costs about $200.
                                 </p>
                                 <Link style={{textDecoration: 'none'}} to="/Portfolio">
                                     <div className="GalleryButton">
@@ -112,9 +112,27 @@ const Home = () => {
     const whoAmI =  <p> 
                         My name is Léo Dupire. I am an undergraduate Computer & Data Science student, completing my final year at New York University. My background is originally in Mechanical Engineering. I fell in love with engineering from a young age, taking on increasingly ambitious projects throughout the years. Eventually, I found that I also had a great interest in Computer Science and Data Science, after which I changed my field of study accordingly. <br></br> <br></br>
                         I spent my early years in a medieval village in the south of France, until moving to Manhattan. Througout my time in New York, I stayed close to my French and Swedish heritage and learned English as well as some Spanish along the way. I went to the Lycée Français de New York, graduating in 2018 and pursuing higher education at Northeastern University, followed by New York University. <br></br> <br></br>
-                        I have undertaken several personal projects, as can be seen in my portfolio. I'm always looking for opportunities to grow and exercise my creativity and persistence. If you have any questions, please reach out!"
+                        I have undertaken several personal projects, as can be seen in my portfolio, and I'm always looking for opportunities to grow and exercise my creativity and persistence. If you have any questions, please reach out!
                     </p>
-    const whatIDo = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    const whatIDo = <p>
+                        As a Computer and Data Scientist I have worked in a variety of fields through academic studies as well as professional experience. I have worked in fields such as:
+                        <ul>
+                            <li>Cloud Computing</li>
+                            <li>Natural Language Processing</li>
+                            <li>Predictive Analytics</li>
+                            <li>Software Development</li>
+                        </ul>
+                        Involving skills of <b>Data Science</b> as well as <b>full-stack development</b>. In addition to this, I have also gathered experience through my Mechanical Engineering background. This includes:
+                        <ul>
+                            <li>Robotics</li>
+                            <li>Aerodynamics</li>
+                            <li>CAD and other 3D modeling</li>
+                            <li>Imaging</li>
+                            <li>Security</li>
+                            <li>Sustainability</li>
+                        </ul>
+                        Outside of school and work, I also love to play and compose music. I have played piano my whole life, picking up guitar in my mid-teens and having a brief stint as a drummer as well. My style is generally alternative rock, although I really try to stay versatile and grow into other genres. Music aside, I also enjoy tennis, squash, running, hands-on projects, sailing, among <i>many</i> others.
+                    </p>
 
     const Tab = (props) => {
         return (
@@ -132,11 +150,13 @@ const Home = () => {
                 <div className="header" id="Home">
                     <div className="CenterCircle">
                         <div className="Profile">
-                            <img
-                                className="imageLEO"
-                                src={LEO}
-                                alt="Léo Dupire"
-                            />
+                            <Link to="/" onClick={() => window.location.reload()}>
+                                <img
+                                    className="imageLEO"
+                                    src={LEO}
+                                    alt="Léo Dupire"
+                                />
+                            </ Link>
                         </div>
                         <div className="Name" id="First">
                             <h2 className="HomeName">Léo</h2>
@@ -163,12 +183,8 @@ const Home = () => {
                             link="/portfolio"
                         />
                         <Tab
-                            title="Upbringing"
-                            link="/upbringing"
-                        />
-                        <Tab
-                            title="Hobbies"
-                            link="/hobbies"
+                            title="Contact Me"
+                            link="/contactme"
                         />
                     </div>
                 </div>
@@ -178,8 +194,8 @@ const Home = () => {
                     <p id="Home">{whoAmI}</p>
                     <h3 id="Home">What I do</h3>
                     <p id="Home">{whatIDo}</p>
-                    <h2 id="Home">Documents!</h2>
-                    <h3 id="Home">My résumé</h3>
+                    <h2 id="Home">Documents</h2>
+                    <h3 id="Home">My Résumé</h3>
                     <div className="ResumePosition">
                         <iframe src="https://drive.google.com/file/d/12vix--qu-DkUbIdiGD_drLmiRTw9i-BB/preview" allow="autoplay" className="ResumePDF"></iframe>
                     </div>

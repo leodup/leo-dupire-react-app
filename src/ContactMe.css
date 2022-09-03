@@ -1,0 +1,404 @@
+:root {
+    --animation-height: 50vh;
+    --light-beige: rgb(255, 224, 162);
+    --light-brown: rgb(255, 190, 120);
+    --light-green: rgb(216, 255, 216);
+    --light-yellow: rgb(150, 225, 255);
+    --pink: rgb(255, 195, 195);
+    --teal: rgb(202, 255, 243);
+    --dark-teal: rgb(157, 226, 209);
+    --lavender: rgb(233, 216, 255);
+}
+
+.ContactMe {
+    height: 50vh;
+}
+
+h2#Contact {
+    font-size: 2rem;
+}
+
+.Symbol {
+    display: flex;
+}
+
+.contactIcon {
+    padding-top: 2.5vh;
+    height: 7rem;
+}
+
+.ContactInfo {
+    padding-left: 1.5rem;
+}
+
+p.Contact {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.HomeLinkContact {
+    position: absolute;
+    z-index: 2;
+    top: 0.75vh;
+    left: 3vw;
+}
+
+.HomeLinkContact:hover {
+    transform: scale(1.025, 1.025);
+}
+
+#HomeContact {
+    font-size: 1.5vw;
+    font-weight: bold;
+    
+}
+
+h1.ContactMe {
+    position: absolute;
+    z-index: 2;
+    top: -2vh;
+    left: 3vw;
+    font-size: 15vw;
+}
+
+@media (prefers-reduced-motion: no-preference) { 
+    #HomeLinkContact {
+        text-decoration: underline;
+        text-shadow: 0 0 10px;
+        animation: TextAnimation1;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        /* animation-direction: alternate-reverse; */
+    }
+  }
+  @keyframes TextAnimation1 { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
+    0%, 10% {
+        color: var(--light-brown);
+    }
+
+    /* Start blue curtain fill to right */
+
+    15%, 25% {
+        color: var(--dark-teal);
+    }
+
+    /* Start blue curtain receed upward */
+
+    30%, 40% {
+        color: brown;
+    }
+    
+    45%, 55% {
+        color: brown;
+    }
+
+    60%, 70% {
+        color: var(--pink);
+    }
+
+    75%, 85% {
+        color: brown;
+    }
+
+    100% {
+        color: var(--light-brown);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) { 
+    h1#ContactMe {
+        text-shadow: 0 0 10px;
+        animation: TextAnimation2;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        /* animation-direction: alternate-reverse; */
+    }
+  }
+  @keyframes TextAnimation2 { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
+    0%, 10% {
+        color: var(--light-brown);
+    }
+
+    /* Start blue curtain fill to right */
+
+    15%, 25% {
+        color: var(--dark-teal);
+    }
+
+    /* Start blue curtain receed upward */
+
+    30%, 40% {
+        color: brown;
+    }
+    
+    45%, 55% {
+        color: brown;
+    }
+
+    60%, 70% {
+        color: var(--pink);
+    }
+
+    75%, 85% {
+        color: brown;
+    }
+
+    100% {
+        color: var(--light-brown);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) { 
+    .Curtain1 {
+        position: absolute;
+        animation: CurtainAnimation1;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        /* animation-direction: alternate-reverse; */
+    }
+  }
+  @keyframes CurtainAnimation1 { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
+    0%, 10% {
+        z-index: -1;
+        height: var(--animation-height);
+        width: 0%;
+        top: 0%;
+        left: 0%;
+    }
+    10% {
+        z-index: 1;
+        background-color: var(--light-beige);
+        height: var(--animation-height);
+        width: 0%;
+        top: 0%;
+        left: 0%;
+    }
+
+    /* Start blue curtain fill to right */
+
+    15%, 25% {
+        z-index: 1;
+        background-color: var(--light-beige);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    /* Start blue curtain receed upward */
+
+    30%, 35% {
+        z-index: 1;
+        background-color: var(--light-beige);
+        height: 0%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    35% {
+        z-index: -1;
+        height: 0%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    /* Change blue curtain position to center */
+
+    36%, 40% {
+        z-index: -1;
+        background-color: var(--light-brown);
+        height: var(--animation-height);
+        width: 0%;
+        top: 0%;
+        left: 50%;
+    }
+    40% {
+        z-index: 1;
+        background-color: var(--light-brown);
+        height: var(--animation-height);
+        width: 0%;
+        top: 0%;
+        left: 50%;
+    }
+    
+    45%, 55% {
+        z-index: 1;
+        background-color: var(--light-brown);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    60% {
+        z-index: 1;
+        background-color: var(--light-green);
+        height: 0%;
+        width: 0%;
+        top: calc(var(--animation-height)/2);
+        left: 50%;
+    }
+    
+    70% {
+        z-index: 1;
+        background-color: brown;
+        height: 0%;
+        width: 0%;
+        top: calc(var(--animation-height)/2);
+        left: 50%;
+    }
+
+    70% {
+        z-index: 1;
+        background-color: brown;
+        height: 0%;
+        width: 0%;
+        top: 0%;
+        left: 0%;
+    }
+
+    75%, 85% {
+        z-index: 1;
+        background-color: var(--lavender);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    100% {
+        z-index: 1;
+        background-color: var(--teal);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) { 
+    .Curtain2 {
+        position: absolute;
+        animation: CurtainAnimation2;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+  }
+  @keyframes CurtainAnimation2 { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
+    0%, 10% {
+        background-color: var(--teal);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    10% {
+        background-color: var(--teal);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    /* Start blue curtain fill to right */
+
+    15%, 25% {
+        background-color: var(--teal);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    /* Start blue curtain receed upward */
+
+    30%, 55% {
+        background-color: var(--light-yellow);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    60%, 70% {
+        background-color: var(--light-green);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    70% {
+        background-color: var(--teal);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    75%, 85% {
+        background-color: var(--teal);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    100% {
+        background-color: var(--teal);
+        height: var(--animation-height);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) { 
+    .ContactMe2 {
+        border-top: 5px solid black;
+        height: 50vh;
+        padding-top: 1.5vh;
+        padding-left: 4vw;
+        /* background-color: rgb(237, 237, 237); */
+
+        animation: TextAnimation3;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        /* animation-direction: alternate-reverse; */
+    }
+  }
+  @keyframes TextAnimation3 { /* 0, 5, 10, 12.5 ... 52.5, 57.5, 62.5, 65 */
+    0%, 10% {
+        background-color: rgba(255, 190, 120, 0.268);
+    }
+
+    15%, 25% {
+        background-color: rgba(157, 226, 209, 0.256);
+    }
+
+    30%, 40% {
+        background-color: rgba(165, 42, 42, 0.274);
+    }
+    
+    45%, 55% {
+        background-color: rgba(165, 42, 42, 0.274);
+    }
+
+    60%, 70% {
+        background-color: rgba(255, 195, 195, 0.272);
+    }
+
+    75%, 85% {
+        background-color: rgba(165, 42, 42, 0.512);
+    }
+
+    100% {
+        background-color: rgba(255, 190, 120, 0.268);
+    }
+}

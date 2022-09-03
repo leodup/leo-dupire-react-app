@@ -9,6 +9,8 @@ import Work from './Work.js';
 import Education from "./Education.js"
 import Portfolio from "./Portfolio.js"
 import Hobbies from "./Hobbies.js"
+import ContactMe from "./ContactMe.js"
+
 
 function App() {
 
@@ -47,9 +49,9 @@ function App() {
             <Footer />
           </div>
         } />
-        <Route path="/hobbies" element={
+        <Route path="/contactme" element={
           <div>
-            <Hobbies />
+            <ContactMe />
             <Footer />
           </div>
         } />
