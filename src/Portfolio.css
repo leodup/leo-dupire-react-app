@@ -1,0 +1,282 @@
+:root {
+    --header-height: 80vh;
+    --block-height: 38vh;
+    --spacing: calc((var(--header-height) - 2*var(--block-height))/3);
+    --iconHeight: 20vh;
+}
+
+/* HOME BUTTON */
+
+.PortfolioLink {
+    position: absolute;
+    top: 0.75vh;
+    left: 3vw;
+}
+
+.PortfolioLink:hover {
+    transform: scale(1.025, 1.025);
+}
+
+#PortfolioLink {
+    font-size: 1.75vw;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+;
+}
+
+/* HEADER */
+
+.PortfolioHeader {
+    position: absolute;
+    top: 0%;
+    height: var(--header-height);
+    width: 100%;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    box-shadow: inset 0 0 10px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.LinesLeft {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: calc(50vw - var(--header-height)/2);
+    overflow: hidden;
+}
+
+.Orient {
+    background: repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 20px,
+            black 20px,
+            black 40px);
+    height: 500%;
+    width: 500%;
+    animation: angle 15s ease infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes angle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+        transform: rotate(-90deg);
+	}
+}
+
+.Blocks {
+    position: relative;
+    left: calc(50vw - var(--header-height)/2);
+    height: var(--header-height);
+    width: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    /* gap: 0vh; */
+}
+
+.Top {
+    position: relative;
+    top: var(--spacing);
+    height: var(--block-height);
+    width: var(--header-height);
+    display: flex;
+}
+
+.Bottom {
+    position: relative;
+    top: calc(2*var(--spacing));
+    height: var(--header-height);
+    width: var(--header-height);
+    display: flex;
+}
+
+/* Q1 */
+
+.Q1 {
+    position: relative;
+    left: var(--spacing);
+    width: var(--block-height);
+    height: var(--block-height);
+    background-color: black;
+    border-radius: 20px;
+    transition: 0.25s;
+    box-shadow: 0 0 5px black;
+    font-weight: 600;
+    /* text-align: center; */
+    color: white;
+}
+
+.Q1:hover .BlockTop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.BlockTop {
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.Q1:hover .TitleText1 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#DS-Box-Title {
+    position: relative;
+    top: -1vh;
+    font-size: 3vh;
+    font-weight: 800;
+    letter-spacing: 1vh;
+}
+
+.Q1:hover #DS-Box-Text {
+    visibility: visible;
+    opacity: 1;
+}
+
+#DS-Box-Text {
+    visibility: hidden;
+    opacity: 0;
+
+    position: relative;
+    top: -15vh;
+    color: black;
+    font-size: 1.5vh;
+    line-height: 5vh;
+}
+
+/* Q2 */
+
+.Q2 {
+    position: relative;
+    left: calc(2*var(--spacing));
+    width: var(--block-height);
+    height: var(--block-height);
+    background-color: black;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px black;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.Q3 {
+    position: relative;
+    left: var(--spacing);
+    width: var(--block-height);
+    height: var(--block-height);
+    background-color: black;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px black;
+}
+
+.Q4 {
+    position: relative;
+    left: calc(2*var(--spacing));
+    width: var(--block-height);
+    height: var(--block-height);
+    background-color: black;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px black;
+}
+
+.Q1:hover, .Q2:hover, .Q3:hover, .Q4:hover {
+    transform: scale(1.025, 1.025);
+    transition: 0.5s;
+    background-color: rgb(244, 244, 244);
+    --image: url('./images/CodeImage.jpg');
+}
+
+.TitleText1 {
+    position: relative;
+    height: 20.5vh;
+    top: 6vh;
+    left: 2vh;
+    transition: 0.5;
+}
+
+.TitleText2 {
+    position: relative;
+    height: 20.5vh;
+    top: 6vh;
+}
+
+.TitleText3 {
+    position: relative;
+    height: 20.5vh;
+    top: 12vh;
+    left: 2vh;
+}
+
+.Image {
+    position: absolute;
+    z-index: 1;
+    top: calc(40vh - var(--iconHeight)/2);
+    left: calc(49.7vw - var(--iconHeight)/2);
+    height: var(--iconHeight);
+    width: var(--iconHeight);
+    background-image: var(--image);
+    border: 5px solid black;
+    border-radius: 100%;
+}
+
+/* Body */
+
+h1#Portfolio {
+    margin-top: var(--header-height);
+    margin-bottom: 0%;
+    padding-left: 2vh;
+    background-color: black;
+    font-size: 10vh;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2vh;
+    line-height: 16vh;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+
+.PortfolioBody {
+    margin-left: calc(50vw - var(--header-height)/2 + 2vh);
+}
+
+h2#Section {
+    font-size: 4vh;
+    font-weight: 800;
+    margin-top: 3vh;
+    margin-bottom: 0%;
+    text-shadow: 2px 2px 2px grey;
+}
+
+h3#Section {
+    font-size: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}

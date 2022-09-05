@@ -16,9 +16,11 @@ function App() {
 
   const Footer = () => {
     return(
-      <Link to="/">
-        <p id="ReturnHome">Return Home</p>
-      </Link>
+      <div className="Footer">
+        <Link to="/">
+          <p id="ReturnHome"><i class="fa fa-home fa-2x"></i></p>  {/*https://icons.getbootstrap.com*/}
+        </Link>
+      </div>
     )
   }
 
@@ -29,6 +31,7 @@ function App() {
         <Route path="/" element={
           <div>
             <Home />
+            <Footer />
           </div>
         } />
         <Route path="/work" element={

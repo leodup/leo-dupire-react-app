@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.Footer {
+  height: 10vh;
+  background-color: rgb(213, 213, 213);
+  text-align: center;
+  box-shadow: 0 0 10px grey;
+}
+
+p#ReturnHome {
+  position: relative;
+  top: 2vh;
+  font-size: 2vh;
+  font-weight: 700;
+  color: black;
+}
