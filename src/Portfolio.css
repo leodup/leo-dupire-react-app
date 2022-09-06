@@ -261,10 +261,13 @@ h1#Portfolio {
     line-height: 16vh;
     text-align: center;
     box-shadow: 0 0 10px black;
+    text-shadow: 2px 2px 2px grey;
 }
 
 .PortfolioBody {
     margin-left: calc(50vw - var(--header-height)/2 + 2vh);
+    margin-right: calc(50vw - var(--header-height)/2 + 2vh);
+    text-align: justify;
 }
 
 h2#Section {
@@ -275,8 +278,24 @@ h2#Section {
     text-shadow: 2px 2px 2px grey;
 }
 
+h2#TBC {
+    font-size: 3.5vh;
+    font-weight: 800;
+    margin-top: 3vh;
+    margin-bottom: 0%;
+    color: grey;
+    text-shadow: 2px 2px 2px grey;
+}
+
 h3#Section {
-    font-size: 2vh;
+    font-size: 2.75vh;
+    font-weight: 800;
     margin-top: 3vh;
     margin-bottom: 1vh;
+    color: rgb(58, 58, 58);
+}
+
+p#Section {
+    font-size: 2vh;
+    line-height: 3vh;
 }

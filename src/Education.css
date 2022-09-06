@@ -119,6 +119,7 @@ h2#NEU2 {
     overflow: hidden;
     font-size: 1.25vw;
     width: 50%;
+    text-align: justify;
 }
 
 .Description#NEU {
@@ -127,6 +128,7 @@ h2#NEU2 {
     overflow: hidden;
     font-size: 1.25vw;
     width: 50%;
+    text-align: justify;
 }
 
 .Description#LFNY {
@@ -135,6 +137,7 @@ h2#NEU2 {
     overflow: hidden;
     font-size: 1.25vw;
     width: 50%;
+    text-align: justify;
 }
 
 .Title {

@@ -109,12 +109,12 @@ const Home = () => {
         return () => clearInterval(interval);
     })
 
-    const whoAmI =  <p> 
+    const whoAmI =  <p id="Home"> 
                         My name is Léo Dupire. I am an undergraduate Computer & Data Science student, completing my final year at New York University. My background is originally in Mechanical Engineering. I fell in love with engineering from a young age, taking on increasingly ambitious projects throughout the years. Eventually, I found that I also had a great interest in Computer Science and Data Science, after which I changed my field of study accordingly. <br></br> <br></br>
                         I spent my early years in a medieval village in the south of France, until moving to Manhattan. Througout my time in New York, I stayed close to my French and Swedish heritage and learned English as well as some Spanish along the way. I went to the Lycée Français de New York, graduating in 2018 and pursuing higher education at Northeastern University, followed by New York University. <br></br> <br></br>
                         I have undertaken several personal projects, as can be seen in my portfolio, and I'm always looking for opportunities to grow and exercise my creativity and persistence. If you have any questions, please reach out!
                     </p>
-    const whatIDo = <p>
+    const whatIDo = <p id="Home">
                         As a Computer and Data Scientist I have worked in a variety of fields through academic studies as well as professional experience. I have worked in fields such as:
                         <ul>
                             <li>Cloud Computing</li>
@@ -191,9 +191,9 @@ const Home = () => {
                 <div className="body" id="Home">
                     <h2 id="Home">About me</h2>
                     <h3 id="Home">Who I am</h3>
-                    <p id="Home">{whoAmI}</p>
+                    {whoAmI}
                     <h3 id="Home">What I do</h3>
-                    <p id="Home">{whatIDo}</p>
+                    {whatIDo}
                     <h2 id="Home">Documents</h2>
                     <h3 id="Home">My Résumé</h3>
                     <div className="ResumePosition">

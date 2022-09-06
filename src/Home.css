@@ -92,19 +92,6 @@
     }
 }
 
-h2.HomeName {
-}
-
-h2#Home {
-    font-size: 3vw;
-    text-shadow: 2px 2px 2px grey;
-}
-
-h3#Home {
-    font-size: 2vw;
-    color: rgb(54, 54, 54);
-}
-
 .Name#First {
     left: 10vw;
 }
@@ -418,26 +405,27 @@ h3#Home {
 
   /* BODY */
 
-  h2#Home {
-        padding-top: 2rem;
-        padding-left: 5rem;
+h2#Home {
+    font-size: 3vw;
+    text-shadow: 2px 2px 2px grey;
+    padding-top: 2vh;
+}
+
+h3#Home {
+    font-size: 2vw;
+    color: rgb(54, 54, 54);
+}
+
+p#Home {
+    font-size: 2.5vh;
+    line-height: 4vh;
+    text-align: justify;
   }
 
-  h3#Home {
-        padding-left: 6rem;
-  }
-
-  p#Home {
-        padding-left: 8rem;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        width: 85%;
-  }
-
-  .body#Home {
-    padding-left: 18vw;
-    padding-right: 20vw;
-  }
+.body#Home {
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
 
 .ResumePosition {
     padding-left: 15%;
