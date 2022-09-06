@@ -5,6 +5,8 @@
     --profile-image-height: 17.5vw;
     --profile-image-max-height: 17.5rem;
     --name-box-border-radius: 10vw;
+
+    --body-width: min(100vw, 90vh, 70rem);
 }
 
 .header#Home {
@@ -423,8 +425,8 @@ p#Home {
   }
 
 .body#Home {
-    padding-left: 25vw;
-    padding-right: 25vw;
+    padding-left: calc(50vw - var(--body-width)/2);
+    padding-right: calc(50vw - var(--body-width)/2);
 }
 
 .ResumePosition {
