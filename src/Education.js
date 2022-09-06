@@ -84,7 +84,7 @@ const Education = () => {
                         </div>
                         <div className="Description" id="LFNY">
                             <div className="Title">
-                                <p id="Level">French Baccalaureate of Science with Honors</p>
+                                <p id="Level">French Baccalaureate of Science w. Honors</p>
                                 <p id="Period">2004-2018</p>
                                 <p id="Level2">High School Diploma</p>
                             </div>

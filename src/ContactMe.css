@@ -361,9 +361,10 @@ h1.ContactMe {
 @media (prefers-reduced-motion: no-preference) { 
     .ContactMe2 {
         border-top: 5px solid black;
-        height: 50vh;
         padding-top: 1.5vh;
         padding-left: 4vw;
+        min-height: 50vh;
+        padding-bottom: 2vw;
         /* background-color: rgb(237, 237, 237); */
 
         animation: TextAnimation3;
