@@ -1,15 +1,16 @@
 :root {
-    --header-height: 80vh;
-    --block-height: 38vh;
+    --header-height: 42vw;
+    --block-height: 19vw;
     --spacing: calc((var(--header-height) - 2*var(--block-height))/3);
-    --iconHeight: 20vh;
+    --iconHeight: 10vw;
+    --portfolio-body-width: min(90vw, 75vh, 70rem);
 }
 
 /* HOME BUTTON */
 
 .PortfolioLink {
     position: absolute;
-    top: 0.75vh;
+    top: 0.75vw;
     left: 3vw;
 }
 
@@ -21,7 +22,8 @@
     font-size: 1.75vw;
     font-weight: bold;
     text-decoration: underline;
-    color: white;
+    color: black;
+
 ;
 }
 
@@ -85,7 +87,6 @@
     width: var(--header-height);
     display: flex;
     flex-direction: column;
-    /* gap: 0vh; */
 }
 
 .Top {
@@ -112,9 +113,9 @@
     width: var(--block-height);
     height: var(--block-height);
     background-color: black;
-    border-radius: 20px;
+    border-radius: 1vw;
     transition: 0.25s;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 0.25vw black;
     font-weight: 600;
     /* text-align: center; */
     color: white;
@@ -132,10 +133,10 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 7vh;
+    height: 3vw;
     background-color: black;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
     text-align: center;
     transition: 0.5s;
 }
@@ -147,10 +148,10 @@
 
 #DS-Box-Title {
     position: relative;
-    top: -1vh;
-    font-size: 3vh;
+    top: -1vw;
+    font-size: 1.5vw;
     font-weight: 800;
-    letter-spacing: 1vh;
+    letter-spacing: 0.5vw;
 }
 
 .Q1:hover #DS-Box-Text {
@@ -163,10 +164,10 @@
     opacity: 0;
 
     position: relative;
-    top: -15vh;
+    top: -8vw;
     color: black;
-    font-size: 1.5vh;
-    line-height: 5vh;
+    font-size: 0.8vw;
+    line-height: 2.5vw;
 }
 
 /* Q2 */
@@ -177,9 +178,9 @@
     width: var(--block-height);
     height: var(--block-height);
     background-color: black;
-    border-radius: 20px;
+    border-radius: 1vw;
     transition: 0.5s;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 0.25vw black;
     font-weight: 600;
     text-align: center;
     color: white;
@@ -191,9 +192,9 @@
     width: var(--block-height);
     height: var(--block-height);
     background-color: black;
-    border-radius: 20px;
+    border-radius: 1vw;
     transition: 0.5s;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 0.25vw black;
 }
 
 .Q4 {
@@ -202,9 +203,9 @@
     width: var(--block-height);
     height: var(--block-height);
     background-color: black;
-    border-radius: 20px;
+    border-radius: 1vw;
     transition: 0.5s;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 0.25vw black;
 }
 
 .Q1:hover, .Q2:hover, .Q3:hover, .Q4:hover {
@@ -216,29 +217,29 @@
 
 .TitleText1 {
     position: relative;
-    height: 20.5vh;
-    top: 6vh;
-    left: 2vh;
+    height: 10.25vw;
+    top: 3vw;
+    left: 1vw;
     transition: 0.5;
 }
 
 .TitleText2 {
     position: relative;
-    height: 20.5vh;
-    top: 6vh;
+    height: 10.25vw;
+    top: 3vw;
 }
 
 .TitleText3 {
     position: relative;
-    height: 20.5vh;
-    top: 12vh;
-    left: 2vh;
+    height: 10.25vw;
+    top: 6vw;
+    left: 1vw;
 }
 
 .Image {
     position: absolute;
     z-index: 1;
-    top: calc(40vh - var(--iconHeight)/2);
+    top: calc(20vw - var(--iconHeight)/2);
     left: calc(49.7vw - var(--iconHeight)/2);
     height: var(--iconHeight);
     width: var(--iconHeight);
@@ -252,21 +253,21 @@
 h1#Portfolio {
     margin-top: var(--header-height);
     margin-bottom: 0%;
-    padding-left: 2vh;
+    padding-left: 4vw;
     background-color: black;
-    font-size: 10vh;
+    font-size: 6vw;
     font-weight: 900;
     color: white;
-    letter-spacing: 2vh;
-    line-height: 16vh;
+    letter-spacing: 7vw;
+    line-height: 8vw;
     text-align: center;
     box-shadow: 0 0 10px black;
     text-shadow: 2px 2px 2px grey;
 }
 
 .PortfolioBody {
-    margin-left: calc(50vw - var(--header-height)/2 + 2vh);
-    margin-right: calc(50vw - var(--header-height)/2 + 2vh);
+    margin-left: calc(50vw - var(--portfolio-body-width)/2);
+    margin-right: calc(50vw - var(--portfolio-body-width)/2);
     text-align: justify;
 }
 
