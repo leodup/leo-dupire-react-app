@@ -25,7 +25,7 @@ const Home = () => {
                                     Mechanical Engineer with the Paradigm Hyperloop team at Northeastern University. <br></br> <br></br>
                                     The annual Hyperloop competition is organized by <b>SpaceX</b>. <br></br>
                                 </p>
-                                <Link style={{textDecoration: 'none'}} to="/Portfolio">
+                                <Link style={{textDecoration: 'none'}} to="/Portfolio/#Hyperloop">
                                     <div className="GalleryButton">
                                         <p id="GalleryButton">Explore</p>
                                     </div>
@@ -45,7 +45,7 @@ const Home = () => {
                             I built and designed an off-road Go Kart <b>from scratch</b> at the age of <b>12</b>. <br></br> <br></br>
                             This, in many ways, was my debut as an engineer.
                         </p>
-                        <Link style={{textDecoration: 'none'}} to="/Portfolio">
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#GoKart">
                             <div className="GalleryButton">
                                 <p id="GalleryButton">Explore</p>
                             </div>
@@ -65,7 +65,7 @@ const Home = () => {
                                     During the height of the COVID-19 ventilator <b>shortages</b>, I designed and built a ventilator. <br></br> <br></br>
                                     Ventilators can cost upwards of 10s of thousands of dollars. Using Arduino, some circuitry, and carpentry, this simple product costs about $200.
                                 </p>
-                                <Link style={{textDecoration: 'none'}} to="/Portfolio">
+                                <Link style={{textDecoration: 'none'}} to="/Portfolio/#Ventilator">
                                     <div className="GalleryButton">
                                         <p id="GalleryButton">Explore</p>
                                     </div>
@@ -85,7 +85,7 @@ const Home = () => {
                             Temporary sustainability exhibit for the <b>Boston Museum of Science</b>. <br></br> <br></br>
                             Completed as part of an intensive Engineering Design course at Northeastern University.
                         </p>
-                        <Link style={{textDecoration: 'none'}} to="/Portfolio">
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#DAC">
                             <div className="GalleryButton">
                                 <p id="GalleryButton">Explore</p>
                             </div>
@@ -136,10 +136,14 @@ const Home = () => {
 
     const Tab = (props) => {
         return (
-            <div className="Tab">
-                <Link style={{textDecoration: 'none'}} to={props.link}>
-                    <p id="HomeTab" data-hover={props.title}>{props.title}</p>
-                </Link>
+            <div className="Filler">
+                    <Link to={props.link} style={{ textDecoration: 'none' }}>
+                    <div className="Tab">
+                        <p>{props.title}</p>
+                    </div>
+                    </Link>
+                    
+                
             </div>
         );
     }

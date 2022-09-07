@@ -1,9 +1,11 @@
 :root {
     --header-height: 42vw;
     --block-height: 19vw;
+    --block-width: 35vw;
     --spacing: calc((var(--header-height) - 2*var(--block-height))/3);
     --iconHeight: 10vw;
-    --portfolio-body-width: min(90vw, 75vh, 70rem);
+    --portfolio-body-width: min(90vw, 70rem, max(var(--scale)*var(--header-height), 60vh));
+    --scale: 1.5;
 }
 
 /* HOME BUTTON */
@@ -22,9 +24,8 @@
     font-size: 1.75vw;
     font-weight: bold;
     text-decoration: underline;
-    color: black;
-
-;
+    color: white;
+    text-shadow: 0 0 10px ;
 }
 
 /* HEADER */
@@ -32,12 +33,11 @@
 .PortfolioHeader {
     position: absolute;
     top: 0%;
-    height: var(--header-height);
+    height: calc(var(--header-height) + 9vw);
     width: 100%;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #ad41ff, #ff4646, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    box-shadow: inset 0 0 10px;
 }
 @keyframes gradient {
 	0% {
@@ -51,40 +51,11 @@
 	}
 }
 
-.LinesLeft {
-    overflow: hidden;
-    position: absolute;
-    height: 100%;
-    width: calc(50vw - var(--header-height)/2);
-    overflow: hidden;
-}
-
-.Orient {
-    background: repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 20px,
-            black 20px,
-            black 40px);
-    height: 500%;
-    width: 500%;
-    animation: angle 15s ease infinite;
-    animation-direction: alternate-reverse;
-}
-@keyframes angle {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-        transform: rotate(-90deg);
-	}
-}
-
 .Blocks {
     position: relative;
-    left: calc(50vw - var(--header-height)/2);
+    left: calc(50vw - var(--scale)*var(--header-height)/2);
     height: var(--header-height);
-    width: var(--header-height);
+    width: calc(var(--scale)*var(--header-height));
     display: flex;
     flex-direction: column;
 }
@@ -93,7 +64,7 @@
     position: relative;
     top: var(--spacing);
     height: var(--block-height);
-    width: var(--header-height);
+    width: calc(var(--scale)*var(--header-height));
     display: flex;
 }
 
@@ -101,24 +72,14 @@
     position: relative;
     top: calc(2*var(--spacing));
     height: var(--header-height);
-    width: var(--header-height);
+    width: calc(var(--scale)*var(--header-height));
     display: flex;
 }
 
 /* Q1 */
 
 .Q1 {
-    position: relative;
     left: var(--spacing);
-    width: var(--block-height);
-    height: var(--block-height);
-    background-color: black;
-    border-radius: 1vw;
-    transition: 0.25s;
-    box-shadow: 0 0 0.25vw black;
-    font-weight: 600;
-    /* text-align: center; */
-    color: white;
 }
 
 .Q1:hover .BlockTop {
@@ -135,8 +96,8 @@
     width: 100%;
     height: 3vw;
     background-color: black;
-    border-top-left-radius: 1vw;
-    border-top-right-radius: 1vw;
+    border-top-left-radius: 0.25vw;
+    border-top-right-radius: 0.25vw;
     text-align: center;
     transition: 0.5s;
 }
@@ -173,39 +134,28 @@
 /* Q2 */
 
 .Q2 {
-    position: relative;
     left: calc(2*var(--spacing));
-    width: var(--block-height);
-    height: var(--block-height);
-    background-color: black;
-    border-radius: 1vw;
-    transition: 0.5s;
-    box-shadow: 0 0 0.25vw black;
-    font-weight: 600;
-    text-align: center;
-    color: white;
 }
 
 .Q3 {
-    position: relative;
     left: var(--spacing);
-    width: var(--block-height);
-    height: var(--block-height);
-    background-color: black;
-    border-radius: 1vw;
-    transition: 0.5s;
-    box-shadow: 0 0 0.25vw black;
 }
 
 .Q4 {
-    position: relative;
     left: calc(2*var(--spacing));
-    width: var(--block-height);
+}
+
+.Q1, .Q2, .Q3, .Q4 {
+    position: relative;
+    width: var(--block-width);
     height: var(--block-height);
-    background-color: black;
-    border-radius: 1vw;
-    transition: 0.5s;
-    box-shadow: 0 0 0.25vw black;
+    background-color: transparent;
+    border-radius: 0.25vw;
+    transition: 0.25s;
+    box-shadow: 0 0 0.25vw white;
+    font-weight: 600;
+    color: white;
+    border: 0.4vw solid white;
 }
 
 .Q1:hover, .Q2:hover, .Q3:hover, .Q4:hover {
@@ -217,22 +167,23 @@
 
 .TitleText1 {
     position: relative;
-    height: 10.25vw;
-    top: 3vw;
+    height: calc(var(--block-height) - 2vw);
+    top: 1vw;
     left: 1vw;
     transition: 0.5;
 }
 
 .TitleText2 {
     position: relative;
-    height: 10.25vw;
-    top: 3vw;
+    height: calc(var(--block-height) - 2vw);
+    top: 1vw;
+    left: 1vw;
 }
 
 .TitleText3 {
     position: relative;
-    height: 10.25vw;
-    top: 6vw;
+    height: calc(var(--block-height) - 2vw);
+    top: 1vw;
     left: 1vw;
 }
 
@@ -251,18 +202,20 @@
 /* Body */
 
 h1#Portfolio {
-    margin-top: var(--header-height);
+    position: relative;
+    z-index: 1;
+    margin-top: calc(var(--header-height) + 1vw);
     margin-bottom: 0%;
-    padding-left: 4vw;
-    background-color: black;
+    padding-left: calc(50vw - 11vw - var(--scale)*var(--header-height)/2);
+    background-color: rgba(255, 255, 255, 0.85);
     font-size: 6vw;
     font-weight: 900;
-    color: white;
-    letter-spacing: 7vw;
+    color: black;
+    letter-spacing: 3.8vw;
     line-height: 8vw;
     text-align: center;
-    box-shadow: 0 0 10px black;
-    text-shadow: 2px 2px 2px grey;
+    box-shadow: 0 0 10px white;
+    text-shadow: 0 0 0.1vw black;
 }
 
 .PortfolioBody {
@@ -271,12 +224,11 @@ h1#Portfolio {
     text-align: justify;
 }
 
-h2#Section {
+h2.Section {
     font-size: 4vh;
     font-weight: 800;
     margin-top: 3vh;
     margin-bottom: 0%;
-    text-shadow: 2px 2px 2px grey;
 }
 
 h2#TBC {
@@ -288,7 +240,7 @@ h2#TBC {
     text-shadow: 2px 2px 2px grey;
 }
 
-h3#Section {
+h3.Section {
     font-size: 2.75vh;
     font-weight: 800;
     margin-top: 3vh;
@@ -296,7 +248,7 @@ h3#Section {
     color: rgb(58, 58, 58);
 }
 
-p#Section {
+p.Section {
     font-size: 2vh;
     line-height: 3vh;
 }

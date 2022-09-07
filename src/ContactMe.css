@@ -1,5 +1,5 @@
 :root {
-    --animation-height: 50vh;
+    --animation-height: min(80vh, 40vw);
     --light-beige: rgb(255, 224, 162);
     --light-brown: rgb(255, 190, 120);
     --light-green: rgb(216, 255, 216);
@@ -11,7 +11,7 @@
 }
 
 .ContactMe {
-    height: 50vh;
+    height: var(--animation-height);
 }
 
 h2#Contact {
@@ -54,9 +54,11 @@ p.Contact {
 }
 
 h1.ContactMe {
+    height: 4vw;
+    line-height: 4vw;
     position: absolute;
     z-index: 2;
-    top: -2vh;
+    top: 19vw;
     left: 3vw;
     font-size: 15vw;
 }
