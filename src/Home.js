@@ -60,7 +60,7 @@ const Home = () => {
                                 alt="Ventilator Image"
                             />
                             <div className="galleryText">
-                                <h5 id="expandHeader">Resperatory Ventilator</h5>
+                                <h5 id="expandHeader">Respiratory Ventilator</h5>
                                 <p id="expandText">
                                     During the height of the COVID-19 ventilator <b>shortages</b>, I designed and built a ventilator. <br></br> <br></br>
                                     Ventilators can cost upwards of 10s of thousands of dollars. Using Arduino, some circuitry, and carpentry, this simple product costs about $200.
@@ -169,6 +169,7 @@ const Home = () => {
                             <h2 className="HomeName">Dupire</h2>
                         </div>
                         <div className="NameBack"></div>
+                        <div className="Spacer"></div>
                         <div className="LargeExpand">
                             {galleryCurrent}
                         </div>

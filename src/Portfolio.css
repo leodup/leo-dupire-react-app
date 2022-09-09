@@ -12,6 +12,7 @@
 
 .PortfolioLink {
     position: absolute;
+    z-index: 1;
     top: 0.75vw;
     left: 3vw;
 }
@@ -21,11 +22,11 @@
 }
 
 #PortfolioLink {
-    font-size: 1.75vw;
+    font-size: calc(1.75vw + 0.125rem);
     font-weight: bold;
+    line-height: 1.75vw;
     text-decoration: underline;
     color: white;
-    text-shadow: 0 0 10px ;
 }
 
 /* HEADER */
@@ -51,9 +52,28 @@
 	}
 }
 
+.LeftMargin {
+    position: absolute;
+    top: 0;
+    height: calc(var(--header-height) + 1vw);
+    width: calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2);
+    background-color: black;
+    opacity: 0.4;
+}
+
+.RightMargin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(var(--header-height) + 1vw);
+    width: calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2);
+    background-color: black;
+    opacity: 0.4;
+}
+
 .Blocks {
     position: relative;
-    left: calc(50vw - var(--scale)*var(--header-height)/2);
+    left: calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2);
     height: var(--header-height);
     width: calc(var(--scale)*var(--header-height));
     display: flex;
@@ -202,20 +222,21 @@
 /* Body */
 
 h1#Portfolio {
+    font-family: "impact";
     position: relative;
     z-index: 1;
     margin-top: calc(var(--header-height) + 1vw);
     margin-bottom: 0%;
-    padding-left: calc(50vw - 11vw - var(--scale)*var(--header-height)/2);
-    background-color: rgba(255, 255, 255, 0.85);
+    padding-left: calc(50vw - 14vw - var(--scale)*var(--header-height)/2);
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 6vw;
     font-weight: 900;
-    color: black;
-    letter-spacing: 3.8vw;
+    color: white;
+    letter-spacing: 4.8vw;
     line-height: 8vw;
     text-align: center;
-    box-shadow: 0 0 10px white;
-    text-shadow: 0 0 0.1vw black;
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 0.1vw white;
 }
 
 .PortfolioBody {
@@ -225,30 +246,47 @@ h1#Portfolio {
 }
 
 h2.Section {
+    font-family: "impact";
     font-size: 4vh;
     font-weight: 800;
-    margin-top: 3vh;
-    margin-bottom: 0%;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
 }
 
-h2#TBC {
+div.TBC{
+    width: 100%;
+    text-align: center;
+}
+
+h2.TBC {
+    font-family: "impact";
     font-size: 3.5vh;
     font-weight: 800;
     margin-top: 3vh;
     margin-bottom: 0%;
-    color: grey;
-    text-shadow: 2px 2px 2px grey;
+    color: rgb(42, 42, 42);
+    margin-bottom: 6vh;
 }
 
 h3.Section {
+    font-family: "impact";
     font-size: 2.75vh;
     font-weight: 800;
-    margin-top: 3vh;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     color: rgb(58, 58, 58);
 }
 
 p.Section {
-    font-size: 2vh;
-    line-height: 3vh;
+    font-family: "gill sans";
+    /* text-shadow: 0 0 1px; */
+    font-size: 2.25vh;
+    font-weight: 400;
+    line-height: 4vh;
+    color: rgb(51, 51, 51);
+    margin-bottom: 8vh;
+}
+
+.TEDVideo {
+    width: 100%;
+    height: calc(0.56*var(--portfolio-body-width))
 }

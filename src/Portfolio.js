@@ -74,6 +74,8 @@ const Portfolio = () => {
                     src={CodeImage}
                     alt="Code Image"
                 /> */}
+                <div className='LeftMargin'></div>
+                <div className='RightMargin'></div>
             </div>
             <div className="Header1">
                 <h1 id="Portfolio">PORTFOLIO</h1>
@@ -93,7 +95,7 @@ const Portfolio = () => {
                     <h3 className="Section">This Website</h3>
                     <p className="Section"></p>
                     <h3 className="Section" id="DAC">Boston Museum of Science</h3>
-                    <p className="Section">Cornerstone is an intensive engineering design course at Northeastern University. It covers 2D and 3D modeling software such as AutoCAD and Solidworks, programming languages like MATLAB and C++, robotics and circuit design using arduino and C++. The course also teaches decision making strategies, product design techniques, as well as ethical engineering practices.<br></br><br></br>
+                    <p className="Section">Cornerstone is an intensive engineering design course at Northeastern University. It covers 2D and 3D modeling software such as AutoCAD and Solidworks, programming languages like MATLAB and C++, robotics and circuit design using Arduino. The course also teaches decision making strategies, product design techniques, as well as ethical engineering practices.<br></br><br></br>
                         Completion of the course required a final project. My class’s assignment was a sustainability-themed museum exhibit for the Boston Museum of Science. I proposed the idea of carbon sequestration, the removal of CO​2 from the atmosphere to combat climate change.<br></br><br></br>
                         The exhibit had to be user friendly and appeal to users of all ages. For this, we made several iterations of our project, implementing universal design, and making it as intuitive as possible. This required several “focus group” meetings to see what the audience would want to see. I wanted to make the project as interactive as possible. This required all our programming, circuit building, and design skills to be put to use. We created a user interface using a touch screen as can be seen in Images 1 and 2. The goal of the exhibit was for the user to build his or her own negative emissions plant. Several user-decisions impacted their final score. These include: what to do with the CO​2,​ where to build the plant, and what energy source to use. Each step would subtract money from the budget. For maximum interactability, the user was tasked with building the plant using the blocks in Image 3. The amount of blocks used depended on what was left in the budget. This effectively tackled both the environmental and economical aspects of sustainability.</p>
                 </div>
@@ -103,7 +105,7 @@ const Portfolio = () => {
                     <p className="Section">I built a car when I was twelve years old! For my birthday, I asked my parents, not for a present, but for a project. They couldn’t say no to such a request.<br></br><br></br>
                         All the Youtube videos showed similar factory-made go-karts. Those didn’t grasp my attention. My interest was in building the car, not just to drive it - so I decided to make my own, from scratch. Not that building a go-kart is easy, but I really wanted a challenge - so I made plans to implement my own suspension designs, effectively making it an off-road vehicle.<br></br><br></br>
                         I scoured Amazon, Ebay, and the local hardware stores for individual parts, materials, and equipment. I also had to make sure everything was compatible (bearings with axles, sprockets with chains). I bought a welder and angle grinder - among many, many other things - and taught myself how to use these tools. Items like the steering kit I had gotten had to be aggressively adapted to fit my custom dimensions. I finally finished the kart one year later as I could only advance during some weekends and part of the summer (not much space to build a small car in NYC). If I were to change anything, I would put hard compound Pirelli tires on it!</p>
-                    <h3 className="Section" id="Ventilator">Resperatory Ventilator</h3>
+                    <h3 className="Section" id="Ventilator">Respiratory Ventilator</h3>
                     <p className="Section">There is no better time to make a cost-effective home-made ventilator than in the middle of a global pandemic and ventilator shortage! Jokes aside, starting in mid-March, 2020, I went into quarantine with my family in New York. At the time, New York was an epicenter of the virus outbreak, the state itself having more cases than any other country. This led to shortages of hospital beds for the sick, not to mention life-saving ventilators. The cost per ventilator was said to be over 50 thousand dollars according to Forbes’ coverage of Governor Andrew Cuomo.<br></br><br></br>
                         Fearing for the safety of my parents, and lacking confidence in accessibility to essential healthcare, I decided to make my own ventilator.<br></br><br></br>
                         I already had the design in mind, I just had to find the correct parts online. Everything I ordered can be seen in Image 1 to the right, each item bought separately from the rest. I got to work! I could only advance at night and during week-ends because I was working from home for my previous co-op during the day.<br></br><br></br>
@@ -118,6 +120,9 @@ const Portfolio = () => {
                 </div>
                 <div className="Random">
                     <h2 className="Section">Random</h2>
+                    <h3 className="Section">TEDx Talk</h3>
+                    <iframe className='TEDVideo' src="https://www.youtube.com/embed/CUFYI-LzpcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p className="Section">I performed a TEDx talk at age 15 titled "Realize Your Dreams". </p>
                     <h3 className="Section">Music</h3>
                     <p className="Section"></p>
                     <h3 className="Section">Alphabite</h3>
@@ -127,7 +132,9 @@ const Portfolio = () => {
                     <h3 className="Section">Hobbies</h3>
                     <p className="Section"></p>
                 </div>
-                <h2 className="TBC">To Be Continued...</h2>
+                <div className="TBC">
+                    <h2 className="TBC">To Be Continued...</h2>
+                </div>
             </div>
         </div>
     );

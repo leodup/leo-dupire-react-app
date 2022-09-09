@@ -1,14 +1,16 @@
 :root {
-    --padding-top-bottom-header-image: 12vw;
-    --home-color: rgb(225, 255, 251);
-    --counter-color: rgb(127, 221, 217);
-    --counter-color-dark: rgb(64, 164, 159);
+    --padding-top-bottom-header-image: 30vh;
+    --home-color: rgb(210, 255, 249);
+    --counter-color-dark: rgb(25, 114, 110);
+    --counter-color: rgb(64, 164, 159);
     --animation-time: 30s;
     --profile-image-height: 17.5vw;
-    --name-box-border-radius: 10vw;
+    --name-box-border-radius: 7.5vw;
     --image-border: 0.6vw;
 
     --body-width: min(90vw, 90vh, 70rem);
+    --font-title: "Georgia";
+    --font-text: "Palatino";
 }
 
 .header#Home {
@@ -21,16 +23,10 @@
     position: relative;
     /* padding-top: var(--padding-top-bottom-header-image); */
     padding-bottom: var(--padding-top-bottom-header-image);
-    height: 32vw;
+    height: 60vh;
 
     -ms-transform: translateX(-50%);
     transform: translateX(0%);
-}
-
-.Circle {
-    height: 30rem;
-    width: 30rem;
-    border-radius: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -67,21 +63,22 @@
   }
 
 .Name {
+    font-family: var(--font-title);
     z-index: -1;
     position: absolute;
     height: var(--profile-image-height);
     line-height: var(--profile-image-height);
-    top: calc(var(--padding-top-bottom-header-image) + 2vh - 10vw);
-    font-size: 8vw;
+    top: calc(var(--padding-top-bottom-header-image) + 2vh - 9.5vw);
+    font-size: 7.5vw;
     color: var(--home-color);
 }
 
 .Name#First {
-    left: 10vw;
+    left: 8vw;
 }
 
 .Name#Last {
-    right: 10vw;
+    right: 8vw;
 }
 
 /* Profile IMAGE (3.5% increments)*/ 
@@ -101,14 +98,14 @@
     }
     3.5%, 7% {
         padding-top: var(--padding-top-bottom-header-image);
-        padding-left: 32vw;
+        padding-left: 31vw;
     }
     10.5%, 14% {
         padding-top: var(--padding-top-bottom-header-image); /* BACK TO CENTER */
         padding-left: 40vw;
     }
     17.5%, 43% {
-        padding-top: 2vw;
+        padding-top: calc(38vh - 15vw - 2vw);
         padding-left: 2vw;
     }
     46.5%, 50% {
@@ -117,14 +114,14 @@
     }
     53.5%, 57% {
         padding-top: var(--padding-top-bottom-header-image);
-        padding-left: 32vw;
+        padding-left: 31vw;
     }
     60.5%, 64% {
         padding-top: var(--padding-top-bottom-header-image); /* BACK TO CENTER */
         padding-left: 40vw;
     }
     67.5%, 93% {
-        padding-top: 2vw;
+        padding-top: calc(38vh - 15vw - 2vw);
         padding-left: calc(96% - var(--profile-image-height) + 8vw);
     }
     96.5%, 100% {
@@ -174,6 +171,16 @@
     }
   }
 
+.Spacer {
+    z-index: -2;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 90%;
+        height: 85%;
+        background-color: transparent;
+}
+
 /* BIG WHITE AREA EXPAND */
 @media (prefers-reduced-motion: no-preference) {
     .LargeExpand {
@@ -182,6 +189,7 @@
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
       box-shadow: 0 0 0.5vw var(--counter-color-dark);
+      display: flex;
       /* animation-direction: alternate-reverse; */
     }
   }
@@ -198,10 +206,10 @@
     17.5%, 43% {
         z-index: -1;
         position: absolute;
-        top: 10%;
+        top: calc(38vh - 15vw);
         left: 5%;
         width: 90%;
-        height: 85%;
+        height: min(85%, 40vw);
         background-color: white;
         border-radius: 1vw;
     }
@@ -217,10 +225,10 @@
     67.5%, 93% {
         z-index: -1;
         position: absolute;
-        top: 10%;
+        top: calc(38vh - 15vw);
         left: 5%;
         width: 90%;
-        height: 85%;
+        height: min(85%, 40vw);
         background-color: white;
         border-radius: 1vw;
     }
@@ -237,25 +245,23 @@
 
 /* BIG AREA CONTENT */
 
-.LargeExpand {
-    display: flex;
-}
-
 .imageExpand {
-    padding-top: 7.5%;
+    margin-top: 8%;
     padding-left: min(5rem, 5%);
     border-radius: 70%;
     object-fit: cover;
     width: 40%;
-    height: 60%;
+    height: min(25vw, 60%);
 }
 
 #expandHeader {
     font-size: min(2vw, 2.5rem);
-    font-weight: 500;
+    font-weight: 600;
+    font-family: var(--font-title);
 }
 
 #expandText {
+    font-family: var(--font-text);
     font-size: min(1.5vw, 2rem);
     font-weight: 300;
     padding-bottom: 0.5rem;
@@ -263,9 +269,10 @@
 
 @media (prefers-reduced-motion: no-preference) { 
     .galleryText {
-        padding-top: 5%;
+        padding-top: 8%;
         padding-left: 4vw;
         padding-right: 2vw;
+        height: 20%;
 
         animation: GalleryTextFade;
         animation-duration: var(--animation-time);
@@ -293,20 +300,26 @@
 }
 
 .GalleryButton {
+    font-family: var(--font-text);
     border-radius: 0.25vw;
     background-color: var(--counter-color-dark);
     box-shadow: 0 0 0.125vw var(--counter-color-dark);
-    color: white;
+    color: var(--home-color);
     font-size: 1.5vw;
-    width: 7vw;
+    font-weight: 600;
+    width: 7.25vw;
+    text-align: center;
+}
+
+.GalleryButton:hover {
+    transform: scale(1.025, 1.025);
 }
 
 #GalleryButton {
     padding-top: 0.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    padding-bottom: 0.5vw;
-    
+    padding-bottom: 0.5vw;   
 }
 
   /* TABS */
@@ -361,6 +374,7 @@
 }
 
 .Tab {
+    font-family: var(--font-title);
     position: relative;
     z-index: 1;
     top: -0.75vw;
@@ -373,6 +387,7 @@
   /* BODY */
 
 h2#Home {
+    font-family: var(--font-title);
     font-size: 4.5vh;
     color: var(--counter-color-dark);
     text-shadow: 2px 2px 2px var(--counter-color);
@@ -380,14 +395,18 @@ h2#Home {
 }
 
 h3#Home {
+    font-family: var(--font-title);
     font-size: 3.5vh;
     color: rgb(54, 54, 54);
 }
 
 p#Home {
-    font-size: 2.5vh;
-    line-height: 4vh;
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 2.75vh;
+    line-height: 4.5vh;
     text-align: justify;
+    color: rgb(52, 52, 52);
   }
 
 .body#Home {
