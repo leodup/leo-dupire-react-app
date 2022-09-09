@@ -76,6 +76,8 @@ const Portfolio = () => {
                 /> */}
                 <div className='LeftMargin'></div>
                 <div className='RightMargin'></div>
+                <div className='TopMargin'></div>
+                <div className='BottomMargin'></div>
             </div>
             <div className="Header1">
                 <h1 id="Portfolio">PORTFOLIO</h1>

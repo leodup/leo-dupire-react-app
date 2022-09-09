@@ -73,6 +73,24 @@
     opacity: 0.4;
 }
 
+.TopMargin {
+    position: absolute;
+    top: 0;
+    height: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.BottomMargin {
+    position: absolute;
+    top: calc(var(--header-height) - calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2) + 1vh);
+    height: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
 .Blocks {
     position: relative;
     top: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
