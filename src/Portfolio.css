@@ -1,8 +1,8 @@
 :root {
-    --header-height: 42vw;
-    --block-height: 19vw;
-    --block-width: 35vw;
-    --spacing: calc((var(--header-height) - 2*var(--block-height))/3);
+    --header-height: 80vh;
+    --block-height: min(calc(var(--header-height)/2 - 2vw), 27vw);
+    --block-width: calc(1.75*var(--block-height));
+    --spacing: 1.5vw;
     --iconHeight: 10vw;
     --portfolio-body-width: min(90vw, 70rem, max(var(--scale)*var(--header-height), 60vh));
     --scale: 1.5;
@@ -22,9 +22,11 @@
 }
 
 #PortfolioLink {
+    font-family: "impact";
     font-size: calc(1.75vw + 0.125rem);
     font-weight: bold;
     line-height: 1.75vw;
+    letter-spacing: 0.125vw;
     text-decoration: underline;
     color: white;
 }
@@ -73,7 +75,8 @@
 
 .Blocks {
     position: relative;
-    left: calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2);
+    top: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
+    left: max(calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2), 0vw);
     height: var(--header-height);
     width: calc(var(--scale)*var(--header-height));
     display: flex;

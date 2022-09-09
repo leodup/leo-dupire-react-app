@@ -1,5 +1,5 @@
 :root {
-    --padding-top-bottom-header-image: 30vh;
+    --padding-top-bottom-header-image: 25vh;
     --home-color: rgb(210, 255, 249);
     --counter-color-dark: rgb(25, 114, 110);
     --counter-color: rgb(64, 164, 159);
@@ -173,12 +173,12 @@
 
 .Spacer {
     z-index: -2;
-        position: absolute;
-        top: 10%;
-        left: 5%;
-        width: 90%;
-        height: 85%;
-        background-color: transparent;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: min(85%, 40vw);
+    background-color: transparent;
 }
 
 /* BIG WHITE AREA EXPAND */
