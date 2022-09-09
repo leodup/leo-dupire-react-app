@@ -9,7 +9,7 @@
 }
 
 #HomeLink {
-    font-size: calc(1.75vw + 0.125rem);
+    font-size: calc(3vh + 0.5vw);
     line-height: 1.75vw;
     font-weight: bold;
     text-decoration: underline;

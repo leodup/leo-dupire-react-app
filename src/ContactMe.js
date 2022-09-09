@@ -16,7 +16,7 @@ const ContactMe = () => {
                 </Link>
                 <div className="Curtain1"></div>
                 <div className="Curtain2"></div>
-                <h1 className="ContactMe" id="ContactMe">Contact Me</h1>
+                <h1 id="ContactMe">Contact Me</h1>
             </div>
             <div className="ContactMe2">
                 <div className="Symbol">
@@ -25,7 +25,7 @@ const ContactMe = () => {
                         src={Email}
                         alt="Email"
                     />
-                    <div className="ContactInfo">
+                    <div className="ContactInfoEmail">
                         <h2 id="Contact">Email</h2>
                         <p className="Contact">
                             <b>Personal:</b> leo.dupire@gmail.com <br></br>
@@ -39,7 +39,7 @@ const ContactMe = () => {
                         src={Phone}
                         alt="Phone"
                     />
-                    <div className="ContactInfo">
+                    <div className="ContactInfoOther">
                         <h2 id="Contact">Phone Number</h2>
                         <p className="Contact">
                             <b>Mobile:</b> +1 (646) 696-0521 <br></br>
@@ -52,7 +52,7 @@ const ContactMe = () => {
                         src={LinkedIn}
                         alt="LinkedIn"
                     />
-                    <div className="ContactInfo">
+                    <div className="ContactInfoOther">
                         <h2 id="Contact">LinkedIn</h2>
                         <p className="Contact">
                             <b>Profile:</b> <a href="linkedin.com/in/léo-dupire-47387a183">linkedin.com/in/léo-dupire-47387a183</a><br></br>

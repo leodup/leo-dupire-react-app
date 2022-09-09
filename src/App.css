@@ -38,16 +38,18 @@
 }
 
 .Footer {
+  position: relative;
+  top: -2.5vh;
   height: 10vh;
-  background-color: rgb(213, 213, 213);
+  width: 100%;
+  background-color: black;
   text-align: center;
-  box-shadow: 0 0 10px grey;
 }
 
 p#ReturnHome {
-  position: relative;
-  top: 2vh;
+  padding-top: 2vh;
+  margin-left: 49%;
   font-size: 2vh;
   font-weight: 700;
-  color: black;
+  color: white;
 }

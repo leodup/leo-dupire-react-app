@@ -1,5 +1,5 @@
 :root {
-    --animation-height: min(80vh, 40vw);
+    --animation-height: 90vh;
     --light-beige: rgb(255, 224, 162);
     --light-brown: rgb(255, 190, 120);
     --light-green: rgb(216, 255, 216);
@@ -11,11 +11,13 @@
 }
 
 .ContactMe {
+    position: relative;
     height: var(--animation-height);
 }
 
 h2#Contact {
-    font-size: 2rem;
+    position: relative;
+    font-size: 2vw;
 }
 
 .Symbol {
@@ -23,17 +25,23 @@ h2#Contact {
 }
 
 .contactIcon {
-    padding-top: 2.5vh;
-    height: 7rem;
+    padding-top: 2.5vw;
+    height: 7vw;
 }
 
-.ContactInfo {
-    padding-left: 1.5rem;
+.ContactInfoEmail {
+    margin-top: 0.5vw;
+    padding-left: 1.5vw;
+}
+
+.ContactInfoOther {
+    margin-top: 1vw;
+    padding-left: 1.5vw;
 }
 
 p.Contact {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1vw;
+    line-height: 2vw;
 }
 
 .HomeLinkContact {
@@ -48,19 +56,9 @@ p.Contact {
 }
 
 #HomeContact {
-    font-size: 1.5vw;
+    font-size: calc(3vh + 0.5vw);
     font-weight: bold;
     
-}
-
-h1.ContactMe {
-    height: 4vw;
-    line-height: 4vw;
-    position: absolute;
-    z-index: 2;
-    top: 19vw;
-    left: 3vw;
-    font-size: 15vw;
 }
 
 @media (prefers-reduced-motion: no-preference) { 
@@ -110,6 +108,14 @@ h1.ContactMe {
 
 @media (prefers-reduced-motion: no-preference) { 
     h1#ContactMe {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        top: calc(85vh - 7.5vw);
+        height: 4vw;
+        line-height: 4vw;
+        left: 3vw;
+        font-size: 15vw;
         text-shadow: 0 0 10px;
         animation: TextAnimation2;
         animation-duration: 30s;
@@ -363,9 +369,7 @@ h1.ContactMe {
 @media (prefers-reduced-motion: no-preference) { 
     .ContactMe2 {
         border-top: 5px solid black;
-        padding-top: 1.5vh;
         padding-left: 4vw;
-        min-height: 50vh;
         padding-bottom: 2vw;
         /* background-color: rgb(237, 237, 237); */
 

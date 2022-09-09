@@ -9,7 +9,7 @@
 }
 
 #WorkLink {
-    font-size: 1.75vw;
+    font-size: calc(3vh + 0.5vw);
     font-weight: bold;
     text-decoration: underline;
     color: black;
@@ -23,20 +23,28 @@
     background-color: rgb(169, 255, 244);
 }
 
+.WorkTitles {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
 h1#Work {
     color: black;
-    padding-left: 2vw;
-    letter-spacing: 12vw;
+    letter-spacing: 10vw;
     font-size: 20vw;
+    width: 100%;
+    text-align: center;
 }
 
 p#Experience {
     position: absolute;
     top: 50vh;
     color: black;
-    padding-left: 2vw;
     letter-spacing: 7.5vw;
     font-size: 5vw;
+    width: 100%;
+    text-align: center;
 }
 
 .IBM {

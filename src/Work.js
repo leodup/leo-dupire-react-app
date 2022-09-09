@@ -31,8 +31,10 @@ const Work = () => {
                                 <p id="WorkLink">Home</p>
                             </div>
                         </Link>
-                        <h1 id="Work">WORK</h1>
-                        <p id="Experience">EXPERIENCE</p>
+                        <div className='WorkTitles'>
+                            <h1 id="Work">WORK</h1>
+                            <p id="Experience">EXPERIENCE</p>
+                        </div>
                     </div>
                 </Animator>
             </ScrollPage>
