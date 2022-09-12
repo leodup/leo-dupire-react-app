@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import './App.css';
 import ScrollToTop from "./ScrollToTop";
@@ -26,6 +27,12 @@ function App() {
 
   return (
     <>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Léo Dupire</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+          <meta name="description" content="About Léo Dupire" />
+      </Helmet>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={
