@@ -1,0 +1,76 @@
+/* GALLERY */
+
+.image-container#Vent1 {
+    height: 25%;
+    width: 55%;
+}
+
+img#Vent1 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Vent1:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#Vent2 {
+    position: relative;
+    top: 2%;
+    height: 73%;
+    width: 55%;
+    margin-left: 0%;
+}
+
+img#Vent2 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Vent2:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#Vent3 {
+    position: relative;
+    bottom: 51%;
+    height: 53%;
+    width: 44%;
+    margin-left: 56%;
+}
+
+img#Vent3 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Vent3:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#Vent4 {
+    position: relative;
+    bottom: 151%;
+    height: 45%;
+    width: 44%;
+    margin-left: 56%;
+}
+
+img#Vent4 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Vent4:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.VentVideo1 {
+    margin-left: 25%;
+    width: 50%;
+    height: calc(0.56*var(--portfolio-body-width)*0.5)
+}

@@ -1,0 +1,104 @@
+/* GALLERY */
+
+.image-container#GK1 {
+    height: 100%;
+    width: 37%;
+}
+
+img#GoKart1 {
+    height: 100%;
+    width: 100%;
+}
+
+img#GoKart1:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#GK2 {
+    position: relative;
+    bottom: 100%;
+    height: 45%;
+    width: 31%;
+    margin-left: 38%;
+}
+
+img#GoKart2 {
+    height: 100%;
+    width: 100%;
+}
+
+img#GoKart2:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#GK3 {
+    position: relative;
+    bottom: 145%;
+    height: 45%;
+    width: 30%;
+    margin-left: 70%;
+}
+
+img#GoKart3 {
+    height: 100%;
+    width: 100%;
+}
+
+img#GoKart3:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#GK4 {
+    position: relative;
+    left: 37%;
+    margin-left: 1%;
+    bottom: 143.5%;
+    height: 53.5%;
+    width: 25%;
+}
+
+img#GoKart4 {
+    height: 100%;
+    width: 100%;
+}
+
+img#GoKart4:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#GK5 {
+    position: relative;
+    left: 63%;
+    margin-left: 1%;
+    bottom: 197%;
+    height: 53.5%;
+    width: 36%;
+}
+
+img#GoKart5 {
+    height: 100%;
+    width: 100%;
+}
+
+img#GoKart5:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.GKVideo1 {
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 44%;
+    height: calc(0.56*var(--portfolio-body-width)*0.45)
+}
+
+.GKVideo2 {
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 44%;
+    height: calc(0.56*var(--portfolio-body-width)*0.45)
+}

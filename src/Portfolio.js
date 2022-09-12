@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 import "./Portfolio.css";
+import "./PortfolioFiles/GoKart.css";
+import "./PortfolioFiles/Hydro.css";
+import "./PortfolioFiles/DAC.css";
+import "./PortfolioFiles/Vent.css";
 import CrossBow from "./images/CrossBow.jpg";
 
 import DataScienceText from "./images/DataScienceText.png";
@@ -13,6 +17,27 @@ import MechEIcon from "./images/MechEIcon.png";
 import RandomIcon from "./images/RandomIcon.png";
 
 import CodeImage from "./images/CodeImage.jpg";
+
+import GoKart1 from "./images/PortfolioProjects/GoKart1.jpg";
+import GoKart2 from "./images/PortfolioProjects/GoKart2.jpg";
+import GoKart3 from "./images/PortfolioProjects/GoKart3.png";
+import GoKart4 from "./images/PortfolioProjects/GoKart4.jpg";
+import GoKart5 from "./images/PortfolioProjects/GoKart5.jpg";
+
+import Hydro1 from "./images/PortfolioProjects/Hydro1.png";
+import Hydro2 from "./images/PortfolioProjects/Hydro2.png";
+import Hydro3 from "./images/PortfolioProjects/Hydro3.png";
+import Hydro4 from "./images/PortfolioProjects/Hydro4.png";
+
+import DAC1 from "./images/PortfolioProjects/DAC1.png";
+import DAC2 from "./images/PortfolioProjects/DAC2.png";
+import DAC3 from "./images/PortfolioProjects/DAC3.png";
+import DAC4 from "./images/PortfolioProjects/DAC4.png";
+
+import Vent1 from "./images/PortfolioProjects/Vent1.png";
+import Vent2 from "./images/PortfolioProjects/Vent2.png";
+import Vent3 from "./images/PortfolioProjects/Vent3.png";
+import Vent4 from "./images/PortfolioProjects/Vent4.png";
 
 const Portfolio = () => {
     
@@ -69,11 +94,6 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                {/* <img
-                    className="Image"
-                    src={CodeImage}
-                    alt="Code Image"
-                /> */}
                 <div className='LeftMargin'></div>
                 <div className='RightMargin'></div>
                 <div className='TopMargin'></div>
@@ -85,54 +105,234 @@ const Portfolio = () => {
             <div className="PortfolioBody">
                 <div className="DataScience">
                     <h2 className="Section">Data Science</h2>
-                    <h3 className="Section">NLP</h3>
-                    <p className="Section"></p>
-                    <h3 className="Section">Bias Mitigation</h3>
-                    <p className="Section"></p>
-                    <h3 className="Section">School Analysis</h3>
-                    <p className="Section"></p>
+                    <div className='Project'>
+                        <h3 className="Section">NLP</h3>
+                        <p className="Section"></p>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section">Bias Mitigation</h3>
+                        <p className="Section"></p>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section">School Analysis</h3>
+                        <p className="Section"></p>
+                    </div>
                 </div>
                 <div className="ComputerScience">
                     <h2 className="Section">Computer Science</h2>
-                    <h3 className="Section">This Website</h3>
-                    <p className="Section"></p>
-                    <h3 className="Section" id="DAC">Boston Museum of Science</h3>
-                    <p className="Section">Cornerstone is an intensive engineering design course at Northeastern University. It covers 2D and 3D modeling software such as AutoCAD and Solidworks, programming languages like MATLAB and C++, robotics and circuit design using Arduino. The course also teaches decision making strategies, product design techniques, as well as ethical engineering practices.<br></br><br></br>
-                        Completion of the course required a final project. My class’s assignment was a sustainability-themed museum exhibit for the Boston Museum of Science. I proposed the idea of carbon sequestration, the removal of CO​2 from the atmosphere to combat climate change.<br></br><br></br>
-                        The exhibit had to be user friendly and appeal to users of all ages. For this, we made several iterations of our project, implementing universal design, and making it as intuitive as possible. This required several “focus group” meetings to see what the audience would want to see. I wanted to make the project as interactive as possible. This required all our programming, circuit building, and design skills to be put to use. We created a user interface using a touch screen as can be seen in Images 1 and 2. The goal of the exhibit was for the user to build his or her own negative emissions plant. Several user-decisions impacted their final score. These include: what to do with the CO​2,​ where to build the plant, and what energy source to use. Each step would subtract money from the budget. For maximum interactability, the user was tasked with building the plant using the blocks in Image 3. The amount of blocks used depended on what was left in the budget. This effectively tackled both the environmental and economical aspects of sustainability.</p>
+                    <div className='Project'>
+                        <h3 className="Section">This Website</h3>
+                        <p className="Section"></p>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section" id="DAC">Boston Museum of Science</h3>
+                        <div className='Gallery'>
+                            <div className='image-container' id="DAC1">
+                                <img 
+                                    id="DAC1" 
+                                    src={DAC1}
+                                    alt="DAC 1"
+                                />
+                            </div>
+                            <div className='image-container' id="DAC2">
+                                <img 
+                                    id="DAC2" 
+                                    src={DAC2}
+                                    alt="DAC 2"
+                                />
+                            </div>
+                            <div className='image-container' id="DAC3">
+                                <img 
+                                    id="DAC3" 
+                                    src={DAC3}
+                                    alt="DAC 3"
+                                />
+                            </div>
+                            <div className='image-container' id="DAC4">
+                                <img 
+                                    id="DAC4" 
+                                    src={DAC4}
+                                    alt="DAC 4"
+                                />
+                            </div>
+                        </ div>
+                        <p className="Section">Cornerstone is an intensive engineering design course at Northeastern University. It covers 2D and 3D modeling software such as AutoCAD and Solidworks, programming languages like MATLAB and C++, robotics and circuit design using Arduino. The course also teaches decision making strategies, product design techniques, as well as ethical engineering practices.<br></br><br></br>
+                            Completion of the course required a final project. My class’s assignment was a sustainability-themed museum exhibit for the Boston Museum of Science. I proposed the idea of carbon sequestration, the removal of CO​2 from the atmosphere to combat climate change.<br></br><br></br>
+                            The exhibit had to be user friendly and appeal to users of all ages. For this, we made several iterations of our project, implementing universal design, and making it as intuitive as possible. This required several “focus group” meetings to see what the audience would want to see. I wanted to make the project as interactive as possible. This required all our programming, circuit building, and design skills to be put to use. We created a user interface using a touch screen as can be seen in Images 1 and 2. The goal of the exhibit was for the user to build his or her own negative emissions plant. Several user-decisions impacted their final score. These include: what to do with the CO​2,​ where to build the plant, and what energy source to use. Each step would subtract money from the budget. For maximum interactability, the user was tasked with building the plant using the blocks in Image 3. The amount of blocks used depended on what was left in the budget. This effectively tackled both the environmental and economical aspects of sustainability.</p>
+                            <iframe className='DACVideo1' src="https://www.youtube.com/embed/P1on9m4jRk8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture, fullscreen"
+                            allowfullscreen="allowfullscreen"
+                            mozallowfullscreen="mozallowfullscreen" 
+                            msallowfullscreen="msallowfullscreen" 
+                            oallowfullscreen="oallowfullscreen" 
+                            webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                    </div>
                 </div>
                 <div className="MechE">
                     <h2 className="Section">Mechanical Engineering</h2>
-                    <h3 className="Section" id="GoKart">Go Kart</h3>
-                    <p className="Section">I built a car when I was twelve years old! For my birthday, I asked my parents, not for a present, but for a project. They couldn’t say no to such a request.<br></br><br></br>
-                        All the Youtube videos showed similar factory-made go-karts. Those didn’t grasp my attention. My interest was in building the car, not just to drive it - so I decided to make my own, from scratch. Not that building a go-kart is easy, but I really wanted a challenge - so I made plans to implement my own suspension designs, effectively making it an off-road vehicle.<br></br><br></br>
-                        I scoured Amazon, Ebay, and the local hardware stores for individual parts, materials, and equipment. I also had to make sure everything was compatible (bearings with axles, sprockets with chains). I bought a welder and angle grinder - among many, many other things - and taught myself how to use these tools. Items like the steering kit I had gotten had to be aggressively adapted to fit my custom dimensions. I finally finished the kart one year later as I could only advance during some weekends and part of the summer (not much space to build a small car in NYC). If I were to change anything, I would put hard compound Pirelli tires on it!</p>
-                    <h3 className="Section" id="Ventilator">Respiratory Ventilator</h3>
-                    <p className="Section">There is no better time to make a cost-effective home-made ventilator than in the middle of a global pandemic and ventilator shortage! Jokes aside, starting in mid-March, 2020, I went into quarantine with my family in New York. At the time, New York was an epicenter of the virus outbreak, the state itself having more cases than any other country. This led to shortages of hospital beds for the sick, not to mention life-saving ventilators. The cost per ventilator was said to be over 50 thousand dollars according to Forbes’ coverage of Governor Andrew Cuomo.<br></br><br></br>
-                        Fearing for the safety of my parents, and lacking confidence in accessibility to essential healthcare, I decided to make my own ventilator.<br></br><br></br>
-                        I already had the design in mind, I just had to find the correct parts online. Everything I ordered can be seen in Image 1 to the right, each item bought separately from the rest. I got to work! I could only advance at night and during week-ends because I was working from home for my previous co-op during the day.<br></br><br></br>
-                        After a few days of doing wiring, soldering, a little bit of carpentry, and my fair share of programming in C++, I completed the ventilator (Images 2 & 3).<br></br><br></br>
-                        My ventilator uses a bag valve mask to deliver the air to the patient. This means it pushes a certain volume of air into the patient’s lungs. It does not have the fancier features that hospitals have, such as pressure regulation. This project was meant to provide a life-line, a last resort in case of emergency. I still equipped it with a user interface (LCD screen), rpm variation inputs (buttons), and an alarm in case of a problem (button & speaker system). It also cost less than $200 in materials to make, a sizable step down from the 50 thousand I mentioned earlier.</p>
-                    <h3 className="Section">Hydrodynamic Water Tunnel</h3>
-                    <p className="Section">In 11th grade, I decided to conduct a research project with two classmates for our TPE (Travaux Personnels Encadrés) in the French Baccalaureate. In simplified terms, the requirements for this assignment were to complete a year-long project on essentially anything we wanted.<br></br><br></br>
-                        As my team was trying to find an interesting subject for our project, I remembered a television program I had seen about submarines, in which they discussed the difficulties in creating efficient and stealthy propellers. One of the problems was cavitation, a phenomenon where low pressure on the backside of the propeller blades creates vapor bubbles that implode and create loud noises as well as damage to the propeller. We decided to explore this and conduct our own experiments on this subject. We settled on the prompt: How does the shape and material of a propeller affect its motor force?<br></br><br></br>
-                        First, I designed a set of differing propellers that were to be tested. We printed them on 3D printers (Image 3). Then, I came up with a device to test the propellers. This can be seen in Images 1 and 2. Our findings supported our hypothesis. I received a 20/20 for the project, report, and presentation in front of a jury at the end of the school year.</p>
+                    <div className='Project'>
+                        <h3 className="Section" id="GoKart">Go Kart</h3>
+                        <div className='Gallery'>
+                            <div className='image-container' id="GK1">
+                                <img 
+                                    id="GoKart1" 
+                                    src={GoKart1}
+                                    alt="Go Kart 1"
+                                />
+                            </div>
+                            <div className='image-container' id="GK2">
+                                <img 
+                                    id="GoKart2" 
+                                    src={GoKart2}
+                                    alt="Go Kart 2"
+                                />
+                            </div>
+                            <div className='image-container' id="GK3">
+                                <img 
+                                    id="GoKart3" 
+                                    src={GoKart3}
+                                    alt="Go Kart 3"
+                                />
+                            </div>
+                            <div className='image-container' id="GK4">
+                                <img 
+                                    id="GoKart4" 
+                                    src={GoKart4}
+                                    alt="Go Kart 4"
+                                />
+                            </div>
+                            <div className='image-container' id="GK5">
+                                <img 
+                                    id="GoKart5" 
+                                    src={GoKart5}
+                                    alt="Go Kart 5"
+                                />
+                            </div>
+                        </div>
+                        <p className="Section">I built a car when I was twelve years old! For my birthday, I asked my parents, not for a present, but for a project. They couldn’t say no to such a request.<br></br><br></br>
+                            All the Youtube videos showed similar factory-made go-karts. Those didn’t grasp my attention. My interest was in building the car, not just to drive it - so I decided to make my own, from scratch. Not that building a go-kart is easy, but I really wanted a challenge - so I made plans to implement my own suspension designs, effectively making it an off-road vehicle.<br></br><br></br>
+                            I scoured Amazon, Ebay, and the local hardware stores for individual parts, materials, and equipment. I also had to make sure everything was compatible (bearings with axles, sprockets with chains). I bought a welder and angle grinder - among many, many other things - and taught myself how to use these tools. Items like the steering kit I had gotten had to be aggressively adapted to fit my custom dimensions. I finally finished the kart one year later as I could only advance during some weekends and part of the summer (not much space to build a small car in NYC). If I were to change anything, I would put hard compound Pirelli tires on it!</p>
+                        <iframe className='GKVideo1' src="https://www.youtube.com/embed/Fgm2egUgD7s?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture, fullscreen"
+                            allowfullscreen="allowfullscreen"
+                            mozallowfullscreen="mozallowfullscreen" 
+                            msallowfullscreen="msallowfullscreen" 
+                            oallowfullscreen="oallowfullscreen" 
+                            webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                        <iframe className='GKVideo2' src="https://www.youtube.com/embed/ih7jAaZ65bo?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture, fullscreen"
+                            allowfullscreen="allowfullscreen"
+                            mozallowfullscreen="mozallowfullscreen" 
+                            msallowfullscreen="msallowfullscreen" 
+                            oallowfullscreen="oallowfullscreen" 
+                            webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section" id="Ventilator">Respiratory Ventilator</h3>
+                        <div className='Gallery'>
+                            <div className='image-container' id="Vent1">
+                                <img 
+                                    id="Vent1" 
+                                    src={Vent1}
+                                    alt="Vent 1"
+                                />
+                            </div>
+                            <div className='image-container' id="Vent2">
+                                <img 
+                                    id="Vent2" 
+                                    src={Vent2}
+                                    alt="Vent 2"
+                                />
+                            </div>
+                            <div className='image-container' id="Vent3">
+                                <img 
+                                    id="Vent3" 
+                                    src={Vent3}
+                                    alt="Vent 3"
+                                />
+                            </div>
+                            <div className='image-container' id="Vent4">
+                                <img 
+                                    id="Vent4" 
+                                    src={Vent4}
+                                    alt="Vent 4"
+                                />
+                            </div>
+                        </ div>
+                        <p className="Section">There is no better time to make a cost-effective home-made ventilator than in the middle of a global pandemic and ventilator shortage! Jokes aside, starting in mid-March, 2020, I went into quarantine with my family in New York. At the time, New York was an epicenter of the virus outbreak, the state itself having more cases than any other country. This led to shortages of hospital beds for the sick, not to mention life-saving ventilators. The cost per ventilator was said to be over 50 thousand dollars according to Forbes’ coverage of Governor Andrew Cuomo.<br></br><br></br>
+                            Fearing for the safety of my parents, and lacking confidence in accessibility to essential healthcare, I decided to make my own ventilator.<br></br><br></br>
+                            I already had the design in mind, I just had to find the correct parts online. Everything I ordered can be seen in Image 1 to the right, each item bought separately from the rest. I got to work! I could only advance at night and during week-ends because I was working from home for my previous co-op during the day.<br></br><br></br>
+                            After a few days of doing wiring, soldering, a little bit of carpentry, and my fair share of programming in C++, I completed the ventilator (Images 2 & 3).<br></br><br></br>
+                            My ventilator uses a bag valve mask to deliver the air to the patient. This means it pushes a certain volume of air into the patient’s lungs. It does not have the fancier features that hospitals have, such as pressure regulation. This project was meant to provide a life-line, a last resort in case of emergency. I still equipped it with a user interface (LCD screen), rpm variation inputs (buttons), and an alarm in case of a problem (button & speaker system). It also cost less than $200 in materials to make, a sizable step down from the 50 thousand I mentioned earlier.</p>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section">Hydrodynamic Water Tunnel</h3>
+                        <div className='Gallery'>
+                            <div className='image-container' id="Hydro1">
+                                <img 
+                                    id="Hydro1" 
+                                    src={Hydro1}
+                                    alt="Hydro 1"
+                                />
+                            </div>
+                            <div className='image-container' id="Hydro2">
+                                <img 
+                                    id="Hydro2" 
+                                    src={Hydro2}
+                                    alt="Hydro 2"
+                                />
+                            </div>
+                            <div className='image-container' id="Hydro3">
+                                <img 
+                                    id="Hydro3" 
+                                    src={Hydro3}
+                                    alt="Hydro 3"
+                                />
+                            </div>
+                            <div className='image-container' id="Hydro4">
+                                <img 
+                                    id="Hydro4" 
+                                    src={Hydro4}
+                                    alt="Hydro 4"
+                                />
+                            </div>
+                        </ div>
+                        <p className="Section">In 11th grade, I decided to conduct a research project with two classmates for our TPE (Travaux Personnels Encadrés) in the French Baccalaureate. In simplified terms, the requirements for this assignment were to complete a year-long project on essentially anything we wanted.<br></br><br></br>
+                            As my team was trying to find an interesting subject for our project, I remembered a television program I had seen about submarines, in which they discussed the difficulties in creating efficient and stealthy propellers. One of the problems was cavitation, a phenomenon where low pressure on the backside of the propeller blades creates vapor bubbles that implode and create loud noises as well as damage to the propeller. We decided to explore this and conduct our own experiments on this subject. We settled on the prompt: How does the shape and material of a propeller affect its motor force?<br></br><br></br>
+                            First, I designed a set of differing propellers that were to be tested. We printed them on 3D printers (Image 3). Then, I came up with a device to test the propellers. This can be seen in Images 1 and 2. Our findings supported our hypothesis. I received a 20/20 for the project, report, and presentation in front of a jury at the end of the school year.</p>
+                        <iframe className='HydroVideo1' src="https://www.youtube.com/embed/Dwzz5BkMMX4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture, fullscreen"
+                            allowfullscreen="allowfullscreen"
+                            mozallowfullscreen="mozallowfullscreen" 
+                            msallowfullscreen="msallowfullscreen" 
+                            oallowfullscreen="oallowfullscreen" 
+                            webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                    </div>
                     <h3 className="Section" id="Hyperloop">Hyperloop</h3>
                     <p className="Section"></p>
                 </div>
                 <div className="Random">
                     <h2 className="Section">Random</h2>
-                    <h3 className="Section">TEDx Talk</h3>
-                    <iframe className='TEDVideo' src="https://www.youtube.com/embed/CUFYI-LzpcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p className="Section">I performed a TEDx talk at age 15 titled "Realize Your Dreams". </p>
-                    <h3 className="Section">Music</h3>
-                    <p className="Section"></p>
-                    <h3 className="Section">Alphabite</h3>
-                    <p className="Section">In 9th grade, I worked after school with a teacher for a service learning project. We designed a number of educational puzzles for a school of kids in Haiti. We did this using the school’s new 3D printers, a relatively new technology at the time. The most notable puzzle was called AlphaBite. It was an alphabet puzzle with building blocks for each letter (vowels in red, consonants in blue). The shape I designed was very simple. It resembled a cylinder with a “bite” taken out of it, hence the name of the product. Haiti had a literacy rate of 61.7% in 2016 according to the CIA factbook.<br></br><br></br>
-                        The same year, I also mentored a group of students in 3D printing, acting as the teacher’s right-hand-man, if you will.<br></br><br></br>
+                    <div className='Project'>
+                        <h3 className="Section">TEDx Talk</h3>
+                        <iframe className='TEDVideo' src="https://www.youtube.com/embed/CUFYI-LzpcI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture, fullscreen"
+                            allowfullscreen="allowfullscreen"
+                            mozallowfullscreen="mozallowfullscreen" 
+                            msallowfullscreen="msallowfullscreen" 
+                            oallowfullscreen="oallowfullscreen" 
+                            webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                        <p className="Section">I performed a TEDx talk at age 15 titled "Realize Your Dreams". </p>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section">Music</h3>
+                        <p className="Section"></p>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section">Alphabite</h3>
+                        <p className="Section">In 9th grade, I worked after school with a teacher for a service learning project. We designed a number of educational puzzles for a school of kids in Haiti. We did this using the school’s new 3D printers, a relatively new technology at the time. The most notable puzzle was called AlphaBite. It was an alphabet puzzle with building blocks for each letter (vowels in red, consonants in blue). The shape I designed was very simple. It resembled a cylinder with a “bite” taken out of it, hence the name of the product. Haiti had a literacy rate of 61.7% in 2016 according to the CIA factbook.<br></br><br></br>
+                            The same year, I also mentored a group of students in 3D printing, acting as the teacher’s right-hand-man, if you will.<br></br><br></br>
                         This ultimately got me a paid job at a neighboring school, PS6, for the following year. This was a large after-school workshop program with dozens of students in the 3D printing activities. I helped mentor the students and maintained multiple 3D printers.</p>
-                    <h3 className="Section">Hobbies</h3>
-                    <p className="Section"></p>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section">Hobbies</h3>
+                        <p className="Section"></p>
+                    </div>
                 </div>
                 <div className="TBC">
                     <h2 className="TBC">To Be Continued...</h2>

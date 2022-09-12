@@ -1,0 +1,77 @@
+/* GALLERY */
+
+.image-container#Hydro1 {
+    height: 100%;
+    width: 35%;
+}
+
+img#Hydro1 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Hydro1:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#Hydro2 {
+    position: relative;
+    bottom: 100%;
+    height: 50%;
+    width: 32%;
+    margin-left: 36%;
+}
+
+img#Hydro2 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Hydro2:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#Hydro3 {
+    position: relative;
+    bottom: 150%;
+    height: 50%;
+    width: 31%;
+    margin-left: 69%;
+}
+
+img#Hydro3 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Hydro3:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#Hydro4 {
+    position: relative;
+    bottom: 138%;
+    height: 25%;
+    width: 62%;
+    margin-left: 36%;
+    padding-left: 1%;
+}
+
+img#Hydro4 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Hydro4:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.HydroVideo1 {
+    margin-left: 25%;
+    width: 50%;
+    height: calc(0.56*var(--portfolio-body-width)*0.5 )
+}

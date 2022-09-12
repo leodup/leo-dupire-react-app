@@ -1,0 +1,76 @@
+/* GALLERY */
+
+.image-container#DAC1 {
+    height: 100%;
+    width: 50%;
+}
+
+img#DAC1 {
+    height: 100%;
+    width: 100%;
+}
+
+img#DAC1:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#DAC2 {
+    position: relative;
+    bottom: 100%;
+    height: 45%;
+    width: 24%;
+    margin-left: 51%;
+}
+
+img#DAC2 {
+    height: 100%;
+    width: 100%;
+}
+
+img#DAC2:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#DAC3 {
+    position: relative;
+    bottom: 145%;
+    height: 45%;
+    width: 24%;
+    margin-left: 76%;
+}
+
+img#DAC3 {
+    height: 100%;
+    width: 100%;
+}
+
+img#DAC3:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#DAC4 {
+    position: relative;
+    bottom: 143.5%;
+    height: 53.5%;
+    width: 49%;
+    margin-left: 51%;
+}
+
+img#DAC4 {
+    height: 100%;
+    width: 100%;
+}
+
+img#DAC4:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.DACVideo1 {
+    margin-left: 25%;
+    width: 50%;
+    height: calc(0.56*var(--portfolio-body-width)*0.5 )
+}
