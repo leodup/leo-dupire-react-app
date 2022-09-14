@@ -107,6 +107,9 @@ const Portfolio = () => {
                     <h2 className="Section">Data Science</h2>
                     <div className='Project'>
                         <h3 className="Section">NLP</h3>
+                        <div className="NLPPosition">
+                            <iframe src="https://drive.google.com/file/d/1f_OGk0sSn4joooqS0PryteYdc_8Xkln8/preview" allow="autoplay" className="NLPPDF"></iframe>
+                        </div>
                         <p className="Section"></p>
                     </div>
                     <div className='Project'>

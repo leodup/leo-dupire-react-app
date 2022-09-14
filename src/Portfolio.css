@@ -314,6 +314,18 @@ p.Section {
     margin-bottom: 8vh;
 }
 
+.NLPPosition {
+    -ms-transform: translateX(-50%);
+    transform: translateX(0%);
+}
+
+.NLPPDF {
+    width: var(--portfolio-body-width);
+    height: calc(1.3*var(--portfolio-body-width));
+    max-width: 50rem;
+    max-height: 65rem;
+}
+
 /* GALLERY */
 
 .image-container {

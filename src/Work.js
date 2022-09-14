@@ -26,6 +26,17 @@ const Work = () => {
             <ScrollPage page={0}>
                 <Animator animation={batch(Fade())}>
                     <div className="Work">
+                        {/* <div class="container">
+                            <h1><span>THE<br></br>BLOBS</span></h1>
+                            
+                            <div class="blobs_1"></div>
+                            <div class="blobs_2"></div>
+                            <div class="blobs_3"></div>
+                            <div class="blobs_4"></div>
+                            <div class="blobs_5"></div>
+                            <div class="blobs_6"></div>
+                            <div class="blobs_7"></div>
+                        </div> */}
                         <Link to="/">
                             <div className="WorkLink">
                                 <p id="WorkLink">Home</p>
