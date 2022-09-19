@@ -107,12 +107,13 @@ p.Contact {
 @media (prefers-reduced-motion: no-preference) { 
     h1#ContactMe {
         position: relative;
+        background-color: transparent;
         z-index: 2;
         margin: 0;
         top: calc(80vh - 7.5vw);
         height: 4vw;
         line-height: 4vw;
-        left: 3vw;
+        left: 0vw;
         font-size: 15vw;
         text-shadow: 0 0 10px;
         animation: TextAnimation2;

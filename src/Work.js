@@ -46,6 +46,7 @@ const Work = () => {
                             <h1 id="Work">WORK</h1>
                             <p id="Experience">EXPERIENCE</p>
                         </div>
+                        <div className='BottomBar'></div>
                     </div>
                 </Animator>
             </ScrollPage>

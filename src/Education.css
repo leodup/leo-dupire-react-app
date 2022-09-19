@@ -1,5 +1,6 @@
 .HomeLink {
     position: absolute;
+    z-index: 1;
     top: 0.75vh;
     left: 3vw;
 }
@@ -67,6 +68,7 @@ h1#Education {
     transform: translate(-50%, -50%);
     font-size: 13vw;
     color: rgb(255, 243, 220);
+    background-color: transparent;
 }
 
 h2#NYU {
