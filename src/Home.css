@@ -1,8 +1,8 @@
 :root {
     --padding-top-bottom-header-image: 25vh;
-    --home-color: rgb(210, 255, 249);
-    --counter-color-dark: rgb(25, 114, 110);
-    --counter-color: rgb(64, 164, 159);
+    --home-color: rgb(52, 52, 52); /* rgb(210, 255, 249) */
+    --counter-color-dark: rgb(50, 153, 146); /* rgb(25, 114, 110) */
+    --counter-color: rgb(109, 191, 187); /* rgb(64, 164, 159) */
     --animation-time: 30s;
     --profile-image-height: 17.5vw;
     --name-box-border-radius: 7.5vw;
@@ -15,7 +15,7 @@
 
 .header#Home {
     background-color: var(--home-color);
-    box-shadow: 0 0 2.5vw var(--counter-color-dark);
+    box-shadow: 0 0 2.5vh var(--counter-color-dark);
     border-bottom: 2px solid var(--counter-color);
 }
 
@@ -68,7 +68,7 @@
     position: absolute;
     height: var(--profile-image-height);
     line-height: var(--profile-image-height);
-    top: calc(var(--padding-top-bottom-header-image) + 2vh - 9.5vw);
+    top: calc(var(--padding-top-bottom-header-image) - 9vw); /* + 2vh - 9.5vw */
     font-size: 7.5vw;
     color: var(--home-color);
 }
@@ -201,7 +201,7 @@
         left: 50%;
         width: 0%;
         height: 0%;
-        background-color: white;
+        background-color: whitesmoke;
     }
     17.5%, 43% {
         z-index: -1;
@@ -210,7 +210,7 @@
         left: 5%;
         width: 90%;
         height: min(85%, 40vw);
-        background-color: white;
+        background-color: whitesmoke;
         border-radius: 1vw;
     }
     46.5%, 64% {
@@ -220,7 +220,7 @@
         left: 50%;
         width: 0%;
         height: 0%;
-        background-color: white;
+        background-color: whitesmoke;
     }
     67.5%, 93% {
         z-index: -1;
@@ -229,7 +229,7 @@
         left: 5%;
         width: 90%;
         height: min(85%, 40vw);
-        background-color: white;
+        background-color: whitesmoke;
         border-radius: 1vw;
     }
     96.5%, 100% {
@@ -239,7 +239,7 @@
         left: 50%;
         width: 0%;
         height: 0%;
-        background-color: white;
+        background-color: whitesmoke;
     }
 }
 
@@ -304,7 +304,7 @@
     border-radius: 0.25vw;
     background-color: var(--counter-color-dark);
     box-shadow: 0 0 0.125vw var(--counter-color-dark);
-    color: var(--home-color);
+    color: whitesmoke; /* var(--home-color) */
     font-size: 1.5vw;
     font-weight: 600;
     width: 7.25vw;
@@ -352,7 +352,7 @@
   height: 0vw;
   width: 100%;
   content: "";
-  background-color: var(--counter-color);
+  background-color: rgb(111, 111, 111); /* var(--counter-color) */
 }
 
 /* Line after hover */
@@ -390,7 +390,7 @@ h2#Home {
     font-family: var(--font-title);
     font-size: 4.5vh;
     color: var(--counter-color-dark);
-    text-shadow: 2px 2px 2px var(--counter-color);
+    text-shadow: 1px 1px 0px var(--counter-color);
     padding-top: 2vh;
 }
 
@@ -412,11 +412,17 @@ p#Home {
 .body#Home {
     padding-left: calc(50vw - var(--body-width)/2);
     padding-right: calc(50vw - var(--body-width)/2);
+    background-color: whitesmoke;
+}
+
+.Home{
+    background-color: whitesmoke;
 }
 
 .ResumePosition {
     -ms-transform: translateX(-50%);
     transform: translateX(0%);
+    padding-bottom: 5vh;
 }
 
 .ResumePDF {
@@ -425,3 +431,29 @@ p#Home {
     /* max-width: 50rem; */
     max-height: 65rem;
 }
+
+.FooterTab#Home {
+    color: var(--counter-color);
+  }
+
+
+
+
+  /* DISCLAIMER */
+  .DISCLAIMERbig {
+    position: absolute;
+    z-index: 2;
+    background-color: red;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: calc(50vw - 16.5vh);
+  }
+
+  .DISCLAIMERsmall {
+    font-size: 2vh;
+    font-weight: bold;
+    line-height: 3.5vh;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+  }

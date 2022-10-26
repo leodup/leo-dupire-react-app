@@ -52,12 +52,21 @@ p#Experience {
     text-align: center;
 }
 
-.BottomBar {
-    position: relative;
+.BottomBar::before {
+    /* position: relative;
     bottom: 2vh;
     width: 100%;
     height: 2vh;
-    background-color: #0f62fe;
+    background-color: #0f62fe; */
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #0f0f10;
+    height: 85%;
 }
 
 .IBM {
@@ -254,30 +263,12 @@ transition:all .1s linear;
     color:black;
 }
 
-/* MIGHT NOT BE USED */
-.main-menu .nav-icon {
-position:relative;
-display:table-cell;
-width:60px;
-height:36px;
-text-align:center;
-vertical-align:middle;
-font-size:18px;
-}
-
 .main-menu .nav-text {
 position:relative;
 display:table-cell;
 vertical-align:middle;
 width:190px;
   font-family: 'Titillium Web', sans-serif;
-}
-
-/* NOT USED BUT INSPIRATION */
-.main-menu>ul.logout {
-position:absolute;
-left:0;
-bottom:0;
 }
 
 .no-touch .scrollable.hover {
@@ -291,15 +282,6 @@ overflow:visible;
 
 a:hover,a:focus {
 text-decoration:none;
-}
-
-/* MIGHT NOT BE USED */
-nav {
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
--o-user-select:none;
-user-select:none;
 }
 
 /* ICONS before expanding */
@@ -437,3 +419,7 @@ h1 span:before{
 	90%{border-radius:25% 75% 70% 30% / 39% 50% 50% 61%}
 	100%{border-radius:66% 34% 33% 67% / 65% 73% 27% 35%}
 	}
+
+.FooterTab#Work {
+    color: whitesmoke;
+    }

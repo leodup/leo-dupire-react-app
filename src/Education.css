@@ -22,7 +22,7 @@
 }
 
 .Header#Education {
-    height: 80vh;
+    height: calc(var(--header-height) + 9vw);
     position: relative;
 }
 
@@ -93,7 +93,7 @@ h2#NEU2 {
 
 .Education {
     padding-left: 5vw;
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/white_wall_hash.png);
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/concrete_seamless.png); /* https://www.toptal.com/designers/subtlepatterns/uploads/white_wall_hash.png */
     background-repeat:repeat;
 }
 
@@ -235,5 +235,6 @@ h2#LFNY2 {
     line-height: 2vw;
 }
 
-/* Overkill for Home button */
-
+.FooterTab#Education {
+    color: rgb(231, 231, 231);
+  }

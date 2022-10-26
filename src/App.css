@@ -39,11 +39,33 @@
 
 .Footer {
   position: relative;
-  top: -2.5vh;
-  height: 10vh;
   width: 100%;
-  background-color: black;
+  height: 6.25vw;
+  background-color: var(--home-color);
   text-align: center;
+}
+
+.FooterTabs {
+  padding-left: calc(50vw - var(--body-width)/2);
+  padding-right: calc(51vw - var(--body-width)/2);
+  display: flex;
+  overflow: hidden;
+}
+
+.FooterFiller {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.FooterTab {
+  font-family: var(--font-title);
+  position: relative;
+  z-index: 1;
+  top: 1vw;
+  font-weight: 600;
+  font-size: 1.25vw;
+  letter-spacing: 4px;
 }
 
 p#ReturnHome {

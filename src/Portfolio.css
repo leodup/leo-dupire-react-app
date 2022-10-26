@@ -345,3 +345,7 @@ p.Section {
     width: 94%;
     height: calc(0.56*var(--portfolio-body-width)*0.94)
 }
+
+.FooterTab#Portfolio {
+    color: white;
+  }

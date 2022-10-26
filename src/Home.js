@@ -138,12 +138,22 @@ const Home = () => {
         return (
             <div className="Filler">
                     <Link to={props.link} style={{ textDecoration: 'none' }}>
-                    <div className="Tab">
-                        <p>{props.title}</p>
-                    </div>
+                        <div className="Tab">
+                            <p>{props.title}</p>
+                        </div>
                     </Link>
-                    
-                
+            </div>
+        );
+    }
+
+    const FooterTab = (props) => {
+        return (
+            <div className="FooterFiller">
+                    <Link to={props.link} style={{ textDecoration: 'none' }}>
+                        <div className="FooterTab" id="Home">
+                            <p>{props.title}</p>
+                        </div>
+                    </Link>
             </div>
         );
     }
@@ -152,6 +162,7 @@ const Home = () => {
         <>
             <div className="Home">
                 <div className="header" id="Home">
+                    <div className="DISCLAIMERbig"><div className="DISCLAIMERsmall">Website still under development!</div></div>
                     <div className="CenterCircle">
                         <div className="Profile">
                             <Link to="/" onClick={() => window.location.reload()}>
@@ -187,10 +198,10 @@ const Home = () => {
                             title="Portfolio"
                             link="/portfolio"
                         />
-                        <Tab
+                        {/* <Tab
                             title="Contact Me"
                             link="/contactme"
-                        />
+                        /> */}
                     </div>
                 </div>
                 <div className="body" id="Home">
@@ -204,6 +215,26 @@ const Home = () => {
                     <div className="ResumePosition">
                         <iframe src="https://drive.google.com/file/d/12vix--qu-DkUbIdiGD_drLmiRTw9i-BB/preview" allow="autoplay" className="ResumePDF"></iframe>
                     </div>
+                </div>
+            </div>
+            <div className="Footer">
+                <div className="FooterTabs">
+                    <FooterTab
+                        title="Home"
+                        link="/"
+                    />
+                    <FooterTab
+                        title="Work"
+                        link="/work"
+                    />
+                    <FooterTab 
+                        title="Education"
+                        link="/education"
+                    />
+                    <FooterTab 
+                        title="Portfolio"
+                        link="/portfolio"
+                    />
                 </div>
             </div>
         </>

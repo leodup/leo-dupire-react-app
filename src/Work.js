@@ -20,12 +20,25 @@ import ANALOGIC from "./images/ANALOGIC.png";
 import PS6 from "./images/PS6.png";
 
 const Work = () => {
+
+    const FooterTab = (props) => {
+        return (
+            <div className="FooterFiller">
+                    <Link to={props.link} style={{ textDecoration: 'none' }}>
+                        <div className="FooterTab" id="Work">
+                            <p>{props.title}</p>
+                        </div>
+                    </Link>
+            </div>
+        );
+    }
     
     return (
         <ScrollContainer>
             <ScrollPage page={0}>
-                <Animator animation={batch(Fade())}>
+                <Animator>
                     <div className="Work">
+                        <div className="DISCLAIMERbig"><div className="DISCLAIMERsmall">Website still under development!</div></div>
                         {/* <div class="container">
                             <h1><span>THE<br></br>BLOBS</span></h1>
                             
@@ -51,7 +64,7 @@ const Work = () => {
                 </Animator>
             </ScrollPage>
             <ScrollPage page={1}>
-                <Animator animation={batch(Fade())}>
+                <Animator>
                     <div className="IBM">
                         <img
                             className="imageIBM"
@@ -118,7 +131,7 @@ const Work = () => {
                 </Animator>
             </ScrollPage>
             <ScrollPage page={2}>
-                <Animator animation={batch(Fade())}>
+                <Animator>
                     <div className="BROCC">
                         <img
                             className="imageBROCC"
@@ -160,7 +173,7 @@ const Work = () => {
                 </Animator>
             </ScrollPage>
             <ScrollPage page={3}>
-                <Animator animation={batch(Fade())}>
+                <Animator>
                     <div className="ANALOGIC">
                         <img
                             className="imageANALOGIC"
@@ -216,7 +229,7 @@ const Work = () => {
                 </Animator>
             </ScrollPage>
             <ScrollPage page={4}>
-                <Animator animation={batch(Fade())}>
+                <Animator>
                     <div className="PS6">
                         <img
                             className="imagePS6"
@@ -243,6 +256,22 @@ const Work = () => {
                     </div>
                 </Animator>
             </ScrollPage>
+            <div className="Footer">
+                <div className="FooterTabs">
+                    <FooterTab
+                        title="Home"
+                        link="/"
+                    />
+                    <FooterTab
+                        title="Work"
+                        link="/work"
+                    />
+                    <FooterTab 
+                        title="Education"
+                        link="/education"
+                    />
+                </div>
+            </div>
         </ScrollContainer>
     );
 }

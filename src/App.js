@@ -15,16 +15,6 @@ import ContactMe from "./ContactMe.js"
 
 function App() {
 
-  const Footer = () => {
-    return(
-      <div className="Footer">
-        <Link to="/">
-          <p id="ReturnHome"><i class="fa fa-home fa-2x"></i></p>  {/*https://icons.getbootstrap.com*/}
-        </Link>
-      </div>
-    )
-  }
-
   return (
     <>
       <Helmet>
@@ -38,31 +28,31 @@ function App() {
         <Route path="/" element={
           <div>
             <Home />
-            <Footer />
+            {/* <Footer /> */}
           </div>
         } />
         <Route path="/work" element={
           <div>
             <Work />
-            <Footer />
+            {/* <Footer /> */}
           </div>
         } />
         <Route path="/education" element={
         <div>
           <Education />
-          <Footer />
+          {/* <Footer /> */}
         </div>
         } />
         <Route path="/portfolio" element={
           <div>
             <Portfolio />
-            <Footer />
+            {/* <Footer /> */}
           </div>
         } />
         <Route path="/contactme" element={
           <div>
             <ContactMe />
-            <Footer />
+            {/* <Footer /> */}
           </div>
         } />
       </Routes>

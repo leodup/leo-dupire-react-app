@@ -40,10 +40,23 @@ import Vent3 from "./images/PortfolioProjects/Vent3.png";
 import Vent4 from "./images/PortfolioProjects/Vent4.png";
 
 const Portfolio = () => {
+
+    const FooterTab = (props) => {
+        return (
+            <div className="FooterFiller">
+                    <Link to={props.link} style={{ textDecoration: 'none' }}>
+                        <div className="FooterTab" id="Portfolio">
+                            <p>{props.title}</p>
+                        </div>
+                    </Link>
+            </div>
+        );
+    }
     
     return (
         <div>
             <div className="PortfolioHeader">
+            <div className="DISCLAIMERbig"><div className="DISCLAIMERsmall">Website still under development!</div></div>
                 <div className="LinesLeft"></div>
                 <Link to="/">
                     <div className="PortfolioLink">
@@ -339,6 +352,22 @@ const Portfolio = () => {
                 </div>
                 <div className="TBC">
                     <h2 className="TBC">To Be Continued...</h2>
+                </div>
+            </div>
+            <div className="Footer">
+                <div className="FooterTabs">
+                    <FooterTab
+                        title="Home"
+                        link="/"
+                    />
+                    <FooterTab
+                        title="Work"
+                        link="/work"
+                    />
+                    <FooterTab 
+                        title="Education"
+                        link="/education"
+                    />
                 </div>
             </div>
         </div>
