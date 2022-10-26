@@ -75,11 +75,11 @@ const Portfolio = () => {
                                 <p id="DS-Box-Title">Data Science</p>
                             </div>
                             <p id="DS-Box-Text">
-                                <ul>
-                                    <li>Identifying Multilingual Misinformation</li>
-                                    <li>Disparity and Bias Mitigation</li>
-                                    <li>Intro to Data Science</li>
-                                </ul>
+                                <img
+                                    className="Q1Show"
+                                    src={DataScienceIcon}
+                                    alt="Data Science Icon"
+                                />
                             </p>
                         </div>
                         <div className="Q2">

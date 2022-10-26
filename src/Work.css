@@ -1,3 +1,7 @@
+:root {
+    --left-pad-text: 4vw;
+}
+
 .WorkLink {
     position: absolute;
     z-index: 1;
@@ -76,7 +80,7 @@ p#Experience {
 
 .imageIBM {
     padding-top: 4vw;
-    padding-left: 4vw;
+    padding-left: var(--left-pad-text);
     width: 20vw;
 }
 
@@ -87,7 +91,7 @@ p#Experience {
 
 .imageBROCC {
     padding-top: 4vw;
-    padding-left: 4vw;
+    padding-left: var(--left-pad-text);
     width: 30vw;
 }
 
@@ -98,7 +102,7 @@ p#Experience {
 
 .imageANALOGIC {
     padding-top: 4vw;
-    padding-left: 4vw;
+    padding-left: var(--left-pad-text);
     width: 25vw;
 }
 
@@ -109,7 +113,7 @@ p#Experience {
 
 .imagePS6 {
     padding-top: 4vw;
-    padding-left: 4vw;
+    padding-left: var(--left-pad-text);
     width: 25vw;
 }
 
@@ -185,6 +189,17 @@ z-index:1000;
     background:#212121;
     border-top: 2px solid white;  
 }
+#IBMText1 {
+    position: relative;
+    width: 93vw;
+    top: 1vw;
+    left: var(--left-pad-text);
+    color: #212121;
+    font-size: calc(1vw + 1vh);
+    font-weight: 400;
+    font-family: "Gill Sans";
+    line-height: calc(1vw + 1vh + 7.5px);
+}
 
 .main-menu#BROCC1 {
     top:0;
@@ -197,6 +212,18 @@ z-index:1000;
     height:50%;  
     background:white;
     border-top: 2px solid black;  
+}
+
+#BroccText1 {
+    position: relative;
+    width: 93vw;
+    top: 1vw;
+    left: var(--left-pad-text);
+    color: white;
+    font-size: calc(1vw + 1vh);
+    font-weight: 400;
+    font-family: "Gill Sans";
+    line-height: calc(1vw + 1vh + 7.5px);
 }
 
 .main-menu#ANALOGIC1 {
@@ -216,6 +243,17 @@ z-index:1000;
     height:33%;  
     background:white;
     border-top: 2px solid rgb(26, 108, 185);  
+}
+#AnalogicText1 {
+    position: relative;
+    width: 93vw;
+    top: 1vw;
+    left: var(--left-pad-text);
+    color: white;
+    font-size: calc(1vw + 1vh);
+    font-weight: 400;
+    font-family: "Gill Sans";
+    line-height: calc(1vw + 1vh + 7.5px);
 }
 
 .main-menu#PS6-1 {
