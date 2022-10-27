@@ -76,7 +76,7 @@ const Portfolio = () => {
                             </div>
                             <p id="DS-Box-Text">
                                 <img
-                                    className="Q1Show"
+                                    className="Show"
                                     src={DataScienceIcon}
                                     alt="Data Science Icon"
                                 />
@@ -88,6 +88,16 @@ const Portfolio = () => {
                                 src={ComputerScienceText}
                                 alt="Computer Science Text"
                             />
+                            <div className="BlockTop">
+                                <p id="DS-Box-Title">Computer Science</p>
+                            </div>
+                            <p id="DS-Box-Text">
+                                <img
+                                    className="Show"
+                                    src={ComputerScienceIcon}
+                                    alt="Data Science Icon"
+                                />
+                            </p>
                         </div>
                     </div>
                     <div className="Bottom">
@@ -97,13 +107,33 @@ const Portfolio = () => {
                                 src={MechEText}
                                 alt="Mechanical Engineering Text"
                             />
+                            <div className="BlockTop">
+                                <p id="DS-Box-Title">Mechanical Engineering</p>
+                            </div>
+                            <p id="DS-Box-Text">
+                                <img
+                                    className="Show"
+                                    src={MechEIcon}
+                                    alt="Data Science Icon"
+                                />
+                            </p>
                         </div>
                         <div className="Q4">
                             <img
-                                className="TitleText3"
+                                className="TitleText4"
                                 src={RandomText}
                                 alt="Random Text"
                             />
+                            <div className="BlockTop">
+                                <p id="DS-Box-Title">Random Projects</p>
+                            </div>
+                            <p id="DS-Box-Text">
+                                <img
+                                    className="Show"
+                                    src={RandomIcon}
+                                    alt="Data Science Icon"
+                                />
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -127,18 +157,18 @@ const Portfolio = () => {
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Bias Mitigation</h3>
-                        <p className="Section"></p>
+                        <p className="Section">I performed a project demonstrating responsible data science practices such as disparity identification and bias mitigation on a Kaggle dataset provided by Porto Seguro, one of Brazil's leading home and auto insurers. In this project, I demonstrated my technical skills, dealing with machine learning, data privacy, data augmentation, and I also grew as a team leader. (This topic will be elaborated on with the site's development)</p>
                     </div>
                     <div className='Project'>
                         <h3 className="Section">School Analysis</h3>
-                        <p className="Section"></p>
+                        <p className="Section">This project involved the use of multiple machine learning methods, from linear, logistical, and multiple regression to clustering models and more! (This topic will be elaborated on with the site's development)</p>
                     </div>
                 </div>
                 <div className="ComputerScience">
                     <h2 className="Section">Computer Science</h2>
                     <div className='Project'>
                         <h3 className="Section">This Website</h3>
-                        <p className="Section"></p>
+                        <p className="Section">I built this website completely on my own using knowledge gained from my internship at IBM. The foundation and minimal viable product of this website were created over the summer and into the fall of 2022. This is a ReactJS app which I designed, developed, and implemented from scratch. I hope you enjoy!</p>
                     </div>
                     <div className='Project'>
                         <h3 className="Section" id="DAC">Boston Museum of Science</h3>
@@ -321,7 +351,10 @@ const Portfolio = () => {
                             webkitallowfullscreen="webkitallowfullscreen"></iframe>
                     </div>
                     <h3 className="Section" id="Hyperloop">Hyperloop</h3>
-                    <p className="Section"></p>
+                    <p className="Section">
+                        I was part of the hyperloop team at Northeastern University. This was a collaborative effort between several universities, Northeastern being a prominent member. I joined the team shortly after they ranked 2nd-worldwide in the Hyperloop competition held by SpaceX. My role consisted of working with the team's in-house wind-tunnel and developping an optimal, minimally intrusive mechanism for precisely changing the pitch, yaw, and roll of the hyperloop skates. Although Hyperloop pods travel in a vaccum, this is not a perfect vaccum and the pod experiences significant air resistance when travelling at very high speeds. Thus aerodynamics played a large role in our analyses. <br></br> <br></br> 
+                        I also researched optimal ply-up techniques with different material fabrics for the hardware encasings of the pod. The vaccum of the Hyperloop tunnel caused many issues with our electronics, notably the batteries. Myself and two fellow engineers were tasked with designing a soft-shell, pressurized encasing for these components. To create a robust design, our research was heavily focused on ply-up techniques for different materials. With carbon fiber, for instance, ply-up is the way in which different sheets of carbon fiber are layered in varying orientations to maximize the strength of the enclosure when exposed to multi-directional forces.
+                    </p>
                 </div>
                 <div className="Random">
                     <h2 className="Section">Random</h2>
@@ -337,7 +370,7 @@ const Portfolio = () => {
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Music</h3>
-                        <p className="Section"></p>
+                        <p className="Section">I love to play and compose music. My production software of choice is Logic Pro X. I play the guitar, piano, and some drums. I have been working on several compositions and would love to release some in the near future! My music mainly consists of alternative rock, but my genres vary; I like to exhibit versatility in whatever I do. Styles span from traditional alternative rock, to pieces with heavy classical and operatic undertones, to reggae-like passages, to more modern tastes. Not at the same time... for the most part. </p>
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Alphabite</h3>
@@ -347,7 +380,7 @@ const Portfolio = () => {
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Hobbies</h3>
-                        <p className="Section"></p>
+                        <p className="Section">My hobbies are well reflected in this portfolio. These include: composing music, playing guitar, playing piano as well as playing tennis and sailing.</p>
                     </div>
                 </div>
                 <div className="TBC">

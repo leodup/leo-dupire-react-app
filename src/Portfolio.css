@@ -4,7 +4,7 @@
     --block-width: calc(1.75*var(--block-height));
     --spacing: 1.5vw;
     --iconHeight: 10vw;
-    --portfolio-body-width: min(90vw, 70rem, max(var(--scale)*var(--header-height), 60vh));
+    --portfolio-body-width: min(90vw, 70rem, max(var(--scale)*var(--header-height) - 30vh, 60vh));
     --scale: 1.5;
 }
 
@@ -117,15 +117,24 @@
     display: flex;
 }
 
-/* Q1 */
+/* Quadrants */
 
-.Q1 {
-    left: var(--spacing);
-}
+.Q1 {left: var(--spacing);}
+.Q2 {left: calc(2*var(--spacing));}
+.Q3 {left: var(--spacing);}
+.Q4 { left: calc(2*var(--spacing));}
 
-.Q1:hover .BlockTop {
-    visibility: visible;
-    opacity: 1;
+.Q1, .Q2, .Q3, .Q4 {
+    position: relative;
+    width: var(--block-width);
+    height: var(--block-height);
+    background-color: transparent;
+    border-radius: 0.25vw;
+    transition: 0.25s;
+    box-shadow: 0 0 0.25vw white;
+    font-weight: 600;
+    color: white;
+    border: 0.4vw solid white;
 }
 
 .BlockTop {
@@ -143,12 +152,6 @@
     text-align: center;
     transition: 0.5s;
 }
-
-.Q1:hover .TitleText1 {
-    opacity: 1;
-    visibility: hidden;
-}
-
 #DS-Box-Title {
     position: relative;
     top: -1vw;
@@ -156,12 +159,6 @@
     font-weight: 800;
     letter-spacing: 0.5vw;
 }
-
-.Q1:hover #DS-Box-Text {
-    visibility: visible;
-    opacity: 1;
-}
-
 #DS-Box-Text {
     visibility: hidden;
     opacity: 0;
@@ -173,31 +170,17 @@
     line-height: 2.5vw;
 }
 
-/* Q2 */
-
-.Q2 {
-    left: calc(2*var(--spacing));
+.Q1:hover .BlockTop, .Q2:hover .BlockTop, .Q3:hover .BlockTop, .Q4:hover .BlockTop {
+    visibility: visible;
+    opacity: 1;
 }
-
-.Q3 {
-    left: var(--spacing);
+.Q1:hover .TitleText1, .Q2:hover .TitleText2, .Q3:hover .TitleText3, .Q4:hover .TitleText4 {
+    opacity: 1;
+    visibility: hidden;
 }
-
-.Q4 {
-    left: calc(2*var(--spacing));
-}
-
-.Q1, .Q2, .Q3, .Q4 {
-    position: relative;
-    width: var(--block-width);
-    height: var(--block-height);
-    background-color: transparent;
-    border-radius: 0.25vw;
-    transition: 0.25s;
-    box-shadow: 0 0 0.25vw white;
-    font-weight: 600;
-    color: white;
-    border: 0.4vw solid white;
+.Q1:hover #DS-Box-Text, .Q2:hover #DS-Box-Text, .Q3:hover #DS-Box-Text, .Q4:hover #DS-Box-Text {
+    visibility: visible;
+    opacity: 1;
 }
 
 .Q1:hover, .Q2:hover, .Q3:hover, .Q4:hover {
@@ -207,26 +190,12 @@
     --image: url('./images/CodeImage.jpg');
 }
 
-.TitleText1 {
+.TitleText1, .TitleText2, .TitleText3, .TitleText4  {
     position: relative;
     height: calc(var(--block-height) - 2vw);
     top: 1vw;
     left: 1vw;
     transition: 0.5;
-}
-
-.TitleText2 {
-    position: relative;
-    height: calc(var(--block-height) - 2vw);
-    top: 1vw;
-    left: 1vw;
-}
-
-.TitleText3 {
-    position: relative;
-    height: calc(var(--block-height) - 2vw);
-    top: 1vw;
-    left: 1vw;
 }
 
 .Image {
@@ -241,12 +210,12 @@
     border-radius: 100%;
 }
 
-.Q1Show {
+.Show {
     position: relative;
     /* height: calc(var(--block-height) - 2vw); */
-    width: 90%;
+    width: 86%;
     /* bottom: 0px; */
-    left: 5%;
+    left: 7%;
     transition: 0.5;
 }
 

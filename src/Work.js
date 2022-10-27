@@ -63,6 +63,11 @@ const Work = () => {
         —
         I am ever so grateful to the team at Analogic for providing me with a supportive and friendly work environment. I am so glad to have interacted and worked alongside so many creative, passionate, and driven individuals. <br></br> <br></br>
     </p>
+
+    const PS6Text1 = <p id="PS6Text1">
+        At the age of 14, I was hired as a mentor and technician for an afterschool workshop at PS6, a prominent public school in New York City. I learned to work with students as well as maintain and operate multiple 3D printers for the school. I obtained this position through prior work at my highschool.<br></br><br></br>
+        I worked at my highschool in an afterschool workshop where I mentored students on 3D modeling and 3D printing. We worked on several projects. A project I completed independently with these facilities was a service learning project for school in Haiti. This product, called Alphabite, is an intuitive alphabet puzzle for students to learn how to read and write more efficiently. This project is listed in my Portfolio page. (This topic will be elaborated on with the site's development)
+    </p>
     
     return (
         <ScrollContainer>
@@ -271,6 +276,7 @@ const Work = () => {
                             src={PS6}
                             alt="PS6"
                         />
+                        {PS6Text1}
                         {/* <div className="PS6-1">
                             <nav class="main-menu" id="PS6-1">
                                 <ul>

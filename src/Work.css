@@ -262,6 +262,17 @@ z-index:1000;
     background:white;
     border-top: 2px solid #dc2728; 
 }
+#PS6Text1 {
+    position: relative;
+    width: 93vw;
+    top: 1vw;
+    left: var(--left-pad-text);
+    color: black;
+    font-size: calc(1vw + 1vh);
+    font-weight: 400;
+    font-family: "Gill Sans";
+    line-height: calc(1vw + 1vh + 7.5px);
+}
 
 /* MARGIN from top */
 .main-menu>ul {
