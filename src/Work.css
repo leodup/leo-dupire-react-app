@@ -1,5 +1,6 @@
 :root {
     --left-pad-text: 4vw;
+    --header-text-color: rgb(181, 181, 181);
 }
 
 .WorkLink {
@@ -17,7 +18,7 @@
     font-size: calc(3vh + 0.5vw);
     font-weight: bold;
     text-decoration: underline;
-    color: black;
+    color: var(--header-text-color);
 ;
 }
 
@@ -25,7 +26,8 @@
     position: absolute;
     top: 0;
     height: 100vh;
-    background-color: rgb(240, 240, 240);
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/cartographer.png);
+    background-repeat:repeat;
 }
 
 .WorkTitles {
@@ -36,22 +38,22 @@
 
 h1#Work {
     position: relative;
-    color: black;
+    top: -5vh;
+    color: var(--header-text-color);
     background-color: transparent;
     margin-left: 3vw;
     letter-spacing: 10vw;
     font-size: 20vw;
     width: 100%;
-    text-align: center;
 }
 
 p#Experience {
     position: absolute;
     margin-left: 2vw;
-    bottom: 5vh;
-    color: black;
+    bottom: min(calc(12.5vh - 7.5vw), 4rem);
+    color: var(--header-text-color);
     letter-spacing: 7.5vw;
-    font-size: 5vw;
+    font-size: min(5vw, 5rem);
     width: 100%;
     text-align: center;
 }
