@@ -16,6 +16,7 @@ const ContactMe = () => {
                 </Link>
                 <div className="Curtain1"></div>
                 <div className="Curtain2"></div>
+                <div className='HoneyComb'></div>
                 <h1 id="ContactMe">Contact Me</h1>
             </div>
             <div className="ContactMe2">

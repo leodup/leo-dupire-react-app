@@ -1,8 +1,9 @@
 :root {
     --padding-top-bottom-header-image: 25vh;
-    --home-color: rgb(52, 52, 52); /* rgb(210, 255, 249) */
+    --home-color: rgb(27, 27, 27); /* rgb(210, 255, 249) */
     --counter-color-dark: rgb(50, 153, 146); /* rgb(25, 114, 110) */
     --counter-color: rgb(109, 191, 187); /* rgb(64, 164, 159) */
+    --background-color: rgb(231, 241, 240);
     --animation-time: 30s;
     --profile-image-height: 17.5vw;
     --name-box-border-radius: 7.5vw;
@@ -184,6 +185,7 @@
 /* BIG WHITE AREA EXPAND */
 @media (prefers-reduced-motion: no-preference) {
     .LargeExpand {
+      background-color: var(--background-color);
       animation: LargeExpand;
       animation-duration: var(--animation-time);
       animation-iteration-count: infinite;
@@ -201,7 +203,6 @@
         left: 50%;
         width: 0%;
         height: 0%;
-        background-color: whitesmoke;
     }
     17.5%, 43% {
         z-index: -1;
@@ -210,7 +211,6 @@
         left: 5%;
         width: 90%;
         height: min(85%, 40vw);
-        background-color: whitesmoke;
         border-radius: 1vw;
     }
     46.5%, 64% {
@@ -220,7 +220,6 @@
         left: 50%;
         width: 0%;
         height: 0%;
-        background-color: whitesmoke;
     }
     67.5%, 93% {
         z-index: -1;
@@ -229,7 +228,6 @@
         left: 5%;
         width: 90%;
         height: min(85%, 40vw);
-        background-color: whitesmoke;
         border-radius: 1vw;
     }
     96.5%, 100% {
@@ -239,7 +237,6 @@
         left: 50%;
         width: 0%;
         height: 0%;
-        background-color: whitesmoke;
     }
 }
 
@@ -412,11 +409,11 @@ p#Home {
 .body#Home {
     padding-left: calc(50vw - var(--body-width)/2);
     padding-right: calc(50vw - var(--body-width)/2);
-    background-color: whitesmoke;
+    background-color: var(--background-color);
 }
 
 .Home{
-    background-color: whitesmoke;
+    background-color: var(--background-color);
 }
 
 .ResumePosition {
@@ -443,7 +440,7 @@ p#Home {
   .DISCLAIMERbig {
     position: absolute;
     z-index: 2;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -452,8 +449,10 @@ p#Home {
 
   .DISCLAIMERsmall {
     font-size: 2vh;
-    font-weight: bold;
+    font-weight: 200;
     line-height: 3.5vh;
     padding-left: 0.5vh;
     padding-right: 0.5vh;
+    color: whitesmoke;
+    font-family: "optima";
   }

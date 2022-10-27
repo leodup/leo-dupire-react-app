@@ -1,6 +1,6 @@
 :root {
     --left-pad-text: 4vw;
-    --header-text-color: rgb(181, 181, 181);
+    --header-text-color: rgba(255, 255, 255, 0.3);
 }
 
 .WorkLink {
