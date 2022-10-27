@@ -194,7 +194,7 @@ z-index:1000;
     width: 93vw;
     top: 1vw;
     left: var(--left-pad-text);
-    color: #212121;
+    color: white;
     font-size: calc(1vw + 1vh);
     font-weight: 400;
     font-family: "Gill Sans";

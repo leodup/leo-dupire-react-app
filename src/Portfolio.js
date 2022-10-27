@@ -370,7 +370,7 @@ const Portfolio = () => {
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Music</h3>
-                        <p className="Section">I love to play and compose music. My production software of choice is Logic Pro X. I play the guitar, piano, and some drums. I have been working on several compositions and would love to release some in the near future! My music mainly consists of alternative rock, but my genres vary; I like to exhibit versatility in whatever I do. Styles span from traditional alternative rock, to pieces with heavy classical and operatic undertones, to reggae-like passages, to more modern tastes. Not at the same time... for the most part. </p>
+                        <p className="Section">I love to play and compose music. My production software of choice is Logic Pro X. I play the guitar, piano, and some drums. I have been working on several compositions and would love to release some in the near future! My music mainly consists of alternative rock, but my genres vary; I like to exhibit versatility in whatever I do. Styles span from traditional alternative rock, to pieces with heavy classical and operatic undertones, to reggae-like passages, to more modern tastes. Not all at the same time... for the most part. </p>
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Alphabite</h3>
