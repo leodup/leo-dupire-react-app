@@ -444,7 +444,7 @@ p#Home {
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    left: calc(50vw - 16.5vh);
+    left: calc(50vw - 15vh);
   }
 
   .DISCLAIMERsmall {
