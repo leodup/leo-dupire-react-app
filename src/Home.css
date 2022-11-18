@@ -3,7 +3,7 @@
     --home-color: rgb(22, 22, 22); /* rgb(210, 255, 249) */
     --counter-color-dark: rgb(50, 153, 146); /* rgb(25, 114, 110) */
     --counter-color: rgb(109, 191, 187); /* rgb(64, 164, 159) */
-    --background-color: rgb(231, 241, 240);
+    --background-color: rgb(255, 255, 255);
     --animation-time: 30s;
     --profile-image-height: 17.5vw;
     --name-box-border-radius: 7.5vw;
@@ -325,7 +325,7 @@
     width: 100%;
     display: flex;
     overflow: hidden;
-    height: 4vw;
+    height: max(4vw, 2.3rem);
 }
 
 .Filler {
@@ -349,7 +349,7 @@
   height: 0vw;
   width: 100%;
   content: "";
-  background-color: rgb(111, 111, 111); /* var(--counter-color) */
+  background-color: rgb(255, 255, 255, 0.85); /* var(--counter-color) */
 }
 
 /* Line after hover */
@@ -377,7 +377,7 @@
     top: -0.75vw;
     color: var(--counter-color-dark);
     font-weight: bold;
-    font-size: 1.75vw;
+    font-size: max(1.75vw, 1rem);
     letter-spacing: 4px;
 }
 
@@ -385,7 +385,7 @@
 
 h2#Home {
     font-family: var(--font-title);
-    font-size: 4.5vh;
+    font-size: max(min(4vw, 4vh), 1.75rem);
     color: var(--counter-color-dark);
     text-shadow: 1px 1px 0px var(--counter-color);
     padding-top: 2vh;
@@ -393,15 +393,15 @@ h2#Home {
 
 h3#Home {
     font-family: var(--font-title);
-    font-size: 3.5vh;
+    font-size: max(min(3vw, 3vh), 1.25rem);
     color: rgb(54, 54, 54);
 }
 
 p#Home {
     font-family: var(--font-text);
     font-weight: 500;
-    font-size: 2vh;
-    line-height: 4vh;
+    font-size: max(min(2vw, 2vh), 1rem);
+    line-height: max(min(4vw, 4vh), 1.75rem);
     text-align: justify;
     color: rgb(52, 52, 52);
   }

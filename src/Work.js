@@ -303,13 +303,13 @@ const Work = () => {
                         title="Home"
                         link="/"
                     />
-                    <FooterTab
-                        title="Work"
-                        link="/work"
-                    />
                     <FooterTab 
                         title="Education"
                         link="/education"
+                    />
+                    <FooterTab
+                        title="Portfolio"
+                        link="/portfolio"
                     />
                 </div>
             </div>

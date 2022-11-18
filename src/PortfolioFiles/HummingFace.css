@@ -1,0 +1,18 @@
+/* GALLERY */
+
+.image-container#HuggingFace1 {
+    margin-left: 5%;
+    margin-right: 15%;
+    height: 100%;
+    width: 80%;
+}
+
+img#HF1 {
+    height: 100%;
+    width: 100%;
+}
+
+img#HF1:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}

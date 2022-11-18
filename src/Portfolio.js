@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import "./Portfolio.css";
+import "./PortfolioFiles/HummingFace.css";
 import "./PortfolioFiles/GoKart.css";
 import "./PortfolioFiles/Hydro.css";
 import "./PortfolioFiles/DAC.css";
@@ -17,6 +18,8 @@ import MechEIcon from "./images/MechEIcon.png";
 import RandomIcon from "./images/RandomIcon.png";
 
 import CodeImage from "./images/CodeImage.jpg";
+
+import Spectrogram from "./images/PortfolioProjects/Spectrogram.png";
 
 import GoKart1 from "./images/PortfolioProjects/GoKart1.jpg";
 import GoKart2 from "./images/PortfolioProjects/GoKart2.jpg";
@@ -53,6 +56,18 @@ const Portfolio = () => {
         );
     }
     
+    const Tab = (props) => {
+        return (
+            <div className="FillerPort">
+                    <Link to={props.link} style={{ textDecoration: 'none' }}>
+                        <div className="TabPort">
+                            <p>{props.title}</p>
+                        </div>
+                    </Link>
+            </div>
+        );
+    }
+
     return (
         <div>
             <div className="PortfolioHeader">
@@ -142,22 +157,50 @@ const Portfolio = () => {
                 <div className='TopMargin'></div>
                 <div className='BottomMargin'></div>
             </div>
+            <div className="TabsPort">
+                <Tab 
+                    title="Home"
+                    link="/"
+                />
+                <Tab
+                    title="Work"
+                    link="/work"
+                />
+                <Tab 
+                    title="Education"
+                    link="/education"
+                />
+                {/* <Tab
+                    title="Contact Me"
+                    link="/contactme"
+                /> */}
+            </div>
             <div className="Header1">
-                <h1 id="Portfolio">PORTFOLIO</h1>
+                <h1 id="Portfolio">P &nbsp; O &nbsp; R &nbsp; T &nbsp; F &nbsp; O &nbsp; L &nbsp; I &nbsp; O</h1>
             </div>
             <div className="PortfolioBody">
                 <div className="DataScience">
                     <h2 className="Section">Data Science</h2>
                     <div className='Project'>
-                        <h3 className="Section">NLP</h3>
+                        <h3 className="Section">Music Generation</h3>
+                        <div className='Gallery'>
+                            <div className='image-container' id="HuggingFace1">
+                                <img 
+                                    id="HF1" 
+                                    src={Spectrogram}
+                                    alt="Spectrogram 1"
+                                />
+                            </div>
+                        </ div>
+                        <p className="Section">I am currently working on this project. My teammate Mateus Aragão and I are designing and building multiple deep learning generative models (GAN, Auto-Encoder, Diffusion) to generate sample sounds from a user prompt. Such models can be used to aid musicians in finding that 'elusive' sound that they may not know how to obtain through traditional means. The model will generate original sounds for users to sample, even introducing a new source of inspiration for composition.</p>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section">Natural Language Processing (NLP)</h3>
+                        <p className="Section">I performed a set of experiments in Natural Language Understanding along with teammates Yara Kyrychenko and Carla García Medina. We trained four separate Transformer/LSTM models (two English and two multilingual): RoBERTa, XLM-RoBERTa, T5, and mT5. Our goal was to identify the best performing model for identifying missinformation in multilingual Twitter posts sourced from the MuMiN dataset. The English-only models were trained and tested on multilingual tweets that were translated to english in pre-processing using the Google Translate API.</p>
                         <div className="NLPPosition">
                             <iframe src="https://drive.google.com/file/d/1f_OGk0sSn4joooqS0PryteYdc_8Xkln8/preview" allow="autoplay" className="NLPPDF"></iframe>
                         </div>
                         <p className="Section"></p>
-                    </div>
-                    <div className='Project'>
-                        <h3 className="Section">Music Generation</h3>
-                        <p className="Section">I am currently working on this project. My teammate Mateus Aragão and I are designing and building multiple deep learning generative models (GAN, Auto-Encoder, Diffusion) to generate sample sounds from a user prompt. Such models can be used to aid musicians in finding that 'elusive' sound that they may not know how to obtain through traditional means. The model will generate original sounds for users to sample, even introducing a new source of inspiration for composition.</p>
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Bias Mitigation</h3>

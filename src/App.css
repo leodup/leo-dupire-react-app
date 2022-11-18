@@ -40,7 +40,7 @@
 .Footer {
   position: relative;
   width: 100%;
-  height: 6.25vw;
+  height: max(min(6.25vw, 12vh), 5rem);
   background-color: var(--home-color);
   text-align: center;
 }
@@ -64,7 +64,7 @@
   z-index: 1;
   top: 1vw;
   font-weight: 600;
-  font-size: 1.25vw;
+  font-size: max(min(1.25vw, 55vh), 0.75rem);
   letter-spacing: 4px;
 }
 
