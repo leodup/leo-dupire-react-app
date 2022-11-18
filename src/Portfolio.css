@@ -1,11 +1,11 @@
 :root {
     --header-height: 80vh;
-    --block-height: min(calc(var(--header-height)/2 - 2vw), 27vw);
-    --block-width: calc(1.75*var(--block-height));
+    --block-height: min(calc(var(--header-height)/2 - 2vw), 31.5vw);
+    --block-width: calc(1.52*var(--block-height));
     --spacing: 1.5vw;
     --iconHeight: 10vw;
     --portfolio-body-width: min(90vw, 70rem, max(var(--scale)*var(--header-height) - 30vh, 60vh));
-    --scale: 1.5;
+    --scale: 1.37;
 }
 
 /* HOME BUTTON */
@@ -28,7 +28,8 @@
     line-height: 1.75vw;
     letter-spacing: 0.125vw;
     text-decoration: underline;
-    color: white;
+    color: rgb(255, 255, 255, 0.5);
+    text-shadow: 0px -1px 1px rgb(134, 134, 134);
 }
 
 /* HEADER */
@@ -60,7 +61,7 @@
     height: calc(var(--header-height) + 1vw);
     width: calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2);
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.85;
 }
 
 .RightMargin {
@@ -70,7 +71,7 @@
     height: calc(var(--header-height) + 1vw);
     width: calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2);
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.85;
 }
 
 .TopMargin {
@@ -79,7 +80,7 @@
     height: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
     width: 100%;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.85;
 }
 
 .BottomMargin {
@@ -88,7 +89,7 @@
     height: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
     width: 100%;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.85;
 }
 
 .Blocks {
@@ -129,26 +130,26 @@
     width: var(--block-width);
     height: var(--block-height);
     background-color: transparent;
-    border-radius: 0.25vw;
+    border-radius: 10px;
     transition: 0.25s;
-    box-shadow: 0 0 0.25vw white;
+    box-shadow: 0 0 0.25vw black;
     font-weight: 600;
     color: white;
-    border: 0.4vw solid white;
+    /* border: 0.4vw solid white; */
 }
 
 .BlockTop {
     visibility: hidden;
     opacity: 0;
-    color: rgb(80, 80, 80);
+    color: rgb(226, 226, 226);
 
     position: absolute;
     top: 0;
     width: 100%;
     height: 3vw;
-    background-color: rgb(205, 205, 205);
-    border-top-left-radius: 0.25vw;
-    border-top-right-radius: 0.25vw;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     text-align: center;
     transition: 0.5s;
 }
@@ -164,7 +165,7 @@
     opacity: 0;
 
     position: relative;
-    top: calc(4.5vw - var(--block-height));
+    top: calc(3.5vw - var(--block-height));
     color: black;
     font-size: 0.8vw;
     line-height: 2.5vw;
@@ -186,16 +187,20 @@
 .Q1:hover, .Q2:hover, .Q3:hover, .Q4:hover {
     transform: scale(1.025, 1.025);
     transition: 0.5s;
-    background-color: rgb(244, 244, 244);
+    background-color: rgba(255, 255, 255, 0.4);
     --image: url('./images/CodeImage.jpg');
 }
 
 .TitleText1, .TitleText2, .TitleText3, .TitleText4  {
     position: relative;
-    height: calc(var(--block-height) - 2vw);
-    top: 1vw;
-    left: 1vw;
+    border-radius: 10px;
+    height: 100%; /*calc(var(--block-height) - 2vw);*/
+    /* top: 1vw;
+    left: 1vw; */
     transition: 0.5;
+    -webkit-filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
+    filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
+    opacity: 0.85;
 }
 
 .Image {
@@ -212,10 +217,11 @@
 
 .Show {
     position: relative;
+    /* filter: blur(5px); */
     /* height: calc(var(--block-height) - 2vw); */
-    width: 86%;
+    width: 80%;
     /* bottom: 0px; */
-    left: 7%;
+    left: 10%;
     transition: 0.5;
 }
 
@@ -227,16 +233,16 @@ h1#Portfolio {
     z-index: 1;
     margin-top: calc(var(--header-height) + 1vw);
     margin-bottom: 0%;
-    padding-left: calc(50vw - 14vw - var(--scale)*var(--header-height)/2);
-    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: calc(50vw - 16.5vw - var(--scale)*var(--header-height)/2);
+    background-color: rgba(50, 50, 50, 0.5);
     font-size: 6vw;
     font-weight: 900;
-    color: white;
+    color: rgb(0, 0, 0);
     letter-spacing: 4.8vw;
     line-height: 8vw;
     text-align: center;
     box-shadow: 0 0 10px black;
-    text-shadow: 0 0 0.1vw white;
+    text-shadow: 0px -2px 4px white;
 }
 
 .PortfolioBody {

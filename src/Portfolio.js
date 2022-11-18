@@ -156,6 +156,10 @@ const Portfolio = () => {
                         <p className="Section"></p>
                     </div>
                     <div className='Project'>
+                        <h3 className="Section">Music Generation</h3>
+                        <p className="Section">I am currently working on this project. My teammate Mateus Aragão and I are designing and building multiple deep learning generative models (GAN, Auto-Encoder, Diffusion) to generate sample sounds from a user prompt. Such models can be used to aid musicians in finding that 'elusive' sound that they may not know how to obtain through traditional means. The model will generate original sounds for users to sample, even introducing a new source of inspiration for composition.</p>
+                    </div>
+                    <div className='Project'>
                         <h3 className="Section">Bias Mitigation</h3>
                         <p className="Section">I performed a project demonstrating responsible data science practices such as disparity identification and bias mitigation on a Kaggle dataset provided by Porto Seguro, one of Brazil's leading home and auto insurers. In this project, I demonstrated my technical skills, dealing with machine learning, data privacy, data augmentation, and I also grew as a team leader. (This topic will be elaborated on with the site's development)</p>
                     </div>
