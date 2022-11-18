@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ccb1cb1.css",
-    "main.js": "/static/js/main.5955f53d.js",
+    "main.css": "/static/css/main.bb9b37cf.css",
+    "main.js": "/static/js/main.fa6b850c.js",
     "static/media/LawnCycle.jpg": "/static/media/LawnCycle.7bed325751346c9046f9.jpg",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/Vent1.png": "/static/media/Vent1.f9c58f2c2ad246b9f99d.png",
@@ -19,6 +19,7 @@
     "static/media/Vent3.png": "/static/media/Vent3.0a5b99a1bd46ae626b90.png",
     "static/media/moi.jpg": "/static/media/moi.5524c894ab519c3ec425.jpg",
     "static/media/GoKart3.png": "/static/media/GoKart3.86e4d531fde938a44ce7.png",
+    "static/media/Spectrogram.png": "/static/media/Spectrogram.41afa02445c975224642.png",
     "static/media/GoKart.jpg": "/static/media/GoKart.d3b45949e8878afe4dab.jpg",
     "static/media/GoKart1.jpg": "/static/media/GoKart1.5fdae03fbd8831dfddc8.jpg",
     "static/media/GoKart2.jpg": "/static/media/GoKart2.891ece74df311d03623d.jpg",
@@ -51,11 +52,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.3ccb1cb1.css.map": "/static/css/main.3ccb1cb1.css.map",
-    "main.5955f53d.js.map": "/static/js/main.5955f53d.js.map"
+    "main.bb9b37cf.css.map": "/static/css/main.bb9b37cf.css.map",
+    "main.fa6b850c.js.map": "/static/js/main.fa6b850c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ccb1cb1.css",
-    "static/js/main.5955f53d.js"
+    "static/css/main.bb9b37cf.css",
+    "static/js/main.fa6b850c.js"
   ]
 }
