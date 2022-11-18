@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.92cf1e7a.css",
+    "main.css": "/static/css/main.49fbdcf5.css",
     "main.js": "/static/js/main.83bad36e.js",
     "static/media/LawnCycle.jpg": "/static/media/LawnCycle.7bed325751346c9046f9.jpg",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
@@ -51,11 +51,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.92cf1e7a.css.map": "/static/css/main.92cf1e7a.css.map",
+    "main.49fbdcf5.css.map": "/static/css/main.49fbdcf5.css.map",
     "main.83bad36e.js.map": "/static/js/main.83bad36e.js.map"
   },
   "entrypoints": [
-    "static/css/main.92cf1e7a.css",
+    "static/css/main.49fbdcf5.css",
     "static/js/main.83bad36e.js"
   ]
 }
