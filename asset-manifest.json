@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.49fbdcf5.css",
-    "main.js": "/static/js/main.83bad36e.js",
+    "main.css": "/static/css/main.3ccb1cb1.css",
+    "main.js": "/static/js/main.5955f53d.js",
     "static/media/LawnCycle.jpg": "/static/media/LawnCycle.7bed325751346c9046f9.jpg",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/Vent1.png": "/static/media/Vent1.f9c58f2c2ad246b9f99d.png",
@@ -33,14 +33,14 @@
     "static/media/RandomIcon.png": "/static/media/RandomIcon.fc7fbde852e6778deb37.png",
     "static/media/Phone.png": "/static/media/Phone.856a6d6ec8adbb75dd3a.png",
     "static/media/PS6.png": "/static/media/PS6.8f5af3e541339737be7a.png",
-    "static/media/ComputerScienceText.png": "/static/media/ComputerScienceText.1cf531bd6a9574a0163e.png",
-    "static/media/MechEText.png": "/static/media/MechEText.3e4d62c7482464d2a764.png",
+    "static/media/MechEText.png": "/static/media/MechEText.f0bbed766b63f4f7f633.png",
+    "static/media/ComputerScienceText.png": "/static/media/ComputerScienceText.130d54a96c6d67b7a6ed.png",
     "static/media/Ventilator.jpg": "/static/media/Ventilator.9b45cc8693adcc76a82f.jpg",
+    "static/media/RandomText.png": "/static/media/RandomText.dfef22c12be377f99928.png",
     "static/media/LEO.jpg": "/static/media/LEO.7bb58316c39631fd9a13.jpg",
     "static/media/Email.png": "/static/media/Email.7dc508103e64df91fe84.png",
+    "static/media/DataScienceText.png": "/static/media/DataScienceText.aa8afe663779ffea50b5.png",
     "static/media/BROCC.png": "/static/media/BROCC.16c672e630c011d99eb1.png",
-    "static/media/RandomText.png": "/static/media/RandomText.e4334909711c4d901494.png",
-    "static/media/DataScienceText.png": "/static/media/DataScienceText.73d4e47f0480329ce75a.png",
     "static/media/NEU.png": "/static/media/NEU.a2800ce55d912cf998fe.png",
     "static/media/Hyperloop.jpg": "/static/media/Hyperloop.33117ee3b5330d8c7738.jpg",
     "static/media/LinkedIn.png": "/static/media/LinkedIn.8456984ecd24018282f3.png",
@@ -51,11 +51,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.49fbdcf5.css.map": "/static/css/main.49fbdcf5.css.map",
-    "main.83bad36e.js.map": "/static/js/main.83bad36e.js.map"
+    "main.3ccb1cb1.css.map": "/static/css/main.3ccb1cb1.css.map",
+    "main.5955f53d.js.map": "/static/js/main.5955f53d.js.map"
   },
   "entrypoints": [
-    "static/css/main.49fbdcf5.css",
-    "static/js/main.83bad36e.js"
+    "static/css/main.3ccb1cb1.css",
+    "static/js/main.5955f53d.js"
   ]
 }
