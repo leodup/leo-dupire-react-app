@@ -176,7 +176,8 @@ const Portfolio = () => {
                 /> */}
             </div>
             <div className="Header1">
-                <h1 id="Portfolio">P &nbsp; O &nbsp; R &nbsp; T &nbsp; F &nbsp; O &nbsp; L &nbsp; I &nbsp; O</h1>
+                <h1 id="Portfolio">P &nbsp;O&nbsp;R &nbsp;T &nbsp;F &nbsp;O &nbsp;L &nbsp;I &nbsp;O</h1>
+
             </div>
             <div className="PortfolioBody">
                 <div className="DataScience">

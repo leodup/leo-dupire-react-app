@@ -1,5 +1,6 @@
 :root {
     --padding-top-bottom-header-image: 25vh;
+    --paddy: calc(35vh - 15vw);
     --home-color: rgb(22, 22, 22); /* rgb(210, 255, 249) */
     --counter-color-dark: rgb(50, 153, 146); /* rgb(25, 114, 110) */
     --counter-color: rgb(109, 191, 187); /* rgb(64, 164, 159) */
@@ -23,8 +24,8 @@
 .CenterCircle {
     position: relative;
     /* padding-top: var(--padding-top-bottom-header-image); */
-    padding-bottom: var(--padding-top-bottom-header-image);
-    height: 60vh;
+    /* margin-bottom: var(--padding-top-bottom-header-image); */
+    height: 85vh;
 
     -ms-transform: translateX(-50%);
     transform: translateX(0%);
@@ -37,7 +38,8 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
         border: var(--image-border) solid var(--counter-color);
-        box-shadow: 0 0 0.25vw var(--counter-color-dark);
+        box-shadow: 0 0 1vw black;
+        /* var(--counter-color-dark); */
     }
   }
   @keyframes imageSize {
@@ -47,7 +49,7 @@
     }
     17.5%, 43% {
         height: calc(var(--profile-image-height) - 8vw);
-        border-radius: 20%;
+        border-radius: 17.5%;
     }
     46.5%, 64% {
         height: var(--profile-image-height);
@@ -55,7 +57,7 @@
     }
     67.5%, 93% {
         height: calc(var(--profile-image-height) - 8vw);
-        border-radius: 20%;
+        border-radius: 17.5%;
     }
     96.5%, 100% {
         height: var(--profile-image-height);
@@ -106,7 +108,7 @@
         padding-left: 40vw;
     }
     17.5%, 43% {
-        padding-top: calc(38vh - 15vw - 2vw);
+        padding-top: calc(var(--paddy) - 2vw);
         padding-left: 2vw;
     }
     46.5%, 50% {
@@ -122,7 +124,7 @@
         padding-left: 40vw;
     }
     67.5%, 93% {
-        padding-top: calc(38vh - 15vw - 2vw);
+        padding-top: calc(var(--paddy) - 2vw);
         padding-left: calc(96% - var(--profile-image-height) + 8vw);
     }
     96.5%, 100% {
@@ -139,7 +141,7 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
 
-        box-shadow: 0 0 10px var(--counter-color-dark);
+        box-shadow: 0 0 0.75vw var(--counter-color-dark);
         z-index: -2;
         position: absolute;
         top: calc(var(--padding-top-bottom-header-image) + var(--image-border));
@@ -190,7 +192,7 @@
       animation-duration: var(--animation-time);
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
-      box-shadow: 0 0 0.5vw var(--counter-color-dark);
+      box-shadow: 0 0 0.75vw var(--counter-color-dark);
       display: flex;
       /* animation-direction: alternate-reverse; */
     }
@@ -207,11 +209,11 @@
     17.5%, 43% {
         z-index: -1;
         position: absolute;
-        top: calc(38vh - 15vw);
+        top: var(--paddy);
         left: 5%;
         width: 90%;
         height: min(85%, 40vw);
-        border-radius: 1vw;
+        border-radius: 0.5vw;
     }
     46.5%, 64% {
         z-index: -1;
@@ -224,11 +226,11 @@
     67.5%, 93% {
         z-index: -1;
         position: absolute;
-        top: calc(38vh - 15vw);
+        top: var(--paddy);
         left: 5%;
         width: 90%;
         height: min(85%, 40vw);
-        border-radius: 1vw;
+        border-radius: 0.5vw;
     }
     96.5%, 100% {
         z-index: -1;
@@ -244,11 +246,12 @@
 
 .imageExpand {
     margin-top: 8%;
-    padding-left: min(5rem, 5%);
+    margin-left: min(5rem, 5%);
     border-radius: 70%;
     object-fit: cover;
     width: 40%;
     height: min(25vw, 60%);
+    box-shadow: 0 0 0.5vw black;
 }
 
 #expandHeader {
@@ -401,7 +404,7 @@ p#Home {
     font-family: var(--font-text);
     font-weight: 500;
     font-size: max(min(2vw, 2vh), 1rem);
-    line-height: max(min(4vw, 4vh), 1.75rem);
+    line-height: max(min(3.5vw, 3.5vh), 1.25rem);
     text-align: justify;
     color: rgb(52, 52, 52);
   }
