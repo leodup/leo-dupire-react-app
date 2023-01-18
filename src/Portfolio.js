@@ -101,10 +101,6 @@ const Portfolio = () => {
                                 />
                             </p>
                         </div>
-
-
-
-
                         <div className="Q2">
                             <img
                                 className="TitleText2"
@@ -160,10 +156,10 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <div className='LeftMargin'></div>
+                {/* <div className='LeftMargin'></div>
                 <div className='RightMargin'></div>
                 <div className='TopMargin'></div>
-                <div className='BottomMargin'></div>
+                <div className='BottomMargin'></div> */}
             </div>
             <div className="TabsPort">
                 <Tab 

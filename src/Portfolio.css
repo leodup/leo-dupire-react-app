@@ -348,7 +348,7 @@ p.Section {
     border: 2px solid rgb(0, 0, 0, 0.85);
     /* border-right: 2px solid rgb(0, 0, 0, 0.85); */
     /* background-color: rgba(50, 50, 50, 0.7); */
-    background: linear-gradient(rgba(50, 50, 50, 0.75), rgba(50, 50, 50, 0.5));
+    background: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.25));
 }
 .FillerPort:before,
 .FillerPort:after {
@@ -387,7 +387,7 @@ p.Section {
     position: relative;
     z-index: 1;
     top: -0.75vw;
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(30, 30, 30, 0.85);
     font-weight: bold;
     font-size: max(1.75vw, 1rem);
     letter-spacing: 4px;
