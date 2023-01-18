@@ -78,6 +78,10 @@ const Portfolio = () => {
                         <p id="PortfolioLink">Home</p>
                     </div>
                 </Link>
+                <div className="Header1">
+                    <h1 id="Portfolio">P O R T F O L I O</h1>
+                </div>
+                {/* P&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;T&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;O */}
                 <div className='Blocks'>
                     <div className="Top">
                         <div className="Q1">
@@ -86,7 +90,7 @@ const Portfolio = () => {
                                 src={DataScienceText}
                                 alt="Data Science Text"
                             />
-                            <div className="BlockTop">
+                            <div className="BlockTop" id="q1">
                                 <p id="DS-Box-Title">Data Science</p>
                             </div>
                             <p id="DS-Box-Text">
@@ -97,13 +101,17 @@ const Portfolio = () => {
                                 />
                             </p>
                         </div>
+
+
+
+
                         <div className="Q2">
                             <img
                                 className="TitleText2"
                                 src={ComputerScienceText}
                                 alt="Computer Science Text"
                             />
-                            <div className="BlockTop">
+                            <div className="BlockTop" id="q2">
                                 <p id="DS-Box-Title">Computer Science</p>
                             </div>
                             <p id="DS-Box-Text">
@@ -122,7 +130,7 @@ const Portfolio = () => {
                                 src={MechEText}
                                 alt="Mechanical Engineering Text"
                             />
-                            <div className="BlockTop">
+                            <div className="BlockTop" id="q3">
                                 <p id="DS-Box-Title">Mechanical Engineering</p>
                             </div>
                             <p id="DS-Box-Text">
@@ -139,7 +147,7 @@ const Portfolio = () => {
                                 src={RandomText}
                                 alt="Random Text"
                             />
-                            <div className="BlockTop">
+                            <div className="BlockTop" id="q4">
                                 <p id="DS-Box-Title">Random Projects</p>
                             </div>
                             <p id="DS-Box-Text">
@@ -174,10 +182,6 @@ const Portfolio = () => {
                     title="Contact Me"
                     link="/contactme"
                 /> */}
-            </div>
-            <div className="Header1">
-                <h1 id="Portfolio">P &nbsp;O&nbsp;R &nbsp;T &nbsp;F &nbsp;O &nbsp;L &nbsp;I &nbsp;O</h1>
-
             </div>
             <div className="PortfolioBody">
                 <div className="DataScience">

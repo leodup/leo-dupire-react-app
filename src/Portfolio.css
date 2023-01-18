@@ -1,11 +1,13 @@
 :root {
-    --header-height: 70vh;
-    --block-height: min(calc(var(--header-height)/2 - 2vw), 31.5vw);
+    --header-height: 85vh;
+    --height2: calc(var(--header-height) - max(8vw, 4rem) - 2vh);
+    --block-height: min(calc(var(--height2)/2 - 2vw), 31.5vw);
     --block-width: calc(1.52*var(--block-height));
     --spacing: 1.5vw;
     --iconHeight: 10vw;
     --portfolio-body-width: min(90vw, 70rem, max(1.4*var(--scale)*var(--header-height) - 30vh, 60vh));
-    --scale: 1.37;
+    --scale: 1.4;
+    --quad-radius: 0.75rem;
 }
 
 /* HOME BUTTON */
@@ -36,9 +38,9 @@
 .PortfolioHeader {
     position: absolute;
     top: 0%;
-    height: calc(var(--header-height) + max(8vw, 4rem) + 1vw + max(4vw, 2.3rem));
+    height: calc(var(--header-height) + max(4vw, 2.3rem));
     width: 100%;
-	background: linear-gradient(-45deg, #ad41ff, #ff4646, #23a6d5, #23d5ab);
+	background: var(--counter-color-dark); /* linear-gradient(-45deg, #ad41ff, #ff4646, #23a6d5, #23d5ab); */
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
@@ -56,27 +58,27 @@
 
 .LeftMargin {
     position: absolute;
-    top: 0;
-    height: calc(var(--header-height) + 1vw);
-    width: calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2);
+    top: max(9vw, 4rem);
+    height: calc(var(--header-height) - max(8vw, 4rem) - 1vw);
+    width: calc(50vw - var(--scale)*var(--height2)/2 - 3*var(--spacing)/2);
     background-color: black;
-    opacity: 0.85;
+    opacity: 0.75;
 }
 
 .RightMargin {
     position: absolute;
-    top: 0;
+    top: max(9vw, 4rem);
     right: 0;
-    height: calc(var(--header-height) + 1vw);
-    width: calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2);
+    height: calc(var(--header-height) - max(8vw, 4rem) - 1vw);
+    width: calc(50vw - var(--scale)*var(--height2)/2 - 3*var(--spacing)/2);
     background-color: black;
     opacity: 0.85;
 }
 
 .TopMargin {
     position: absolute;
-    top: 0;
-    height: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
+    top: max(9vw, 4rem);
+    height: calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2);
     width: 100%;
     background-color: black;
     opacity: 0.85;
@@ -84,8 +86,8 @@
 
 .BottomMargin {
     position: absolute;
-    top: calc(var(--header-height) - calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2) + 1vh);
-    height: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
+    top: calc(var(--header-height) - calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2)); /*calc(var(--height2) - calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2) + 1vh);*/
+    height: calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2);
     width: 100%;
     background-color: black;
     opacity: 0.85;
@@ -93,9 +95,7 @@
 
 .Blocks {
     position: relative;
-    top: calc(var(--header-height)/2 - var(--block-height) - 3*var(--spacing)/2);
-    padding-left: max(calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2 - 0.25vw), 0vw);
-    height: var(--header-height);
+    top: calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2 + 0.25vw);
     width: 100vw - max(calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2), 0vw);
     display: flex;
     flex-direction: column;
@@ -105,31 +105,36 @@
     position: relative;
     top: var(--spacing);
     height: var(--block-height);
-    width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .Bottom {
     position: relative;
     top: calc(2*var(--spacing));
-    height: var(--header-height);
-    width: 100%;
+    height: var(--block-height);
     display: flex;
+    justify-content: center;
 }
 
 /* Quadrants */
 
-.Q1 {left: var(--spacing);}
-.Q2 {left: calc(2*var(--spacing));}
-.Q3 {left: var(--spacing);}
-.Q4 { left: calc(2*var(--spacing));}
+.Q1 {
+     border-top-left-radius: var(--quad-radius);}
+.Q2 {
+     border-top-right-radius: var(--quad-radius);}
+.Q3 {
+     border-bottom-left-radius: var(--quad-radius);}
+.Q4 {
+     border-bottom-right-radius: var(--quad-radius);}
 
 .Q1, .Q2, .Q3, .Q4 {
     position: relative;
+    margin-right: calc(var(--spacing)/2);
+    margin-left: calc(var(--spacing)/2);
     width: var(--block-width);
     height: var(--block-height);
-    background-color: transparent;
-    border-radius: 10px;
+    background-color: var(--counter-color);
     transition: 0.25s;
     box-shadow: 0 0 0.5vw black;
     font-weight: 600;
@@ -147,11 +152,13 @@
     width: 100%;
     height: 3vw;
     background-color: rgb(0, 0, 0, 0.8);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     text-align: center;
     transition: 0.5s;
 }
+
+.BlockTop#q1 {border-top-left-radius: var(--quad-radius);}
+.BlockTop#q2 {border-top-right-radius: var(--quad-radius);}
+
 #DS-Box-Title {
     position: relative;
     top: -0.5vw;
@@ -192,7 +199,6 @@
 
 .TitleText1, .TitleText2, .TitleText3, .TitleText4  {
     position: relative;
-    border-radius: 10px;
     height: 100%; /*calc(var(--block-height) - 2vw);*/
     width: 100%;
     /* top: 1vw;
@@ -202,6 +208,11 @@
     filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
     opacity: 0.85;
 }
+
+.TitleText1 {border-top-left-radius: var(--quad-radius);}
+.TitleText2 {border-top-right-radius: var(--quad-radius);}
+.TitleText3 {border-bottom-left-radius: var(--quad-radius);}
+.TitleText4 {border-bottom-right-radius: var(--quad-radius);}
 
 .Image {
     position: absolute;
@@ -229,9 +240,10 @@
 
 h1#Portfolio {
     width: 100%;
-    background-color: rgba(50, 50, 50, 0.5);
+    background-color: var(--counter-color);
     font-family: "impact";
     position: relative;
+    padding-top: 1vw;
     font-size: max(6vw, 3rem);
     font-weight: 900;
     color: rgba(0, 0, 0, 0.95);
@@ -333,8 +345,8 @@ p.Section {
     width: 100%;
     position: relative;
     text-align: center;
-    border-left: 2px solid rgb(0, 0, 0, 0.85);
-    border-right: 2px solid rgb(0, 0, 0, 0.85);
+    border: 2px solid rgb(0, 0, 0, 0.85);
+    /* border-right: 2px solid rgb(0, 0, 0, 0.85); */
     /* background-color: rgba(50, 50, 50, 0.7); */
     background: linear-gradient(rgba(50, 50, 50, 0.75), rgba(50, 50, 50, 0.5));
 }
@@ -363,7 +375,7 @@ p.Section {
 }
 
 .TabsPort {
-    margin-top: calc(var(--header-height) + 1vw);
+    margin-top: var(--header-height);
     width: 100%;
     display: flex;
     overflow: hidden;
