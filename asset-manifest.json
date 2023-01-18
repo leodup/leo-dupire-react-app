@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.392fff1c.css",
-    "main.js": "/static/js/main.aa3258d2.js",
+    "main.css": "/static/css/main.576abc10.css",
+    "main.js": "/static/js/main.1ad637fb.js",
     "static/media/LawnCycle.jpg": "/static/media/LawnCycle.7bed325751346c9046f9.jpg",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/Vent1.png": "/static/media/Vent1.f9c58f2c2ad246b9f99d.png",
@@ -52,11 +52,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.392fff1c.css.map": "/static/css/main.392fff1c.css.map",
-    "main.aa3258d2.js.map": "/static/js/main.aa3258d2.js.map"
+    "main.576abc10.css.map": "/static/css/main.576abc10.css.map",
+    "main.1ad637fb.js.map": "/static/js/main.1ad637fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.392fff1c.css",
-    "static/js/main.aa3258d2.js"
+    "static/css/main.576abc10.css",
+    "static/js/main.1ad637fb.js"
   ]
 }
