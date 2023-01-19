@@ -434,8 +434,7 @@ const Portfolio = () => {
                             />
                         </div>
                     </ div>
-                    <p className="Section">I also researched optimal ply-up techniques with different material fabrics for the hardware encasings of the pod. The vaccum of the Hyperloop tunnel caused many issues with our electronics, notably the batteries. Myself and two fellow engineers were tasked with designing a soft-shell, pressurized encasing for these components. To create a robust design, our research was heavily focused on ply-up techniques for different materials. With carbon fiber, for instance, ply-up is the way in which different sheets of carbon fiber are layered in varying orientations to maximize the strength of the enclosure when exposed to multi-directional forces.
-                    </p>
+                    <p className="Section">I also researched optimal ply-up techniques with different material fabrics for the hardware encasings of the pod. The vaccum of the Hyperloop tunnel caused many issues with our electronics, notably the batteries. Myself and two fellow engineers were tasked with designing a soft-shell, pressurized encasing for these components. To create a robust design, our research was heavily focused on ply-up techniques for different materials. With carbon fiber, for instance, ply-up is the way in which different sheets of carbon fiber are layered in varying orientations to maximize the strength of the enclosure when exposed to multi-directional forces.</p>
                 </div>
                 <div className="Random">
                     <h2 className="Section" id="Random">Random</h2>
