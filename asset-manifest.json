@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.576abc10.css",
-    "main.js": "/static/js/main.1ad637fb.js",
+    "main.css": "/static/css/main.a38591b3.css",
+    "main.js": "/static/js/main.fc7c1289.js",
     "static/media/LawnCycle.jpg": "/static/media/LawnCycle.7bed325751346c9046f9.jpg",
+    "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
+    "static/media/LogicPro.png": "/static/media/LogicPro.6f7d15fed4f2a3e36ac9.png",
     "static/media/Vent1.png": "/static/media/Vent1.f9c58f2c2ad246b9f99d.png",
     "static/media/Hydro3.png": "/static/media/Hydro3.1f53d99da5722807ba25.png",
     "static/media/DAC4.png": "/static/media/DAC4.d1a33c26c466d159f09d.png",
@@ -17,6 +19,7 @@
     "static/media/Hydro1.png": "/static/media/Hydro1.042cdf8ed266be7d598b.png",
     "static/media/Vent4.png": "/static/media/Vent4.fee91a08ceb174c60ab7.png",
     "static/media/Vent3.png": "/static/media/Vent3.0a5b99a1bd46ae626b90.png",
+    "static/media/Alphabite.png": "/static/media/Alphabite.4844ad8caa952242b1cb.png",
     "static/media/moi.jpg": "/static/media/moi.5524c894ab519c3ec425.jpg",
     "static/media/GoKart3.png": "/static/media/GoKart3.86e4d531fde938a44ce7.png",
     "static/media/Spectrogram.png": "/static/media/Spectrogram.41afa02445c975224642.png",
@@ -34,6 +37,7 @@
     "static/media/RandomIcon.png": "/static/media/RandomIcon.fc7fbde852e6778deb37.png",
     "static/media/Phone.png": "/static/media/Phone.856a6d6ec8adbb75dd3a.png",
     "static/media/PS6.png": "/static/media/PS6.8f5af3e541339737be7a.png",
+    "static/media/Hyperloop2.jpg": "/static/media/Hyperloop2.1f02f126507a39df6d19.jpg",
     "static/media/MechEText.png": "/static/media/MechEText.f0bbed766b63f4f7f633.png",
     "static/media/ComputerScienceText.png": "/static/media/ComputerScienceText.1549d83bd02ce952ab14.png",
     "static/media/Ventilator.jpg": "/static/media/Ventilator.9b45cc8693adcc76a82f.jpg",
@@ -45,6 +49,7 @@
     "static/media/NEU.png": "/static/media/NEU.a2800ce55d912cf998fe.png",
     "static/media/Hyperloop.jpg": "/static/media/Hyperloop.33117ee3b5330d8c7738.jpg",
     "static/media/LinkedIn.png": "/static/media/LinkedIn.8456984ecd24018282f3.png",
+    "static/media/HyperloopMe.jpg": "/static/media/HyperloopMe.46eb691707ba3eb8e65d.jpg",
     "static/media/IBM.png": "/static/media/IBM.db7083475c897ce837d6.png",
     "static/media/LFNY.png": "/static/media/LFNY.afd4be08404a5c010b0c.png",
     "static/media/CodeImage.jpg": "/static/media/CodeImage.0cfc780eb6b9a69f8bcf.jpg",
@@ -52,11 +57,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.576abc10.css.map": "/static/css/main.576abc10.css.map",
-    "main.1ad637fb.js.map": "/static/js/main.1ad637fb.js.map"
+    "main.a38591b3.css.map": "/static/css/main.a38591b3.css.map",
+    "main.fc7c1289.js.map": "/static/js/main.fc7c1289.js.map"
   },
   "entrypoints": [
-    "static/css/main.576abc10.css",
-    "static/js/main.1ad637fb.js"
+    "static/css/main.a38591b3.css",
+    "static/js/main.fc7c1289.js"
   ]
 }
