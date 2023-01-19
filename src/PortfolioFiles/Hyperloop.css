@@ -1,0 +1,36 @@
+/* GALLERY */
+
+.image-container2#Hyperloop1 {
+    margin-left: 5%;
+    margin-right: 15%;
+    height: 100%;
+    width: 27.5%;
+}
+
+img#Hyperloop1 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Hyperloop1:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}
+
+.image-container#Hyperloop2 {
+    position: relative;
+    bottom: 100%;
+    height: 100%;
+    width: 61.5%;
+    margin-left: 33.5%;
+}
+
+img#Hyperloop2 {
+    height: 100%;
+    width: 100%;
+}
+
+img#Hyperloop2:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}

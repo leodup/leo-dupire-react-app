@@ -1,8 +1,11 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import "./Portfolio.css";
 import "./PortfolioFiles/HummingFace.css";
 import "./PortfolioFiles/GoKart.css";
 import "./PortfolioFiles/Hydro.css";
+import "./PortfolioFiles/Hyperloop.css";
+import "./PortfolioFiles/Music.css";
+import "./PortfolioFiles/Alphabite.css";
 import "./PortfolioFiles/DAC.css";
 import "./PortfolioFiles/Vent.css";
 import CrossBow from "./images/CrossBow.jpg";
@@ -42,6 +45,14 @@ import Vent2 from "./images/PortfolioProjects/Vent2.png";
 import Vent3 from "./images/PortfolioProjects/Vent3.png";
 import Vent4 from "./images/PortfolioProjects/Vent4.png";
 
+import Hyperloop1 from "./images/PortfolioProjects/HyperloopMe.jpg";
+import Hyperloop2 from "./images/PortfolioProjects/Hyperloop2.jpg";
+
+import Music1 from "./images/PortfolioProjects/LogicPro.png";
+import Music2 from "./images/PortfolioProjects/Show.png";
+
+import Alphabite from "./images/PortfolioProjects/Alphabite.png";
+
 const Portfolio = () => {
 
     const FooterTab = (props) => {
@@ -79,81 +90,88 @@ const Portfolio = () => {
                     </div>
                 </Link>
                 <div className="Header1">
-                    <h1 id="Portfolio">P O R T F O L I O</h1>
+                    <h1 id="Portfolio">PORTFOLIO</h1>
                 </div>
-                {/* P&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;T&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;O */}
                 <div className='Blocks'>
                     <div className="Top">
-                        <div className="Q1">
-                            <img
-                                className="TitleText1"
-                                src={DataScienceText}
-                                alt="Data Science Text"
-                            />
-                            <div className="BlockTop" id="q1">
-                                <p id="DS-Box-Title">Data Science</p>
-                            </div>
-                            <p id="DS-Box-Text">
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#DataScience">
+                            <div className="Q1">
                                 <img
-                                    className="Show"
-                                    src={DataScienceIcon}
-                                    alt="Data Science Icon"
+                                    className="TitleText1"
+                                    src={DataScienceText}
+                                    alt="Data Science Text"
                                 />
-                            </p>
-                        </div>
-                        <div className="Q2">
-                            <img
-                                className="TitleText2"
-                                src={ComputerScienceText}
-                                alt="Computer Science Text"
-                            />
-                            <div className="BlockTop" id="q2">
-                                <p id="DS-Box-Title">Computer Science</p>
+                                <div className="BlockTop" id="q1">
+                                    <p id="DS-Box-Title">Data Science</p>
+                                </div>
+                                <p id="DS-Box-Text">
+                                    <img
+                                        className="Show"
+                                        src={DataScienceIcon}
+                                        alt="Data Science Icon"
+                                    />
+                                </p>
                             </div>
-                            <p id="DS-Box-Text">
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#ComputerScience">
+                            <div className="Q2">
                                 <img
-                                    className="Show"
-                                    src={ComputerScienceIcon}
-                                    alt="Data Science Icon"
+                                    className="TitleText2"
+                                    src={ComputerScienceText}
+                                    alt="Computer Science Text"
                                 />
-                            </p>
-                        </div>
+                                <div className="BlockTop" id="q2">
+                                    <p id="DS-Box-Title">Computer Science</p>
+                                </div>
+                                <p id="DS-Box-Text">
+                                    <img
+                                        className="Show"
+                                        src={ComputerScienceIcon}
+                                        alt="Data Science Icon"
+                                    />
+                                </p>
+                            </div>
+                        </Link>
                     </div>
                     <div className="Bottom">
-                        <div className="Q3">
-                            <img
-                                className="TitleText3"
-                                src={MechEText}
-                                alt="Mechanical Engineering Text"
-                            />
-                            <div className="BlockTop" id="q3">
-                                <p id="DS-Box-Title">Mechanical Engineering</p>
-                            </div>
-                            <p id="DS-Box-Text">
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#MechE">
+                            <div className="Q3">
                                 <img
-                                    className="Show"
-                                    src={MechEIcon}
-                                    alt="Data Science Icon"
+                                    className="TitleText3"
+                                    src={MechEText}
+                                    alt="Mechanical Engineering Text"
                                 />
-                            </p>
-                        </div>
-                        <div className="Q4">
-                            <img
-                                className="TitleText4"
-                                src={RandomText}
-                                alt="Random Text"
-                            />
-                            <div className="BlockTop" id="q4">
-                                <p id="DS-Box-Title">Random Projects</p>
+                                <div className="BlockTop" id="q3">
+                                    <p id="DS-Box-Title">Engineering</p>
+                                </div>
+                                <p id="DS-Box-Text">
+                                    <img
+                                        className="Show"
+                                        src={MechEIcon}
+                                        alt="Data Science Icon"
+                                    />
+                                </p>
                             </div>
-                            <p id="DS-Box-Text">
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#Random">
+                            <div className="Q4">
                                 <img
-                                    className="Show"
-                                    src={RandomIcon}
-                                    alt="Data Science Icon"
+                                    className="TitleText4"
+                                    src={RandomText}
+                                    alt="Random Text"
                                 />
-                            </p>
-                        </div>
+                                <div className="BlockTop" id="q4">
+                                    <p id="DS-Box-Title">Random Projects</p>
+                                </div>
+                                <p id="DS-Box-Text">
+                                    <img
+                                        className="Show"
+                                        src={RandomIcon}
+                                        alt="Data Science Icon"
+                                    />
+                                </p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 {/* <div className='LeftMargin'></div>
@@ -181,11 +199,11 @@ const Portfolio = () => {
             </div>
             <div className="PortfolioBody">
                 <div className="DataScience">
-                    <h2 className="Section">Data Science</h2>
+                    <h2 className="Section" id="DataScience">Data Science</h2>
                     <div className='Project'>
                         <h3 className="Section">Music Generation</h3>
-                        <div className='Gallery'>
-                            <div className='image-container' id="HuggingFace1">
+                        <div className='Gallery2'>
+                            <div className='image-container2' id="HuggingFace1">
                                 <img 
                                     id="HF1" 
                                     src={Spectrogram}
@@ -213,7 +231,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="ComputerScience">
-                    <h2 className="Section">Computer Science</h2>
+                    <h2 className="Section" id="ComputerScience">Computer Science</h2>
                     <div className='Project'>
                         <h3 className="Section">This Website</h3>
                         <p className="Section">I built this website completely on my own using knowledge gained from my internship at IBM. The foundation and minimal viable product of this website were created over the summer and into the fall of 2022. This is a ReactJS app which I designed, developed, and implemented from scratch. I hope you enjoy!</p>
@@ -262,7 +280,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="MechE">
-                    <h2 className="Section">Mechanical Engineering</h2>
+                    <h2 className="Section" id="MechE">Mechanical Engineering</h2>
                     <div className='Project'>
                         <h3 className="Section" id="GoKart">Go Kart</h3>
                         <div className='Gallery'>
@@ -399,13 +417,28 @@ const Portfolio = () => {
                             webkitallowfullscreen="webkitallowfullscreen"></iframe>
                     </div>
                     <h3 className="Section" id="Hyperloop">Hyperloop</h3>
-                    <p className="Section">
-                        I was part of the hyperloop team at Northeastern University. This was a collaborative effort between several universities, Northeastern being a prominent member. I joined the team shortly after they ranked 2nd-worldwide in the Hyperloop competition held by SpaceX. My role consisted of working with the team's in-house wind-tunnel and developping an optimal, minimally intrusive mechanism for precisely changing the pitch, yaw, and roll of the hyperloop skates. Although Hyperloop pods travel in a vaccum, this is not a perfect vaccum and the pod experiences significant air resistance when travelling at very high speeds. Thus aerodynamics played a large role in our analyses. <br></br> <br></br> 
-                        I also researched optimal ply-up techniques with different material fabrics for the hardware encasings of the pod. The vaccum of the Hyperloop tunnel caused many issues with our electronics, notably the batteries. Myself and two fellow engineers were tasked with designing a soft-shell, pressurized encasing for these components. To create a robust design, our research was heavily focused on ply-up techniques for different materials. With carbon fiber, for instance, ply-up is the way in which different sheets of carbon fiber are layered in varying orientations to maximize the strength of the enclosure when exposed to multi-directional forces.
+                    <p className="Section">I was part of the hyperloop team at Northeastern University. This was a collaborative effort between several universities, Northeastern being a prominent member. I joined the team shortly after they ranked 2nd-worldwide in the Hyperloop competition held by SpaceX. My role consisted of working with the team's in-house wind-tunnel and developping an optimal, minimally intrusive mechanism for precisely changing the pitch, yaw, and roll of the hyperloop skates. Although Hyperloop pods travel in a vaccum, this is not a perfect vaccum and the pod experiences significant air resistance when travelling at very high speeds. Thus aerodynamics played a large role in our analyses.</p>
+                    <div className='Gallery2'>
+                        <div className='image-container2' id="Hyperloop1">
+                            <img 
+                                id="Hyperloop1" 
+                                src={Hyperloop1}
+                                alt="Hyperloop 1"
+                            />
+                        </div>
+                        <div className='image-container' id="Hyperloop2">
+                            <img 
+                                id="Hyperloop2" 
+                                src={Hyperloop2}
+                                alt="Hyperloop 2"
+                            />
+                        </div>
+                    </ div>
+                    <p className="Section">I also researched optimal ply-up techniques with different material fabrics for the hardware encasings of the pod. The vaccum of the Hyperloop tunnel caused many issues with our electronics, notably the batteries. Myself and two fellow engineers were tasked with designing a soft-shell, pressurized encasing for these components. To create a robust design, our research was heavily focused on ply-up techniques for different materials. With carbon fiber, for instance, ply-up is the way in which different sheets of carbon fiber are layered in varying orientations to maximize the strength of the enclosure when exposed to multi-directional forces.
                     </p>
                 </div>
                 <div className="Random">
-                    <h2 className="Section">Random</h2>
+                    <h2 className="Section" id="Random">Random</h2>
                     <div className='Project'>
                         <h3 className="Section">TEDx Talk</h3>
                         <iframe className='TEDVideo' src="https://www.youtube.com/embed/CUFYI-LzpcI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture, fullscreen"
@@ -418,17 +451,41 @@ const Portfolio = () => {
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Music</h3>
+                        <div className='Gallery2'>
+                            <div className='image-container2' id="Music1">
+                                <img 
+                                    id="Music1" 
+                                    src={Music1}
+                                    alt="Music 1"
+                                />
+                            </div>
+                            <div className='image-container' id="Music2">
+                                <img 
+                                    id="Music2" 
+                                    src={Music2}
+                                    alt="Music 2"
+                                />
+                            </div>
+                        </ div>
                         <p className="Section">I love to play and compose music. My production software of choice is Logic Pro X. I play the guitar, piano, and some drums. I have been working on several compositions and would love to release some in the near future! My music mainly consists of alternative rock, but my genres vary; I like to exhibit versatility in whatever I do. Styles span from traditional alternative rock, to pieces with heavy classical and operatic undertones, to reggae-like passages, to more modern tastes. Not all at the same time... for the most part. </p>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">Alphabite</h3>
-                        <p className="Section">In 9th grade, I worked after school with a teacher for a service learning project. We designed a number of educational puzzles for a school of kids in Haiti. We did this using the school’s new 3D printers, a relatively new technology at the time. The most notable puzzle was called AlphaBite. It was an alphabet puzzle with building blocks for each letter (vowels in red, consonants in blue). The shape I designed was very simple. It resembled a cylinder with a “bite” taken out of it, hence the name of the product. Haiti had a literacy rate of 61.7% in 2016 according to the CIA factbook.<br></br><br></br>
-                            The same year, I also mentored a group of students in 3D printing, acting as the teacher’s right-hand-man, if you will.<br></br><br></br>
-                        This ultimately got me a paid job at a neighboring school, PS6, for the following year. This was a large after-school workshop program with dozens of students in the 3D printing activities. I helped mentor the students and maintained multiple 3D printers.</p>
+                        <h3 className="Section">AlphaBite</h3>
+                        <p className="Section">In 9th grade, I worked after school with a teacher for a service learning project. We designed a number of educational puzzles for a school of kids in Haiti. We did this using the school’s new 3D printers, a relatively new technology at the time. The most notable puzzle was called AlphaBite. It was an alphabet puzzle with building blocks for each letter (vowels in red, consonants in blue). The shape I designed was very simple. It resembled a cylinder with a “bite” taken out of it, hence the name of the product. Haiti had a literacy rate of 61.7% in 2016 according to the CIA factbook.</p>
+                        <div className='Gallery2'>
+                            <div className='image-container2' id="Alphabite">
+                                <img 
+                                    id="Alphabite" 
+                                    src={Alphabite}
+                                    alt="Alphabite"
+                                />
+                            </div>
+                        </ div>
+                        <p className="Section">The same year, I also mentored a group of students in 3D printing, acting as the teacher’s right-hand-man, if you will. This ultimately got me a paid role at a neighboring school, PS6, for the following year. This was a large after-school workshop program with dozens of students in the 3D printing activities. I helped mentor the students and maintained multiple 3D printers.</p>
                     </div>
                     <div className='Project'>
                         <h3 className="Section">Hobbies</h3>
-                        <p className="Section">My hobbies are well reflected in this portfolio. These include: composing music, playing guitar, playing piano as well as playing tennis and sailing.</p>
+                        <p className="Section">My hobbies are well reflected in this portfolio. These further include: tennis, running, sailing, and philosophy.</p>
                     </div>
                 </div>
                 <div className="TBC">

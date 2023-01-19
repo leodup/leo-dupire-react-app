@@ -1,3 +1,5 @@
+
+
 :root {
     --header-height: 85vh;
     --height2: calc(var(--header-height) - max(8vw, 4rem) - 2vh);
@@ -24,13 +26,13 @@
 }
 
 #PortfolioLink {
-    font-family: "impact";
+    font-family: 'Chivo', cursive;
     font-size: calc(3vh + 0.5vw);
-    font-weight: bold;
+    font-weight: 800;
     line-height: 1.75vw;
-    letter-spacing: 0.125vw;
+    /* letter-spacing: 0.125vw; */
     text-decoration: underline;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 /* HEADER */
@@ -159,11 +161,14 @@
 .BlockTop#q1 {border-top-left-radius: var(--quad-radius);}
 .BlockTop#q2 {border-top-right-radius: var(--quad-radius);}
 
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Alfa+Slab+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Righteous&family=Sedgwick+Ave&display=swap");
+
 #DS-Box-Title {
     position: relative;
-    top: -0.5vw;
-    font-size: 1.2vw;
-    font-weight: 800;
+    top: -1.75vw;
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 2vw;
+    font-weight: 500;
     letter-spacing: 0.5vw;
 }
 #DS-Box-Text {
@@ -238,14 +243,16 @@
 
 /* Body */
 
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Monoton&family=Righteous&display=swap");
+
 h1#Portfolio {
     width: 100%;
     background-color: var(--counter-color);
-    font-family: "impact";
+    font-family: 'Monoton', cursive;
     position: relative;
     padding-top: 1vw;
     font-size: max(6vw, 3rem);
-    font-weight: 900;
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.95);
     line-height: max(8vw, 4rem);
     box-shadow: 0px 4px 2px black;
@@ -259,9 +266,9 @@ h1#Portfolio {
 }
 
 h2.Section {
-    font-family: "impact";
+    font-family: 'Chivo', cursive;
     font-size: max(min(4vw, 4vh), 1.75rem);
-    font-weight: 800;
+    font-weight: 900;
     margin-top: 8vh;
     padding-top: 0.5vh;
     margin-bottom: 2vh;
@@ -274,7 +281,7 @@ div.TBC{
 }
 
 h2.TBC {
-    font-family: "impact";
+    font-family: 'Chivo', cursive;
     font-size: max(min(3vw, 3vh), 1.25rem);
     font-weight: 800;
     margin-top: 3vh;
@@ -286,7 +293,7 @@ h2.TBC {
 }
 
 h3.Section {
-    font-family: "impact";
+    font-family: 'Chivo', cursive;
     font-size: 2.75vh;
     font-weight: 800;
     margin-bottom: 2vh;
@@ -329,8 +336,20 @@ p.Section {
     overflow: hidden;
 }
 
+.image-container2 {
+    width: 100%;
+    height: 375px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
 .Gallery {
     height: calc(var(--portfolio-body-width)/2);
+    width: var(--portfolio-body-width);
+}
+
+.Gallery2 {
+    height: calc(3*var(--portfolio-body-width)/8);
     width: var(--portfolio-body-width);
 }
 
@@ -341,11 +360,11 @@ p.Section {
 }
 
 .FillerPort {
-    border-top: 4px solid rgb(0, 0, 0, 0.85);
+    border-top: 0.5vw solid rgb(0, 0, 0, 0.85);
     width: 100%;
     position: relative;
     text-align: center;
-    border: 2px solid rgb(0, 0, 0, 0.85);
+    border: min(0.25vw, 2px) solid rgb(0, 0, 0, 0.85);
     /* border-right: 2px solid rgb(0, 0, 0, 0.85); */
     /* background-color: rgba(50, 50, 50, 0.7); */
     background: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.25));
@@ -382,18 +401,21 @@ p.Section {
     height: max(4vw, 2.3rem);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
+
 .TabPort {
-    font-family: "impact";
     position: relative;
     z-index: 1;
-    top: -0.75vw;
-    color: rgba(30, 30, 30, 0.85);
-    font-weight: bold;
-    font-size: max(1.75vw, 1rem);
-    letter-spacing: 4px;
+    top: min(-1.35vw, -0.5rem);
+    color: rgba(10, 10, 10, 0.85);
+    font-family: 'Chivo', cursive;
+    font-weight: 900;
+    font-size: max(2vw, 1rem);
+    letter-spacing: 0.125vw;
 }
 
 .FooterTab#Portfolio {
     color: white;
-    font-family: "impact";
+    font-family: 'Chivo', cursive;
+    font-weight: 900;
   }
