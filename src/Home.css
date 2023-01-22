@@ -45,22 +45,27 @@
   @keyframes imageSize {
     0%, 14% {
         height: var(--profile-image-height);
+        width: var(--profile-image-height);
         border-radius: 100%;
     }
     17.5%, 43% {
         height: calc(var(--profile-image-height) - 8vw);
+        width: calc(var(--profile-image-height) - 8vw);
         border-radius: 17.5%;
     }
     46.5%, 64% {
         height: var(--profile-image-height);
+        width: var(--profile-image-height);
         border-radius: 100%;
     }
     67.5%, 93% {
         height: calc(var(--profile-image-height) - 8vw);
+        width: calc(var(--profile-image-height) - 8vw);
         border-radius: 17.5%;
     }
     96.5%, 100% {
         height: var(--profile-image-height);
+        width: var(--profile-image-height);
         border-radius: 100%;
     }
   }

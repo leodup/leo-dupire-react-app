@@ -68,6 +68,18 @@ const Work = () => {
         At the age of 14, I was hired as a mentor and technician for an afterschool workshop at PS6, a prominent public school in New York City. I learned to work with students as well as maintain and operate multiple 3D printers for the school. I obtained this position through prior work at my highschool.<br></br><br></br>
         I worked at my highschool in an afterschool workshop where I mentored students on 3D modeling and 3D printing. We worked on several projects. A project I completed independently with these facilities was a service learning project for school in Haiti. This product, called Alphabite, is an intuitive alphabet puzzle for students to learn how to read and write more efficiently. This project is listed in my Portfolio page. (This topic will be elaborated on with the site's development)
     </p>
+
+    const Tab = (props) => {
+        return (
+            <div className="FillerWork">
+                    <Link to={props.link} style={{ textDecoration: 'none' }}>
+                        <div className="TabWork">
+                            <p>{props.title}</p>
+                        </div>
+                    </Link>
+            </div>
+        );
+    }
     
     return (
         <ScrollContainer>
@@ -95,7 +107,22 @@ const Work = () => {
                             <h1 id="Work">WORK</h1>
                             <p id="Experience">EXPERIENCE</p>
                         </div>
+                        <div className="TabsWork">
+                            <Tab 
+                                title="Home"
+                                link="/"
+                            />
+                            <Tab
+                                title="Education"
+                                link="/education"
+                            />
+                            <Tab 
+                                title="Portfolio"
+                                link="/portfolio"
+                            />
+                        </div>
                         <div className='BottomBar'></div>
+                        <div className="Signal"></div>
                     </div>
                 </Animator>
             </ScrollPage>

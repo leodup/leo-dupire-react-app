@@ -22,8 +22,9 @@
 }
 
 .Header#Education {
-    height: calc(var(--header-height) + 9vw);
+    height: calc(var(--header-height) + max(4vw, 2.3rem));
     position: relative;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.5);
 }
 
 .Library {
@@ -215,11 +216,72 @@ h2#LFNY2 {
     line-height: 2vw;
 }
 
+#Desc1Low {
+    position: relative;
+    float: left;
+    left:0;
+    top: -5vw;
+    right: 6vw;
+    padding-right: 6vw;
+    line-height: 2vw;
+}
+
+#Desc1Lowerish {
+    position: relative;
+    float: left;
+    left:0;
+    top: -6vw;
+    right: 6vw;
+    padding-right: 6vw;
+    line-height: 2vw;
+}
+
+#Desc1Lower {
+    position: relative;
+    float: left;
+    left:0;
+    top: -8vw;
+    right: 6vw;
+    padding-right: 6vw;
+    line-height: 2vw;
+}
+
 #Desc2 {
     position: relative;
     float: left;
     left:0;
     top: -3vw;
+    right: 6vw;
+    padding-right: 6vw;
+    line-height: 2vw;
+}
+
+#Desc2Low {
+    position: relative;
+    float: left;
+    left:0;
+    top: -4vw;
+    right: 6vw;
+    padding-right: 6vw;
+    line-height: 2vw;
+}
+
+#Desc2Lower {
+    position: relative;
+    float: left;
+    width: 100%;
+    left:0;
+    top: -5vw;
+    right: 6vw;
+    padding-right: 6vw;
+    line-height: 2vw;
+}
+
+#Desc2Lowest {
+    position: relative;
+    float: left;
+    left:0;
+    top: -8vw;
     right: 6vw;
     padding-right: 6vw;
     line-height: 2vw;
@@ -235,6 +297,72 @@ h2#LFNY2 {
     line-height: 2vw;
 }
 
+#Desc3Low {
+    position: relative;
+    float: left;
+    left:0;
+    top: -5vw;
+    right: 6vw;
+    padding-right: 6vw;
+    line-height: 2vw;
+}
+
 .FooterTab#Education {
     color: rgb(231, 231, 231);
   }
+
+.FillerEdu {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-bottom: min(0.5vw, 4px) solid rgb(255, 243, 220);
+    border-left: min(0.25vw, 2px) solid rgb(255, 243, 220);
+    border-right: min(0.25vw, 2px) solid rgb(255, 243, 220);
+    /* border-right: 2px solid rgb(0, 0, 0, 0.85); */
+    /* background-color: rgba(50, 50, 50, 0.7); */
+    background: linear-gradient(rgba(82, 56, 6, 0), rgb(57, 38, 2));
+}
+.FillerEdu:before,
+.FillerEdu:after {
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/* Line before hover */
+.FillerEdu:before {
+  top: 0%;
+  display: block;
+  height: 110%;
+  width: 100%;
+  content: "";
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.FillerEdu:hover:before,
+.current .Filler:before {
+    top: 0%;
+    opacity: 1;
+    height: 110%;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.TabsEdu {
+    position: absolute;
+    top: var(--header-height);
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    height: max(4vw, 2.3rem);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
+
+.TabEdu {
+    position: relative;
+    z-index: 1;
+    top: min(-1.35vw, -0.5rem);
+    color: rgb(255, 243, 220);
+    font-weight: 700;
+    font-size: max(2vw, 1rem);
+    letter-spacing: 0.125vw;
+}

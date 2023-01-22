@@ -21,12 +21,26 @@ const Education = () => {
         );
     }
 
-    const NYUDesc1 = "I am in my final year at NYU, studying Computer and Data Science after shifting from Mechancial Engineering in 2020. "
-    const NYUDesc2 = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-    const NEUDesc1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    const NEUDesc2 = "I completed my first semester of university abroad in Melbourne, Australia. This term lasted from July 2018 until December 2018. During this time, I was involved in student organizations such as the Formula SAE team, in which I began the research and design process for a custom wind-tunnel. Unfortunately, due to my limited time in Melbourne, I handed the project back to the local students as I returned to the States.";
-    const LFNYDesc1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    const LFNYDesc2 = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    const NYUDesc1 = "I am currently completing my final semester at NYU, studying Computer and Data Science after shifting from Mechancial Engineering in 2020. "
+    const NYUDesc2 = "My studies triggered me, leading to me taking on several computer/data science projects in my free time with peers and solo. These include this website, music generation using Convolutional Neural Networks (CNNs), Kaggle competitions, among others. At NYU, I've also made a habbit of attending conferences with speakers such as Yann LeCun."
+    const NYUDesc3 = "Notable courses:"
+    const NEUDesc1 = "I completed two and a half years of Mechanical Engineering at Northeastern. I did my first semester of university abroad in Melbourne, Australia. During this time, I was involved in the Formula SAE team, for which I began the research and design process for a custom wind-tunnel.";
+    const NEUDesc2 = "Back in Boston, I was a team member of the Paradigm Hyperloop Team and I later founded the NorthEastern Sustainable Technologies Association (NESTA) with two peers. I also took advantage of Northeastern's amazing Co-op program, through which I gathered five months of professional work experience. Although I changed majors with my transfer to NYU, my interest in projects combining mechanical engineering, computer science, and data science is still very much present."
+    const NEUDesc3 = "Notable courses:"
+    const LFNYDesc1 = "I went to the Lycée Français de New York (LFNY), a francophone school in New York City  (kindergarten to highschool). In my final years at the LFNY, I chose the scientific French Baccalaureate with a specialization in physics. The baccalaureat was a two year endeavour, consisting of advanced year-long projects (Travaux Personnels Encadrés or TPE), scrutinous presentations, and - of course - multiple exams. I ultimately recieved my diploma with honors in 2018."
+    const LFNYDesc2 = "I left the LFNY fluent in French, English, and confident in Spanish (fluent in Swedish from external experience as well). I look back fondly on the knowlegde I accumulated during my time at the LFNY, notably through my scientific diploma - ranging from physics, chemistry, biology, philosophy as well as music and art! I was also part of the debate club, the TED Club, the yearbook commitee, and was awarded the art prize in my last years there. I also pursued several extracurricular hobbies during my time at the LFNY." 
+
+    const Tab = (props) => {
+        return (
+            <div className="FillerEdu">
+                    <Link to={props.link} style={{ textDecoration: 'none' }}>
+                        <div className="TabEdu">
+                            <p>{props.title}</p>
+                        </div>
+                    </Link>
+            </div>
+        );
+    }
 
     return (
         <>
@@ -44,6 +58,20 @@ const Education = () => {
                     </Link>
                     <div>
                         <h1 id="Education">Education</h1>
+                    </div>
+                    <div className="TabsEdu">
+                        <Tab 
+                            title="Home"
+                            link="/"
+                        />
+                        <Tab
+                            title="Work"
+                            link="/work"
+                        />
+                        <Tab 
+                            title="Portfolio"
+                            link="/portfolio"
+                        />
                     </div>
                 </div>
                 <div className="Education">
@@ -63,7 +91,22 @@ const Education = () => {
                             </div>
                             <p id="Location">New York, NY</p>
                             <p id="Desc1">{NYUDesc1}</p>
-                            <p id="Desc1">{NYUDesc2}</p>
+                            <p id="Desc1Low">{NYUDesc2}</p>
+                            <p id="Desc1Lowerish">{NYUDesc3}</p>
+                            <p id="Desc1Lower">
+                                <ul>
+                                    <li>Machine Learning</li>
+                                    <li>Deep Learning (Advanced Topics in Data Science)</li>
+                                    <li>Machine Learning for Natural Language Understanding</li>
+                                    <li>Algorithms</li>
+                                    <li>Discrete Math</li>
+                                    <li>Big Data</li>
+                                    <li>Data Structures</li>
+                                    <li>Causal Inference</li>
+                                    <li>Data Base Design & Implementation</li>
+                                    <li>Data Management and Analysis</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                     <div className="JoinNEU">
@@ -83,7 +126,20 @@ const Education = () => {
                             </div>
                             <p id="Location2">Boston, MA</p>
                             <p id="Desc2">{NEUDesc1}</p>
-                            <p id="Desc2">{NEUDesc2}</p>
+                            <p id="Desc2Low">{NEUDesc2}</p>
+                            <p id="Desc2Lower">{NEUDesc3}</p>
+                            <p id="Desc2Lowest">
+                                <ul>
+                                    <li>Thermodynamics</li>
+                                    <li>Dynamics</li>
+                                    <li>Engineering Mechanics & Design</li>
+                                    <li>Cornerstone of Engineering 1-2</li>
+                                    <li>Physics 1-2</li>
+                                    <li>Probability & Statistics</li>
+                                    <li>Differential Equations & Linear Algebra</li>
+                                    <li>Calculus 1-3</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                     <div className="JoinLFNY">
@@ -103,7 +159,7 @@ const Education = () => {
                             </div>
                             <p id="Location">New York, NY</p>
                             <p id="Desc3">{LFNYDesc1}</p>
-                            <p id="Desc3">{LFNYDesc2}</p>
+                            <p id="Desc3Low">{LFNYDesc2}</p>
                         </div>
                     </div>
                 </div>    
