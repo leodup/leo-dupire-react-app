@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a38591b3.css",
-    "main.js": "/static/js/main.fc7c1289.js",
+    "main.css": "/static/css/main.c55284df.css",
+    "main.js": "/static/js/main.2adc0ff5.js",
     "static/media/LawnCycle.jpg": "/static/media/LawnCycle.7bed325751346c9046f9.jpg",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
@@ -10,8 +10,8 @@
     "static/media/Hydro3.png": "/static/media/Hydro3.1f53d99da5722807ba25.png",
     "static/media/DAC4.png": "/static/media/DAC4.d1a33c26c466d159f09d.png",
     "static/media/Monta.jpg": "/static/media/Monta.8d27e1dceeb83e6448d1.jpg",
-    "static/media/DAC2.png": "/static/media/DAC2.30b27871137eacc0152c.png",
     "static/media/CrossBow.jpg": "/static/media/CrossBow.232186daffa496cd1144.jpg",
+    "static/media/DAC2.png": "/static/media/DAC2.bf49a3692bcf35db3e16.png",
     "static/media/Hydro2.png": "/static/media/Hydro2.bff1811c5fb44517c94c.png",
     "static/media/DAC1.png": "/static/media/DAC1.e9f0c20187b30f98479c.png",
     "static/media/Alphabite.jpg": "/static/media/Alphabite.f5e9e7d9dd7ce6e5d358.jpg",
@@ -57,11 +57,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.a38591b3.css.map": "/static/css/main.a38591b3.css.map",
-    "main.fc7c1289.js.map": "/static/js/main.fc7c1289.js.map"
+    "main.c55284df.css.map": "/static/css/main.c55284df.css.map",
+    "main.2adc0ff5.js.map": "/static/js/main.2adc0ff5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a38591b3.css",
-    "static/js/main.fc7c1289.js"
+    "static/css/main.c55284df.css",
+    "static/js/main.2adc0ff5.js"
   ]
 }
