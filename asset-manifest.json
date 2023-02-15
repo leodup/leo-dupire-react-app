@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1eed93cf.css",
-    "main.js": "/static/js/main.11b925f9.js",
+    "main.css": "/static/css/main.32346180.css",
+    "main.js": "/static/js/main.a4228fce.js",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/LogicPro.png": "/static/media/LogicPro.6f7d15fed4f2a3e36ac9.png",
@@ -16,6 +16,7 @@
     "static/media/Vent4.png": "/static/media/Vent4.fee91a08ceb174c60ab7.png",
     "static/media/Vent3.png": "/static/media/Vent3.0a5b99a1bd46ae626b90.png",
     "static/media/Alphabite.png": "/static/media/Alphabite.4844ad8caa952242b1cb.png",
+    "static/media/PortfolioBackground.jpg": "/static/media/PortfolioBackground.0aff3853ae9e78fb4152.jpg",
     "static/media/GoKart3.png": "/static/media/GoKart3.86e4d531fde938a44ce7.png",
     "static/media/Spectrogram.png": "/static/media/Spectrogram.41afa02445c975224642.png",
     "static/media/HomeBackground.jpg": "/static/media/HomeBackground.ebeea6c0ee11ef0e9523.jpg",
@@ -25,7 +26,7 @@
     "static/media/Hydro4.png": "/static/media/Hydro4.f526e178fe623adffdd7.png",
     "static/media/DataScienceIcon.png": "/static/media/DataScienceIcon.1ed73cca21b6959932ac.png",
     "static/media/ComputerScienceIcon.png": "/static/media/ComputerScienceIcon.9c54f968b9a4cf7c38bf.png",
-    "static/media/Library.jpg": "/static/media/Library.34c8534365b42a1a4760.jpg",
+    "static/media/LibraryBackground.jpg": "/static/media/LibraryBackground.34c8534365b42a1a4760.jpg",
     "static/media/GoKart4.jpg": "/static/media/GoKart4.c4f9162060cd0056a798.jpg",
     "static/media/MechEIcon.png": "/static/media/MechEIcon.10b8a9fdcdf020a78aad.png",
     "static/media/HummingFace.jpg": "/static/media/HummingFace.14460f985d9b6576f204.jpg",
@@ -48,11 +49,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.1eed93cf.css.map": "/static/css/main.1eed93cf.css.map",
-    "main.11b925f9.js.map": "/static/js/main.11b925f9.js.map"
+    "main.32346180.css.map": "/static/css/main.32346180.css.map",
+    "main.a4228fce.js.map": "/static/js/main.a4228fce.js.map"
   },
   "entrypoints": [
-    "static/css/main.1eed93cf.css",
-    "static/js/main.11b925f9.js"
+    "static/css/main.32346180.css",
+    "static/js/main.a4228fce.js"
   ]
 }
