@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Education.css';
+import '../App+/Footer/Footer.css';
+import '../App+/Tabs/Tabs.js';
+import '../App+/Tabs/Tabs.css';
 
-import Library from "./images/Library.jpg"; //https://www.weforum.org/agenda/2021/12/diversity-inclusion-human-library/
-import NYU from "./images/NYU.png";
-import NEU from "./images/NEU.png"; // https://www.google.com/search?q=northeastern+university+logo&rlz=1C5CHFA_enAU806AU806&sxsrf=ALiCzsY0AIofA2r-Ylu6_-E7EYIkgHjUsw:1657999670977&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjWg7SLkv74AhX4GVkFHRJgDCsQ_AUoAXoECAEQAw&biw=1527&bih=762&dpr=2.2#imgrc=jFaBWjkNtOSB5M&imgdii=v84AuK80Z_B2sM
-import LFNY from "./images/LFNY.png";
+import Library from "../images/Library.jpg"; //https://www.weforum.org/agenda/2021/12/diversity-inclusion-human-library/
+import NYU from "../images/NYU.png";
+import NEU from "../images/NEU.png"; // https://www.google.com/search?q=northeastern+university+logo&rlz=1C5CHFA_enAU806AU806&sxsrf=ALiCzsY0AIofA2r-Ylu6_-E7EYIkgHjUsw:1657999670977&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjWg7SLkv74AhX4GVkFHRJgDCsQ_AUoAXoECAEQAw&biw=1527&bih=762&dpr=2.2#imgrc=jFaBWjkNtOSB5M&imgdii=v84AuK80Z_B2sM
+import LFNY from "../images/LFNY.png";
 
 const Education = () => {
 
@@ -98,6 +101,7 @@ const Education = () => {
                                     <li>Machine Learning</li>
                                     <li>Deep Learning (Advanced Topics in Data Science)</li>
                                     <li>Machine Learning for Natural Language Understanding</li>
+                                    <li>Computer Systems Organization</li>
                                     <li>Algorithms</li>
                                     <li>Discrete Math</li>
                                     <li>Big Data</li>

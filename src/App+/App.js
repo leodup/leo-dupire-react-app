@@ -5,16 +5,13 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 import ScrollToTop from "./ScrollToTop";
 
-import Home from './Home.js';
-import Work from './Work.js';
-import Education from "./Education.js"
-import Portfolio from "./Portfolio.js"
-import Hobbies from "./Hobbies.js"
-import ContactMe from "./ContactMe.js"
+import Home from '../Home/Home.js';
+import Work from '../Work/Work.js';
+import Education from "../Education/Education.js";
+import Portfolio from "../Portfolio/Portfolio.js";
 
 
 function App() {
-
   return (
     <>
       <Helmet>
@@ -46,12 +43,6 @@ function App() {
         <Route path="/portfolio" element={
           <div>
             <Portfolio />
-            {/* <Footer /> */}
-          </div>
-        } />
-        <Route path="/contactme" element={
-          <div>
-            <ContactMe />
             {/* <Footer /> */}
           </div>
         } />

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600&family=Montserrat+Alternates:wght@400;600;800&display=swap');
+
+:root {
+    --title-font: 'Montserrat Alternates', sans-serif;
+    --text-font: 'Exo', sans-serif;
+    --header-height: 85vh;
+
+    /* Home */
+    --exhibit-height: max(20vw, 8rem);
+    --animation-time: 36s;
+
+    --padding-top-bottom-header-image: 25vh;
+    --paddy: calc(35vh - 15vw);
+    --home-color: rgb(220, 220, 220); /*rgb(22, 22, 22);  rgb(210, 255, 249) */
+    --counter-color-dark: rgb(50, 153, 146); /* rgb(25, 114, 110) */
+    --counter-color: rgb(109, 191, 187); /* rgb(64, 164, 159) */
+    --background-color: rgb(255, 255, 255);
+    --profile-image-height: 17.5vw;
+    --name-box-border-radius: 7.5vw;
+    --image-border: 0.6vw;
+
+    --body-width: min(90vw, 90vh, 70rem);
+    --font-title: "Georgia";
+    --font-text: "Palatino";
+
+    /* Work */
+
+    --left-pad-text: 4vw;
+    --header-text-color: #0f62fe;
+}

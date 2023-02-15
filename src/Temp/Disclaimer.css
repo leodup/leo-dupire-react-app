@@ -1,0 +1,19 @@
+@import "../App+/App.css";
+
+.DISCLAIMERbig {
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.DISCLAIMERsmall {
+    font-size: 2vh;
+    font-weight: 200;
+    line-height: 3.5vh;
+    color: whitesmoke;
+    font-family: var(--title-font);
+}

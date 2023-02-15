@@ -199,7 +199,6 @@
     transform: scale(1.025, 1.025);
     transition: 0.5s;
     background-color: rgba(255, 255, 255, 0.4);
-    --image: url('./images/CodeImage.jpg');
 }
 
 .TitleText1, .TitleText2, .TitleText3, .TitleText4  {
@@ -242,7 +241,6 @@
 }
 
 /* Body */
-
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Monoton&family=Righteous&display=swap");
 
 h1#Portfolio {

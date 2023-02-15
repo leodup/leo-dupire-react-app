@@ -1,4 +1,9 @@
 import { HashLink as Link } from 'react-router-hash-link';
+
+import '../App+/Footer/Footer.css';
+import '../App+/Tabs/Tabs.js';
+import '../App+/Tabs/Tabs.css';
+
 import "./Portfolio.css";
 import "./PortfolioFiles/HummingFace.css";
 import "./PortfolioFiles/GoKart.css";
@@ -8,50 +13,47 @@ import "./PortfolioFiles/Music.css";
 import "./PortfolioFiles/Alphabite.css";
 import "./PortfolioFiles/DAC.css";
 import "./PortfolioFiles/Vent.css";
-import CrossBow from "./images/CrossBow.jpg";
 
-import DataScienceText from "./images/DataScienceText.png";
-import ComputerScienceText from "./images/ComputerScienceText.png";
-import MechEText from "./images/MechEText.png";
-import RandomText from "./images/RandomText.png";
+import DataScienceText from "../images/DataScienceText.png";
+import ComputerScienceText from "../images/ComputerScienceText.png";
+import MechEText from "../images/MechEText.png";
+import RandomText from "../images/RandomText.png";
 
-import DataScienceIcon from "./images/DataScienceIcon.png";
-import ComputerScienceIcon from "./images/ComputerScienceIcon.png";
-import MechEIcon from "./images/MechEIcon.png";
-import RandomIcon from "./images/RandomIcon.png";
+import DataScienceIcon from "../images/DataScienceIcon.png";
+import ComputerScienceIcon from "../images/ComputerScienceIcon.png";
+import MechEIcon from "../images/MechEIcon.png";
+import RandomIcon from "../images/RandomIcon.png";
 
-import CodeImage from "./images/CodeImage.jpg";
+import Spectrogram from "../images/PortfolioProjects/Spectrogram.png";
 
-import Spectrogram from "./images/PortfolioProjects/Spectrogram.png";
+import GoKart1 from "../images/PortfolioProjects/GoKart1.jpg";
+import GoKart2 from "../images/PortfolioProjects/GoKart2.jpg";
+import GoKart3 from "../images/PortfolioProjects/GoKart3.png";
+import GoKart4 from "../images/PortfolioProjects/GoKart4.jpg";
+import GoKart5 from "../images/PortfolioProjects/GoKart5.jpg";
 
-import GoKart1 from "./images/PortfolioProjects/GoKart1.jpg";
-import GoKart2 from "./images/PortfolioProjects/GoKart2.jpg";
-import GoKart3 from "./images/PortfolioProjects/GoKart3.png";
-import GoKart4 from "./images/PortfolioProjects/GoKart4.jpg";
-import GoKart5 from "./images/PortfolioProjects/GoKart5.jpg";
+import Hydro1 from "../images/PortfolioProjects/Hydro1.png";
+import Hydro2 from "../images/PortfolioProjects/Hydro2.png";
+import Hydro3 from "../images/PortfolioProjects/Hydro3.png";
+import Hydro4 from "../images/PortfolioProjects/Hydro4.png";
 
-import Hydro1 from "./images/PortfolioProjects/Hydro1.png";
-import Hydro2 from "./images/PortfolioProjects/Hydro2.png";
-import Hydro3 from "./images/PortfolioProjects/Hydro3.png";
-import Hydro4 from "./images/PortfolioProjects/Hydro4.png";
+import DAC1 from "../images/PortfolioProjects/DAC1.png";
+import DAC2 from "../images/PortfolioProjects/DAC2.png";
+import DAC3 from "../images/PortfolioProjects/DAC3.png";
+import DAC4 from "../images/PortfolioProjects/DAC4.png";
 
-import DAC1 from "./images/PortfolioProjects/DAC1.png";
-import DAC2 from "./images/PortfolioProjects/DAC2.png";
-import DAC3 from "./images/PortfolioProjects/DAC3.png";
-import DAC4 from "./images/PortfolioProjects/DAC4.png";
+import Vent1 from "../images/PortfolioProjects/Vent1.png";
+import Vent2 from "../images/PortfolioProjects/Vent2.png";
+import Vent3 from "../images/PortfolioProjects/Vent3.png";
+import Vent4 from "../images/PortfolioProjects/Vent4.png";
 
-import Vent1 from "./images/PortfolioProjects/Vent1.png";
-import Vent2 from "./images/PortfolioProjects/Vent2.png";
-import Vent3 from "./images/PortfolioProjects/Vent3.png";
-import Vent4 from "./images/PortfolioProjects/Vent4.png";
+import Hyperloop1 from "../images/PortfolioProjects/HyperloopMe.jpg";
+import Hyperloop2 from "../images/PortfolioProjects/Hyperloop2.jpg";
 
-import Hyperloop1 from "./images/PortfolioProjects/HyperloopMe.jpg";
-import Hyperloop2 from "./images/PortfolioProjects/Hyperloop2.jpg";
+import Music1 from "../images/PortfolioProjects/LogicPro.png";
+import Music2 from "../images/PortfolioProjects/Show.png";
 
-import Music1 from "./images/PortfolioProjects/LogicPro.png";
-import Music2 from "./images/PortfolioProjects/Show.png";
-
-import Alphabite from "./images/PortfolioProjects/Alphabite.png";
+import Alphabite from "../images/PortfolioProjects/Alphabite.png";
 
 const Portfolio = () => {
 
@@ -201,7 +203,7 @@ const Portfolio = () => {
                 <div className="DataScience">
                     <h2 className="Section" id="DataScience">Data Science</h2>
                     <div className='Project'>
-                        <h3 className="Section">Music Generation</h3>
+                        <h3 className="Section" id="HummingFace">Music Generation</h3>
                         <div className='Gallery2'>
                             <div className='image-container2' id="HuggingFace1">
                                 <img 
@@ -214,7 +216,7 @@ const Portfolio = () => {
                         <p className="Section">I am currently working on this project. My teammate Mateus Aragão and I are designing and building multiple deep learning generative models (GAN, Auto-Encoder, Diffusion) to generate sample sounds from a user prompt. Such models can be used to aid musicians in finding that 'elusive' sound that they may not know how to obtain through traditional means. The model will generate original sounds for users to sample, even introducing a new source of inspiration for composition.</p>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">Natural Language Processing (NLP)</h3>
+                        <h3 className="Section" id="NLP">Natural Language Processing (NLP)</h3>
                         <p className="Section">I performed a set of experiments in Natural Language Understanding along with teammates Yara Kyrychenko and Carla García Medina. We trained four separate Transformer/LSTM models (two English and two multilingual): RoBERTa, XLM-RoBERTa, T5, and mT5. Our goal was to identify the best performing model for identifying missinformation in multilingual Twitter posts sourced from the MuMiN dataset. The English-only models were trained and tested on multilingual tweets that were translated to english in pre-processing using the Google Translate API.</p>
                         <div className="NLPPosition">
                             <iframe src="https://drive.google.com/file/d/1f_OGk0sSn4joooqS0PryteYdc_8Xkln8/preview" allow="autoplay" className="NLPPDF"></iframe>
@@ -233,7 +235,7 @@ const Portfolio = () => {
                 <div className="ComputerScience">
                     <h2 className="Section" id="ComputerScience">Computer Science</h2>
                     <div className='Project'>
-                        <h3 className="Section">This Website</h3>
+                        <h3 className="Section" id="Website">This Website</h3>
                         <p className="Section">I built this website completely on my own using knowledge gained from my internship at IBM. The foundation and minimal viable product of this website were created over the summer and into the fall of 2022. This is a ReactJS app which I designed, developed, and implemented from scratch. I hope you enjoy!</p>
                     </div>
                     <div className='Project'>
