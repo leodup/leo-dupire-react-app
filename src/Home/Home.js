@@ -15,23 +15,20 @@ import HyperloopImage from "../images/ExhibitImages/Hyperloop.jpg";
 
 const Home = () => {
     const Leo = <>
-                    {/* <img
-                        className="Name"
-                        src={LEO}
-                        alt="Léo Image"
-                    /> */}
                     <div className="Name">
                         <h4 className="FirstName">Léo</h4>
                         <h4 className="LastName">Dupire</h4>
                     </div>
                 </>
 
-    const HummingFace =   <>
-                            <img
-                                className="ExhibitImg"
-                                src={HummingFaceImage}
-                                alt="HummingFace Image"
-                            />
+    const HummingFace = <>
+                            <div className="ExhibitImgDiv">
+                                <img
+                                    className="ExhibitImg"
+                                    src={HummingFaceImage}
+                                    alt="HummingFace Image"
+                                />
+                            </div>
                             <div className="ExhibitTextAll">
                                 <div className="ExhibitText">
                                     <h5 id="ExhibitText">Music Generation</h5>
@@ -48,11 +45,13 @@ const Home = () => {
                         </>
 
     const NLP =  <>
-                    <img
-                        className="ExhibitImg"
-                        src={NLPImage}
-                        alt="NLP Image"
-                    />
+                    <div className="ExhibitImgDiv">
+                        <img
+                            className="ExhibitImg"
+                            src={NLPImage}
+                            alt="NLP Image"
+                        />
+                    </div>
                     <div className="ExhibitTextAll">
                         <div className="ExhibitText">
                             <h5 id="ExhibitText">Natural Language Processing</h5>
@@ -69,16 +68,20 @@ const Home = () => {
                 </>
 
     const Website =  <>
-                        <img
-                            className="ExhibitImg"
-                            src={WebsiteImage}
-                            alt="Website Image"
-                        />
+                        <div className="ExhibitImgDiv">
+                            <img
+                                className="ExhibitImg"
+                                src={WebsiteImage}
+                                alt="Website Image"
+                            />
+                        </div>
                         <div className="ExhibitTextAll">
                             <div className="ExhibitText">
-                                <h5 id="ExhibitText">This Website</h5>
+                                <h5 id="ExhibitText">Web Development</h5>
                                 <p id="ExhibitText">
-                                    I designed and created this website using ReactJS.
+                                    I am self taught in Web Development. My learning journey started at IBM and continued beyond.<br></br><br></br>
+                                    
+                                    I designed and created <b>this website</b> using ReactJS.
                                 </p>
                             </div>
                             <Link style={{textDecoration: 'none'}} to="/Portfolio/#Website">
@@ -90,11 +93,13 @@ const Home = () => {
                     </>
 
     const Hyperloop =   <>
-                            <img
-                                className="ExhibitImg"
-                                src={HyperloopImage}
-                                alt="Hyperloop Image"
-                            />
+                            <div className="ExhibitImgDiv">
+                                <img
+                                    className="ExhibitImg"
+                                    src={HyperloopImage}
+                                    alt="Hyperloop Image"
+                                />
+                            </div>
                             <div className="ExhibitTextAll">
                                 <div className="ExhibitText">
                                     <h5 id="ExhibitText">Hyperloop</h5>
