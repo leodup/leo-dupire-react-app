@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600&family=Montserrat+Alternates:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 
 :root {
     --title-font: 'Montserrat Alternates', sans-serif;
-    --text-font: 'Exo', sans-serif;
+    --text-font: 'Raleway', sans-serif;
     --header-height: 85vh;
 
     /* Home */

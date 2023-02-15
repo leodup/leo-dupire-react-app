@@ -4,8 +4,21 @@
     position: relative;
     width: 100%;
     height: max(min(6.25vw, 12vh), 5rem);
-    background-color: var(--home-color);
+    /* background-color: var(--home-color); */
     text-align: center;
+
+    background-image: url("../../images/Backgrounds/HomeBackground.jpg");
+    background-repeat: no-repeat;
+
+    -moz-background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+
+    -webkit-background-size: 100vmax 100%;
+    -moz-background-size: 100vmax 100%;
+    -o-background-size: 100vmax 100%;
+    background-size: 100vmax 100%;
 }
 
 .FooterTabs {
