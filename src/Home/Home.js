@@ -173,42 +173,40 @@ const Home = () => {
     return (
         <>
             <Disclaimer/>
-            <div className="Home" id="Text">
-                <div className="header" id="Home">
-                    <div className="Head">
-                        <div className="HeadContent">
-                            {galleryCurrent}
-                        </div>
+            <div className="header" id="Home">
+                <div className="Head" id="Home">
+                    <div className="HeadContent">
+                        {galleryCurrent}
                     </div>
-                    <Tabs
-                            title1="Work"
-                            title2="Education"
-                            title3="Portfolio"
-                            link1="/work"
-                            link2="/education"
-                            link3="/portfolio"
-                        />
                 </div>
-                <div className="body" id="Home">
-                    <h2 id="Home">About me</h2>
-                    <h3 id="Home">Who I am</h3>
-                    <div className="CenterLeo">
-                        <img
-                            className="LeoImg"
-                            src={LEO}
-                            alt="Léo Image"
-                        />
-                    </div>
-                    {whoAmI}
-                    <h3 id="Home">What I do</h3>
-                    {whatIDo}
+                <Tabs
+                        title1="Work"
+                        title2="Education"
+                        title3="Portfolio"
+                        link1="/work"
+                        link2="/education"
+                        link3="/portfolio"
+                    />
+            </div>
+            <div className="body" id="Home">
+                <h2 id="Home">About me</h2>
+                <h3 id="Home">Who I am</h3>
+                <div className="CenterLeo">
+                    <img
+                        className="LeoImg"
+                        src={LEO}
+                        alt="Léo Image"
+                    />
                 </div>
-                <div className="body" id="Home">
-                    <h2 id="Home">Documents</h2>
-                    <h3 id="Home">My Résumé</h3>
-                    <div className="ResumePosition">
-                        <iframe src="https://drive.google.com/file/d/12vix--qu-DkUbIdiGD_drLmiRTw9i-BB/preview" allow="autoplay" className="ResumePDF"></iframe>
-                    </div>
+                {whoAmI}
+                <h3 id="Home">What I do</h3>
+                {whatIDo}
+            </div>
+            <div className="body" id="Home">
+                <h2 id="Home">Documents</h2>
+                <h3 id="Home">My Résumé</h3>
+                <div className="ResumePosition">
+                    <iframe src="https://drive.google.com/file/d/12vix--qu-DkUbIdiGD_drLmiRTw9i-BB/preview" allow="autoplay" className="ResumePDF"></iframe>
                 </div>
             </div>
             <div className="Footer">

@@ -15,12 +15,9 @@
     background-size: 100vmax 100%;
 }
 
-.Head {
+.Head#Home {
     position: relative;
     height: var(--header-height);
-
-    -ms-transform: translateX(-50%);
-    transform: translateX(0%);
 }
 
 .HeadContent {

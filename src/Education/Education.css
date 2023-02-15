@@ -1,3 +1,23 @@
+.header#Education {
+    background-image: url("../images/Backgrounds/LibraryBackground.jpg"); /* https://www.weforum.org/agenda/2021/12/diversity-inclusion-human-library/ */
+    background-repeat: no-repeat;
+
+    -moz-background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+
+    -webkit-background-size: 100vmax 100%;
+    -moz-background-size: 100vmax 100%;
+    -o-background-size: 100vmax 100%;
+    background-size: 100vmax 100%;
+}
+
+.Head#Education {
+    position: relative;
+    height: var(--header-height);
+}
+
 .HomeLink {
     position: absolute;
     z-index: 1;
@@ -15,16 +35,6 @@
     font-weight: bold;
     text-decoration: underline;
     color: rgb(255, 243, 220);
-}
-
-.body#Education {
-    /* max-width: 100rem; */
-}
-
-.Header#Education {
-    height: calc(var(--header-height) + max(4vw, 2.3rem));
-    position: relative;
-    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.5);
 }
 
 .Library {
@@ -354,8 +364,6 @@ h2#LFNY2 {
     overflow: hidden;
     height: max(4vw, 2.3rem);
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
 
 .TabEdu {
     position: relative;

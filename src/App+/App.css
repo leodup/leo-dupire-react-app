@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600&family=Montserrat+Alternates:wght@400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Monoton&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Alfa+Slab+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Righteous&family=Sedgwick+Ave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
 
 :root {
     --title-font: 'Montserrat Alternates', sans-serif;
@@ -25,7 +29,17 @@
     --font-text: "Palatino";
 
     /* Work */
-
     --left-pad-text: 4vw;
     --header-text-color: #0f62fe;
+
+    /* Portfolio */
+    --header-height: 85vh;
+    --height2: calc(var(--header-height) - max(8vw, 4rem) - 2vh);
+    --block-height: min(calc(var(--height2)/2 - 2vw), 31.5vw);
+    --block-width: calc(1.52*var(--block-height));
+    --spacing: 1.5vw;
+    --iconHeight: 10vw;
+    --portfolio-body-width: min(90vw, 70rem, max(1.4*var(--scale)*var(--header-height) - 30vh, 60vh));
+    --scale: 1.4;
+    --quad-radius: 0.75rem;
 }

@@ -1,19 +1,26 @@
+@import "../App+/App.css";
 
+.header#Portfolio {
+    background-image: url("../images/Backgrounds/PortfolioBackground.jpg");
+    background-repeat: no-repeat;
 
-:root {
-    --header-height: 85vh;
-    --height2: calc(var(--header-height) - max(8vw, 4rem) - 2vh);
-    --block-height: min(calc(var(--height2)/2 - 2vw), 31.5vw);
-    --block-width: calc(1.52*var(--block-height));
-    --spacing: 1.5vw;
-    --iconHeight: 10vw;
-    --portfolio-body-width: min(90vw, 70rem, max(1.4*var(--scale)*var(--header-height) - 30vh, 60vh));
-    --scale: 1.4;
-    --quad-radius: 0.75rem;
+    -moz-background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+
+    -webkit-background-size: 100vmax 100%;
+    -moz-background-size: 100vmax 100%;
+    -o-background-size: 100vmax 100%;
+    background-size: 100vmax 100%;
+}
+
+.Head#Portfolio {
+    position: relative;
+    height: var(--header-height);
 }
 
 /* HOME BUTTON */
-
 .PortfolioLink {
     position: absolute;
     z-index: 1;
@@ -26,79 +33,35 @@
 }
 
 #PortfolioLink {
-    font-family: 'Chivo', cursive;
+    font-family: var(--title-font);
     font-size: calc(3vh + 0.5vw);
     font-weight: 800;
     line-height: 1.75vw;
-    /* letter-spacing: 0.125vw; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: rgba(0, 0, 0, 0.75);
 }
 
+h1#Portfolio {
+    position: relative;
+    padding-top: 1vw;
+    width: 100%;
+    background-color: transparent;
+    font-family: 'Monoton', cursive;
+    font-size: max(6vw, 3rem);
+    font-weight: 500;
+    line-height: max(8vw, 4rem);
+    color: black;
+}
+
 /* HEADER */
-
 .PortfolioHeader {
-    position: absolute;
-    top: 0%;
-    height: calc(var(--header-height) + max(4vw, 2.3rem));
+    position: relative;
     width: 100%;
-	background: var(--counter-color-dark); /* linear-gradient(-45deg, #ad41ff, #ff4646, #23a6d5, #23d5ab); */
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.LeftMargin {
-    position: absolute;
-    top: max(9vw, 4rem);
-    height: calc(var(--header-height) - max(8vw, 4rem) - 1vw);
-    width: calc(50vw - var(--scale)*var(--height2)/2 - 3*var(--spacing)/2);
-    background-color: black;
-    opacity: 0.75;
-}
-
-.RightMargin {
-    position: absolute;
-    top: max(9vw, 4rem);
-    right: 0;
-    height: calc(var(--header-height) - max(8vw, 4rem) - 1vw);
-    width: calc(50vw - var(--scale)*var(--height2)/2 - 3*var(--spacing)/2);
-    background-color: black;
-    opacity: 0.85;
-}
-
-.TopMargin {
-    position: absolute;
-    top: max(9vw, 4rem);
-    height: calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2);
-    width: 100%;
-    background-color: black;
-    opacity: 0.85;
-}
-
-.BottomMargin {
-    position: absolute;
-    top: calc(var(--header-height) - calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2)); /*calc(var(--height2) - calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2) + 1vh);*/
-    height: calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2);
-    width: 100%;
-    background-color: black;
-    opacity: 0.85;
+    height: calc(var(--header-height));
 }
 
 .Blocks {
-    position: relative;
-    top: calc(var(--height2)/2 - var(--block-height) - 3*var(--spacing)/2 + 0.25vw);
-    width: 100vw - max(calc(50vw - var(--scale)*var(--header-height)/2 - 3*var(--spacing)/2), 0vw);
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -106,7 +69,6 @@
 .Top {
     position: relative;
     top: var(--spacing);
-    height: var(--block-height);
     display: flex;
     justify-content: center;
 }
@@ -114,7 +76,6 @@
 .Bottom {
     position: relative;
     top: calc(2*var(--spacing));
-    height: var(--block-height);
     display: flex;
     justify-content: center;
 }
@@ -136,12 +97,10 @@
     margin-left: calc(var(--spacing)/2);
     width: var(--block-width);
     height: var(--block-height);
-    background-color: var(--counter-color);
-    transition: 0.25s;
-    box-shadow: 0 0 0.5vw black;
+    background-color: transparent;
     font-weight: 600;
     color: white;
-    /* border: 0.4vw solid white; */
+    transition: 0.3s;
 }
 
 .BlockTop {
@@ -160,8 +119,6 @@
 
 .BlockTop#q1 {border-top-left-radius: var(--quad-radius);}
 .BlockTop#q2 {border-top-right-radius: var(--quad-radius);}
-
-@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Alfa+Slab+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Righteous&family=Sedgwick+Ave&display=swap");
 
 #DS-Box-Title {
     position: relative;
@@ -197,20 +154,15 @@
 
 .Q1:hover, .Q2:hover, .Q3:hover, .Q4:hover {
     transform: scale(1.025, 1.025);
-    transition: 0.5s;
     background-color: rgba(255, 255, 255, 0.4);
 }
 
 .TitleText1, .TitleText2, .TitleText3, .TitleText4  {
-    position: relative;
-    height: 100%; /*calc(var(--block-height) - 2vw);*/
+    height: 100%;
     width: 100%;
-    /* top: 1vw;
-    left: 1vw; */
-    transition: 0.5;
     -webkit-filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
     filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
-    opacity: 0.85;
+    opacity: 1;
 }
 
 .TitleText1 {border-top-left-radius: var(--quad-radius);}
@@ -241,22 +193,6 @@
 }
 
 /* Body */
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Monoton&family=Righteous&display=swap");
-
-h1#Portfolio {
-    width: 100%;
-    background-color: var(--counter-color);
-    font-family: 'Monoton', cursive;
-    position: relative;
-    padding-top: 1vw;
-    font-size: max(6vw, 3rem);
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.95);
-    line-height: max(8vw, 4rem);
-    box-shadow: 0px 4px 2px black;
-    text-shadow: 0px -0.125vw 0.125vw white;
-}
-
 .PortfolioBody {
     margin-left: calc(50vw - var(--portfolio-body-width)/2);
     margin-right: calc(50vw - var(--portfolio-body-width)/2);
@@ -264,13 +200,29 @@ h1#Portfolio {
 }
 
 h2.Section {
-    font-family: 'Chivo', cursive;
+    font-family: var(--title-font);
     font-size: max(min(4vw, 4vh), 1.75rem);
     font-weight: 900;
     margin-top: 8vh;
     padding-top: 0.5vh;
     margin-bottom: 2vh;
     border-top: 0.5vh solid black;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    background-image: url("../images/Backgrounds/PortfolioBackground.jpg");
+    background-repeat: no-repeat;
+
+    -moz-background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+
+    -webkit-background-size: 100vmax 100%;
+    -moz-background-size: 100vmax 100%;
+    -o-background-size: 100vmax 100%;
+    background-size: 100vmax 100%;
 }
 
 div.TBC{
@@ -279,7 +231,7 @@ div.TBC{
 }
 
 h2.TBC {
-    font-family: 'Chivo', cursive;
+    font-family: var(--text-font);
     font-size: max(min(3vw, 3vh), 1.25rem);
     font-weight: 800;
     margin-top: 3vh;
@@ -291,7 +243,7 @@ h2.TBC {
 }
 
 h3.Section {
-    font-family: 'Chivo', cursive;
+    font-family: var(--title-font);
     font-size: 2.75vh;
     font-weight: 800;
     margin-bottom: 2vh;
@@ -300,7 +252,6 @@ h3.Section {
 
 p.Section {
     font-family: "gill sans";
-    /* text-shadow: 0 0 1px; */
     font-size: max(min(2.25vw, 2.25vh), 1rem);
     line-height: max(min(3.5vw, 3.5vh), 1.5rem);
     font-weight: 400;
@@ -357,6 +308,7 @@ p.Section {
     height: calc(0.56*var(--portfolio-body-width)*0.94)
 }
 
+
 .FillerPort {
     border-top: 0.5vw solid rgb(0, 0, 0, 0.85);
     width: 100%;
@@ -398,8 +350,6 @@ p.Section {
     overflow: hidden;
     height: max(4vw, 2.3rem);
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
 
 .TabPort {
     position: relative;

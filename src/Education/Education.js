@@ -5,7 +5,9 @@ import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.js';
 import '../App+/Tabs/Tabs.css';
 
-import Library from "../images/Library.jpg"; //https://www.weforum.org/agenda/2021/12/diversity-inclusion-human-library/
+import Tabs from '../App+/Tabs/Tabs.js';
+import Disclaimer from "../Temp/Disclaimer.js"
+
 import NYU from "../images/NYU.png";
 import NEU from "../images/NEU.png"; // https://www.google.com/search?q=northeastern+university+logo&rlz=1C5CHFA_enAU806AU806&sxsrf=ALiCzsY0AIofA2r-Ylu6_-E7EYIkgHjUsw:1657999670977&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjWg7SLkv74AhX4GVkFHRJgDCsQ_AUoAXoECAEQAw&biw=1527&bih=762&dpr=2.2#imgrc=jFaBWjkNtOSB5M&imgdii=v84AuK80Z_B2sM
 import LFNY from "../images/LFNY.png";
@@ -47,13 +49,9 @@ const Education = () => {
 
     return (
         <>
-            <div className="body" id="Education">
-                <div className="Header" id="Education">
-                <div className="DISCLAIMERbig"><div className="DISCLAIMERsmall">Website still under development!</div></div>
-                    <img
-                        src={Library}
-                        className="Library"
-                    />
+            <Disclaimer/>
+            <div className="header" id="Education">
+                <div className="Head" id="Education">
                     <Link to="/">
                         <div className="HomeLink">
                             <p id="HomeLink">Home</p>
@@ -62,112 +60,106 @@ const Education = () => {
                     <div>
                         <h1 id="Education">Education</h1>
                     </div>
-                    <div className="TabsEdu">
-                        <Tab 
-                            title="Home"
-                            link="/"
+                </div>
+                <Tabs
+                    title1="Home"
+                    title2="Work"
+                    title3="Portfolio"
+                    link1="/"
+                    link2="/work"
+                    link3="/portfolio"
+                />
+            </div>
+            <div className="Education">
+                <div className="JoinNYU">
+                    <div className="NYU">
+                        <h2 id="NYU">New York</h2>
+                        <h2 id="NYU2">University</h2>
+                        <img
+                            src={NYU}
+                            className="imageNYU"
                         />
-                        <Tab
-                            title="Work"
-                            link="/work"
-                        />
-                        <Tab 
-                            title="Portfolio"
-                            link="/portfolio"
-                        />
+                    </div>
+                    <div className="Description" id="NYU">
+                        <div className="Title">
+                            <p id="Level">Bachelor's in Computer & Data Science</p>
+                            <p id="Period">2021 - 2023</p>
+                        </div>
+                        <p id="Location">New York, NY</p>
+                        <p id="Desc1">{NYUDesc1}</p>
+                        <p id="Desc1Low">{NYUDesc2}</p>
+                        <p id="Desc1Lowerish">{NYUDesc3}</p>
+                        <p id="Desc1Lower">
+                            <ul>
+                                <li>Machine Learning</li>
+                                <li>Deep Learning (Advanced Topics in Data Science)</li>
+                                <li>Machine Learning for Natural Language Understanding</li>
+                                <li>Computer Systems Organization</li>
+                                <li>Algorithms</li>
+                                <li>Discrete Math</li>
+                                <li>Big Data</li>
+                                <li>Data Structures</li>
+                                <li>Causal Inference</li>
+                                <li>Data Base Design & Implementation</li>
+                                <li>Data Management and Analysis</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
-                <div className="Education">
-                    <div className="JoinNYU">
-                        <div className="NYU">
-                            <h2 id="NYU">New York</h2>
-                            <h2 id="NYU2">University</h2>
-                            <img
-                                src={NYU}
-                                className="imageNYU"
-                            />
-                        </div>
-                        <div className="Description" id="NYU">
-                            <div className="Title">
-                                <p id="Level">Bachelor's in Computer & Data Science</p>
-                                <p id="Period">2021 - 2023</p>
-                            </div>
-                            <p id="Location">New York, NY</p>
-                            <p id="Desc1">{NYUDesc1}</p>
-                            <p id="Desc1Low">{NYUDesc2}</p>
-                            <p id="Desc1Lowerish">{NYUDesc3}</p>
-                            <p id="Desc1Lower">
-                                <ul>
-                                    <li>Machine Learning</li>
-                                    <li>Deep Learning (Advanced Topics in Data Science)</li>
-                                    <li>Machine Learning for Natural Language Understanding</li>
-                                    <li>Computer Systems Organization</li>
-                                    <li>Algorithms</li>
-                                    <li>Discrete Math</li>
-                                    <li>Big Data</li>
-                                    <li>Data Structures</li>
-                                    <li>Causal Inference</li>
-                                    <li>Data Base Design & Implementation</li>
-                                    <li>Data Management and Analysis</li>
-                                </ul>
-                            </p>
-                        </div>
+                <div className="JoinNEU">
+                    <div className="NEU">
+                        <h2 id="NEU">Northeastern</h2>
+                        <h2 id="NEU2">University</h2>
+                        <img
+                            src={NEU}
+                            className="imageNEU"
+                        />
                     </div>
-                    <div className="JoinNEU">
-                        <div className="NEU">
-                            <h2 id="NEU">Northeastern</h2>
-                            <h2 id="NEU2">University</h2>
-                            <img
-                                src={NEU}
-                                className="imageNEU"
-                            />
+                    <div className="Description" id="NEU">
+                        <div className="Title">
+                            <p id="Level">Bachelor's in Mechanical Engineering</p>
+                            <p id="Period">2018 - 2020</p>
+                            <p id="Level2">>50% Complete - Changed Majors</p>
                         </div>
-                        <div className="Description" id="NEU">
-                            <div className="Title">
-                                <p id="Level">Bachelor's in Mechanical Engineering</p>
-                                <p id="Period">2018 - 2020</p>
-                                <p id="Level2">>50% Complete - Changed Majors</p>
-                            </div>
-                            <p id="Location2">Boston, MA</p>
-                            <p id="Desc2">{NEUDesc1}</p>
-                            <p id="Desc2Low">{NEUDesc2}</p>
-                            <p id="Desc2Lower">{NEUDesc3}</p>
-                            <p id="Desc2Lowest">
-                                <ul>
-                                    <li>Thermodynamics</li>
-                                    <li>Dynamics</li>
-                                    <li>Engineering Mechanics & Design</li>
-                                    <li>Cornerstone of Engineering 1-2</li>
-                                    <li>Physics 1-2</li>
-                                    <li>Probability & Statistics</li>
-                                    <li>Differential Equations & Linear Algebra</li>
-                                    <li>Calculus 1-3</li>
-                                </ul>
-                            </p>
-                        </div>
+                        <p id="Location2">Boston, MA</p>
+                        <p id="Desc2">{NEUDesc1}</p>
+                        <p id="Desc2Low">{NEUDesc2}</p>
+                        <p id="Desc2Lower">{NEUDesc3}</p>
+                        <p id="Desc2Lowest">
+                            <ul>
+                                <li>Thermodynamics</li>
+                                <li>Dynamics</li>
+                                <li>Engineering Mechanics & Design</li>
+                                <li>Cornerstone of Engineering 1-2</li>
+                                <li>Physics 1-2</li>
+                                <li>Probability & Statistics</li>
+                                <li>Differential Equations & Linear Algebra</li>
+                                <li>Calculus 1-3</li>
+                            </ul>
+                        </p>
                     </div>
-                    <div className="JoinLFNY">
-                        <div className="LFNY">
-                            <h2 id="LFNY">Lycée Français</h2>
-                            <h2 id="LFNY2">de New York</h2>
-                            <img
-                                src={LFNY}
-                                className="imageLFNY"
-                            />
-                        </div>
-                        <div className="Description" id="LFNY">
-                            <div className="Title">
-                                <p id="Level">French Baccalaureate of Science w. Honors</p>
-                                <p id="Period">2004-2018</p>
-                                <p id="Level2">High School Diploma</p>
-                            </div>
-                            <p id="Location">New York, NY</p>
-                            <p id="Desc3">{LFNYDesc1}</p>
-                            <p id="Desc3Low">{LFNYDesc2}</p>
-                        </div>
+                </div>
+                <div className="JoinLFNY">
+                    <div className="LFNY">
+                        <h2 id="LFNY">Lycée Français</h2>
+                        <h2 id="LFNY2">de New York</h2>
+                        <img
+                            src={LFNY}
+                            className="imageLFNY"
+                        />
                     </div>
-                </div>    
-            </div>
+                    <div className="Description" id="LFNY">
+                        <div className="Title">
+                            <p id="Level">French Baccalaureate of Science w. Honors</p>
+                            <p id="Period">2004-2018</p>
+                            <p id="Level2">High School Diploma</p>
+                        </div>
+                        <p id="Location">New York, NY</p>
+                        <p id="Desc3">{LFNYDesc1}</p>
+                        <p id="Desc3Low">{LFNYDesc2}</p>
+                    </div>
+                </div>
+            </div>    
             <div className="Footer">
                 <div className="FooterTabs">
                     <FooterTab

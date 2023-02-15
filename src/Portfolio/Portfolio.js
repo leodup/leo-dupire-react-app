@@ -14,6 +14,9 @@ import "./PortfolioFiles/Alphabite.css";
 import "./PortfolioFiles/DAC.css";
 import "./PortfolioFiles/Vent.css";
 
+import Disclaimer from "../Temp/Disclaimer.js"
+import Tabs from '../App+/Tabs/Tabs.js';
+
 import DataScienceText from "../images/DataScienceText.png";
 import ComputerScienceText from "../images/ComputerScienceText.png";
 import MechEText from "../images/MechEText.png";
@@ -83,121 +86,108 @@ const Portfolio = () => {
 
     return (
         <div>
-            <div className="PortfolioHeader">
-            <div className="DISCLAIMERbig"><div className="DISCLAIMERsmall">Website still under development!</div></div>
-                <div className="LinesLeft"></div>
-                <Link to="/">
-                    <div className="PortfolioLink">
-                        <p id="PortfolioLink">Home</p>
+            <Disclaimer/>
+            <div className="header" id="Portfolio">
+                <div className="Head" id="Portfolio">
+                    <Link to="/">
+                        <div className="PortfolioLink">
+                            <p id="PortfolioLink">Home</p>
+                        </div>
+                    </Link>
+                    <div className="Header1">
+                        <h1 id="Portfolio">PORTFOLIO</h1>
                     </div>
-                </Link>
-                <div className="Header1">
-                    <h1 id="Portfolio">PORTFOLIO</h1>
+                    <div className='Blocks'>
+                        <div className="Top">
+                            <Link style={{textDecoration: 'none'}} to="/Portfolio/#DataScience">
+                                <div className="Q1">
+                                    <img
+                                        className="TitleText1"
+                                        src={DataScienceText}
+                                        alt="Data Science Text"
+                                    />
+                                    <div className="BlockTop" id="q1">
+                                        <p id="DS-Box-Title">Data Science</p>
+                                    </div>
+                                    <p id="DS-Box-Text">
+                                        <img
+                                            className="Show"
+                                            src={DataScienceIcon}
+                                            alt="Data Science Icon"
+                                        />
+                                    </p>
+                                </div>
+                            </Link>
+                            <Link style={{textDecoration: 'none'}} to="/Portfolio/#ComputerScience">
+                                <div className="Q2">
+                                    <img
+                                        className="TitleText2"
+                                        src={ComputerScienceText}
+                                        alt="Computer Science Text"
+                                    />
+                                    <div className="BlockTop" id="q2">
+                                        <p id="DS-Box-Title">Computer Science</p>
+                                    </div>
+                                    <p id="DS-Box-Text">
+                                        <img
+                                            className="Show"
+                                            src={ComputerScienceIcon}
+                                            alt="Data Science Icon"
+                                        />
+                                    </p>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="Bottom">
+                            <Link style={{textDecoration: 'none'}} to="/Portfolio/#MechE">
+                                <div className="Q3">
+                                    <img
+                                        className="TitleText3"
+                                        src={MechEText}
+                                        alt="Mechanical Engineering Text"
+                                    />
+                                    <div className="BlockTop" id="q3">
+                                        <p id="DS-Box-Title">Engineering</p>
+                                    </div>
+                                    <p id="DS-Box-Text">
+                                        <img
+                                            className="Show"
+                                            src={MechEIcon}
+                                            alt="Data Science Icon"
+                                        />
+                                    </p>
+                                </div>
+                            </Link>
+                            <Link style={{textDecoration: 'none'}} to="/Portfolio/#Random">
+                                <div className="Q4">
+                                    <img
+                                        className="TitleText4"
+                                        src={RandomText}
+                                        alt="Random Text"
+                                    />
+                                    <div className="BlockTop" id="q4">
+                                        <p id="DS-Box-Title">Random Projects</p>
+                                    </div>
+                                    <p id="DS-Box-Text">
+                                        <img
+                                            className="Show"
+                                            src={RandomIcon}
+                                            alt="Data Science Icon"
+                                        />
+                                    </p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
-                <div className='Blocks'>
-                    <div className="Top">
-                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#DataScience">
-                            <div className="Q1">
-                                <img
-                                    className="TitleText1"
-                                    src={DataScienceText}
-                                    alt="Data Science Text"
-                                />
-                                <div className="BlockTop" id="q1">
-                                    <p id="DS-Box-Title">Data Science</p>
-                                </div>
-                                <p id="DS-Box-Text">
-                                    <img
-                                        className="Show"
-                                        src={DataScienceIcon}
-                                        alt="Data Science Icon"
-                                    />
-                                </p>
-                            </div>
-                        </Link>
-                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#ComputerScience">
-                            <div className="Q2">
-                                <img
-                                    className="TitleText2"
-                                    src={ComputerScienceText}
-                                    alt="Computer Science Text"
-                                />
-                                <div className="BlockTop" id="q2">
-                                    <p id="DS-Box-Title">Computer Science</p>
-                                </div>
-                                <p id="DS-Box-Text">
-                                    <img
-                                        className="Show"
-                                        src={ComputerScienceIcon}
-                                        alt="Data Science Icon"
-                                    />
-                                </p>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="Bottom">
-                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#MechE">
-                            <div className="Q3">
-                                <img
-                                    className="TitleText3"
-                                    src={MechEText}
-                                    alt="Mechanical Engineering Text"
-                                />
-                                <div className="BlockTop" id="q3">
-                                    <p id="DS-Box-Title">Engineering</p>
-                                </div>
-                                <p id="DS-Box-Text">
-                                    <img
-                                        className="Show"
-                                        src={MechEIcon}
-                                        alt="Data Science Icon"
-                                    />
-                                </p>
-                            </div>
-                        </Link>
-                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#Random">
-                            <div className="Q4">
-                                <img
-                                    className="TitleText4"
-                                    src={RandomText}
-                                    alt="Random Text"
-                                />
-                                <div className="BlockTop" id="q4">
-                                    <p id="DS-Box-Title">Random Projects</p>
-                                </div>
-                                <p id="DS-Box-Text">
-                                    <img
-                                        className="Show"
-                                        src={RandomIcon}
-                                        alt="Data Science Icon"
-                                    />
-                                </p>
-                            </div>
-                        </Link>
-                    </div>
-                </div>
-                {/* <div className='LeftMargin'></div>
-                <div className='RightMargin'></div>
-                <div className='TopMargin'></div>
-                <div className='BottomMargin'></div> */}
-            </div>
-            <div className="TabsPort">
-                <Tab 
-                    title="Home"
-                    link="/"
+                <Tabs
+                    title1="Home"
+                    title2="Work"
+                    title3="Education"
+                    link1="/"
+                    link2="/work"
+                    link3="/education"
                 />
-                <Tab
-                    title="Work"
-                    link="/work"
-                />
-                <Tab 
-                    title="Education"
-                    link="/education"
-                />
-                {/* <Tab
-                    title="Contact Me"
-                    link="/contactme"
-                /> */}
             </div>
             <div className="PortfolioBody">
                 <div className="DataScience">
