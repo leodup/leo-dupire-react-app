@@ -16,6 +16,7 @@ import "./PortfolioFiles/Vent.css";
 
 import Disclaimer from "../Temp/Disclaimer.js"
 import Tabs from '../App+/Tabs/Tabs.js';
+import Footer from '../App+/Footer/Footer.js';
 
 import DataScienceText from "../images/DataScienceText.png";
 import ComputerScienceText from "../images/ComputerScienceText.png";
@@ -59,44 +60,12 @@ import Music2 from "../images/PortfolioProjects/Show.png";
 import Alphabite from "../images/PortfolioProjects/Alphabite.png";
 
 const Portfolio = () => {
-
-    const FooterTab = (props) => {
-        return (
-            <div className="FooterFiller">
-                    <Link to={props.link} style={{ textDecoration: 'none' }}>
-                        <div className="FooterTab" id="Portfolio">
-                            <p>{props.title}</p>
-                        </div>
-                    </Link>
-            </div>
-        );
-    }
-    
-    const Tab = (props) => {
-        return (
-            <div className="FillerPort">
-                    <Link to={props.link} style={{ textDecoration: 'none' }}>
-                        <div className="TabPort">
-                            <p>{props.title}</p>
-                        </div>
-                    </Link>
-            </div>
-        );
-    }
-
     return (
         <div>
             <Disclaimer/>
             <div className="header" id="Portfolio">
                 <div className="Head" id="Portfolio">
-                    <Link to="/">
-                        <div className="PortfolioLink">
-                            <p id="PortfolioLink">Home</p>
-                        </div>
-                    </Link>
-                    <div className="Header1">
-                        <h1 id="Portfolio">PORTFOLIO</h1>
-                    </div>
+                    <h1 id="Portfolio">PORTFOLIO</h1>
                     <div className='Blocks'>
                         <div className="Top">
                             <Link style={{textDecoration: 'none'}} to="/Portfolio/#DataScience">
@@ -180,14 +149,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <Tabs
-                    title1="Home"
-                    title2="Work"
-                    title3="Education"
-                    link1="/"
-                    link2="/work"
-                    link3="/education"
-                />
+                <Tabs title1="Home" link1="/" page="Portfolio"/>
             </div>
             <div className="PortfolioBody">
                 <div className="DataScience">
@@ -483,22 +445,7 @@ const Portfolio = () => {
                     <h2 className="TBC">To Be Continued...</h2>
                 </div>
             </div>
-            <div className="Footer">
-                <div className="FooterTabs">
-                    <FooterTab
-                        title="Home"
-                        link="/"
-                    />
-                    <FooterTab
-                        title="Work"
-                        link="/work"
-                    />
-                    <FooterTab 
-                        title="Education"
-                        link="/education"
-                    />
-                </div>
-            </div>
+            <Footer page="Portfolio"/>
         </div>
     );
 }

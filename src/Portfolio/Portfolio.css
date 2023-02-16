@@ -20,40 +20,18 @@
     height: var(--header-height);
 }
 
-/* HOME BUTTON */
-.PortfolioLink {
-    position: absolute;
-    z-index: 1;
-    top: 0.75vw;
-    left: 3vw;
-}
-
-.PortfolioLink:hover {
-    transform: scale(1.025, 1.025);
-}
-
-#PortfolioLink {
-    font-family: var(--title-font);
-    font-size: calc(3vh + 0.5vw);
-    font-weight: 800;
-    line-height: 1.75vw;
-    /* text-decoration: underline; */
-    color: rgba(0, 0, 0, 0.75);
-}
-
 h1#Portfolio {
-    position: relative;
-    padding-top: 1vw;
+    margin: 0;
     width: 100%;
     background-color: transparent;
+
+    text-align: center;
     font-family: 'Monoton', cursive;
     font-size: max(6vw, 3rem);
     font-weight: 500;
-    line-height: max(8vw, 4rem);
     color: black;
 }
 
-/* HEADER */
 .PortfolioHeader {
     position: relative;
     width: 100%;
@@ -61,27 +39,27 @@ h1#Portfolio {
 }
 
 .Blocks {
-    height: 100%;
+    position: relative;
+    top: max(-1vw, -1rem);
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .Top {
-    position: relative;
-    top: var(--spacing);
+    margin-top: var(--spacing);
     display: flex;
     justify-content: center;
 }
 
 .Bottom {
-    position: relative;
-    top: calc(2*var(--spacing));
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
     display: flex;
     justify-content: center;
 }
 
 /* Quadrants */
-
 .Q1 {
      border-top-left-radius: var(--quad-radius);}
 .Q2 {
@@ -307,63 +285,3 @@ p.Section {
     width: 94%;
     height: calc(0.56*var(--portfolio-body-width)*0.94)
 }
-
-
-.FillerPort {
-    border-top: 0.5vw solid rgb(0, 0, 0, 0.85);
-    width: 100%;
-    position: relative;
-    text-align: center;
-    border: min(0.25vw, 2px) solid rgb(0, 0, 0, 0.85);
-    /* border-right: 2px solid rgb(0, 0, 0, 0.85); */
-    /* background-color: rgba(50, 50, 50, 0.7); */
-    background: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.25));
-}
-.FillerPort:before,
-.FillerPort:after {
-  position: absolute;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-/* Line before hover */
-.FillerPort:before {
-  top: 0%;
-  display: block;
-  height: 110%;
-  width: 100%;
-  content: "";
-  background-color: rgb(255, 255, 255, 0);
-}
-
-.FillerPort:hover:before,
-.current .Filler:before {
-    top: 0%;
-    opacity: 1;
-    height: 110%;
-    background-color: rgb(255, 255, 255, 0.25);
-}
-
-.TabsPort {
-    margin-top: var(--header-height);
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    height: max(4vw, 2.3rem);
-}
-
-.TabPort {
-    position: relative;
-    z-index: 1;
-    top: min(-1.35vw, -0.5rem);
-    color: rgba(10, 10, 10, 0.85);
-    font-family: 'Chivo', cursive;
-    font-weight: 900;
-    font-size: max(2vw, 1rem);
-    letter-spacing: 0.125vw;
-}
-
-.FooterTab#Portfolio {
-    color: white;
-    font-family: 'Chivo', cursive;
-    font-weight: 900;
-  }

@@ -3,8 +3,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 import './Home.css';
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.css';
-import Tabs from '../App+/Tabs/Tabs.js';
 import Disclaimer from "../Temp/Disclaimer.js"
+import Tabs from '../App+/Tabs/Tabs.js';
+import Footer from '../App+/Footer/Footer.js';
 
 import LEO from "../images/LEO.jpg";
 import HummingFaceImage from "../images/ExhibitImages/HummingFace.jpg";
@@ -158,18 +159,6 @@ const Home = () => {
                         Outside of school and work, I also love to play and compose music. I have played piano my whole life, picking up guitar in my mid-teens and having a brief stint as a drummer as well. My style is generally alternative rock, although I really try to stay versatile and grow into other genres. Music aside, I also enjoy tennis, squash, running, hands-on projects, sailing, among <i>many</i> others.
                     </p>
 
-    const FooterTab = (props) => {
-        return (
-            <div className="FooterFiller">
-                    <Link to={props.link} style={{ textDecoration: 'none' }}>
-                        <div className="FooterTab" id="Home">
-                            <p>{props.title}</p>
-                        </div>
-                    </Link>
-            </div>
-        );
-    }
-
     return (
         <>
             <Disclaimer/>
@@ -179,17 +168,10 @@ const Home = () => {
                         {galleryCurrent}
                     </div>
                 </div>
-                <Tabs
-                        title1="Work"
-                        title2="Education"
-                        title3="Portfolio"
-                        link1="/work"
-                        link2="/education"
-                        link3="/portfolio"
-                    />
+                <Tabs title1="About" link1="/#aboutme" page="Home"/>
             </div>
             <div className="body" id="Home">
-                <h2 id="Home">About me</h2>
+                <h2 className="Home" id="aboutme">About me</h2>
                 <h3 id="Home">Who I am</h3>
                 <div className="CenterLeo">
                     <img
@@ -203,32 +185,13 @@ const Home = () => {
                 {whatIDo}
             </div>
             <div className="body" id="Home">
-                <h2 id="Home">Documents</h2>
+                <h2 className="Home">Documents</h2>
                 <h3 id="Home">My Résumé</h3>
                 <div className="ResumePosition">
                     <iframe src="https://drive.google.com/file/d/12vix--qu-DkUbIdiGD_drLmiRTw9i-BB/preview" allow="autoplay" className="ResumePDF"></iframe>
                 </div>
             </div>
-            <div className="Footer">
-                <div className="FooterTabs">
-                    <FooterTab
-                        title="Home"
-                        link="/"
-                    />
-                    <FooterTab
-                        title="Work"
-                        link="/work"
-                    />
-                    <FooterTab 
-                        title="Education"
-                        link="/education"
-                    />
-                    <FooterTab 
-                        title="Portfolio"
-                        link="/portfolio"
-                    />
-                </div>
-            </div>
+            <Footer page="Home"/>
         </>
     )
 }

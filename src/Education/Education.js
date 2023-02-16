@@ -1,30 +1,17 @@
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Education.css';
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.js';
 import '../App+/Tabs/Tabs.css';
-
-import Tabs from '../App+/Tabs/Tabs.js';
 import Disclaimer from "../Temp/Disclaimer.js"
+import Tabs from '../App+/Tabs/Tabs.js';
+import Footer from '../App+/Footer/Footer.js';
 
 import NYU from "../images/NYU.png";
 import NEU from "../images/NEU.png"; // https://www.google.com/search?q=northeastern+university+logo&rlz=1C5CHFA_enAU806AU806&sxsrf=ALiCzsY0AIofA2r-Ylu6_-E7EYIkgHjUsw:1657999670977&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjWg7SLkv74AhX4GVkFHRJgDCsQ_AUoAXoECAEQAw&biw=1527&bih=762&dpr=2.2#imgrc=jFaBWjkNtOSB5M&imgdii=v84AuK80Z_B2sM
 import LFNY from "../images/LFNY.png";
 
 const Education = () => {
-
-    const FooterTab = (props) => {
-        return (
-            <div className="FooterFiller">
-                    <Link to={props.link} style={{ textDecoration: 'none' }}>
-                        <div className="FooterTab" id="Education">
-                            <p>{props.title}</p>
-                        </div>
-                    </Link>
-            </div>
-        );
-    }
 
     const NYUDesc1 = "I am currently completing my final semester at NYU, studying Computer and Data Science after shifting from Mechancial Engineering in 2020. "
     const NYUDesc2 = "My studies triggered me, leading to me taking on several computer/data science projects in my free time with peers and solo. These include this website, music generation using Convolutional Neural Networks (CNNs), Kaggle competitions, among others. At NYU, I've also made a habbit of attending conferences with speakers such as Yann LeCun."
@@ -35,40 +22,14 @@ const Education = () => {
     const LFNYDesc1 = "I went to the Lycée Français de New York (LFNY), a francophone school in New York City  (kindergarten to highschool). In my final years at the LFNY, I chose the scientific French Baccalaureate with a specialization in physics. The baccalaureat was a two year endeavour, consisting of advanced year-long projects (Travaux Personnels Encadrés or TPE), scrutinous presentations, and - of course - multiple exams. I ultimately recieved my diploma with honors in 2018."
     const LFNYDesc2 = "I left the LFNY fluent in French, English, and confident in Spanish (fluent in Swedish from external experience as well). I look back fondly on the knowlegde I accumulated during my time at the LFNY, notably through my scientific diploma - ranging from physics, chemistry, biology, philosophy as well as music and art! I was also part of the debate club, the TED Club, the yearbook commitee, and was awarded the art prize in my last years there. I also pursued several extracurricular hobbies during my time at the LFNY." 
 
-    const Tab = (props) => {
-        return (
-            <div className="FillerEdu">
-                    <Link to={props.link} style={{ textDecoration: 'none' }}>
-                        <div className="TabEdu">
-                            <p>{props.title}</p>
-                        </div>
-                    </Link>
-            </div>
-        );
-    }
-
     return (
         <>
             <Disclaimer/>
             <div className="header" id="Education">
                 <div className="Head" id="Education">
-                    <Link to="/">
-                        <div className="HomeLink">
-                            <p id="HomeLink">Home</p>
-                        </div>
-                    </Link>
-                    <div>
-                        <h1 id="Education">Education</h1>
-                    </div>
+                    <h1 id="Education">Education</h1>
                 </div>
-                <Tabs
-                    title1="Home"
-                    title2="Work"
-                    title3="Portfolio"
-                    link1="/"
-                    link2="/work"
-                    link3="/portfolio"
-                />
+                <Tabs title1="Home" link1="/" page="Education"/>
             </div>
             <div className="Education">
                 <div className="JoinNYU">
@@ -91,9 +52,10 @@ const Education = () => {
                         <p id="Desc1Lowerish">{NYUDesc3}</p>
                         <p id="Desc1Lower">
                             <ul>
-                                <li>Machine Learning</li>
+                                <li>Deep Learning with <b>Yann LeCun</b> (Graduate)</li>
                                 <li>Deep Learning (Advanced Topics in Data Science)</li>
-                                <li>Machine Learning for Natural Language Understanding</li>
+                                <li>Machine Learning for NLP (Graduate)</li>
+                                <li>Machine Learning</li>
                                 <li>Computer Systems Organization</li>
                                 <li>Algorithms</li>
                                 <li>Discrete Math</li>
@@ -160,22 +122,7 @@ const Education = () => {
                     </div>
                 </div>
             </div>    
-            <div className="Footer">
-                <div className="FooterTabs">
-                    <FooterTab
-                        title="Home"
-                        link="/"
-                    />
-                    <FooterTab
-                        title="Work"
-                        link="/work"
-                    />
-                    <FooterTab 
-                        title="Portfolio"
-                        link="/portfolio"
-                    />
-                </div>
-            </div>
+            <Footer page="Education"/>
         </>
     );
 }

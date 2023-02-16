@@ -1,21 +1,12 @@
-import { useEffect, useState } from 'react';
-import { Waypoint } from "react-waypoint";
 import { Link } from 'react-router-dom';
 import './Work.css';
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.js';
 import '../App+/Tabs/Tabs.css';
-import { 
-    ScrollContainer, 
-    ScrollPage, 
-    Animator,
-    batch, 
-    Sticky,
-    Zoom,
-    Fade,
-    MoveOut,
-    MoveIn
-} from 'react-scroll-motion'
+
+import Disclaimer from "../Temp/Disclaimer.js"
+import Tabs from '../App+/Tabs/Tabs.js';
+import Footer from '../App+/Footer/Footer.js';
 
 import IBM from "../images/IBM.png";
 import BROCC from "../images/BROCC.png";
@@ -23,18 +14,6 @@ import ANALOGIC from "../images/ANALOGIC.png";
 import PS6 from "../images/PS6.png";
 
 const Work = () => {
-
-    const FooterTab = (props) => {
-        return (
-            <div className="FooterFiller">
-                    <Link to={props.link} style={{ textDecoration: 'none' }}>
-                        <div className="FooterTab" id="Work">
-                            <p>{props.title}</p>
-                        </div>
-                    </Link>
-            </div>
-        );
-    }
 
     const IBMText1 = <p id="IBMText1">
         I completed my data science internship with IBM’s Extreme Blue program in Raleigh, NC. Extreme Blue is IBM’s technical leadership program in which teams of four interns work together to create a product and solve a real world problem. <br></br> <br></br>
@@ -77,33 +56,12 @@ const Work = () => {
     
     return (
         <div>
-            <div className="Work">
-                <div className="DISCLAIMERbig"><div className="DISCLAIMERsmall">Website still under development!</div></div>
-                <Link to="/">
-                    <div className="WorkLink">
-                        <p id="WorkLink">Home</p>
-                    </div>
-                </Link>
-                <div className='WorkTitles'>
+            <Disclaimer/>
+            <div className="header" id="Work">
+                <div className="Head" id="Work">
                     <h1 id="Work">WORK</h1>
-                    {/* <p id="Experience">EXPERIENCE</p> */}
                 </div>
-                {/* <div className="TabsWork">
-                    <Tab 
-                        title="Home"
-                        link="/"
-                    />
-                    <Tab
-                        title="Education"
-                        link="/education"
-                    />
-                    <Tab 
-                        title="Portfolio"
-                        link="/portfolio"
-                    />
-                </div> */}
-                <div className='BottomBar'></div>
-                <div className="Signal"></div>
+                <Tabs title1="Home" link1="/" page="Work"/>
             </div>
             <div className="IBM">
                 <img
@@ -137,22 +95,7 @@ const Work = () => {
                 />
                 {PS6Text1}
             </div>
-            <div className="Footer">
-                <div className="FooterTabs">
-                    <FooterTab
-                        title="Home"
-                        link="/"
-                    />
-                    <FooterTab 
-                        title="Education"
-                        link="/education"
-                    />
-                    <FooterTab
-                        title="Portfolio"
-                        link="/portfolio"
-                    />
-                </div>
-            </div>
+            <Footer page="Work"/>
         </div>
     );
 }

@@ -3,11 +3,8 @@
 .Footer {
     position: relative;
     width: 100%;
-    height: max(min(6.25vw, 12vh), 5rem);
-    /* background-color: var(--home-color); */
-    text-align: center;
+    height: max(min(6.25vw, 12vh), 4rem);
 
-    background-image: url("../../images/Backgrounds/HomeBackground.jpg");
     background-repeat: no-repeat;
 
     -moz-background-attachment: fixed;
@@ -21,25 +18,62 @@
     background-size: 100vmax 100%;
 }
 
-.FooterTabs {
-    padding-left: calc(50vw - var(--body-width)/2);
-    padding-right: calc(51vw - var(--body-width)/2);
+/* Page Specific Background */
+.Footer#Home {
+    background-image: url("../../images/Backgrounds/HomeBackground.jpg");
+}
+.Footer#Work {
+    background-image: url("../../images/Backgrounds/WorkBackground.jpg");
+}
+.Footer#Education {
+    background-image: url("../../images/Backgrounds/LibraryBackground.jpg");
+}
+.Footer#Portfolio {
+    background-image: url("../../images/Backgrounds/PortfolioBackground.jpg");
+}
+
+/* General */
+.CenterFooter {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.CenterFooter#Work {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.CenterFooter#Education {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.FooterItems {
     display: flex;
     overflow: hidden;
 }
 
-.FooterFiller {
-    width: 100%;
+.FooterItem {
     position: relative;
-    text-align: center;
+    top: max(1vw, 0.75rem);
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+
+    font-family: var(--title-font);
+    font-size: max(min(1.25vw, 55vh), 0.75rem);
+    font-weight: 600;
+    letter-spacing: max(0.25vw, 2px);
 }
 
-.FooterTab {
-    font-family: var(--title-font);
-    position: relative;
-    z-index: 1;
-    top: 1vw;
-    font-weight: 600;
-    font-size: max(min(1.25vw, 55vh), 0.75rem);
-    letter-spacing: 4px;
+/* Page Specific Text*/
+
+.FooterItem#Home {
+    color: whitesmoke;
+}
+.FooterItem#Work {
+    color: whitesmoke;
+    /* font-family: 'Exo', sans-serif; */
+}
+.FooterItem#Education {
+    color: rgb(231, 231, 231);
+}
+.FooterItem#Portfolio {
+    color: whitesmoke;
 }
