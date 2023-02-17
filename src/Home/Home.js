@@ -1,3 +1,6 @@
+import React from 'react';
+import { View } from 'react-native';
+import ReactDOM from 'react-dom'
 import { useEffect, useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Home.css';
@@ -12,7 +15,6 @@ import HummingFaceImage from "../images/ExhibitImages/HummingFace.jpg";
 import NLPImage from "../images/ExhibitImages/NLP.jpg";
 import WebsiteImage from "../images/ExhibitImages/Website.jpg";
 import HyperloopImage from "../images/ExhibitImages/Hyperloop.jpg";
-
 
 const Home = () => {
     const Leo = <>
@@ -34,7 +36,8 @@ const Home = () => {
                                 <div className="ExhibitText">
                                     <h5 id="ExhibitText">Music Generation</h5>
                                     <p id="ExhibitText">
-                                        Sound generation for musical sampling using <b>GANs</b>, <b>Autoencoders</b>, and <b>Diffusion</b> models.
+                                        Sound generation for musical sampling using <b>GANs</b>, <b>Autoencoders</b>, and <b>Diffusion</b> models.<br></br><br></br>
+                                        Eventually, the model will conditionally generate samples based on the user input: an automated <b>sound engineer</b>.
                                     </p>
                                 </div>
                                 <Link style={{textDecoration: 'none'}} to="/Portfolio/#HummingFace">
@@ -80,7 +83,7 @@ const Home = () => {
                             <div className="ExhibitText">
                                 <h5 id="ExhibitText">Web Development</h5>
                                 <p id="ExhibitText">
-                                    I am self taught in Web Development. My learning journey started at IBM and continued beyond.<br></br><br></br>
+                                    I am self taught in Web Development. My learning journey started at <b>IBM</b> and continued beyond.<br></br><br></br>
                                     
                                     I designed and created <b>this website</b> using ReactJS.
                                 </p>
@@ -119,25 +122,75 @@ const Home = () => {
                         </>
 
     const [count, setCount] = useState(0);
-    const gallery = [Leo, HummingFace, HummingFace, NLP, NLP, Website, Website, Hyperloop, Hyperloop]
+    const gallery = [Leo, HummingFace, NLP, Website, Hyperloop]
     const galleryCurrent = gallery[count];
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCount(prevCount => prevCount + 1) // new
-            if(count > gallery.length - 2) // I'n not entirely sure why -2
-            {
-                setCount(prevCount => prevCount - prevCount)
-            }
-        }, 4000);
+    const ref = React.useRef(null);
+    var opacity = 0;
+    var i = 0;
 
-        return () => clearInterval(interval);
-    })
+    function myLoop1() {   
+        const intervalId = setInterval(() => {
+            var body = ref.current;
+            if (opacity < 1) {
+                opacity += 0.025;
+                body.style.opacity = opacity;
+    
+            } else {
+                console.log(i);
+                clearInterval(intervalId)
+                myLoop2()
+            }
+        }, 25);
+    }
+
+    function myLoop2() {  
+        if (i == 0)
+        {
+            const intervalId = setInterval(() => {
+                clearInterval(intervalId);
+                myLoop3()
+            }, 1000);
+        }  
+        else
+        {
+            const intervalId = setInterval(() => {
+                clearInterval(intervalId);
+                myLoop3()
+            }, 5000);
+        }     
+    }
+
+    function myLoop3() {         
+        const intervalId = setInterval(() => {
+            var body = ref.current;
+            if (opacity > 0) {
+                opacity -= 0.025;
+                body.style.opacity = opacity;
+    
+            } else {
+                clearInterval(intervalId)
+                // setCount({ count : count + 1 });
+                i++;
+                setCount(i); // new
+                if(i > gallery.length -1)
+                {
+                    i = 0;
+                    setCount(i);
+                }    
+                myLoop1()
+            }
+        }, 25);
+    }
+    
+    useEffect(() => {
+        myLoop1();  
+    }, []);
 
     const whoAmI =  <p id="Home"> 
                         My name is Léo Dupire. I am an undergraduate Computer & Data Science student, completing my final year at New York University. My background is originally in Mechanical Engineering. I fell in love with engineering from a young age, taking on increasingly ambitious projects throughout the years. Eventually, I found that I also had a great interest in Computer Science and Data Science, after which I changed my field of study accordingly. <br></br> <br></br>
                         I spent my early years in a medieval village in the south of France, until moving to Manhattan. Througout my time in New York, I stayed close to my French and Swedish heritage and learned English as well as some Spanish along the way. I went to the Lycée Français de New York, graduating in 2018 and pursuing higher education at Northeastern University, followed by New York University. <br></br> <br></br>
-                        I have undertaken several personal projects, as can be seen in my portfolio, and I'm always looking for opportunities to grow and exercise my creativity and persistence. If you have any questions, please reach out!
+                        I love taking on new challenges, as can be seen in my portfolio. I'm always looking for opportunities to grow and exercise my creativity and perseverance. If you have any questions, please reach out!
                     </p>
     const whatIDo = <p id="Home">
                         As a Computer and Data Scientist I have worked in a variety of fields through academic studies as well as professional experience. I have worked in fields such as:
@@ -164,7 +217,7 @@ const Home = () => {
             <Disclaimer/>
             <div className="header" id="Home">
                 <div className="Head" id="Home">
-                    <div className="HeadContent">
+                    <div className="HeadContent" ref={ref}>
                         {galleryCurrent}
                     </div>
                 </div>

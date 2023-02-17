@@ -9,10 +9,10 @@
     -o-background-attachment: fixed;
     background-attachment: fixed;
 
-    -webkit-background-size: 100vmax 100%;
-    -moz-background-size: 100vmax 100%;
-    -o-background-size: 100vmax 100%;
-    background-size: 100vmax 100%;
+    -webkit-background-size: var(--background-size);
+    -moz-background-size: var(--background-size);
+    -o-background-size: var(--background-size);
+    background-size: var(--background-size);
 }
 
 .Head#Work {
@@ -27,8 +27,9 @@ h1#Work {
     left: 50%;
 
     font-family: var(--title-font);
-    font-size: 13vw;
-    color: rgb(0, 0, 0, 0.85);
+    font-size: max(13vw, 6rem);
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 0 max(0.25rem, 0.75vw)  rgba(0, 0, 0, 0.626);
 
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -78,98 +79,76 @@ h1#Work {
     width: 25vw;
 }
 
-
-/* SIDEBAR */
-
-.IBM2 {
-    height: 50vh;
+.WorkFlex {
+    width: 100%;
+    display: flex;
 }
 
-/* From the internet */
+/* Text */
+.WorkText {
+    margin-top: 1vw;
+    margin-left: var(--left-pad-text);
+    margin-right: var(--left-pad-text);
+    text-align: justify;
 
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-
-.fa-2x {
-font-size: 2em;
+    font-family: var(--text-font);
+    font-size: var(--work-font-size);
+    font-weight: 400;
+    line-height: var(--work-line-height);
 }
-
-.fa {
-position: relative;
-display: table-cell;
-width: 60px;
-height: 36px;
-text-align: center;
-vertical-align: middle;
-font-size:20px;
-}
-
-
-.main-menu:hover,nav.main-menu.expanded {
-width:40vw;                                /*WIDTH HERE*/
-overflow:visible;
-}
-
-.main-menu {
-background:#212121;
-border-top: 2px solid white;
-border-right:1px solid #e5e5e5;
-position:absolute;
-bottom:0;                                 /*Here for HEIGHT of sidebar*/
-right:0;                                    /*Here for left/right of sidebar*/
-width:200px;
-border-top-left-radius: 6px;
-border-bottom-left-radius: 6px;
-overflow:hidden;
--webkit-transition:width .1s linear;
-transition:width .1s linear;
--webkit-transform:translateZ(0) scale(1,1);
-z-index:1000;
+@media only screen and (max-width: 1000px) {
+    #WorkText {
+        width: 93%;
+    }
 }
 
 #IBMText1 {
-    position: relative;
-    width: 93vw;
-    top: 1vw;
-    left: var(--left-pad-text);
     color: white;
-    font-size: min(1.3rem, calc(0.75vw + 1vh));
-    font-weight: 400;
-    font-family: var(--text-font);
-    line-height: calc(0.75vw + 1vh + 7.5px);
+}
+@media only screen and (max-width: 1000px) {
+    #IBMText1 {
+        width: 93%;
+    }
 }
 
 #BroccText1 {
-    position: relative;
-    width: 93vw;
-    top: 2vw;
-    left: var(--left-pad-text);
     color: white;
-    font-size: min(1.3rem, calc(0.75vw + 1vh));
-    font-weight: 400;
-    font-family: var(--text-font);
-    line-height: calc(1vw + 1vh + 7.5px);
+}
+@media only screen and (max-width: 1000px) {
+    #BroccText1 {
+        width: 93%;
+    }
 }
 
 #AnalogicText1 {
-    position: relative;
-    width: 93vw;
-    top: 1vw;
-    left: var(--left-pad-text);
     color: white;
-    font-size: min(1.3rem, calc(0.75vw + 1vh));
-    font-weight: 400;
-    font-family: var(--text-font);
-    line-height: calc(1vw + 1vh + 7.5px);
+}
+@media only screen and (max-width: 1000px) {
+    #AnalogicText1 {
+        width: 93%;
+    }
 }
 
 #PS6Text1 {
-    position: relative;
-    width: 93vw;
-    top: 1vw;
-    left: var(--left-pad-text);
     color: black;
-    font-size: min(1.3rem, calc(0.75vw + 1vh));
-    font-weight: 500;
-    font-family: var(--text-font);
-    line-height: calc(1vw + 1vh + 7.5px);
+}
+@media only screen and (max-width: 1000px) {
+    #PS6Text1 {
+        width: 93%;
+    }
+}
+
+/* Supporting Images */
+.WorkImage {
+    margin-top: 1vw;
+    margin-right: 5vw;
+    width: calc(93%/3);
+    height: calc(93%/3);
+    border-radius: 2vw;
+}
+@media only screen and (max-width: 1000px) {
+    .WorkImage {
+        margin: 0;
+        width: 0%;
+    }
 }

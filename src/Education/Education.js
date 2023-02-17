@@ -7,9 +7,9 @@ import Disclaimer from "../Temp/Disclaimer.js"
 import Tabs from '../App+/Tabs/Tabs.js';
 import Footer from '../App+/Footer/Footer.js';
 
-import NYU from "../images/NYU.png";
-import NEU from "../images/NEU.png"; // https://www.google.com/search?q=northeastern+university+logo&rlz=1C5CHFA_enAU806AU806&sxsrf=ALiCzsY0AIofA2r-Ylu6_-E7EYIkgHjUsw:1657999670977&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjWg7SLkv74AhX4GVkFHRJgDCsQ_AUoAXoECAEQAw&biw=1527&bih=762&dpr=2.2#imgrc=jFaBWjkNtOSB5M&imgdii=v84AuK80Z_B2sM
-import LFNY from "../images/LFNY.png";
+import NYU from "../images/EducationImg/NYU.png";
+import NEU from "../images/EducationImg/NEU.png"; // https://www.google.com/search?q=northeastern+university+logo&rlz=1C5CHFA_enAU806AU806&sxsrf=ALiCzsY0AIofA2r-Ylu6_-E7EYIkgHjUsw:1657999670977&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjWg7SLkv74AhX4GVkFHRJgDCsQ_AUoAXoECAEQAw&biw=1527&bih=762&dpr=2.2#imgrc=jFaBWjkNtOSB5M&imgdii=v84AuK80Z_B2sM
+import LFNY from "../images/EducationImg/LFNY.png";
 
 const Education = () => {
 

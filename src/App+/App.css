@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aladin&family=Alfa+Slab+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Righteous&family=Sedgwick+Ave&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
 :root {
     --title-font: 'Montserrat Alternates', sans-serif;
@@ -14,6 +15,8 @@
     /* Home */
     --exhibit-height: max(20vw, 9rem);
     --animation-time: 36s;
+    --background-size: max(100vh, 100vw) 100%;
+
 
     --padding-top-bottom-header-image: 25vh;
     --paddy: calc(35vh - 15vw);
@@ -26,12 +29,12 @@
     --image-border: 0.6vw;
 
     --body-width: min(90vw, 90vh, 70rem);
-    --font-title: "Georgia";
-    --font-text: "Palatino";
 
     /* Work */
-    --left-pad-text: 4vw;
     --header-text-color: #0f62fe;
+    --left-pad-text: 4vw;
+    --work-font-size: max(min(1.75vw, 1.75vh), 0.8rem);
+    --work-line-height: max(2.5vmin, 1.25rem);
 
     /* Portfolio */
     --portfolio-title-height: min(10vmax, 10rem);
@@ -40,10 +43,11 @@
     --block-width: calc(1.52*var(--block-height));
     --spacing: 1.5vw;
     --iconHeight: 10vw;
-    --portfolio-body-width: min(90vw, 70rem, max(1.4*var(--scale)*var(--header-height) - 30vh, 60vh));
+    --portfolio-body-width: min(90vw, 90vh, 70rem);
     --scale: 1.4;
     --quad-radius: 0.75rem;
 
     /* Tabs */
     --tab-height: max(4vw, 2.3rem);
+    --tab-font-size: min(2vmax, 1.75rem);
 }

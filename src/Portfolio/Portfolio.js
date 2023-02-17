@@ -18,46 +18,46 @@ import Disclaimer from "../Temp/Disclaimer.js"
 import Tabs from '../App+/Tabs/Tabs.js';
 import Footer from '../App+/Footer/Footer.js';
 
-import DataScienceText from "../images/DataScienceText.png";
-import ComputerScienceText from "../images/ComputerScienceText.png";
-import MechEText from "../images/MechEText.png";
-import RandomText from "../images/RandomText.png";
+import DataScienceText from "../images/PortfolioImg/Blocks/DataScienceText.png";
+import ComputerScienceText from "../images/PortfolioImg/Blocks/ComputerScienceText.png";
+import MechEText from "../images/PortfolioImg/Blocks/MechEText.png";
+import RandomText from "../images/PortfolioImg/Blocks/RandomText.png";
 
-import DataScienceIcon from "../images/DataScienceIcon.png";
-import ComputerScienceIcon from "../images/ComputerScienceIcon.png";
-import MechEIcon from "../images/MechEIcon.png";
-import RandomIcon from "../images/RandomIcon.png";
+import DataScienceIcon from "../images/PortfolioImg/Blocks/DataScienceIcon.png";
+import ComputerScienceIcon from "../images/PortfolioImg/Blocks/ComputerScienceIcon.png";
+import MechEIcon from "../images/PortfolioImg/Blocks/MechEIcon.png";
+import RandomIcon from "../images/PortfolioImg/Blocks/RandomIcon.png";
 
-import Spectrogram from "../images/PortfolioProjects/Spectrogram.png";
+import Spectrogram from "../images/PortfolioImg/Spectrogram.png";
 
-import GoKart1 from "../images/PortfolioProjects/GoKart1.jpg";
-import GoKart2 from "../images/PortfolioProjects/GoKart2.jpg";
-import GoKart3 from "../images/PortfolioProjects/GoKart3.png";
-import GoKart4 from "../images/PortfolioProjects/GoKart4.jpg";
-import GoKart5 from "../images/PortfolioProjects/GoKart5.jpg";
+import GoKart1 from "../images/PortfolioImg/GoKart1.jpg";
+import GoKart2 from "../images/PortfolioImg/GoKart2.jpg";
+import GoKart3 from "../images/PortfolioImg/GoKart3.png";
+import GoKart4 from "../images/PortfolioImg/GoKart4.jpg";
+import GoKart5 from "../images/PortfolioImg/GoKart5.jpg";
 
-import Hydro1 from "../images/PortfolioProjects/Hydro1.png";
-import Hydro2 from "../images/PortfolioProjects/Hydro2.png";
-import Hydro3 from "../images/PortfolioProjects/Hydro3.png";
-import Hydro4 from "../images/PortfolioProjects/Hydro4.png";
+import Hydro1 from "../images/PortfolioImg/Hydro1.png";
+import Hydro2 from "../images/PortfolioImg/Hydro2.png";
+import Hydro3 from "../images/PortfolioImg/Hydro3.png";
+import Hydro4 from "../images/PortfolioImg/Hydro4.png";
 
-import DAC1 from "../images/PortfolioProjects/DAC1.png";
-import DAC2 from "../images/PortfolioProjects/DAC2.png";
-import DAC3 from "../images/PortfolioProjects/DAC3.png";
-import DAC4 from "../images/PortfolioProjects/DAC4.png";
+import DAC1 from "../images/PortfolioImg/DAC1.png";
+import DAC2 from "../images/PortfolioImg/DAC2.png";
+import DAC3 from "../images/PortfolioImg/DAC3.png";
+import DAC4 from "../images/PortfolioImg/DAC4.png";
 
-import Vent1 from "../images/PortfolioProjects/Vent1.png";
-import Vent2 from "../images/PortfolioProjects/Vent2.png";
-import Vent3 from "../images/PortfolioProjects/Vent3.png";
-import Vent4 from "../images/PortfolioProjects/Vent4.png";
+import Vent1 from "../images/PortfolioImg/Vent1.png";
+import Vent2 from "../images/PortfolioImg/Vent2.png";
+import Vent3 from "../images/PortfolioImg/Vent3.png";
+import Vent4 from "../images/PortfolioImg/Vent4.png";
 
-import Hyperloop1 from "../images/PortfolioProjects/HyperloopMe.jpg";
-import Hyperloop2 from "../images/PortfolioProjects/Hyperloop2.jpg";
+import Hyperloop1 from "../images/PortfolioImg/HyperloopMe.jpg";
+import Hyperloop2 from "../images/PortfolioImg/Hyperloop2.jpg";
 
-import Music1 from "../images/PortfolioProjects/LogicPro.png";
-import Music2 from "../images/PortfolioProjects/Show.png";
+import Music1 from "../images/PortfolioImg/LogicPro.png";
+import Music2 from "../images/PortfolioImg/Show.png";
 
-import Alphabite from "../images/PortfolioProjects/Alphabite.png";
+import Alphabite from "../images/PortfolioImg/Alphabite.png";
 
 const Portfolio = () => {
     return (

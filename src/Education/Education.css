@@ -7,10 +7,10 @@
     -o-background-attachment: fixed;
     background-attachment: fixed;
 
-    -webkit-background-size: 100vmax 100%;
-    -moz-background-size: 100vmax 100%;
-    -o-background-size: 100vmax 100%;
-    background-size: 100vmax 100%;
+    -webkit-background-size: var(--background-size);
+    -moz-background-size: var(--background-size);
+    -o-background-size: var(--background-size);
+    background-size: var(--background-size);
 }
 
 .Head#Education {
@@ -54,7 +54,7 @@ h1#Education {
     background-color: transparent;
 
     font-family: var(--text-font);
-    font-size: 13vw;
+    font-size: max(13vw, 4rem);
     font-weight: 700;
     color: rgb(255, 243, 220);
 

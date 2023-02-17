@@ -17,22 +17,30 @@ const Tabs = (props) => {
             <div className="Tabs">
                 <Link to={link1} style={{ textDecoration: 'none' }}>
                     <div className="Tab" id={props.page}>
-                        <p id="pText">{title1}</p>
+                        <div className="TabSpacer" id="t1">
+                            <p id="pText">{title1}</p>
+                        </div>
                     </div>
                 </Link>
                 <Link to={link2} style={{ textDecoration: 'none' }}>
                     <div className="Tab" id={props.page}>
-                        <p id="pText">{title2}</p>
+                    <div className="TabSpacer" id="t2">
+                            <p id="pText">{title2}</p>
+                        </div>
                     </div>
                 </Link>
                 <Link to={link3} style={{ textDecoration: 'none' }}>
                     <div className="Tab" id={props.page}>
-                        <p id="pText">{title3}</p>
+                    <div className="TabSpacer" id="t3">
+                            <p id="pText">{title3}</p>
+                        </div>
                     </div>
                 </Link>
                 <Link to={link4} style={{ textDecoration: 'none' }}>
                     <div className="Tab" id={props.page}>
-                        <p id="pText">{title4}</p>
+                    <div className="TabSpacer" id="t4">
+                            <p id="pText">{title4}</p>
+                        </div>
                     </div>
                 </Link>
             </div>
