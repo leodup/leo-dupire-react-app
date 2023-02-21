@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aladin&family=Alfa+Slab+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Righteous&family=Sedgwick+Ave&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aladin&family=Bowlby+One&family=Chivo:wght@300;400;700;900&family=Erica+One&family=Luckiest+Guy&family=Monoton&family=Mrs+Sheppards&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&family=Sedgwick+Ave&display=swap");
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 :root {
     --title-font: 'Montserrat Alternates', sans-serif;
@@ -15,14 +15,14 @@
     /* Home */
     --exhibit-height: max(20vw, 9rem);
     --animation-time: 36s;
-    --background-size: max(100vh, 100vw) 100%;
+    --background-size: max(100vh, 100vw) calc(1.2*var(--header-height));
 
 
     --padding-top-bottom-header-image: 25vh;
     --paddy: calc(35vh - 15vw);
-    --home-color: rgb(220, 220, 220); /*rgb(22, 22, 22);  rgb(210, 255, 249) */
-    --counter-color-dark: rgb(50, 153, 146); /* rgb(25, 114, 110) */
-    --counter-color: rgb(109, 191, 187); /* rgb(64, 164, 159) */
+    --home-color: rgb(220, 220, 220);
+    --counter-color-dark: rgb(50, 153, 146);
+    --counter-color: rgb(109, 191, 187);
     --background-color: rgb(255, 255, 255);
     --profile-image-height: 17.5vw;
     --name-box-border-radius: 7.5vw;
