@@ -1,0 +1,18 @@
+/* GALLERY */
+
+.image-container2#WNet1 {
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100%;
+    width: 70%;
+}
+
+img#WN1 {
+    height: 100%;
+    width: 100%;
+}
+
+img#WN1:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+}

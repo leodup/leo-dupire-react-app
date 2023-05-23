@@ -188,7 +188,7 @@ const Home = () => {
     }, []);
 
     const whoAmI =  <p id="Home"> 
-                        My name is Léo Dupire. I am an undergraduate Computer & Data Science student, completing my final year at New York University. My background is originally in Mechanical Engineering. I fell in love with engineering from a young age, taking on increasingly ambitious projects throughout the years. Eventually, I found that I also had a great interest in Computer Science and Data Science, after which I changed my field of study accordingly. <br></br> <br></br>
+                        Hello! My name is Léo Dupire. I have a joint bachelor's degree in Computer & Data Science from New York University and also a background in Mechanical Engineering. I fell in love with engineering from a young age, taking on increasingly ambitious projects throughout the years. Eventually, I found that I also had a great interest in Computer Science and Data Science, after which I changed my field of study accordingly. <br></br> <br></br>
                         I spent my early years in a medieval village in the south of France, until moving to Manhattan. Througout my time in New York, I stayed close to my French and Swedish heritage and learned English as well as some Spanish along the way. I went to the Lycée Français de New York, graduating in 2018 and pursuing higher education at Northeastern University, followed by New York University. <br></br> <br></br>
                         I love taking on new challenges, as can be seen in my portfolio. I'm always looking for opportunities to grow and exercise my creativity and perseverance. If you have any questions, please reach out!
                     </p>
@@ -241,7 +241,7 @@ const Home = () => {
                 <h2 className="Home">Documents</h2>
                 <h3 id="Home">My Résumé</h3>
                 <div className="ResumePosition">
-                    <iframe src="https://drive.google.com/file/d/12vix--qu-DkUbIdiGD_drLmiRTw9i-BB/preview" allow="autoplay" className="ResumePDF"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1nks36wwjVsh8qz4xs2vzo-QOeEp7c1kZ/preview" allow="autoplay" className="ResumePDF"></iframe>
                 </div>
             </div>
             <Footer page="Home"/>

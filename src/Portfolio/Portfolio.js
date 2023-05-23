@@ -5,6 +5,7 @@ import '../App+/Tabs/Tabs.js';
 import '../App+/Tabs/Tabs.css';
 
 import "./Portfolio.css";
+import "./PortfolioFiles/WNet.css";
 import "./PortfolioFiles/HummingFace.css";
 import "./PortfolioFiles/GoKart.css";
 import "./PortfolioFiles/Hydro.css";
@@ -27,6 +28,10 @@ import DataScienceIcon from "../images/PortfolioImg/Blocks/DataScienceIcon.png";
 import ComputerScienceIcon from "../images/PortfolioImg/Blocks/ComputerScienceIcon.png";
 import MechEIcon from "../images/PortfolioImg/Blocks/MechEIcon.png";
 import RandomIcon from "../images/PortfolioImg/Blocks/RandomIcon.png";
+
+import WNet_Scores from "../images/PortfolioImg/WNet1.png";
+import WNet2 from "../images/PortfolioImg/WNet2.png";
+import WNet3 from "../images/PortfolioImg/WNet3.png";
 
 import Spectrogram from "../images/PortfolioImg/Spectrogram.png";
 
@@ -155,7 +160,45 @@ const Portfolio = () => {
                 <div className="DataScience">
                     <h2 className="Section" id="DataScience">Data Science</h2>
                     <div className='Project'>
-                        <h3 className="Section" id="HummingFace">Music Generation</h3>
+                        <h3 className="Section" id="WNet">Collision Prediction (WNet)</h3>
+                        <p className="Section">As one of my final undergraduate accomplishments, I, along with my teammate Dhruv Shetty, placed 2nd out of 31 teams in the final competition for <u>Yann LeCun</u>'s graduate Deep Learning course.</p>
+                        <div className='Gallery3'>
+                            <div className='image-container2' id="WNet1">
+                                <img 
+                                    id="WN1" 
+                                    src={WNet_Scores}
+                                    alt="WNet Scores"
+                                />
+                            </div>
+                        </ div>
+                        <p className="Section"><u>The task was as follows:</u> Given eleven video frames of moving and colliding objects (of varying shape, material, and color), we were charged with predicting the positions of these objects on the 22nd frame as a segmentation mask. This required the model to understand the physics of the situation. Our approach was simple and elegant, utilizing teacher forcing to iteratively predict the next image until reaching the 22nd. Below is an example of such an image-mask pair:</p>
+                        <div className='Gallery1'>
+                            <div className='image-container2' id="WNet1">
+                                <img 
+                                    id="WN1" 
+                                    src={WNet2}
+                                    alt="WNet 2"
+                                />
+                            </div>
+                        </ div>
+                        <p className="Section">Below is an example prediction given an input of 11 masks:</p>
+                        <div className='Gallery2'>
+                            <div className='image-container2' id="WNet1">
+                                <img 
+                                    id="WN1" 
+                                    src={WNet3}
+                                    alt="WNet 3"
+                                />
+                            </div>
+                        </ div>
+                        <p className="Section">By placing in the top 5 teams, we were able to present and defend our project in front of Yann LeCun, co-professor Alfredo Canziani, and the rest of the 90-person class.</p>
+                        <p className="Section">The report Dhruv and I wrote is displayed below. It covers a detailed explanation of our approach and implementation.</p>
+                        <div className="NLPPosition">
+                            <iframe src="https://drive.google.com/file/d/1HHzgNbPPx2atbquay9NcA4ivRYsn8w7C/preview" allow="autoplay" className="NLPPDF"></iframe>
+                        </div>
+                    </div>
+                    <div className='Project'>
+                        <h3 className="Section">Music Generation</h3>
                         <div className='Gallery2'>
                             <div className='image-container2' id="HuggingFace1">
                                 <img 
@@ -165,7 +208,7 @@ const Portfolio = () => {
                                 />
                             </div>
                         </ div>
-                        <p className="Section">I am currently working on this project. My teammate Mateus Aragão and I are designing and building multiple deep learning generative models (GAN, Auto-Encoder, Diffusion) to generate sample sounds from a user prompt. Such models can be used to aid musicians in finding that 'elusive' sound that they may not know how to obtain through traditional means. The model will generate original sounds for users to sample, even introducing a new source of inspiration for composition.</p>
+                        <p className="Section">My teammate Mateus Aragão and I started designing and building multiple deep learning generative models (GAN, Auto-Encoder, Diffusion) to generate sample sounds from a user prompt. I have now extended this to a solo project. Such models can be used to aid musicians in finding that 'elusive' sound that they may not know how to obtain through traditional means. The model will generate original sounds for users to sample, even introducing a new source of inspiration for composition.</p>
                     </div>
                     <div className='Project'>
                         <h3 className="Section" id="NLP">Natural Language Processing (NLP)</h3>
@@ -223,7 +266,7 @@ const Portfolio = () => {
                             </div>
                         </ div>
                         <p className="Section">Cornerstone is an intensive engineering design course at Northeastern University. It covers 2D and 3D modeling software such as AutoCAD and Solidworks, programming languages like MATLAB and C++, robotics and circuit design using Arduino. The course also teaches decision making strategies, product design techniques, as well as ethical engineering practices.<br></br><br></br>
-                            Completion of the course required a final project. My class’s assignment was a sustainability-themed museum exhibit for the Boston Museum of Science. I proposed the idea of carbon sequestration, the removal of CO​2 from the atmosphere to combat climate change.<br></br><br></br>
+                            Completion of the course required a final project. My class's assignment was a sustainability-themed museum exhibit for the Boston Museum of Science. I proposed the idea of carbon sequestration, the removal of CO​2 from the atmosphere to combat climate change.<br></br><br></br>
                             The exhibit had to be user friendly and appeal to users of all ages. For this, we made several iterations of our project, implementing universal design, and making it as intuitive as possible. This required several “focus group” meetings to see what the audience would want to see. I wanted to make the project as interactive as possible. This required all our programming, circuit building, and design skills to be put to use. We created a user interface using a touch screen as can be seen in Images 1 and 2. The goal of the exhibit was for the user to build his or her own negative emissions plant. Several user-decisions impacted their final score. These include: what to do with the CO​2,​ where to build the plant, and what energy source to use. Each step would subtract money from the budget. For maximum interactability, the user was tasked with building the plant using the blocks in Image 3. The amount of blocks used depended on what was left in the budget. This effectively tackled both the environmental and economical aspects of sustainability.</p>
                             <iframe className='DACVideo1' src="https://www.youtube.com/embed/P1on9m4jRk8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture, fullscreen"
                             allowfullscreen="allowfullscreen"

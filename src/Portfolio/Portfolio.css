@@ -273,8 +273,18 @@ p.Section {
     width: var(--portfolio-body-width);
 }
 
+.Gallery1 {
+    height: calc(2*var(--portfolio-body-width)/8);
+    width: var(--portfolio-body-width);
+}
+
 .Gallery2 {
     height: calc(3*var(--portfolio-body-width)/8);
+    width: var(--portfolio-body-width);
+}
+
+.Gallery3 {
+    height: calc(3.25*var(--portfolio-body-width)/8);
     width: var(--portfolio-body-width);
 }
 

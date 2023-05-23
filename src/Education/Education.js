@@ -13,7 +13,7 @@ import LFNY from "../images/EducationImg/LFNY.png";
 
 const Education = () => {
 
-    const NYUDesc1 = "I am currently completing my final semester at NYU, studying Computer and Data Science after shifting from Mechancial Engineering in 2020. "
+    const NYUDesc1 = "I completed my joint bachelor's degree of Computer and Data Science at NYU in 2023, after shifting from Mechancial Engineering in 2020. "
     const NYUDesc2 = "My studies triggered me, leading to me taking on several computer/data science projects in my free time with peers and solo. These include this website, music generation using Convolutional Neural Networks (CNNs), Kaggle competitions, among others. At NYU, I've also made a habbit of attending conferences with speakers such as Yann LeCun."
     const NYUDesc3 = "Notable courses:"
     const NEUDesc1 = "I completed two and a half years of Mechanical Engineering at Northeastern. I did my first semester of university abroad in Melbourne, Australia. During this time, I was involved in the Formula SAE team, for which I began the research and design process for a custom wind-tunnel.";
@@ -53,7 +53,7 @@ const Education = () => {
                         <p id="Desc1Lower">
                             <ul>
                                 <li>Deep Learning with <b>Yann LeCun</b> (Graduate)</li>
-                                <li>Deep Learning (Advanced Topics in Data Science)</li>
+                                <li>Deep Learning: Advanced Topics in Data Science</li>
                                 <li>Machine Learning for NLP (Graduate)</li>
                                 <li>Machine Learning</li>
                                 <li>Computer Systems Organization</li>
