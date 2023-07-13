@@ -16,3 +16,9 @@ img#WN1:hover {
     transform: scale(1.05, 1.05);
     transition: 0.5s;
 }
+
+.WNetVideo1 {
+    margin-left: 15%;
+    width: 70%;
+    height: calc(0.56*var(--portfolio-body-width)*0.7)
+}

@@ -161,6 +161,12 @@ const Portfolio = () => {
                     <h2 className="Section" id="DataScience">Data Science</h2>
                     <div className='Project'>
                         <h3 className="Section" id="WNet">Collision Prediction (WNet)</h3>
+                        <iframe className="WNetVideo1" width="560" height="315" src="https://www.youtube.com/embed/nUL6JHKiNiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen="allowfullscreen"
+                        mozallowfullscreen="mozallowfullscreen" 
+                        msallowfullscreen="msallowfullscreen" 
+                        oallowfullscreen="oallowfullscreen" 
+                        webkitallowfullscreen="webkitallowfullscreen"></iframe>
                         <p className="Section">As one of my final undergraduate accomplishments, I, along with my teammate Dhruv Shetty, placed 2nd out of 31 teams in the final competition for <u>Yann LeCun</u>'s graduate Deep Learning course.</p>
                         <div className='Gallery3'>
                             <div className='image-container2' id="WNet1">
