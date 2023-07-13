@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.108c7203.css",
-    "main.js": "/static/js/main.8a8b5930.js",
+    "main.css": "/static/css/main.5ae38e00.css",
+    "main.js": "/static/js/main.458bec49.js",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/LogicPro.png": "/static/media/LogicPro.6f7d15fed4f2a3e36ac9.png",
@@ -54,14 +54,17 @@
     "static/media/LFNY.png": "/static/media/LFNY.afd4be08404a5c010b0c.png",
     "static/media/Hyperloop.jpg": "/static/media/Hyperloop.b1bd9be560b3d5b01510.jpg",
     "static/media/Website.jpg": "/static/media/Website.0cfc780eb6b9a69f8bcf.jpg",
+    "static/media/Email.png": "/static/media/Email.134a88e3e5aec97e86c4.png",
+    "static/media/LinkedIn.png": "/static/media/LinkedIn.69948ad414278f93a624.png",
+    "static/media/GitHub.png": "/static/media/GitHub.a7f46ea12daa401ac92e.png",
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.108c7203.css.map": "/static/css/main.108c7203.css.map",
-    "main.8a8b5930.js.map": "/static/js/main.8a8b5930.js.map"
+    "main.5ae38e00.css.map": "/static/css/main.5ae38e00.css.map",
+    "main.458bec49.js.map": "/static/js/main.458bec49.js.map"
   },
   "entrypoints": [
-    "static/css/main.108c7203.css",
-    "static/js/main.8a8b5930.js"
+    "static/css/main.5ae38e00.css",
+    "static/js/main.458bec49.js"
   ]
 }
