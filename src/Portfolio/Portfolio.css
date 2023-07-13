@@ -252,22 +252,30 @@ h2.Section {
     padding-top: 0.5vh;
     margin-bottom: 2vh;
     border-top: 0.5vh solid black;
-
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
-    background-image: url("../images/Backgrounds/PortfolioBackground.jpg");
-    background-repeat: no-repeat;
-
-    -moz-background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    background-attachment: fixed;
-
-    -webkit-background-size: var(--background-size);
-    -moz-background-size: var(--background-size);
-    -o-background-size: var(--background-size);
-    background-size: var(--background-size);
+}
+@media only screen and (min-width: 800px) {
+    #DataScience, #ComputerScience, #MechE, #Random {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    
+        background-image: url("../images/Backgrounds/PortfolioBackground.jpg");
+        background-repeat: no-repeat;
+    
+        -moz-background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -o-background-attachment: fixed;
+        background-attachment: fixed;
+    
+        -webkit-background-size: var(--background-size);
+        -moz-background-size: var(--background-size);
+        -o-background-size: var(--background-size);
+        background-size: var(--background-size);
+    }
+}
+@media only screen and (max-width: 800px) {
+    #DataScience, #ComputerScience, #MechE, #Random {
+        color: black;
+    }
 }
 
 div.TBC{

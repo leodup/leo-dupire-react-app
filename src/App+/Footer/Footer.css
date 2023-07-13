@@ -4,32 +4,49 @@
     position: relative;
     width: 100%;
     height: max(min(6.25vw, 12vh), 4rem);
-
-    background-repeat: no-repeat;
-
-    -moz-background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    background-attachment: fixed;
-
-    -webkit-background-size: var(--background-size);
-    -moz-background-size: var(--background-size);
-    -o-background-size: var(--background-size);
-    background-size: var(--background-size);
 }
+@media only screen and (min-width: 800px) {
+    .Footer {
+        background-repeat: no-repeat;
 
-/* Page Specific Background */
-.Footer#Home {
-    background-image: url("../../images/Backgrounds/HomeBackground.jpg");
+        -moz-background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -o-background-attachment: fixed;
+        background-attachment: fixed;
+    
+        -webkit-background-size: var(--background-size);
+        -moz-background-size: var(--background-size);
+        -o-background-size: var(--background-size);
+        background-size: var(--background-size);
+    }
+    
+    /* Page Specific Background */
+    .Footer#Home {
+        background-image: url("../../images/Backgrounds/HomeBackground.jpg");
+    }
+    .Footer#Work {
+        background-image: url("../../images/Backgrounds/WorkBackground.jpg");
+    }
+    .Footer#Education {
+        background-image: url("../../images/Backgrounds/LibraryBackground.jpg");
+    }
+    .Footer#Portfolio {
+        background-image: url("../../images/Backgrounds/PortfolioBackground.jpg");
+    }
 }
-.Footer#Work {
-    background-image: url("../../images/Backgrounds/WorkBackground.jpg");
-}
-.Footer#Education {
-    background-image: url("../../images/Backgrounds/LibraryBackground.jpg");
-}
-.Footer#Portfolio {
-    background-image: url("../../images/Backgrounds/PortfolioBackground.jpg");
+@media only screen and (max-width: 800px) {
+    .Footer#Home {
+        background-color: #4f67ff;
+    }
+    .Footer#Work {
+        background-color: #2e7598;
+    }
+    .Footer#Education {
+        background-color: #d29e5d;
+    }
+    .Footer#Portfolio {
+        background-color: #06b002;
+    }
 }
 
 /* General */

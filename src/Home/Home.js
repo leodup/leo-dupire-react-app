@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import ReactDOM from 'react-dom'
+import { ExternalLink } from 'react-external-link';
 import { useEffect, useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Home.css';
@@ -15,6 +16,9 @@ import HummingFaceImage from "../images/ExhibitImages/HummingFace.jpg";
 import NLPImage from "../images/ExhibitImages/NLP.jpg";
 import WebsiteImage from "../images/ExhibitImages/Website.jpg";
 import HyperloopImage from "../images/ExhibitImages/Hyperloop.jpg";
+import LINKEDIN from "../images/ContactMeImg/LinkedIn.png";
+import GIT from "../images/ContactMeImg/GitHub.png";
+import EMAIL from "../images/ContactMeImg/Email.png";
 
 const Home = () => {
     const Leo = <>
@@ -229,6 +233,7 @@ const Home = () => {
                 <div className="CenterLeo">
                     <img
                         className="LeoImg"
+                        id="fix2"
                         src={LEO}
                         alt="Léo Image"
                     />
@@ -238,10 +243,38 @@ const Home = () => {
                 {whatIDo}
             </div>
             <div className="body" id="Home">
-                <h2 className="Home">Documents</h2>
+                <h2 className="Home" id="fix">Additional Resources</h2>
                 <h3 id="Home">My Résumé</h3>
                 <div className="ResumePosition">
                     <iframe src="https://drive.google.com/file/d/1nks36wwjVsh8qz4xs2vzo-QOeEp7c1kZ/preview" allow="autoplay" className="ResumePDF"></iframe>
+                </div>
+            </div>
+            <div className='Contact'>
+                <div className='ContactIcons'>
+                    <ExternalLink href="https://www.linkedin.com/in/l%C3%A9o-dupire-47387a183/">
+                        <img
+                            className="ContactIcon"
+                            id="fix2"
+                            src={LINKEDIN}
+                            alt="LinkedIn Image"
+                        />
+                    </ExternalLink>
+                    <ExternalLink href="https://github.com/leodup">
+                        <img
+                            className="ContactIcon"
+                            id="fix2"
+                            src={GIT}
+                            alt="Github Image"
+                        />
+                    </ExternalLink>
+                    <a href="mailto: leo@leodupire.com">
+                        <img
+                            className="ContactIcon"
+                            id="fix2"
+                            src={EMAIL}
+                            alt="Email Image"
+                        />
+                    </a>
                 </div>
             </div>
             <Footer page="Home"/>
