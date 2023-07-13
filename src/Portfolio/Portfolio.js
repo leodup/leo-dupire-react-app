@@ -68,6 +68,31 @@ const Portfolio = () => {
     return (
         <div>
             <Disclaimer/>
+            <div className="Sidebar" id="disp">
+                <div className="SidebarInner" id="disp">
+                    <div className="SidebarBlock" id="disp">
+                        <p className='Disc2' id="disp">NOT YET INTERACTIVE</p>
+                        <p className='SidebarTitle' id="disp">Data Science</p>
+                        <p className='SidebarText' id="disp">Collision Prediction</p>
+                        <p className='SidebarText' id="disp">Music Generation</p>
+                        <p className='SidebarText' id="disp">NLP</p>
+                        <p className='SidebarText' id="disp">Bias Mitigation</p>
+                        <p className='SidebarText' id="disp">School Analysis</p>
+                        <p className='SidebarTitle' id="disp">Computer Science</p>
+                        <p className='SidebarText' id="disp">Web Development</p>
+                        <p className='SidebarText' id="disp">Museum of Science</p>
+                        <p className='SidebarTitle' id="disp">Engineering</p>
+                        <p className='SidebarText' id="disp">Go Kart</p>
+                        <p className='SidebarText' id="disp">Respiratory Ventilator</p>
+                        <p className='SidebarText' id="disp">Hydrodynamics</p>
+                        <p className='SidebarText' id="disp">Hyperloop</p>
+                        <p className='SidebarTitle' id="disp">Random</p>
+                        <p className='SidebarText' id="disp">TEDx Talk</p>
+                        <p className='SidebarText' id="disp">Music</p>
+                        <p className='SidebarText' id="disp">Alphabite</p>
+                    </div>
+                </div>
+            </div>
             <div className="header" id="Portfolio">
                 <div className="Head" id="Portfolio">
                     <h1 id="Portfolio">PORTFOLIO</h1>

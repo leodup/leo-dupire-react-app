@@ -43,7 +43,7 @@
     --block-width: calc(1.52*var(--block-height));
     --spacing: 1.5vw;
     --iconHeight: 10vw;
-    --portfolio-body-width: min(90vw, 90vh, 70rem);
+    --portfolio-body-width: min(90vw, 80vh, 70rem);
     --scale: 1.4;
     --quad-radius: 0.75rem;
 
