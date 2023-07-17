@@ -1,0 +1,49 @@
+.Sidebar {
+    z-index: 10;
+    position: fixed;
+    top: 6vw;
+    margin-left: calc(50vw - var(--portfolio-body-width)/2 - min(47vw - var(--portfolio-body-width)/2, 300px));
+    width: min(calc(47vw - var(--portfolio-body-width)/2), 300px);
+    text-align: right;
+
+    background-repeat: no-repeat;
+    -moz-background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+
+    -webkit-background-size: var(--background-size);
+    -moz-background-size: var(--background-size);
+    -o-background-size: var(--background-size);
+    background-size: var(--background-size);
+}
+@media only screen and (max-width: 1200px) {
+    #disp {
+        width: 0%;
+        font-size: 0;
+    }
+}
+
+.SidebarBlock {
+    position: relative;
+    top: 1.5vh;
+    margin-right: 4vw;
+}
+
+.SidebarTitle {
+    position: relative;
+    font-family: var(--title-font);
+    font-size: max(min(2vw, 2vh), 1.25rem);
+    font-weight: 900;
+    color: black;
+}
+
+.SidebarText {
+    position: relative;
+    font-family: var(--title-font);
+    font-size: max(min(1vw, 1vh), 0.75rem);
+    color: black;
+}
+
+/* Display Section Content */
+

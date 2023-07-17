@@ -104,8 +104,9 @@ h1#Portfolio {
     position: relative;
     top: -1.75vw;
     font-family: 'Mrs Sheppards', cursive;
+    /* font-family: var(--title-font); */
     font-size: 2vw;
-    font-weight: 500;
+    font-weight: 200;
     letter-spacing: 0.5vw;
 }
 #DS-Box-Text {
@@ -169,76 +170,9 @@ h1#Portfolio {
     transition: 0.5;
 }
 
-.Sidebar {
-    z-index: -10;
-    top: 10vw;
-    position: fixed;
-    width: min(calc(47vw - var(--portfolio-body-width)/2), 250px);
-    height: 67vh;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-
-    background-image: url("../images/Backgrounds/PortfolioBackground.jpg");
-    background-repeat: no-repeat;
-    -moz-background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    background-attachment: fixed;
-
-    -webkit-background-size: var(--background-size);
-    -moz-background-size: var(--background-size);
-    -o-background-size: var(--background-size);
-    background-size: var(--background-size);
-}
-@media only screen and (max-width: 1200px) {
-    #disp {
-        width: 0%;
-        font-size: 0;
-    }
-}
-
-.SidebarInner {
-    position: relative;
-    top: -9px; /* CHANGE THIS TO -12px once scroll is set up */
-    height: calc(100% - 15px);
-    padding-left: 15px;
-    margin-right: 7.5px;
-    background-color: rgb(256, 256, 256, 0.95);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-.SidebarBlock {
-    position: relative;
-    top: 1.5vh;
-}
-
-.Disc2 {
-    position: relative;
-    /* font-family: var(--title-font); */
-    font-size: max(min(1.5vw, 1.5vh), 1rem);
-    font-weight: 800;
-    color: red;
-    text-decoration: underline;
-}
-
-.SidebarTitle {
-    position: relative;
-    font-family: var(--title-font);
-    font-size: max(min(2vw, 2vh), 1.25rem);
-    font-weight: 900;
-    color: black;
-}
-
-.SidebarText {
-    position: relative;
-    font-family: var(--title-font);
-    font-size: max(min(1vw, 1vh), 0.75rem);
-    color: black;
-}
-
 /* Body */
 .PortfolioBody {
+    /* z-index: -2; */
     margin-left: calc(50vw - var(--portfolio-body-width)/2);
     margin-right: calc(50vw - var(--portfolio-body-width)/2);
     text-align: justify;

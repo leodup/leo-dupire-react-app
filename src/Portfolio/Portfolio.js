@@ -1,10 +1,12 @@
 import { HashLink as Link } from 'react-router-hash-link';
+import { useEffect, useState, useRef } from 'react';
 
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.js';
 import '../App+/Tabs/Tabs.css';
 
 import "./Portfolio.css";
+import "./PortfolioFiles/Sidebar.css";
 import "./PortfolioFiles/WNet.css";
 import "./PortfolioFiles/HummingFace.css";
 import "./PortfolioFiles/GoKart.css";
@@ -65,31 +67,149 @@ import Music2 from "../images/PortfolioImg/Show.png";
 import Alphabite from "../images/PortfolioImg/Alphabite.png";
 
 const Portfolio = () => {
+    const [isHidden, setIsHidden] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight;
+            const scrollPosition = window.scrollY;
+
+            // Calculate the scroll position relative to 80vh
+            const scrollPositionVh = (scrollPosition / windowHeight) * 100;
+
+            // Logic to determine whether the elements should be hidden
+            const shouldHide = scrollPositionVh < 85; // Hide when scrolled 80% of the window height
+
+            setIsHidden(shouldHide);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const [SecDS, setDS] = useState(false);
+    const [SecCS, setCS] = useState(false);
+    const [SecME, setME] = useState(false);
+    const [SecR, setR] = useState(false);
+
+    const SidebarSecDS = useRef(null);
+    const SidebarSecCS = useRef(null);
+    const SidebarSecME = useRef(null);
+    const SidebarSecR = useRef(null);
+
+    // useEffect(() => {
+    //     const handleScroll1 = () => {
+    //         const start1 = SidebarSecDS.current.getBoundingClientRect().top;
+    //         const end1 = SidebarSecCS.current.getBoundingClientRect().top;
+    //         const shouldHide1 = window.scrollY < start1 || window.scrollY > end1;
+    //         setDS(shouldHide1);
+    //     };
+    //     const handleScroll2 = () => {
+    //         const start2 = SidebarSecCS.current.getBoundingClientRect().top;
+    //         const end2 = SidebarSecME.current.getBoundingClientRect().top;
+    //         const shouldHide2 = window.scrollY < start2 || window.scrollY > end2;
+    //         setCS(shouldHide2);
+    //     };
+    //     const handleScroll3 = () => {
+    //         const start3 = SidebarSecME.current.getBoundingClientRect().top;
+    //         const end3 = SidebarSecR.current.getBoundingClientRect().top;
+    //         const shouldHide3 = window.scrollY < start3 || window.scrollY > end3;
+    //         setME(shouldHide3);
+    //     };
+    //     const handleScroll4 = () => {
+    //         const start4 = SidebarSecR.current.getBoundingClientRect().top;
+    //         const shouldHide4 = window.scrollY < start4;
+    //         setR(shouldHide4);
+    //     };
+
+    //     window.addEventListener('scroll', handleScroll1);
+    //     window.addEventListener('scroll', handleScroll2);
+    //     window.addEventListener('scroll', handleScroll3);
+    //     window.addEventListener('scroll', handleScroll4);
+
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll1);
+    //         window.removeEventListener('scroll', handleScroll2);
+    //         window.removeEventListener('scroll', handleScroll3);
+    //         window.removeEventListener('scroll', handleScroll4);
+    //     };
+    // }, []);
+
     return (
         <div>
             <Disclaimer/>
-            <div className="Sidebar" id="disp">
-                <div className="SidebarInner" id="disp">
-                    <div className="SidebarBlock" id="disp">
-                        <p className='Disc2' id="disp">NOT YET INTERACTIVE</p>
+            <div className="Sidebar" id="disp" style={{ opacity: isHidden ? 0 : 1, transition: 'opacity 0.25s' }}>
+                <div className="SidebarBlock" id="disp">
+                    <Link style={{textDecoration: 'none'}} to="/Portfolio/#DataScience">
                         <p className='SidebarTitle' id="disp">Data Science</p>
-                        <p className='SidebarText' id="disp">Collision Prediction</p>
-                        <p className='SidebarText' id="disp">Music Generation</p>
-                        <p className='SidebarText' id="disp">NLP</p>
-                        <p className='SidebarText' id="disp">Bias Mitigation</p>
-                        <p className='SidebarText' id="disp">School Analysis</p>
+                    </Link>
+                    <div style={{ display: SecDS ? 'none' : 'block' }}>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#WNet">
+                            <p className='SidebarText' id="disp">Collision Prediction</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#HummingFace">
+                            <p className='SidebarText' id="disp">Music Generation</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#NLP">
+                            <p className='SidebarText' id="disp">NLP</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#BiasMitigation">
+                            <p className='SidebarText' id="disp">Bias Mitigation</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#SchoolAnalysis">
+                            <p className='SidebarText' id="disp">School Analysis</p>
+                        </Link>
+                    </div>
+
+                    <Link style={{textDecoration: 'none'}} to="/Portfolio/#ComputerScience">
                         <p className='SidebarTitle' id="disp">Computer Science</p>
-                        <p className='SidebarText' id="disp">Web Development</p>
-                        <p className='SidebarText' id="disp">Museum of Science</p>
+                    </Link>
+                    <div style={{ display: SecCS ? 'none' : 'block' }}>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#Website">
+                            <p className='SidebarText' id="disp">Web Development</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#DAC">
+                            <p className='SidebarText' id="disp">Museum of Science</p>
+                        </Link>
+                    </div>
+
+                    <Link style={{textDecoration: 'none'}} to="/Portfolio/#MechE">
                         <p className='SidebarTitle' id="disp">Engineering</p>
-                        <p className='SidebarText' id="disp">Go Kart</p>
-                        <p className='SidebarText' id="disp">Respiratory Ventilator</p>
-                        <p className='SidebarText' id="disp">Hydrodynamics</p>
-                        <p className='SidebarText' id="disp">Hyperloop</p>
+                    </Link>
+                    <div style={{ display: SecME ? 'none' : 'block' }}>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#GoKart">
+                            <p className='SidebarText' id="disp">Go Kart</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#Ventilator">
+                            <p className='SidebarText' id="disp">Respiratory Ventilator</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#HydroTunnel">
+                            <p className='SidebarText' id="disp">Hydrodynamics</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#Hyperloop">
+                            <p className='SidebarText' id="disp">Hyperloop</p>
+                        </Link>
+                    </div>
+
+                    <Link style={{textDecoration: 'none'}} to="/Portfolio/#Random">
                         <p className='SidebarTitle' id="disp">Random</p>
-                        <p className='SidebarText' id="disp">TEDx Talk</p>
-                        <p className='SidebarText' id="disp">Music</p>
-                        <p className='SidebarText' id="disp">Alphabite</p>
+                    </Link>
+                    <div style={{ display: SecR ? 'none' : 'block' }}>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#TED">
+                            <p className='SidebarText' id="disp">TEDx Talk</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#Music">
+                            <p className='SidebarText' id="disp">Music</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#Alphabite">
+                            <p className='SidebarText' id="disp">Alphabite</p>
+                        </Link>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#Hobbies">
+                            <p className='SidebarText' id="disp">Hobbies</p>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -182,7 +302,7 @@ const Portfolio = () => {
                 <Tabs title1="Home" link1="/" page="Portfolio"/>
             </div>
             <div className="PortfolioBody">
-                <div className="DataScience">
+                <div className="DataScience" ref={SidebarSecDS}>
                     <h2 className="Section" id="DataScience">Data Science</h2>
                     <div className='Project'>
                         <h3 className="Section" id="WNet">Collision Prediction (WNet)</h3>
@@ -229,7 +349,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">Music Generation</h3>
+                        <h3 className="Section" id="HummingFace">Music Generation</h3>
                         <div className='Gallery2'>
                             <div className='image-container2' id="HuggingFace1">
                                 <img 
@@ -250,15 +370,15 @@ const Portfolio = () => {
                         <p className="Section"></p>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">Bias Mitigation</h3>
+                        <h3 className="Section" id="BiasMitigation">Bias Mitigation</h3>
                         <p className="Section">I performed a project demonstrating responsible data science practices such as disparity identification and bias mitigation on a Kaggle dataset provided by Porto Seguro, one of Brazil's leading home and auto insurers. In this project, I demonstrated my technical skills, dealing with machine learning, data privacy, data augmentation, and I also grew as a team leader. (This topic will be elaborated on with the site's development)</p>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">School Analysis</h3>
+                        <h3 className="Section" id="SchoolAnalysis">School Analysis</h3>
                         <p className="Section">This project involved the use of multiple machine learning methods, from linear, logistical, and multiple regression to clustering models and more! (This topic will be elaborated on with the site's development)</p>
                     </div>
                 </div>
-                <div className="ComputerScience">
+                <div className="ComputerScience" ref={SidebarSecCS}>
                     <h2 className="Section" id="ComputerScience">Computer Science</h2>
                     <div className='Project'>
                         <h3 className="Section" id="Website">This Website</h3>
@@ -307,7 +427,7 @@ const Portfolio = () => {
                             webkitallowfullscreen="webkitallowfullscreen"></iframe>
                     </div>
                 </div>
-                <div className="MechE">
+                <div className="MechE" ref={SidebarSecME}>
                     <h2 className="Section" id="MechE">Mechanical Engineering</h2>
                     <div className='Project'>
                         <h3 className="Section" id="GoKart">Go Kart</h3>
@@ -403,7 +523,7 @@ const Portfolio = () => {
                             My ventilator uses a bag valve mask to deliver the air to the patient. This means it pushes a certain volume of air into the patient’s lungs. It does not have the fancier features that hospitals have, such as pressure regulation. This project was meant to provide a life-line, a last resort in case of emergency. I still equipped it with a user interface (LCD screen), rpm variation inputs (buttons), and an alarm in case of a problem (button & speaker system). It also cost less than $200 in materials to make, a sizable step down from the 50 thousand I mentioned earlier.</p>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">Hydrodynamic Water Tunnel</h3>
+                        <h3 className="Section" id="HydroTunnel">Hydrodynamic Water Tunnel</h3>
                         <div className='Gallery'>
                             <div className='image-container' id="Hydro1">
                                 <img 
@@ -464,10 +584,10 @@ const Portfolio = () => {
                     </ div>
                     <p className="Section">I also researched optimal ply-up techniques with different material fabrics for the hardware encasings of the pod. The vaccum of the Hyperloop tunnel caused many issues with our electronics, notably the batteries. Myself and two fellow engineers were tasked with designing a soft-shell, pressurized encasing for these components. To create a robust design, our research was heavily focused on ply-up techniques for different materials. With carbon fiber, for instance, ply-up is the way in which different sheets of carbon fiber are layered in varying orientations to maximize the strength of the enclosure when exposed to multi-directional forces.</p>
                 </div>
-                <div className="Random">
+                <div className="Random" ref={SidebarSecR}>
                     <h2 className="Section" id="Random">Random</h2>
                     <div className='Project'>
-                        <h3 className="Section">TEDx Talk</h3>
+                        <h3 className="Section" id="TED">TEDx Talk</h3>
                         <iframe className='TEDVideo' src="https://www.youtube.com/embed/CUFYI-LzpcI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture, fullscreen"
                             allowfullscreen="allowfullscreen"
                             mozallowfullscreen="mozallowfullscreen" 
@@ -477,7 +597,7 @@ const Portfolio = () => {
                         <p className="Section">I performed a TEDx talk at age 15 titled "Realize Your Dreams". </p>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">Music</h3>
+                        <h3 className="Section" id="Music">Music</h3>
                         <div className='Gallery2'>
                             <div className='image-container2' id="Music1">
                                 <img 
@@ -497,7 +617,7 @@ const Portfolio = () => {
                         <p className="Section">I love to play and compose music. My production software of choice is Logic Pro X. I play the guitar, piano, and some drums. I have been working on several compositions and would love to release some in the near future! My music mainly consists of alternative rock, but my genres vary; I like to exhibit versatility in whatever I do. Styles span from traditional alternative rock, to pieces with heavy classical and operatic undertones, to reggae-like passages, to more modern tastes. Not all at the same time... for the most part. </p>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">AlphaBite</h3>
+                        <h3 className="Section" id="Alphabite">AlphaBite</h3>
                         <p className="Section">In 9th grade, I worked after school with a teacher for a service learning project. We designed a number of educational puzzles for a school of kids in Haiti. We did this using the school’s new 3D printers, a relatively new technology at the time. The most notable puzzle was called AlphaBite. It was an alphabet puzzle with building blocks for each letter (vowels in red, consonants in blue). The shape I designed was very simple. It resembled a cylinder with a “bite” taken out of it, hence the name of the product. Haiti had a literacy rate of 61.7% in 2016 according to the CIA factbook.</p>
                         <div className='Gallery2'>
                             <div className='image-container2' id="Alphabite">
@@ -511,7 +631,7 @@ const Portfolio = () => {
                         <p className="Section">The same year, I also mentored a group of students in 3D printing, acting as the teacher’s right-hand-man, if you will. This ultimately got me a paid role at a neighboring school, PS6, for the following year. This was a large after-school workshop program with dozens of students in the 3D printing activities. I helped mentor the students and maintained multiple 3D printers.</p>
                     </div>
                     <div className='Project'>
-                        <h3 className="Section">Hobbies</h3>
+                        <h3 className="Section" id="Hobbies">Hobbies</h3>
                         <p className="Section">My hobbies are well reflected in this portfolio. These further include: tennis, running, sailing, and philosophy.</p>
                     </div>
                 </div>
