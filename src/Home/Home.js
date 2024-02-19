@@ -12,6 +12,7 @@ import Tabs from '../App+/Tabs/Tabs.js';
 import Footer from '../App+/Footer/Footer.js';
 
 import LEO from "../images/LEO.jpg";
+import WNetImage from "../images/ExhibitImages/WNet.jpg";
 import HummingFaceImage from "../images/ExhibitImages/HummingFace.jpg";
 import NLPImage from "../images/ExhibitImages/NLP.jpg";
 import WebsiteImage from "../images/ExhibitImages/Website.jpg";
@@ -25,6 +26,29 @@ const Home = () => {
                     <div className="Name">
                         <h4 className="FirstName">Léo</h4>
                         <h4 className="LastName">Dupire</h4>
+                    </div>
+                </>
+
+    const WNet = <>
+                    <div className="ExhibitImgDiv">
+                        <img
+                            className="ExhibitImg"
+                            src={WNetImage}
+                            alt="WNet Image"
+                        />
+                    </div>
+                    <div className="ExhibitTextAll">
+                        <div className="ExhibitText">
+                            <h5 id="ExhibitText">Collision Prediction</h5>
+                            <p id="ExhibitText">
+                                WNet architecture developed for <b>Yann LeCun</b>'s graduate Deep Learning course.<br></br><br></br> This earned my teammate and myself <b>2nd place</b> in the final competition (as an undergrad).
+                            </p>
+                        </div>
+                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#WNet">
+                            <div className="ExhibitButton">
+                                <p id="ExhibitButton">Explore</p>
+                            </div>
+                        </Link>
                     </div>
                 </>
 
@@ -126,7 +150,7 @@ const Home = () => {
                         </>
 
     const [count, setCount] = useState(0);
-    const gallery = [Leo, HummingFace, NLP, Website, Hyperloop]
+    const gallery = [Leo, WNet, HummingFace, NLP, Website, Hyperloop]
     const galleryCurrent = gallery[count];
 
     const ref = React.useRef(null);

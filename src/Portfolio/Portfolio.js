@@ -312,7 +312,8 @@ const Portfolio = () => {
                         msallowfullscreen="msallowfullscreen" 
                         oallowfullscreen="oallowfullscreen" 
                         webkitallowfullscreen="webkitallowfullscreen"></iframe>
-                        <p className="Section">As one of my final undergraduate accomplishments, I, along with my teammate Dhruv Shetty, placed 2nd out of 31 teams in the final competition for <u>Yann LeCun</u>'s graduate Deep Learning course.</p>
+                        <p className="Section">In my final undergraduate semester, I wanted to join arguably the most sought after CS course at NYU,&nbsp; <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank"><u>Yann LeCun</u></a>'s graduate Deep Learning course. As an undergrad, I had to apply and interview to join the selective class and was one of few to be accepted into the class of masters and PhD students. The course was intensive and covered myriad ML architectures, theory, and practical applications.</p>
+                        <p className="Section">I'm proud to say that I lead my team, consisting of myself and teammate Dhruv Shetty, to placing <b>2nd out of 31 teams in Yann LeCun's final competition.</b></p>
                         <div className='Gallery3'>
                             <div className='image-container2' id="WNet1">
                                 <img 
