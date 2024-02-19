@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.50805e61.css",
-    "main.js": "/static/js/main.d5c80828.js",
+    "main.css": "/static/css/main.6d088235.css",
+    "main.js": "/static/js/main.e9201c81.js",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/LogicPro.png": "/static/media/LogicPro.6f7d15fed4f2a3e36ac9.png",
@@ -40,6 +40,7 @@
     "static/media/HummingFace.jpg": "/static/media/HummingFace.14460f985d9b6576f204.jpg",
     "static/media/RandomIcon.png": "/static/media/RandomIcon.fc7fbde852e6778deb37.png",
     "static/media/PS6.png": "/static/media/PS6.8f5af3e541339737be7a.png",
+    "static/media/WNet.jpg": "/static/media/WNet.534e06b494aef99d5a32.jpg",
     "static/media/Hyperloop2.jpg": "/static/media/Hyperloop2.1f02f126507a39df6d19.jpg",
     "static/media/MechEText.png": "/static/media/MechEText.f0bbed766b63f4f7f633.png",
     "static/media/ComputerScienceText.png": "/static/media/ComputerScienceText.1549d83bd02ce952ab14.png",
@@ -60,11 +61,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.50805e61.css.map": "/static/css/main.50805e61.css.map",
-    "main.d5c80828.js.map": "/static/js/main.d5c80828.js.map"
+    "main.6d088235.css.map": "/static/css/main.6d088235.css.map",
+    "main.e9201c81.js.map": "/static/js/main.e9201c81.js.map"
   },
   "entrypoints": [
-    "static/css/main.50805e61.css",
-    "static/js/main.d5c80828.js"
+    "static/css/main.6d088235.css",
+    "static/js/main.e9201c81.js"
   ]
 }
