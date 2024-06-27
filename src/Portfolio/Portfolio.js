@@ -140,7 +140,6 @@ const Portfolio = () => {
 
     return (
         <div>
-            <Disclaimer/>
             <div className="Sidebar" id="disp" style={{ opacity: isHidden ? 0 : 1, transition: 'opacity 0.25s' }}>
                 <div className="SidebarBlock" id="disp">
                     <Link style={{textDecoration: 'none'}} to="/Portfolio/#DataScience">
@@ -226,7 +225,7 @@ const Portfolio = () => {
                                         alt="Data Science Text"
                                     />
                                     <div className="BlockTop" id="q1">
-                                        <p id="DS-Box-Title">Data Science</p>
+                                        <p id="DS-Box-Title">DATA SCIENCE</p>
                                     </div>
                                     <p id="DS-Box-Text">
                                         <img
@@ -245,7 +244,7 @@ const Portfolio = () => {
                                         alt="Computer Science Text"
                                     />
                                     <div className="BlockTop" id="q2">
-                                        <p id="DS-Box-Title">Computer Science</p>
+                                        <p id="DS-Box-Title">COMPUTER SCIENCE</p>
                                     </div>
                                     <p id="DS-Box-Text">
                                         <img
@@ -266,7 +265,7 @@ const Portfolio = () => {
                                         alt="Mechanical Engineering Text"
                                     />
                                     <div className="BlockTop" id="q3">
-                                        <p id="DS-Box-Title">Engineering</p>
+                                        <p id="DS-Box-Title">ENGINEERING</p>
                                     </div>
                                     <p id="DS-Box-Text">
                                         <img
@@ -285,7 +284,7 @@ const Portfolio = () => {
                                         alt="Random Text"
                                     />
                                     <div className="BlockTop" id="q4">
-                                        <p id="DS-Box-Title">Random Projects</p>
+                                        <p id="DS-Box-Title">RANDOM PROJECTS</p>
                                     </div>
                                     <p id="DS-Box-Text">
                                         <img

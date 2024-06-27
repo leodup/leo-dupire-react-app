@@ -24,7 +24,6 @@ const Education = () => {
 
     return (
         <>
-            <Disclaimer/>
             <div className="header" id="Education">
                 <div className="Head" id="Education">
                     <h1 id="Education">Education</h1>

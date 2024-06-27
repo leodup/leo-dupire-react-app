@@ -221,19 +221,20 @@ const Home = () => {
                         I love taking on new challenges, as can be seen in my portfolio. I'm always looking for opportunities to grow and exercise my creativity and perseverance. If you have any questions, please reach out!
                     </p>
     const whatIDo = <p id="Home">
-                        As a Computer and Data Scientist I have worked in a variety of fields through academic studies as well as professional experience. I have worked in fields such as:
+                        As a Computer and Data Scientist, I have worked in a variety of fields through academic studies as well as professional experience. I have worked in fields such as:
                         <ul>
-                            <li>Cloud Computing</li>
                             <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
                             <li>Predictive Analytics</li>
-                            <li>Software Development</li>
+                            <li>Full Stack Development</li>
+                            <li>Cloud Computing</li>
                         </ul>
-                        Involving skills of <b>Data Science</b> as well as <b>full-stack development</b>. In addition to this, I have also gathered experience through my Mechanical Engineering background. This includes:
+                        In addition to this, I have also gathered experience through my Mechanical Engineering background. This includes:
                         <ul>
                             <li>Robotics</li>
                             <li>Aerodynamics</li>
-                            <li>CAD and other 3D modeling</li>
                             <li>Imaging</li>
+                            <li>CAD and other 3D modeling</li>
                             <li>Security</li>
                             <li>Sustainability</li>
                         </ul>
@@ -242,7 +243,6 @@ const Home = () => {
 
     return (
         <>
-            <Disclaimer/>
             <div className="header" id="Home">
                 <div className="Head" id="Home">
                     <div className="HeadContent" ref={ref}>
@@ -252,25 +252,34 @@ const Home = () => {
                 <Tabs title1="About" link1="/#aboutme" page="Home"/>
             </div>
             <div className="body" id="Home">
-                <h2 className="Home" id="aboutme">About me</h2>
-                <h3 id="Home">Who I am</h3>
-                <div className="CenterLeo">
-                    <img
-                        className="LeoImg"
-                        id="fix2"
-                        src={LEO}
-                        alt="Léo Image"
-                    />
-                </div>
-                {whoAmI}
-                <h3 id="Home">What I do</h3>
-                {whatIDo}
-            </div>
-            <div className="body" id="Home">
-                <h2 className="Home" id="fix">Additional Resources</h2>
-                <h3 id="Home">My Résumé</h3>
-                <div className="ResumePosition">
-                    <iframe src="https://drive.google.com/file/d/1nks36wwjVsh8qz4xs2vzo-QOeEp7c1kZ/preview" allow="autoplay" className="ResumePDF"></iframe>
+                <div className="bodiv">
+                    <h2 className="Home" id="aboutme">About me</h2>
+                    <h3 id="Home">Who I am</h3>
+                    <div className="CenterLeo">
+                        <img
+                            className="LeoImg"
+                            id="fix2"
+                            src={LEO}
+                            alt="Léo Image"
+                        />
+                    </div>
+                    {whoAmI}
+                    <h3 id="Home">What I do</h3>
+                    {whatIDo}
+
+                    <h2 className="Home" id="fix">Additional Resources</h2>
+                    <h3 id="Home">Résumé</h3>
+                    <div className="ResumePosition">
+                        <iframe src="https://drive.google.com/file/d/1nks36wwjVsh8qz4xs2vzo-QOeEp7c1kZ/preview" allow="autoplay" className="ResumePDF"></iframe>
+                    </div>
+                    <h3 id="Home">Diploma</h3>
+                    <div className="ResumePosition">
+                        <iframe src="https://drive.google.com/file/d/1Lm-vKiLJcFZ1LKSR-5EV7Zzkj05ugA4G/preview" allow="autoplay"  className="DiplomaPDF"></iframe>
+                    </div>
+                    <h3 id="Home">Honors: Founders Day Award</h3>
+                    <div className="ResumePosition">
+                        <iframe src="https://drive.google.com/file/d/1ZBiu5t-HT2jYoGm88J_8xwEU1TyEcs_m/preview" allow="autoplay" className="HonorsPDF"></iframe>
+                    </div>
                 </div>
             </div>
             <div className='Contact'>

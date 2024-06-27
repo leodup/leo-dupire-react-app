@@ -8,9 +8,12 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 :root {
-    --title-font: 'Montserrat Alternates', sans-serif;
-    --text-font: 'Raleway', sans-serif;
+    --title-font: 'Proxima-Nova', sans-serif; /* Montserrat Alternates */
+    --text-font: 'proxima-nova', sans-serif;
+    --text-font-size: max(min(2vw, 2vh), 1rem);;
     --header-height: 85vh;
+
+    --body-width: min(90vw, 800px);
 
     /* Home */
     --exhibit-height: max(20vw, 9rem);
@@ -23,12 +26,10 @@
     --home-color: rgb(220, 220, 220);
     --counter-color-dark: rgb(50, 153, 146);
     --counter-color: rgb(109, 191, 187);
-    --background-color: rgb(255, 255, 255);
+    --background-color: black;
     --profile-image-height: 17.5vw;
     --name-box-border-radius: 7.5vw;
     --image-border: 0.6vw;
-
-    --body-width: min(90vw, 90vh, 70rem);
 
     /* Work */
     --header-text-color: #0f62fe;
@@ -45,7 +46,7 @@
     --iconHeight: 10vw;
     --portfolio-body-width: min(90vw, 80vh, 70rem);
     --scale: 1.4;
-    --quad-radius: 0.75rem;
+    --quad-radius: 25px;
 
     /* Tabs */
     --tab-height: max(4vw, 2.3rem);

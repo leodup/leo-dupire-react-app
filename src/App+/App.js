@@ -9,6 +9,7 @@ import Home from '../Home/Home.js';
 import Work from '../Work/Work.js';
 import Education from "../Education/Education.js";
 import Portfolio from "../Portfolio/Portfolio.js";
+import Play from "../Play/Play.js";
 
 
 function App() {
@@ -43,6 +44,12 @@ function App() {
         <Route path="/portfolio" element={
           <div>
             <Portfolio />
+            {/* <Footer /> */}
+          </div>
+        } />
+        <Route path="/play" element={
+          <div>
+            <Play />
             {/* <Footer /> */}
           </div>
         } />

@@ -1,0 +1,96 @@
+#variables {
+    --scale: 0.15
+}
+
+@font-face {
+    font-family: 'groovy';
+    src: url('Lostar.ttf') format('truetype');
+}
+
+.all {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.rotate-container {
+    position: relative;
+    top: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.vinyl, .label, .spoke {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+
+    /* transform: rotate(-180deg);
+    transition: transform 1.5s; */
+    border-radius: 50%;
+}
+
+.vinyl {
+    width: min(1520px, 800vw);
+    height: min(1500px, 800vw);
+    background-color: black;
+    color: white;
+    font-family: groovy, sans-serif;
+    font-size: 150px;
+    font-weight: normal;
+    /* box-shadow: 0px 0px 100px black; */
+    transition: transform 0.4s ease-out;
+    border: solid 4px white;
+}
+
+#name {
+    z-index: 1;
+}
+
+.label {
+    width: min(400px, 240vw);
+    height: min(400px, 240vw);
+    background-color: red;
+    transition: transform 0.4s ease-out;
+    text-align: center;
+}
+#label_text {
+    font-family: groovy, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.spoke {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+
+.peek {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    mask-image: radial-gradient(circle at center, transparent 210px, white 10px);
+}
+
+.bio {
+    position: relative;
+    top: 100vh;
+    height: 200vh;
+}
+
+.spiral-dot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: rgb(129, 0, 0);
+    border-radius: 25%;
+  }

@@ -61,7 +61,6 @@ const Work = () => {
     
     return (
         <div>
-            <Disclaimer/>
             <div className="header" id="Work">
                 <div className="Head" id="Work">
                     <h1 id="Work">WORK</h1>

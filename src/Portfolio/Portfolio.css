@@ -81,6 +81,7 @@ h1#Portfolio {
     font-weight: 600;
     color: white;
     transition: 0.3s;
+    border: solid black 1px;
 }
 
 .BlockTop {
@@ -102,15 +103,11 @@ h1#Portfolio {
 
 #DS-Box-Title {
     position: relative;
-    /* top: -1.75vw; */
     top: -1vw;
-    /* font-family: 'Mrs Sheppards', cursive; */
     font-family: var(--title-font);
-    /* font-size: 2vw; */
     font-size: 1.5vw;
-    /* font-weight: 200; */
-    font-weight: 500;
-    letter-spacing: 0.5vw;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 #DS-Box-Text {
     visibility: hidden;
@@ -147,12 +144,19 @@ h1#Portfolio {
     -webkit-filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
     filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
     opacity: 1;
+    
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image */
+    background-clip: border-box; /* Clips the background to the border box */
+    border-radius: inherit; /* Inherits the border-radius from the parent */
 }
+/* 
+.TitleText1 {
 
-.TitleText1 {border-top-left-radius: var(--quad-radius);}
+}
 .TitleText2 {border-top-right-radius: var(--quad-radius);}
 .TitleText3 {border-bottom-left-radius: var(--quad-radius);}
-.TitleText4 {border-bottom-right-radius: var(--quad-radius);}
+.TitleText4 {border-bottom-right-radius: var(--quad-radius);} */
 
 .Image {
     position: absolute;
@@ -241,11 +245,15 @@ h3.Section {
 }
 
 p.Section {
-    font-family: "gill sans";
-    font-size: max(min(2vw, 2vh), 1rem);
-    line-height: max(min(3.25vw, 3.25vh), 1.25rem);
-    font-weight: 400;
     color: rgb(51, 51, 51);
+    font-family: var(--text-font);
+    font-size: var(--text-font-size);
+    
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 1.58;
+    padding: 0 0 1.5em;
 }
 
 .Project {

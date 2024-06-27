@@ -71,8 +71,8 @@ p#pText {
     font-weight: 400;
 }
 .Tab#Home:hover {
-    text-shadow: 0 0 0.1vw whitesmoke;
-    font-weight: 800;
+    text-shadow: 0 0 3px whitesmoke;
+    /* font-weight: 800; */
 }
 
 .Tab#Work {
@@ -81,8 +81,8 @@ p#pText {
     
 }
 .Tab#Work:hover {
-    text-shadow: 0 0 0.1vw whitesmoke;
-    font-weight: 800;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+    /* font-weight: 800; */
 }
 
 .Tab#Education {
@@ -90,8 +90,8 @@ p#pText {
     font-weight: 400;
 }
 .Tab#Education:hover {
-    text-shadow: 0 0 0.1vw whitesmoke;
-    font-weight: 800;
+    text-shadow: 0 0 3px whitesmoke;
+    /* font-weight: 800; */
 }
 
 .Tab#Portfolio {
@@ -99,6 +99,6 @@ p#pText {
     font-weight: 400;
 }
 .Tab#Portfolio:hover {
-    text-shadow: 0 0 0.1vw black;
-    font-weight: 800;
+    text-shadow: 0 0 2px black;
+    /* font-weight: 800; */
 }
