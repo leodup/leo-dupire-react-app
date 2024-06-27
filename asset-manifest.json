@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d088235.css",
-    "main.js": "/static/js/main.e9201c81.js",
+    "main.css": "/static/css/main.5650b396.css",
+    "main.js": "/static/js/main.e05e97c9.js",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/LogicPro.png": "/static/media/LogicPro.6f7d15fed4f2a3e36ac9.png",
@@ -20,12 +20,12 @@
     "static/media/WNet3.png": "/static/media/WNet3.a8a613cc3152be181426.png",
     "static/media/GoKart3.png": "/static/media/GoKart3.86e4d531fde938a44ce7.png",
     "static/media/LibraryBackground.jpg": "/static/media/LibraryBackground.5be2b231fa426a05808e.jpg",
+    "static/media/HomeBackground.jpg": "/static/media/HomeBackground.4897b70a24d1bd90bd72.jpg",
     "static/media/Spectrogram.png": "/static/media/Spectrogram.41afa02445c975224642.png",
     "static/media/WorkBackground.jpg": "/static/media/WorkBackground.f3bb4c3ef4761735ff14.jpg",
     "static/media/IBMimg.jpg": "/static/media/IBMimg.c1519cedc09634639714.jpg",
     "static/media/Analogicimg.jpg": "/static/media/Analogicimg.e5d615cb872b8f6a21f3.jpg",
     "static/media/WNet2.png": "/static/media/WNet2.2db90087fc53a93933ed.png",
-    "static/media/HomeBackground.jpg": "/static/media/HomeBackground.ebeea6c0ee11ef0e9523.jpg",
     "static/media/PortfolioBackground.jpg": "/static/media/PortfolioBackground.1eba7b69c3f370571a0e.jpg",
     "static/media/Broccimg.jpg": "/static/media/Broccimg.e744304aa209d5fffc50.jpg",
     "static/media/GoKart1.jpg": "/static/media/GoKart1.5fdae03fbd8831dfddc8.jpg",
@@ -48,6 +48,7 @@
     "static/media/LEO.jpg": "/static/media/LEO.7bb58316c39631fd9a13.jpg",
     "static/media/DataScienceText.png": "/static/media/DataScienceText.aa8afe663779ffea50b5.png",
     "static/media/BROCC.png": "/static/media/BROCC.16c672e630c011d99eb1.png",
+    "static/media/Lostar.ttf": "/static/media/Lostar.b5d796b48cccb20757de.ttf",
     "static/media/NEU.png": "/static/media/NEU.a2800ce55d912cf998fe.png",
     "static/media/NLP.jpg": "/static/media/NLP.950b753956eb280ee2b9.jpg",
     "static/media/HyperloopMe.jpg": "/static/media/HyperloopMe.46eb691707ba3eb8e65d.jpg",
@@ -61,11 +62,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.6d088235.css.map": "/static/css/main.6d088235.css.map",
-    "main.e9201c81.js.map": "/static/js/main.e9201c81.js.map"
+    "main.5650b396.css.map": "/static/css/main.5650b396.css.map",
+    "main.e05e97c9.js.map": "/static/js/main.e05e97c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d088235.css",
-    "static/js/main.e9201c81.js"
+    "static/css/main.5650b396.css",
+    "static/js/main.e05e97c9.js"
   ]
 }
