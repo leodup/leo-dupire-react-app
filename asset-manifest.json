@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.5650b396.css",
-    "main.js": "/static/js/main.e05e97c9.js",
+    "main.css": "/static/css/main.773d8a93.css",
+    "main.js": "/static/js/main.50d02dd0.js",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/LogicPro.png": "/static/media/LogicPro.6f7d15fed4f2a3e36ac9.png",
     "static/media/Vent1.png": "/static/media/Vent1.f9c58f2c2ad246b9f99d.png",
     "static/media/Hydro3.png": "/static/media/Hydro3.1f53d99da5722807ba25.png",
     "static/media/DAC4.png": "/static/media/DAC4.d1a33c26c466d159f09d.png",
+    "static/media/Monta.jpg": "/static/media/Monta.8d27e1dceeb83e6448d1.jpg",
     "static/media/DAC2.png": "/static/media/DAC2.bf49a3692bcf35db3e16.png",
+    "static/media/PlayBackground.jpg": "/static/media/PlayBackground.ca4c63bbc79ae5908d3e.jpg",
     "static/media/Hydro2.png": "/static/media/Hydro2.bff1811c5fb44517c94c.png",
     "static/media/DAC1.png": "/static/media/DAC1.e9f0c20187b30f98479c.png",
     "static/media/Vent2.png": "/static/media/Vent2.bce0bf08df86d2bef4c3.png",
@@ -33,7 +35,9 @@
     "static/media/GoKart5.jpg": "/static/media/GoKart5.ebd2fd06b28768e1690d.jpg",
     "static/media/Hydro4.png": "/static/media/Hydro4.f526e178fe623adffdd7.png",
     "static/media/PS6img.jpg": "/static/media/PS6img.d3a0c1bcd712a5983f20.jpg",
+    "static/media/Columbiaimg.png": "/static/media/Columbiaimg.c88d30e23e91b05269ea.png",
     "static/media/DataScienceIcon.png": "/static/media/DataScienceIcon.1ed73cca21b6959932ac.png",
+    "static/media/Crash.ttf": "/static/media/Crash.10d6831d13b10b25ae3e.ttf",
     "static/media/ComputerScienceIcon.png": "/static/media/ComputerScienceIcon.9c54f968b9a4cf7c38bf.png",
     "static/media/GoKart4.jpg": "/static/media/GoKart4.c4f9162060cd0056a798.jpg",
     "static/media/MechEIcon.png": "/static/media/MechEIcon.10b8a9fdcdf020a78aad.png",
@@ -41,6 +45,7 @@
     "static/media/RandomIcon.png": "/static/media/RandomIcon.fc7fbde852e6778deb37.png",
     "static/media/PS6.png": "/static/media/PS6.8f5af3e541339737be7a.png",
     "static/media/WNet.jpg": "/static/media/WNet.534e06b494aef99d5a32.jpg",
+    "static/media/Super_Sunday.ttf": "/static/media/Super_Sunday.45c88f84a40290791797.ttf",
     "static/media/Hyperloop2.jpg": "/static/media/Hyperloop2.1f02f126507a39df6d19.jpg",
     "static/media/MechEText.png": "/static/media/MechEText.f0bbed766b63f4f7f633.png",
     "static/media/ComputerScienceText.png": "/static/media/ComputerScienceText.1549d83bd02ce952ab14.png",
@@ -51,6 +56,7 @@
     "static/media/Lostar.ttf": "/static/media/Lostar.b5d796b48cccb20757de.ttf",
     "static/media/NEU.png": "/static/media/NEU.a2800ce55d912cf998fe.png",
     "static/media/NLP.jpg": "/static/media/NLP.950b753956eb280ee2b9.jpg",
+    "static/media/COLUMBIA.png": "/static/media/COLUMBIA.d26c4f7475109acb03f0.png",
     "static/media/HyperloopMe.jpg": "/static/media/HyperloopMe.46eb691707ba3eb8e65d.jpg",
     "static/media/IBM.png": "/static/media/IBM.db7083475c897ce837d6.png",
     "static/media/LFNY.png": "/static/media/LFNY.afd4be08404a5c010b0c.png",
@@ -62,11 +68,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.5650b396.css.map": "/static/css/main.5650b396.css.map",
-    "main.e05e97c9.js.map": "/static/js/main.e05e97c9.js.map"
+    "main.773d8a93.css.map": "/static/css/main.773d8a93.css.map",
+    "main.50d02dd0.js.map": "/static/js/main.50d02dd0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5650b396.css",
-    "static/js/main.e05e97c9.js"
+    "static/css/main.773d8a93.css",
+    "static/js/main.50d02dd0.js"
   ]
 }
