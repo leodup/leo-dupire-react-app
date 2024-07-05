@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Work.css';
 import '../App+/Footer/Footer.css';
@@ -8,17 +9,27 @@ import Disclaimer from "../Temp/Disclaimer.js"
 import Tabs from '../App+/Tabs/Tabs.js';
 import Footer from '../App+/Footer/Footer.js';
 
+import COLUMBIA from "../images/WorkImg/COLUMBIA.png";
 import IBM from "../images/WorkImg/IBM.png";
 import BROCC from "../images/WorkImg/BROCC.png";
 import ANALOGIC from "../images/WorkImg/ANALOGIC.png";
 import PS6 from "../images/WorkImg/PS6.png";
 
+import COLimg from "../images/WorkImg/Columbiaimg.png";
 import IBMimg from "../images/WorkImg/IBMimg.jpg";
 import BROCCimg from "../images/WorkImg/Broccimg.jpg";
 import ANALOGICimg from "../images/WorkImg/Analogicimg.jpg";
 import PS6img from "../images/WorkImg/PS6img.jpg";
 
 const Work = () => {
+
+    const COLText1 = <p className="WorkText" id="COLText1">
+        I am currently an AI research scientist in the Andrea Califano Laboratory at Columbia University's Department of Systems Biology. The lab is renowned for its achievements in pioneering cancer & disease research. <br></br> <br></br>
+
+        My work consists of developing methodologies, notably single-cell LLMs and Graph Neural Networks, to model complex networks of gene interactions. <br></br> <br></br>
+
+        To learn more, please visit the <a href="https://califano.c2b2.columbia.edu/" target="_blank" id="COLText"><u>Califano Lab's website</u></a>.
+    </p>
 
     const IBMText1 = <p className="WorkText" id="IBMText1">
         I completed my data science internship with IBM’s elite Extreme Blue program in Raleigh, NC. Extreme Blue is IBM’s technical leadership program in which teams of four interns work together to create a product and solve a real world problem. <br></br> <br></br>
@@ -66,6 +77,21 @@ const Work = () => {
                     <h1 id="Work">WORK</h1>
                 </div>
                 <Tabs title1="Home" link1="/" page="Work"/>
+            </div>
+            <div className="COLUMBIA">
+                <img
+                    className="imageCOL"
+                    src={COLUMBIA}
+                    alt="Columbia"
+                />
+                <div className="WorkFlex">
+                    {COLText1}
+                    <img
+                        className="WorkImage"
+                        src={COLimg}
+                        alt="Columbia Image"
+                    />
+                </div>
             </div>
             <div className="IBM">
                 <img

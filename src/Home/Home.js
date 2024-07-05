@@ -156,6 +156,7 @@ const Home = () => {
     const ref = React.useRef(null);
     var opacity = 0;
     var i = 0;
+    var buff = 0;
 
     function myLoop1() {   
         const intervalId = setInterval(() => {
@@ -206,9 +207,22 @@ const Home = () => {
                     i = 0;
                     setCount(i);
                 }    
-                myLoop1()
+                BufferLoop()
             }
         }, 25);
+    }
+
+    function BufferLoop() {         
+        const intervalId = setInterval(() => {
+            var body = ref.current;
+            if (buff < 10) {
+                buff += 1
+            } else {
+                clearInterval(intervalId)
+                buff = 0
+                myLoop1()
+            }
+        }, 100);
     }
     
     useEffect(() => {
@@ -272,14 +286,14 @@ const Home = () => {
                     <div className="ResumePosition">
                         <iframe src="https://drive.google.com/file/d/1nks36wwjVsh8qz4xs2vzo-QOeEp7c1kZ/preview" allow="autoplay" className="ResumePDF"></iframe>
                     </div>
-                    <h3 id="Home">Diploma</h3>
+                    {/* <h3 id="Home">Diploma</h3>
                     <div className="ResumePosition">
                         <iframe src="https://drive.google.com/file/d/1Lm-vKiLJcFZ1LKSR-5EV7Zzkj05ugA4G/preview" allow="autoplay"  className="DiplomaPDF"></iframe>
                     </div>
                     <h3 id="Home">Honors: Founders Day Award</h3>
                     <div className="ResumePosition">
                         <iframe src="https://drive.google.com/file/d/1ZBiu5t-HT2jYoGm88J_8xwEU1TyEcs_m/preview" allow="autoplay" className="HonorsPDF"></iframe>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className='Contact'>
