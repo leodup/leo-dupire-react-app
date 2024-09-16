@@ -14,7 +14,7 @@
 
 .cont {
   position: relative;
-  height: 100vh;
+  height: 95vh;
   width: 100%;
 }
 
@@ -55,7 +55,6 @@
 
 .container {
   height: 100%;
-  /* background-color: rgb(138, 104, 104); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +70,6 @@
 
 .HeaderName {
   height: 100%;
-  width: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,8 +77,6 @@
 
 .HeaderNameInner {
   width: 100%;
-  /* display: flex; Enables Flexbox */
-  /* justify-content: space-between; */
 }
 
 .HeaderName img {
@@ -93,7 +89,6 @@
 .HeaderName p {
   position: relative;
   margin: 0;
-  width: 100%;
   font-family: "neoris";
   font-size: 12rem;
   line-height: 9rem;
@@ -101,24 +96,12 @@
   color: rgba(255, 255, 255, 0.9);
   z-index: 2;
 }
-
-
-
-
-
-.peek {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-image: url("../images/PlayImg/Rusty.jpeg");
-  background-size: 500px 400px;
-
-  border-radius: 50%;
-  box-shadow: inset 0px 0px 100px black;
-  background-repeat: 'no-repeat';
-  /* background: radial-gradient(circle, black 60%, rgba(0, 0, 0, 0) 100%); */
+@media only screen and (max-width: 800px) {
+  .HeaderName p {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
 }
-
 
 
 
@@ -128,9 +111,7 @@
 .corpus {
   position: relative;
   width: 100%;
-  /* height: 100vh; */
   background-color: rgb(127 163 176);
-  /* box-shadow: inset 0px 100px 100px 100px black; */
 }
 
 .contCorpus {
@@ -146,89 +127,158 @@
 .conText {
   height: 100%;
   width: 100%;
-  /* display: flex; */
-  /* align-items: center; */
 }
 
 .black {
-  padding-bottom: 5vh;
-  /* height: 100vh; */
-  width: 100%;        /* Stretch to fill the width of the container */
-  display: flex;      /* Optional: Enables flexbox properties inside the divs */
+  width: 100%;
+  display: flex;
   justify-content: center;
 }
 
-h1{
+.releases {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media only screen and (max-width: 800px) {
+  .releases {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.releases h1{
   margin: 0;
-  font-family: "neoris";
-  font-size: 4rem;
+  /* font-family: "recreate"; */
+  font-family: neoris;
+  font-size: 3.5rem;
   line-height: 5rem;
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
-  color: rgba(255, 255, 255, 0.9);
   z-index: 2;
+  text-align: center; 
+
+  color: rgba(0, 0, 0, 0.5);
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-repeat: no-repeat;
+  -moz-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+@media only screen and (max-width: 800px) {
+  .releases h1 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
 }
 
 .songs {
-  width: 35rem;
-  display: flex; /* Enables Flexbox on the outer container */
-  justify-content: center;
-  /* flex-direction: column; */
-  align-items: center; /* Centers the inner container vertically */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media only screen and (max-width: 800px) {
+  .songs {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
-.figs {
+.divider {
+  height: 2px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  filter: brightness(60%);
+}
+
+.divider2 {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(127 163 176);
 }
 
 .song {
   position: relative;
-  display: flex; /* Enables Flexbox */
-  justify-content: center; /* Centers children vertically */
-  align-items: center; /* Centers children horizontally */
-}
+  height: 8rem;
+  /* border-top: 1px solid #95663b; */
 
-.top3, .bottom3 {
-  height: 100%;
-  width: 90%;
-  display: flex;      /* Optional: Enables flexbox properties inside the divs */
-  justify-content: center; /* Optional: Horizontally center content */
-  align-items: center;     /* Optional: Vertically center content */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.song:hover {
+  filter: grayscale(100%);
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: 0.5s;
 }
 
 .record {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.record2 {
-  height: 42.5vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.rec {
-  font-family: neoris;
-  font-size: 3rem;
+  position: absolute;
+  left: 2rem;
+  font-family: recreate;
+  font-size: 2rem;
   line-height: 4rem;
 
-  /* background-image: url("../images/PlayImg/Rusty.jpeg");  */
-  background-size: cover; /* Ensures the background covers the text */
-  background-position: center; /* Centers the background image */
-  -webkit-background-clip: text; /* Clips the background to the text for WebKit browsers */
-  background-clip: text; /* Clips the background to the text */
-  /* color: transparent; */
-  color: rgba(255, 255, 255, 0.75);
-  /* -webkit-text-stroke: 2px rgb(255, 255, 255, 0.75); */
-  text-align: center; /* Centers the text */
-  /* text-shadow: 0 0 10px rgb(0, 0, 0); */
+  color: rgba(0, 0, 0, 0.25);
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-repeat: no-repeat;
+  -moz-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+@media only screen and (max-width: 800px) {
+  .record {
+    left: 1rem;
+    font-family: recreate;
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+}
+
+.recStat {
+  position: absolute;
+  right: 2rem;
+  font-family: recreate;
+  font-size: 2rem;
+  line-height: 4rem;
+
+  color: rgba(0, 0, 0, 0.6);
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-repeat: no-repeat;
+  -moz-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+@media only screen and (max-width: 800px) {
+  .recStat {
+    right: 1rem;
+    font-family: recreate;
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
 }
 
 .rec2 {
@@ -238,14 +288,14 @@ h1{
   line-height: 6rem;
 
   background-image: url("../images/PlayImg/Rusty.jpeg"); 
-  background-size: cover; /* Ensures the background covers the text */
-  background-position: center; /* Centers the background image */
-  -webkit-background-clip: text; /* Clips the background to the text for WebKit browsers */
-  background-clip: text; /* Clips the background to the text */
+  background-size: cover; 
+  background-position: center; 
+  -webkit-background-clip: text;
+  background-clip: text; 
   color: transparent;
   /* color: rgba(255, 255, 255, 0.75); */
   /* -webkit-text-stroke: 2px rgb(255, 255, 255, 0.75); */
-  text-align: center; /* Centers the text */
+  text-align: center; 
   /* text-shadow: 0 0 10px rgb(0, 0, 0); */
 }
 
@@ -373,11 +423,6 @@ h1{
   filter: url(#warp)
 }
 
-/* .image_img {
-
-} */
-
-
 .vid {
   height: 100vh;
   width: 100%;
@@ -386,12 +431,11 @@ h1{
 }
 
 video {
-  /* width: 100%; */
   filter: saturate(200%);
   animation: flicker 0.01s infinite;
   width: 100vw;
-      height: 100vh;
-      object-fit: cover;
+  height: 100vh;
+  object-fit: cover;
 }
 
 @keyframes flicker {

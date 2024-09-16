@@ -26,31 +26,11 @@ const Play = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div class="bottom" style={{ position: 'absolute' }}>
-                    <div className='ContCont'>
-                        <div className='Cont1'>
-                            <div className='container'>
-                                <div className='HeaderName'>
-                                    <div className='HeaderNameInner'>
-                                        <img
-                                            src={LeoDisk}
-                                            alt="Léo name"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
                 <div className='top' style={{ position: 'absolute' }}>
                     <div class="container2">
                         <div className='HeaderName'>
                             <div className='HeaderNameInner'>
-                                {/* <img
-                                    src={LeoName}
-                                    alt="Léo name"
-                                /> */}
-                                <p>Léo Dupire</p>
+                                <p>Léo<br></br>Dupire</p>
                             </div>
                         </div>
                     </div>
@@ -62,32 +42,22 @@ const Play = () => {
                     <div className='releases'>
                         <h1>SINGLES</h1>
                         <div className='songs'>
-                            <div className='figs'>
-                                <div className='record' style={{ marginTop: '6vh', height: '5vh' }}>
-                                </div>
-                                <div className='record'>
-                                    <Single single="Sirens"></Single>
-                                </div>
-                                <div className='record'>
-                                    <Single single="Mad Man" theta="90deg"></Single>
-                                </div>
-                                <div className='record'>
-                                    <Single single="No Time" theta="125deg"></Single>
-                                </div>
+                            <div className='divider'></div>
+                            <div className='song'>
+                                <p className='record'>SIRENS</p>
+                                <p className='recStat'>10/18</p>
                             </div>
-                            <div className='figText'>
-                                <div className='record' style={{ marginTop: '6vh', height: '5vh' }}>
-                                </div>
-                                <div className='record2'>
-                                    <p className='rec'>10/18</p>
-                                </div>
-                                <div className='record2'>
-                                    <p className='rec'>11/29</p>
-                                </div>
-                                <div className='record2'>
-                                    <p className='rec'>01/10</p>
-                                </div>
+                            <div className='divider'></div>
+                            <div className='song'>
+                                <p className='record'>MAD MAN</p>
+                                <p className='recStat'>11/29</p>
                             </div>
+                            <div className='divider'></div>
+                            <div className='song'>
+                                <p className='record'>NO TIME</p>
+                                <p className='recStat' >01/10</p>
+                            </div>
+                            <div className='divider'></div>
 
                             {/* <div className='song'>
                                 <div className='record'>
@@ -116,9 +86,6 @@ const Play = () => {
                             </div> */}
                         </div>
                     </div>
-
-                    {/* <div className='blackInner'>
-                    </div> */}
                 </div>
                 <div className='contCorpus'>
                     <div class="bottom2">
@@ -129,6 +96,32 @@ const Play = () => {
                         </div>
                     </div>
                     <div className='top2'>
+                        <div className='releases'>
+                            <h1 style={{ color: "rgb(127 163 176)" }}>SOCIALS</h1>
+                            <div className='songs'>
+                                <div className='divider2'></div>
+                                <div className='song'>
+                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>INSTAGRAM</p>
+                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>leo_dupes</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song'>
+                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>TIK TOK</p>
+                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>leodupire</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song' /*style={{ borderBottom: "1px solid #95663b" }}*/>
+                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>YOUTUBE</p>
+                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>leodupire1293</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song' /*style={{ borderBottom: "1px solid #95663b" }}*/>
+                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>LINKEDIN</p>
+                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>Léo Dupire</p>
+                                </div>
+                                <div className='divider2'></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className='shows'>
