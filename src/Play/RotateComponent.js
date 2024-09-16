@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Play.css';
 import Monta from "../images/PlayImg/Monta.jpg";
+import Sirens from "../images/PlayImg/CoverArt1.jpg";
 
 const RotateComponent = () => {
   const rotatingDivRef = useRef(null);
@@ -161,6 +162,13 @@ const RotateComponent = () => {
             <div className='releases'>
               <h2 id="Play">releases</h2>
               <p id="Play">Sirens <br></br>Mad Man <br></br>No Time</p>
+              <div className='CoverArt'>
+                <img
+                  className="CoverImg"
+                  src={Sirens}
+                  alt="Sirens Image"
+                />
+              </div>
             </div>
             <div className='shows'>
               <h2 id="Play">upcoming shows</h2>
