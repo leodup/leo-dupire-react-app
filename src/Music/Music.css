@@ -1,0 +1,485 @@
+#variables {
+  --scale: 0.15
+}
+
+@font-face {
+  font-family: 'recreate';
+  src: url('Recreate-KV0aW.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'neoris';
+  src: url('TT Neoris Trial Black.ttf') format('truetype');
+}
+
+.cont {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+}
+
+.top, .bottom {
+  top: 0;             
+  left: 0;            
+  height: 100vh;
+  width: 100%;        
+  display: flex;      /* Optional: Enables flexbox properties inside the divs */
+  justify-content: center; /* Optional: Horizontally center content */
+  align-items: center;     /* Optional: Vertically center content */
+}
+
+.top2, .bottom2 {
+  position: absolute;
+  top: 0;             
+  left: 0;            
+  /* height: 100vh; */
+  width: 100%;        
+  display: flex;      /* Optional: Enables flexbox properties inside the divs */
+  justify-content: center; /* Optional: Horizontally center content */
+}
+
+.bottom2 {
+  box-shadow: inset 0px 0px 5rem black;
+}
+
+.textTop, .textBottom {
+  position: absolute;
+  top: 0;             /* Align to the top edge of the container */
+  left: 0;            /* Align to the left edge of the container */
+  height: 100%;
+  width: 100%;        /* Stretch to fill the width of the container */
+  display: flex;      
+  justify-content: center;
+  align-items: center;    
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderName {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderNameInner {
+  width: 100%;
+}
+
+.HeaderName img {
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.HeaderName p {
+  position: relative;
+  margin: 0;
+  font-family: "neoris";
+  font-size: 12rem;
+  line-height: 9rem;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+@media only screen and (max-width: 800px) {
+  .HeaderName p {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+}
+
+
+
+
+
+
+
+/* BODY */
+.corpus {
+  position: relative;
+  width: 100%;
+  background-color: rgb(127 163 176);
+}
+
+.contCorpus {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.releases {
+  position: relative;
+}
+
+.conText {
+  height: 100%;
+  width: 100%;
+}
+
+.black {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.releases {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media only screen and (max-width: 800px) {
+  .releases {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.releases h1{
+  margin: 0;
+  /* font-family: "recreate"; */
+  font-family: neoris;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  z-index: 2;
+  text-align: center; 
+
+  color: rgba(0, 0, 0, 0.5);
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-repeat: no-repeat;
+  -moz-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+@media only screen and (max-width: 800px) {
+  .releases h1 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+}
+
+.songs {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media only screen and (max-width: 800px) {
+  .songs {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  filter: brightness(60%);
+}
+
+.divider2 {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(127 163 176);
+}
+
+.song {
+  position: relative;
+  height: 6rem;
+  /* border-top: 1px solid #95663b; */
+
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.song:hover {
+  filter: grayscale(100%);
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: 0.5s;
+}
+
+.record {
+  position: absolute;
+  left: 2rem;
+  font-family: recreate;
+  font-size: 1.25rem;
+  line-height: 3rem;
+
+  color: rgba(0, 0, 0, 0.25);
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-repeat: no-repeat;
+  -moz-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+.recordB {
+  position: absolute;
+  left: 2rem;
+  font-family: recreate;
+  font-size: 1.25rem;
+  line-height: 3rem;
+
+  color: rgb(127 163 176);
+}
+@media only screen and (max-width: 800px) {
+  .record, .recordB {
+    left: 1rem;
+    font-family: recreate;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+.recStat {
+  position: absolute;
+  right: 2rem;
+  font-family: recreate;
+  font-size: 1.5rem;
+  line-height: 4rem;
+
+  color: rgba(0, 0, 0, 0.6);
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-repeat: no-repeat;
+  -moz-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+.recStatB {
+  position: absolute;
+  right: 2rem;
+  font-family: recreate;
+  font-size: 1.5rem;
+  line-height: 4rem;
+
+  color: rgb(127 163 176);
+}
+@media only screen and (max-width: 800px) {
+  .recStat, .recStatB {
+    right: 1rem;
+    font-family: recreate;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+.rec2 {
+  width: 80%;
+  font-family: recreate;
+  font-size: 6rem;
+  line-height: 6rem;
+
+  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent;
+  /* color: rgba(255, 255, 255, 0.75); */
+  /* -webkit-text-stroke: 2px rgb(255, 255, 255, 0.75); */
+  text-align: center; 
+  /* text-shadow: 0 0 10px rgb(0, 0, 0); */
+}
+
+.HeaderName2 {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0) 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeaderName2 img {
+  height: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+
+
+.ContCont {
+  height: 100%;
+  width: 100%;
+  display: flex;          
+  justify-content: center; 
+  align-items: center;  
+  overflow: hidden; 
+  /* background-color: black; */
+}
+
+.ContCont2 {
+  /* height: 100%; */
+  width: 100%;
+  display: flex;          
+  justify-content: center; 
+  align-items: center;  
+  overflow: hidden; 
+  /* background-color: black; */
+}
+
+.Cont {
+  position: fixed;
+}
+
+.Cont1 {
+  /* height: 100%; */
+  width: 100%;
+  filter: url(#warp1);
+}
+
+.Cont2 {
+  height: 102vh;
+  width: 105vw;
+  filter: url(#warp2);
+  background-image: url("../images/PlayImg/Rusty.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  -moz-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+
+  -webkit-background-size: var(--background-size);
+  -moz-background-size: var(--background-size);
+  -o-background-size: var(--background-size);
+  background-size: var(--background-size);
+}
+
+.crt {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background:
+              linear-gradient(rgba(0, 0, 0, 0) 0%, 
+                              /* rgba(0, 0, 0, 0.25) 10%, 
+                              rgba(0, 0, 0, 0) 50%, 
+                              rgba(0, 0, 0, 0.25) 90%,  */
+                              rgba(0, 0, 0, 0) 100%),
+              linear-gradient(90deg, 
+                              rgba(0, 0, 0, 1) 0%, 
+                              rgba(61, 0, 0, 0.25) 30%, 
+                              rgba(0, 54, 0, 0.25) 50%, 
+                              rgba(0, 0, 89, 0.25) 70%,
+                              rgba(0, 0, 0, 1) 100%);
+  z-index: 2;
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.svg {
+  position: absolute;
+}
+
+.image__img {
+  filter: url(#warp)
+}
+
+.vid {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+video {
+  filter: saturate(200%);
+  animation: flicker 0.01s infinite;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@keyframes flicker {
+  0%   { opacity: 0.7; }
+  10%   { opacity: 0.65; }
+  20%   { opacity: 0.7; }
+  100%   { opacity: 0.7; }
+}
+
+
+#fixB {
+  background-color: rgb(127 163 176);
+}
+
+.SocialIcons {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.SocialIcon {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  padding: 0.25rem;
+  border-radius: 50%;
+  width: 5vh;
+}

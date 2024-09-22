@@ -1,0 +1,243 @@
+#variables {
+    --scale: 0.15
+}
+
+@font-face {
+    font-family: 'groovy';
+    src: url('Lostar.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'super-sunday';
+    src: url('Super_Sunday.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'crash';
+    src: url('Crash.ttf') format('truetype');
+}
+
+.all {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-disk {
+    position: absolute;
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    transition: transform 0.4s ease-out;
+    
+}
+
+.background-disk-content {
+    height: 100%;
+    width: 100%;
+    /* background-image: url("../images/Backgrounds/PlayBackground.jpg"); */
+    /* filter: grayscale(100%); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-cover {
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 0.3s ease-out;
+}
+
+.rotate-container {
+    position: relative;
+    /* top: 10vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.vinyl, .label, .spoke {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+    border-radius: 50%;
+}
+
+.vinyl {
+    /* position: relative;
+    z-index: 2; */
+    width: min(100vh, 800vw);
+    height: min(100vh, 800vw);
+    color: red;
+    font-family: crash, sans-serif;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: normal;
+    transition: transform 0.3s ease-out;
+
+    /* border: solid 10px white; */
+    overflow: hidden;
+}
+.bar1 {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 30px;
+    background-color: white;
+}
+.bar2 {
+    position: absolute;
+    z-index: 1;
+    top: calc(50vh - 1vw/2);
+    height: 30px;
+    width: 100%;
+    background-color: white;
+}
+.vinyl-content {
+    height: 100%;
+    width: 100%;
+    /* background-image: url("../images/Backgrounds/PlayBackground.jpg"); */
+    /* filter: grayscale(100%); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+    border-radius: 50%;
+}
+
+#name {
+    position: relative;
+    top: 20vh;
+    left: -15.5vw;
+    z-index: 1;
+}
+
+.label {
+    width: min(240px, 240vw);
+    height: min(240px, 240vw);
+    background-color: red;
+    transition: transform 0.3s ease-out;
+    text-align: center;
+}
+#label_text {
+    font-family: groovy, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.spoke {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+
+.peek {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    mask-image: radial-gradient(circle at center, transparent 210px, white 10px);
+}
+
+.tape {
+    position: absolute;
+    z-index: -1;
+    top: 50vh;
+    right: calc(50vw + 50vh);
+    height: 300vh;
+    background-color: red;
+}
+
+.bio {
+    top: 100vh;
+    height: 200vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+}
+
+/* .spiral-dot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: rgb(129, 0, 0);
+    border-radius: 25%;
+  } */
+
+.bio-content {
+    position: relative;
+    z-index: 10;
+    top: 15vh;
+    height: 100%;
+    width: 95vh;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+
+.records {
+    
+}
+
+.releases {
+    
+}
+
+.bio {
+    
+}
+
+h2#Play {
+    font-family: crash;
+    font-size: 10vh;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 5vh;
+    text-align: justify;
+    color: white;
+}
+
+p#Play {
+    font-family: var(--text-font);
+    font-size: var(--text-font-size);
+    text-align: justify;
+    color: rgb(255, 255, 255);
+
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 1.58;
+    padding: 0 0 1.5em;
+
+    font-weight: 500;
+  }
+
+.Monta {
+    height: 100%;
+    width: 100%;
+
+}
+
+.MontaImg {
+    width: 100%;
+}
+
+.CoverArt {
+    width: 15vw;
+}
+
+.CoverImg {
+    width: 100%;
+}

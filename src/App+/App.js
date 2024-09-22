@@ -9,7 +9,7 @@ import Home from '../Home/Home.js';
 import Work from '../Work/Work.js';
 import Education from "../Education/Education.js";
 import Portfolio from "../Portfolio/Portfolio.js";
-import Play from "../Play/Play.js";
+import Music from "../Music/Music.js";
 
 
 function App() {
@@ -47,9 +47,9 @@ function App() {
             {/* <Footer /> */}
           </div>
         } />
-        <Route path="/play" element={
+        <Route path="/music" element={
           <div>
-            <Play />
+            <Music />
             {/* <Footer /> */}
           </div>
         } />
