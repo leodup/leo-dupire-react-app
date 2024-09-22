@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6d2b126.css",
-    "main.js": "/static/js/main.dfbdda70.js",
-    "static/media/WebBackground.mp4": "/static/media/WebBackground.36b2f718df8541baf508.mp4",
+    "main.css": "/static/css/main.3845e863.css",
+    "main.js": "/static/js/main.293aeebf.js",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/LogicPro.png": "/static/media/LogicPro.6f7d15fed4f2a3e36ac9.png",
@@ -16,6 +15,7 @@
     "static/media/L.png": "/static/media/L.df7e3700f88c86797c24.png",
     "static/media/DAC1.png": "/static/media/DAC1.e9f0c20187b30f98479c.png",
     "static/media/Vent2.png": "/static/media/Vent2.bce0bf08df86d2bef4c3.png",
+    "static/media/WebBackground.mp4": "/static/media/WebBackground.6a36b7461cd23edc319a.mp4",
     "static/media/Hydro1.png": "/static/media/Hydro1.042cdf8ed266be7d598b.png",
     "static/media/Vent4.png": "/static/media/Vent4.fee91a08ceb174c60ab7.png",
     "static/media/Vent3.png": "/static/media/Vent3.0a5b99a1bd46ae626b90.png",
@@ -57,6 +57,7 @@
     "static/media/LEO.jpg": "/static/media/LEO.7bb58316c39631fd9a13.jpg",
     "static/media/DataScienceText.png": "/static/media/DataScienceText.aa8afe663779ffea50b5.png",
     "static/media/BROCC.png": "/static/media/BROCC.16c672e630c011d99eb1.png",
+    "static/media/Insta.png": "/static/media/Insta.872cc6e577bbcce3fd24.png",
     "static/media/NEU.png": "/static/media/NEU.a2800ce55d912cf998fe.png",
     "static/media/NLP.jpg": "/static/media/NLP.950b753956eb280ee2b9.jpg",
     "static/media/COLUMBIA.png": "/static/media/COLUMBIA.d26c4f7475109acb03f0.png",
@@ -65,17 +66,19 @@
     "static/media/LFNY.png": "/static/media/LFNY.afd4be08404a5c010b0c.png",
     "static/media/Hyperloop.jpg": "/static/media/Hyperloop.b1bd9be560b3d5b01510.jpg",
     "static/media/Website.jpg": "/static/media/Website.0cfc780eb6b9a69f8bcf.jpg",
-    "static/media/Email.png": "/static/media/Email.134a88e3e5aec97e86c4.png",
+    "static/media/Email.png": "/static/media/Email.76702ffb1caf64682c3d.png",
+    "static/media/TikTok.png": "/static/media/TikTok.9c7dfd886ea5410f444f.png",
+    "static/media/Youtube.png": "/static/media/Youtube.33b138d30559a1a6c98a.png",
     "static/media/LinkedIn.png": "/static/media/LinkedIn.69948ad414278f93a624.png",
     "static/media/GitHub.png": "/static/media/GitHub.a7f46ea12daa401ac92e.png",
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.f6d2b126.css.map": "/static/css/main.f6d2b126.css.map",
-    "main.dfbdda70.js.map": "/static/js/main.dfbdda70.js.map"
+    "main.3845e863.css.map": "/static/css/main.3845e863.css.map",
+    "main.293aeebf.js.map": "/static/js/main.293aeebf.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6d2b126.css",
-    "static/js/main.dfbdda70.js"
+    "static/css/main.3845e863.css",
+    "static/js/main.293aeebf.js"
   ]
 }
