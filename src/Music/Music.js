@@ -19,38 +19,35 @@ import LeoName from "../images/MusicImg/Name.png";
 import Rusty from "../images/MusicImg/Rusty.jpeg";
 // import COVER from "../images/MusicImg/CoverArt1.png";
 import COVERs from "../images/MusicImg/CoverArt.png";
-import VID from "../videos/WebBackground.mp4";
+import VIDLand from "../videos/WebBackground.mp4";
+import VIDPort from "../videos/WebBackgroundPortrait.mov";
 
 const Music = () => {
 
     const height2 = "70vh";
 
-    // if (window.innerWidth < 1000) {
-    //     const height3 = "40rem";
-    // }
-    // else {
-        
-    // }
+    let VID;
+    if (window.innerWidth < 1000) {
+        VID = VIDPort;
+    } else {
+        VID = VIDLand;
+    }
 
-    const [height3, setHeight3] = useState(window.innerHeight);
+    const [height3, setHeight3] = useState("23rem");
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 1000) {
+                setHeight3("23rem");
+            } else {
+                setHeight3("16rem");
+            }
+        };
 
-  // useEffect hook to handle the window resize event
-  useEffect(() => {
-    const handleResize = () => {
-        if (window.innerWidth > 1000) {
-            setHeight3("23rem");
-        } else {
-            setHeight3("16rem");
-        }
-    };
+        window.addEventListener('resize', handleResize);
 
-    // Add event listener when component mounts
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup event listener when component unmounts
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     return (
@@ -58,9 +55,9 @@ const Music = () => {
             <div className='cont'>
                 <div className='ContCont'>
                     <div className='Cont'> 
-                        <div className='crt'>
+                        <div className='crt' id='head'>
                             <div className='vid'>
-                                <video autoPlay muted loop playsInline className='videoTag'>
+                                <video autoPlay muted loop playsInline>
                                     <source src={VID} type='video/mp4' />
                                     Your browser does not support the video tag.
                                 </video>
@@ -150,9 +147,11 @@ const Music = () => {
                 <div className='contCorpus' style={{ height: height2 }}>
                     <div class="bottom2" style={{ height: height2 }}>
                         <div className='ContCont'>
-                            <div className='Cont2'>
-                                <div className='crt'></div>
-                            </div>
+                            {/* <div className='Cont'> */}
+                                <div className='Cont2'>
+                                    <div className='crt2'></div>
+                                </div>
+                            {/* </div> */}
                         </div>
                     </div>
                     <div className='top2' style={{ height: height2 }}>
@@ -189,11 +188,13 @@ const Music = () => {
                         </div>
                     </div>
                 </div>
+
+
                 <div className='contCorpus' style={{ height: height3 }}>
                     <div class="bottom2" style={{ height: height3 }}>
                         <div className='ContCont'>
                             <div className='Cont2'>
-                                <div className='crt'></div>
+                                <div className='crt2'></div>
                             </div>
                         </div>
                     </div>
