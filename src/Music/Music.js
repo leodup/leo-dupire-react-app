@@ -1,32 +1,57 @@
 // import React from 'react';
 import './Music.css';
+import { useEffect, useState } from 'react';
 import { ExternalLink } from 'react-external-link';
-import TIKTOK from "../images/PlayImg/TikTok.png";
-import INSTA from "../images/PlayImg/Insta.png";
-import YOUTUBE from "../images/PlayImg/Youtube.png";
-import EMAIL from "../images/PlayImg/Email.png";
+import TIKTOK from "../images/MusicImg/TikTok.png";
+import INSTA from "../images/MusicImg/Insta.png";
+import YOUTUBE from "../images/MusicImg/Youtube.png";
+import EMAIL from "../images/MusicImg/Email.png";
+import SPOTIFY from "../images/MusicImg/Spotify.png";
+import APPLEMUSIC from "../images/MusicImg/AppleMusic.png";
+import AMAZONMUSIC from "../images/MusicImg/AmazonMusic.png";
+import DEEZER from "../images/MusicImg/Deezer.png";
 import Single from './Single.js';
+import SVG from './SVG.js';
 // import RotateComponent from './RotateComponent';
-import Leo from "../images/PlayImg/L.png";
-import LeoDisk from "../images/PlayImg/Disk.png";
-import LeoName from "../images/PlayImg/Name.png";
-import Rusty from "../images/PlayImg/Rusty.jpeg";
-// import COVER from "../images/PlayImg/CoverArt1.png";
-import COVERs from "../images/PlayImg/CoverArt.png";
+import Leo from "../images/MusicImg/L.png";
+import LeoDisk from "../images/MusicImg/Disk.png";
+import LeoName from "../images/MusicImg/Name.png";
+import Rusty from "../images/MusicImg/Rusty.jpeg";
+// import COVER from "../images/MusicImg/CoverArt1.png";
+import COVERs from "../images/MusicImg/CoverArt.png";
 import VID from "../videos/WebBackground.mp4";
 
 const Music = () => {
 
-    // videoRef = React.createRef();
+    const height2 = "70vh";
 
-    // togglePlay = () => {
-    //     const video = this.videoRef.current;
-    //     if (video.paused) {
-    //         video.play();
-    //     } else {
-    //         video.pause();
-    //     }
-    // };
+    // if (window.innerWidth < 1000) {
+    //     const height3 = "40rem";
+    // }
+    // else {
+        
+    // }
+
+    const [height3, setHeight3] = useState(window.innerHeight);
+
+  // useEffect hook to handle the window resize event
+  useEffect(() => {
+    const handleResize = () => {
+        if (window.innerWidth > 1000) {
+            setHeight3("23rem");
+        } else {
+            setHeight3("16rem");
+        }
+    };
+
+    // Add event listener when component mounts
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+    }, []);
 
     return (
         <>
@@ -44,6 +69,7 @@ const Music = () => {
                     </div>
                 </div>
                 <div className='top' style={{ position: 'absolute' }}>
+                <div className='headerSocial'>
                     <div class="container2">
                         <div className='HeaderName'>
                             <div className='HeaderNameInner'>
@@ -51,6 +77,47 @@ const Music = () => {
                             </div>
                         </div>
                     </div>
+                    {/* <div className='songs' style={{ bottom: "0rem", padding: "2rem" }}>
+                        <div className='SocialIcons'>
+                            <ExternalLink href="https://www.tiktok.com/@leodupire">
+                                <img
+                                    className="SocialIcon"
+                                    style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
+                                    id="fixB"
+                                    src={TIKTOK}
+                                    alt="LinkedIn Image"
+                                />
+                            </ExternalLink>
+                            <ExternalLink href="https://www.instagram.com/leo_dupes/">
+                                <img
+                                    className="SocialIcon"
+                                    style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
+                                    id="fixB"
+                                    src={INSTA}
+                                    alt="Github Image"
+                                />
+                            </ExternalLink>
+                            <ExternalLink href="https://www.youtube.com/@leo_dupire">
+                                <img
+                                    className="SocialIcon"
+                                    style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
+                                    id="fixB"
+                                    src={YOUTUBE}
+                                    alt="Github Image"
+                                />
+                            </ExternalLink>
+                            <a href="mailto: leo@leodupire.com">
+                                <img
+                                    className="SocialIcon"
+                                    style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
+                                    id="fixB"
+                                    src={EMAIL}
+                                    alt="Email Image"
+                                />
+                            </a>
+                        </div>
+                    </div> */}
+                </div>
                 </div>
             </div>
 
@@ -80,15 +147,15 @@ const Music = () => {
                         </div>
                     </div>
                 </div>
-                <div className='contCorpus' style={{ height: "60vh"}}>
-                    <div class="bottom2" style={{ height: "60vh"}}>
+                <div className='contCorpus' style={{ height: height2 }}>
+                    <div class="bottom2" style={{ height: height2 }}>
                         <div className='ContCont'>
                             <div className='Cont2'>
                                 <div className='crt'></div>
                             </div>
                         </div>
                     </div>
-                    <div className='top2'>
+                    <div className='top2' style={{ height: height2 }}>
                         <div className='releases'>
                             <h1 style={{ color: "rgb(127 163 176)" }}>LIVE</h1>
                             <div className='songs'>
@@ -96,6 +163,11 @@ const Music = () => {
                                 <div className='song'>
                                     <p className='record' style={{ color: "rgb(127 163 176)" }}>NYC</p>
                                     <p className='recStat' style={{ color: "rgb(127 163 176)" }}>Coming Soon</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song'>
+                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>More NYC</p>
+                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>Coming Later</p>
                                 </div>
                                 <div className='divider2'></div>
                                 <div className='song'>
@@ -117,30 +189,86 @@ const Music = () => {
                         </div>
                     </div>
                 </div>
-                <div className='black' style={{ backgroundColor: "black"}}>
-                    <div className='releases' style={{ paddingBottom: "5rem"}}>
-                        <h1 style={{ color: "rgb(127 163 176)" }}>FOLLOW</h1>
-                        <div className='songs' style={{ padding: "2rem"}}>
+                <div className='contCorpus' style={{ height: height3 }}>
+                    <div class="bottom2" style={{ height: height3 }}>
+                        <div className='ContCont'>
+                            <div className='Cont2'>
+                                <div className='crt'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='top2' style={{ backgroundColor: "rgb(0, 0, 0, 0.5)" }}>
+                        <div className='releases' style={{ paddingTop: "4rem", paddingBottom: "5rem" }}>
+                            <h1 id='rel' style={{ color: "rgb(127 163 176)" }}>LISTEN</h1>
+                            <div className='songs' style={{ padding: "2rem"}}>
+                                <div className='SocialIcons'>
+                                    <ExternalLink href="https://open.spotify.com/">
+                                        <img
+                                            className="SocialIcon2"
+                                            id="fixB"
+                                            src={SPOTIFY}
+                                            alt="LinkedIn Image"
+                                        />
+                                    </ExternalLink>
+                                    <ExternalLink href="https://music.apple.com/us/new">
+                                        <img
+                                            className="SocialIcon2"
+                                            id="fixB"
+                                            src={APPLEMUSIC}
+                                            alt="Github Image"
+                                        />
+                                    </ExternalLink>
+                                    <ExternalLink href="https://www.deezer.com/us/">
+                                        <img
+                                            className="SocialIcon2"
+                                            id="fixB"
+                                            src={AMAZONMUSIC}
+                                            alt="Github Image"
+                                        />
+                                    </ExternalLink>
+                                    <ExternalLink href="https://music.amazon.com/">
+                                        <img
+                                            className="SocialIcon2"
+                                            id="fixB"
+                                            src={DEEZER}
+                                            alt="Email Image"
+                                        />
+                                    </ExternalLink>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            
+                <div className='black' style={{ backgroundColor: "black" }}>
+                    <div className='releases' style={{ paddingTop: "0rem", paddingBottom: "0rem"}}>
+                        {/* <h1 id='rel' style={{ color: "rgb(255, 255, 255, 0.75)" }}>FOLLOW</h1> */}
+                        <div className='songs' style={{ padding: "2rem" }}>
                             <div className='SocialIcons'>
-                                <ExternalLink href="https://www.linkedin.com/in/l%C3%A9o-dupire-47387a183/">
+                                <ExternalLink href="https://www.tiktok.com/@leodupire">
                                     <img
                                         className="SocialIcon"
+                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
                                         id="fixB"
                                         src={TIKTOK}
                                         alt="LinkedIn Image"
                                     />
                                 </ExternalLink>
-                                <ExternalLink href="https://github.com/leodup">
+                                <ExternalLink href="https://www.instagram.com/leo_dupes/">
                                     <img
                                         className="SocialIcon"
+                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
                                         id="fixB"
                                         src={INSTA}
                                         alt="Github Image"
                                     />
                                 </ExternalLink>
-                                <ExternalLink href="https://github.com/leodup">
+                                <ExternalLink href="https://www.youtube.com/@leo_dupire">
                                     <img
                                         className="SocialIcon"
+                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
                                         id="fixB"
                                         src={YOUTUBE}
                                         alt="Github Image"
@@ -149,6 +277,7 @@ const Music = () => {
                                 <a href="mailto: leo@leodupire.com">
                                     <img
                                         className="SocialIcon"
+                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
                                         id="fixB"
                                         src={EMAIL}
                                         alt="Email Image"
@@ -160,57 +289,7 @@ const Music = () => {
                 </div>
             </div>
 
-
-
-
-            <svg className="svg" style={{ height: 0 }}>
-                <filter id="warp1">
-                    <feTurbulence 
-                        type="fractalNoise" 
-                        baseFrequency="0.005" 
-                        numOctaves="3" 
-                        result="waves"
-                    ></feTurbulence>
-                    <feColorMatrix in="waves" type="hueRotate">
-                        <animate 
-                            attributeName="values" 
-                            values="0;360" 
-                            dur="12s" 
-                            repeatCount="indefinite" 
-                        ></animate>
-                    </feColorMatrix>
-                    <feDisplacementMap 
-                        in="SourceGraphic" 
-                        scale="50" 
-                        xChannelSelector="R" 
-                        yChannelSelector="G"
-                    ></feDisplacementMap>
-                </filter>
-                <svg className="svg" style={{ height: 0 }}>
-                <filter id="warp2">
-                    <feTurbulence 
-                        type="fractalNoise" 
-                        baseFrequency="0.005" 
-                        numOctaves="3" 
-                        result="waves"
-                    ></feTurbulence>
-                    <feColorMatrix in="waves" type="hueRotate">
-                        <animate 
-                            attributeName="values" 
-                            values="0;360" 
-                            dur="6s" 
-                            repeatCount="indefinite" 
-                        ></animate>
-                    </feColorMatrix>
-                    <feDisplacementMap 
-                        in="SourceGraphic" 
-                        scale="40" 
-                        xChannelSelector="R" 
-                        yChannelSelector="G"
-                    ></feDisplacementMap>
-                </filter>
-            </svg>
-            </svg>
+            <SVG></SVG>
         </>
     );
 }

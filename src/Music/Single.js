@@ -1,5 +1,5 @@
 import './Music.css';
-import LeoDisk from "../images/PlayImg/Disk.png";
+import LeoDisk from "../images/MusicImg/Disk.png";
 
 const Single = (props) => {
     return (

@@ -4,12 +4,17 @@
 
 @font-face {
   font-family: 'recreate';
-  src: url('Recreate-KV0aW.ttf') format('truetype');
+  src: url('fonts/Recreate-KV0aW.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'neoris';
-  src: url('TT Neoris Trial Black.ttf') format('truetype');
+  src: url('fonts/TT Neoris Trial Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'serenata';
+  src: url('fonts/Serenata.ttf') format('truetype');
 }
 
 .cont {
@@ -18,7 +23,7 @@
   width: 100%;
 }
 
-.top, .bottom {
+.bottom {
   top: 0;             
   left: 0;            
   height: 100vh;
@@ -26,6 +31,19 @@
   display: flex;      /* Optional: Enables flexbox properties inside the divs */
   justify-content: center; /* Optional: Horizontally center content */
   align-items: center;     /* Optional: Vertically center content */
+}
+
+.top {
+  top: 0;             
+  left: 0;            
+  height: 100vh;
+  width: 100%;        
+  display: flex;      /* Optional: Enables flexbox properties inside the divs */
+  justify-content: center; /* Optional: Horizontally center content */
+  align-items: center;     /* Optional: Vertically center content */
+}
+
+.headerSocial {
 }
 
 .top2, .bottom2 {
@@ -93,14 +111,8 @@
   font-size: 12rem;
   line-height: 9rem;
   -webkit-text-stroke: 2px rgb(255, 255, 255);
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   z-index: 2;
-}
-@media only screen and (max-width: 800px) {
-  .HeaderName p {
-    font-size: 5rem;
-    line-height: 4rem;
-  }
 }
 
 
@@ -144,25 +156,19 @@
   padding-left: 5rem;
   padding-right: 5rem;
 }
-@media only screen and (max-width: 800px) {
-  .releases {
-    padding-top: 5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
 
 .releases h1{
   margin: 0;
   /* font-family: "recreate"; */
-  font-family: neoris;
+  font-family: serenata;
   font-size: 3.5rem;
   line-height: 5rem;
   z-index: 2;
   text-align: center; 
+  /* -webkit-text-stroke: 1px rgb(255, 255, 255, 0.5); */
 
   color: rgba(0, 0, 0, 0.5);
-  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-image: url("../images/MusicImg/Rusty.jpeg"); 
   background-repeat: no-repeat;
   -moz-background-attachment: fixed;
   -webkit-background-attachment: fixed;
@@ -173,11 +179,9 @@
   -webkit-background-clip: text;
   background-clip: text; 
 }
-@media only screen and (max-width: 800px) {
-  .releases h1 {
-    font-size: 2rem;
-    line-height: 1.5rem;
-  }
+#rel {
+  font-family: serenata;
+  font-size: 2rem;
 }
 
 .songs {
@@ -186,19 +190,11 @@
   padding-left: 5rem;
   padding-right: 5rem;
 }
-@media only screen and (max-width: 800px) {
-  .songs {
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
 
 .divider {
   height: 2px;
   width: 100%;
-  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-image: url("../images/MusicImg/Rusty.jpeg"); 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -230,12 +226,13 @@
 .record {
   position: absolute;
   left: 2rem;
-  font-family: recreate;
+  font-family: serenata;
   font-size: 1.25rem;
   line-height: 3rem;
+  font-weight: bold;
 
   color: rgba(0, 0, 0, 0.25);
-  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-image: url("../images/MusicImg/Rusty.jpeg"); 
   background-repeat: no-repeat;
   -moz-background-attachment: fixed;
   -webkit-background-attachment: fixed;
@@ -249,30 +246,22 @@
 .recordB {
   position: absolute;
   left: 2rem;
-  font-family: recreate;
+  font-family: serenata;
   font-size: 1.25rem;
   line-height: 3rem;
 
   color: rgb(127 163 176);
 }
-@media only screen and (max-width: 800px) {
-  .record, .recordB {
-    left: 1rem;
-    font-family: recreate;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-}
 
 .recStat {
   position: absolute;
   right: 2rem;
-  font-family: recreate;
-  font-size: 1.5rem;
+  font-family: serenata;
+  font-size: 1.25rem;
   line-height: 4rem;
 
   color: rgba(0, 0, 0, 0.6);
-  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-image: url("../images/MusicImg/Rusty.jpeg"); 
   background-repeat: no-repeat;
   -moz-background-attachment: fixed;
   -webkit-background-attachment: fixed;
@@ -286,19 +275,11 @@
 .recStatB {
   position: absolute;
   right: 2rem;
-  font-family: recreate;
-  font-size: 1.5rem;
+  font-family: serenata;
+  font-size: 1.25rem;
   line-height: 4rem;
 
   color: rgb(127 163 176);
-}
-@media only screen and (max-width: 800px) {
-  .recStat, .recStatB {
-    right: 1rem;
-    font-family: recreate;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
 }
 
 .rec2 {
@@ -307,7 +288,7 @@
   font-size: 6rem;
   line-height: 6rem;
 
-  background-image: url("../images/PlayImg/Rusty.jpeg"); 
+  background-image: url("../images/MusicImg/Rusty.jpeg"); 
   background-size: cover; 
   background-position: center; 
   -webkit-background-clip: text;
@@ -371,22 +352,18 @@
 }
 
 .Cont2 {
-  height: 102vh;
-  width: 105vw;
+  height: 202vh;
+  width: 205vw;
   filter: url(#warp2);
-  background-image: url("../images/PlayImg/Rusty.jpeg");
+  background-image: url("../images/MusicImg/Rusty.jpeg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-position: center; 
 
   -moz-background-attachment: fixed;
   -webkit-background-attachment: fixed;
   -o-background-attachment: fixed;
   background-attachment: fixed;
-
-  -webkit-background-size: var(--background-size);
-  -moz-background-size: var(--background-size);
-  -o-background-size: var(--background-size);
-  background-size: var(--background-size);
 }
 
 .crt {
@@ -479,7 +456,81 @@ video {
 .SocialIcon {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+  padding: 2px;
+  border-radius: 50%;
+  width: 2rem;
+}
+
+.SocialIcon2 {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
   padding: 0.25rem;
   border-radius: 50%;
-  width: 5vh;
+  width: 5rem;
+}
+
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 1000px) {
+  .HeaderName p {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  .releases {
+    padding-top: 5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .releases h1 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+
+  .songs {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .record, .recordB {
+    left: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .recStat, .recStatB {
+    right: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .Cont2 {
+    height: 100vh;
+    width: 100%;
+    filter: none;
+    z-index: 0;
+    background-image: url("../images/MusicImg/Rusty.jpeg");
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  
+    -moz-background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+  }
+
+  .SocialIcon2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 2px;
+    border-radius: 50%;
+    width: 3rem;
+  }
 }
