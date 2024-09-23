@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3845e863.css",
-    "main.js": "/static/js/main.293aeebf.js",
+    "main.css": "/static/css/main.01ac8aa3.css",
+    "main.js": "/static/js/main.d2206edb.js",
+    "static/media/WebBackground.mp4": "/static/media/WebBackground.349ce5b333e4faac3e85.mp4",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
     "static/media/LogicPro.png": "/static/media/LogicPro.6f7d15fed4f2a3e36ac9.png",
@@ -15,7 +16,6 @@
     "static/media/L.png": "/static/media/L.df7e3700f88c86797c24.png",
     "static/media/DAC1.png": "/static/media/DAC1.e9f0c20187b30f98479c.png",
     "static/media/Vent2.png": "/static/media/Vent2.bce0bf08df86d2bef4c3.png",
-    "static/media/WebBackground.mp4": "/static/media/WebBackground.6a36b7461cd23edc319a.mp4",
     "static/media/Hydro1.png": "/static/media/Hydro1.042cdf8ed266be7d598b.png",
     "static/media/Vent4.png": "/static/media/Vent4.fee91a08ceb174c60ab7.png",
     "static/media/Vent3.png": "/static/media/Vent3.0a5b99a1bd46ae626b90.png",
@@ -48,6 +48,7 @@
     "static/media/HummingFace.jpg": "/static/media/HummingFace.14460f985d9b6576f204.jpg",
     "static/media/TT Neoris Trial Black.ttf": "/static/media/TT Neoris Trial Black.7415a9158f90216dd50b.ttf",
     "static/media/RandomIcon.png": "/static/media/RandomIcon.fc7fbde852e6778deb37.png",
+    "static/media/Serenata.ttf": "/static/media/Serenata.bee2d98244d7b152137c.ttf",
     "static/media/PS6.png": "/static/media/PS6.8f5af3e541339737be7a.png",
     "static/media/WNet.jpg": "/static/media/WNet.534e06b494aef99d5a32.jpg",
     "static/media/Hyperloop2.jpg": "/static/media/Hyperloop2.1f02f126507a39df6d19.jpg",
@@ -56,6 +57,7 @@
     "static/media/RandomText.png": "/static/media/RandomText.dfef22c12be377f99928.png",
     "static/media/LEO.jpg": "/static/media/LEO.7bb58316c39631fd9a13.jpg",
     "static/media/DataScienceText.png": "/static/media/DataScienceText.aa8afe663779ffea50b5.png",
+    "static/media/AmazonMusic.png": "/static/media/AmazonMusic.eb72a15162e6baa00c0c.png",
     "static/media/BROCC.png": "/static/media/BROCC.16c672e630c011d99eb1.png",
     "static/media/Insta.png": "/static/media/Insta.872cc6e577bbcce3fd24.png",
     "static/media/NEU.png": "/static/media/NEU.a2800ce55d912cf998fe.png",
@@ -66,19 +68,22 @@
     "static/media/LFNY.png": "/static/media/LFNY.afd4be08404a5c010b0c.png",
     "static/media/Hyperloop.jpg": "/static/media/Hyperloop.b1bd9be560b3d5b01510.jpg",
     "static/media/Website.jpg": "/static/media/Website.0cfc780eb6b9a69f8bcf.jpg",
+    "static/media/Spotify.png": "/static/media/Spotify.d18d68dbdc918d3e3b48.png",
     "static/media/Email.png": "/static/media/Email.76702ffb1caf64682c3d.png",
     "static/media/TikTok.png": "/static/media/TikTok.9c7dfd886ea5410f444f.png",
     "static/media/Youtube.png": "/static/media/Youtube.33b138d30559a1a6c98a.png",
     "static/media/LinkedIn.png": "/static/media/LinkedIn.69948ad414278f93a624.png",
     "static/media/GitHub.png": "/static/media/GitHub.a7f46ea12daa401ac92e.png",
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
+    "static/media/AppleMusic.png": "/static/media/AppleMusic.1f7d78515720876903c5.png",
+    "static/media/Deezer.png": "/static/media/Deezer.fff590e117e1f659c027.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.3845e863.css.map": "/static/css/main.3845e863.css.map",
-    "main.293aeebf.js.map": "/static/js/main.293aeebf.js.map"
+    "main.01ac8aa3.css.map": "/static/css/main.01ac8aa3.css.map",
+    "main.d2206edb.js.map": "/static/js/main.d2206edb.js.map"
   },
   "entrypoints": [
-    "static/css/main.3845e863.css",
-    "static/js/main.293aeebf.js"
+    "static/css/main.01ac8aa3.css",
+    "static/js/main.d2206edb.js"
   ]
 }
