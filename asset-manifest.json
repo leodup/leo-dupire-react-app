@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e7949dd.css",
-    "main.js": "/static/js/main.92a2ffba.js",
+    "main.css": "/static/css/main.9ee62b4f.css",
+    "main.js": "/static/js/main.95519b25.js",
     "static/media/WebBackgroundPortrait.mov": "/static/media/WebBackgroundPortrait.7ecd25fd304b921851dd.mov",
     "static/media/WebBackground.mp4": "/static/media/WebBackground.349ce5b333e4faac3e85.mp4",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
@@ -58,7 +58,6 @@
     "static/media/RandomText.png": "/static/media/RandomText.dfef22c12be377f99928.png",
     "static/media/LEO.jpg": "/static/media/LEO.7bb58316c39631fd9a13.jpg",
     "static/media/DataScienceText.png": "/static/media/DataScienceText.aa8afe663779ffea50b5.png",
-    "static/media/AmazonMusic.png": "/static/media/AmazonMusic.eb72a15162e6baa00c0c.png",
     "static/media/BROCC.png": "/static/media/BROCC.16c672e630c011d99eb1.png",
     "static/media/Insta.png": "/static/media/Insta.872cc6e577bbcce3fd24.png",
     "static/media/NEU.png": "/static/media/NEU.a2800ce55d912cf998fe.png",
@@ -67,24 +66,25 @@
     "static/media/HyperloopMe.jpg": "/static/media/HyperloopMe.46eb691707ba3eb8e65d.jpg",
     "static/media/IBM.png": "/static/media/IBM.db7083475c897ce837d6.png",
     "static/media/LFNY.png": "/static/media/LFNY.afd4be08404a5c010b0c.png",
+    "static/media/AmazonMusic.png": "/static/media/AmazonMusic.042f929a53e3af7c13f6.png",
     "static/media/Hyperloop.jpg": "/static/media/Hyperloop.b1bd9be560b3d5b01510.jpg",
+    "static/media/Spotify.png": "/static/media/Spotify.add3841f2a1caec6fb46.png",
     "static/media/Website.jpg": "/static/media/Website.0cfc780eb6b9a69f8bcf.jpg",
-    "static/media/Spotify.png": "/static/media/Spotify.d18d68dbdc918d3e3b48.png",
+    "static/media/AppleMusic.png": "/static/media/AppleMusic.ce1cad8bfd92391ee40f.png",
+    "static/media/Deezer.png": "/static/media/Deezer.2654f1f43087d82080ec.png",
     "static/media/Email.png": "/static/media/Email.76702ffb1caf64682c3d.png",
     "static/media/TikTok.png": "/static/media/TikTok.9c7dfd886ea5410f444f.png",
     "static/media/Youtube.png": "/static/media/Youtube.33b138d30559a1a6c98a.png",
     "static/media/LinkedIn.png": "/static/media/LinkedIn.69948ad414278f93a624.png",
     "static/media/GitHub.png": "/static/media/GitHub.a7f46ea12daa401ac92e.png",
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
-    "static/media/AppleMusic.png": "/static/media/AppleMusic.1f7d78515720876903c5.png",
-    "static/media/Deezer.png": "/static/media/Deezer.fff590e117e1f659c027.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.2e7949dd.css.map": "/static/css/main.2e7949dd.css.map",
-    "main.92a2ffba.js.map": "/static/js/main.92a2ffba.js.map"
+    "main.9ee62b4f.css.map": "/static/css/main.9ee62b4f.css.map",
+    "main.95519b25.js.map": "/static/js/main.95519b25.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e7949dd.css",
-    "static/js/main.92a2ffba.js"
+    "static/css/main.9ee62b4f.css",
+    "static/js/main.95519b25.js"
   ]
 }
