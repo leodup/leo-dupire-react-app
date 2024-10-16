@@ -487,7 +487,7 @@ video {
 
 
 #fixB {
-  background-color: rgb(127 163 176);
+  /* background-color: rgba(127, 163, 176, 0.313); */
 }
 
 .SocialIcons {

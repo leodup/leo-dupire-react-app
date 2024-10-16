@@ -76,7 +76,7 @@ const Work = () => {
                 <div className="Head" id="Work">
                     <h1 id="Work">WORK</h1>
                 </div>
-                <Tabs title1="Home" link1="/" page="Work"/>
+                <Tabs title1="Home" link1="/home" page="Work"/>
             </div>
             <div className="COLUMBIA">
                 <img

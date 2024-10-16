@@ -298,7 +298,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <Tabs title1="Home" link1="/" page="Portfolio"/>
+                <Tabs title1="Home" link1="/home" page="Portfolio"/>
             </div>
             <div className="PortfolioBody">
                 <div className="DataScience" ref={SidebarSecDS}>

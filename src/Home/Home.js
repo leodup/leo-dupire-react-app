@@ -263,7 +263,7 @@ const Home = () => {
                         {galleryCurrent}
                     </div>
                 </div>
-                <Tabs title1="About" link1="/#aboutme" page="Home"/>
+                <Tabs title1="About" link1="/home/#aboutme" page="Home"/>
             </div>
             <div className="body" id="Home">
                 <div className="bodiv">

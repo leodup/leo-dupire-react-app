@@ -128,17 +128,17 @@ const Music = () => {
                             <div className='divider'></div>
                             <div className='song'>
                                 <p className='record'>SIRENS</p>
-                                <p className='recStat'>10/18</p>
+                                <p className='recStat'>11/15</p>
                             </div>
                             <div className='divider'></div>
                             <div className='song'>
                                 <p className='record'>MAD MAN</p>
-                                <p className='recStat'>11/29</p>
+                                <p className='recStat'>01/10</p>
                             </div>
                             <div className='divider'></div>
                             <div className='song'>
                                 <p className='record'>NO TIME</p>
-                                <p className='recStat' >01/10</p>
+                                <p className='recStat' >02/21</p>
                             </div>
                             <div className='divider'></div>
                         </div>
@@ -159,14 +159,16 @@ const Music = () => {
                             <h1 style={{ color: "rgb(127 163 176)" }}>LIVE</h1>
                             <div className='songs'>
                                 <div className='divider2'></div>
-                                <div className='song'>
-                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>NYC</p>
-                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>Coming Soon</p>
-                                </div>
+                                <ExternalLink href="https://wl.seetickets.us/event/davinia/623039?afflky=TheCuttingRoom">
+                                    <div className='song'>
+                                        <p className='record' style={{ color: "rgb(127 163 176)" }}>The Cutting Room (NYC) w. Davinia</p>
+                                        <p className='recStat' style={{ color: "rgb(127 163 176)" }}>10/25</p>
+                                    </div>
+                                </ExternalLink>
                                 <div className='divider2'></div>
                                 <div className='song'>
                                     <p className='record' style={{ color: "rgb(127 163 176)" }}>More NYC</p>
-                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>Coming Later</p>
+                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>Coming Soon</p>
                                 </div>
                                 <div className='divider2'></div>
                                 <div className='song'>
@@ -200,7 +202,7 @@ const Music = () => {
                     </div>
                     <div className='top2' style={{ backgroundColor: "rgb(0, 0, 0, 0.5)" }}>
                         <div className='releases' style={{ paddingTop: "4rem", paddingBottom: "5rem" }}>
-                            <h1 id='rel' style={{ color: "rgb(127 163 176)" }}>LISTEN</h1>
+                            <h1 id='rel' style={{ color: "rgb(127 163 176)" }}>LISTEN (Not Quite Yet...)</h1>
                             <div className='songs' style={{ padding: "2rem"}}>
                                 <div className='SocialIcons'>
                                     <ExternalLink href="https://open.spotify.com/">
