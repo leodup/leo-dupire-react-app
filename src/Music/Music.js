@@ -18,7 +18,7 @@ import LeoDisk from "../images/MusicImg/Disk.png";
 import LeoName from "../images/MusicImg/Name.png";
 import Rusty from "../images/MusicImg/Rusty.jpeg";
 // import COVER from "../images/MusicImg/CoverArt1.png";
-import COVERs from "../images/MusicImg/CoverArt.png";
+import SIRENSCOVER from "../images/MusicImg/SirensCoverArt.jpg";
 import VIDLand from "../videos/WebBackground.mp4";
 import VIDPort from "../videos/WebBackgroundPortrait.mov";
 
@@ -125,20 +125,29 @@ const Music = () => {
                     <div className='releases'>
                         <h1>SINGLES</h1>
                         <div className='songs'>
-                            <div className='divider'></div>
-                            <div className='song'>
-                                <p className='record'>SIRENS</p>
-                                <p className='recStat'>11/15</p>
+                            {/* <div className='divider'></div> */}
+                            <div className='song' id="cover">
+                                <div className='PromoteRecord'>
+                                    <ExternalLink href="https://open.spotify.com/track/1fvVIymDuY9V5uymCozZJb">
+                                        <img
+                                            className="CoverArt"
+                                            src={SIRENSCOVER}
+                                            alt="Sirens Cover Art"
+                                        />
+                                    </ExternalLink>
+                                    <p className='recordTop'>SIRENS</p>
+                                    <p className='recRelease'>02/21</p>
+                                </div>
                             </div>
                             <div className='divider'></div>
                             <div className='song'>
                                 <p className='record'>MAD MAN</p>
-                                <p className='recStat'>01/10</p>
+                                <p className='recStat'>----</p>
                             </div>
                             <div className='divider'></div>
                             <div className='song'>
                                 <p className='record'>NO TIME</p>
-                                <p className='recStat' >02/21</p>
+                                <p className='recStat'>----</p>
                             </div>
                             <div className='divider'></div>
                         </div>
@@ -161,19 +170,22 @@ const Music = () => {
                                 <div className='divider2'></div>
                                 <ExternalLink href="https://wl.seetickets.us/event/davinia/623039?afflky=TheCuttingRoom">
                                     <div className='song'>
-                                        <p className='record' style={{ color: "rgb(127 163 176)" }}>The Cutting Room (NYC) w. Davinia</p>
-                                        <p className='recStat' style={{ color: "rgb(127 163 176)" }}>10/25</p>
+                                        <p className='record' style={{ color: "rgb(127 163 176)" }}>The Cutting Room w. Davinia</p>
+                                        <p className='recMid' style={{ color: "rgb(127 163 176)" }}>NYC</p>
+                                        <p className='recStat' style={{ color: "rgb(127 163 176)" }}>10/25/24</p>
                                     </div>
                                 </ExternalLink>
                                 <div className='divider2'></div>
                                 <div className='song'>
-                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>More NYC</p>
-                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>Coming Soon</p>
+                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>TBD</p>
+                                    <p className='recMid' style={{ color: "rgb(127 163 176)" }}>NYC</p>
+                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>----</p>
                                 </div>
                                 <div className='divider2'></div>
                                 <div className='song'>
-                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>More to follow</p>
-                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>...</p>
+                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>TBD</p>
+                                    <p className='recMid' style={{ color: "rgb(127 163 176)" }}>NYC</p>
+                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>----</p>
                                 </div>
                                 <div className='divider2'></div>
                                 {/* <div className='song'>
@@ -202,10 +214,10 @@ const Music = () => {
                     </div>
                     <div className='top2' style={{ backgroundColor: "rgb(0, 0, 0, 0.5)" }}>
                         <div className='releases' style={{ paddingTop: "4rem", paddingBottom: "5rem" }}>
-                            <h1 id='rel' style={{ color: "rgb(127 163 176)" }}>LISTEN (Not Quite Yet...)</h1>
+                            <h1 id='rel' style={{ color: "rgb(127 163 176)" }}>STREAM</h1>
                             <div className='songs' style={{ padding: "2rem"}}>
                                 <div className='SocialIcons'>
-                                    <ExternalLink href="https://open.spotify.com/">
+                                    <ExternalLink href="https://open.spotify.com/artist/6MWqDuBRRboYW6GSI5K0Up">
                                         <img
                                             className="SocialIcon2"
                                             id="fixB"
@@ -250,16 +262,7 @@ const Music = () => {
                         {/* <h1 id='rel' style={{ color: "rgb(255, 255, 255, 0.75)" }}>FOLLOW</h1> */}
                         <div className='songs' style={{ padding: "2rem" }}>
                             <div className='SocialIcons'>
-                                <ExternalLink href="https://www.tiktok.com/@leodupire">
-                                    <img
-                                        className="SocialIcon"
-                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
-                                        id="fixB"
-                                        src={TIKTOK}
-                                        alt="LinkedIn Image"
-                                    />
-                                </ExternalLink>
-                                <ExternalLink href="https://www.instagram.com/leo_dupes/">
+                                <ExternalLink href="https://www.instagram.com/leo.dupire/">
                                     <img
                                         className="SocialIcon"
                                         style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
@@ -268,7 +271,16 @@ const Music = () => {
                                         alt="Github Image"
                                     />
                                 </ExternalLink>
-                                <ExternalLink href="https://www.youtube.com/@leo_dupire">
+                                <ExternalLink href="https://www.tiktok.com/@leo.dupire">
+                                    <img
+                                        className="SocialIcon"
+                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
+                                        id="fixB"
+                                        src={TIKTOK}
+                                        alt="LinkedIn Image"
+                                    />
+                                </ExternalLink>
+                                <ExternalLink href="https://www.youtube.com/@leo.dupire">
                                     <img
                                         className="SocialIcon"
                                         style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
