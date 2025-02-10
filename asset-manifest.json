@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ee62b4f.css",
-    "main.js": "/static/js/main.95519b25.js",
+    "main.css": "/static/css/main.3014801d.css",
+    "main.js": "/static/js/main.d1f46eef.js",
     "static/media/WebBackgroundPortrait.mov": "/static/media/WebBackgroundPortrait.7ecd25fd304b921851dd.mov",
     "static/media/WebBackground.mp4": "/static/media/WebBackground.349ce5b333e4faac3e85.mp4",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
@@ -19,6 +19,7 @@
     "static/media/Vent2.png": "/static/media/Vent2.bce0bf08df86d2bef4c3.png",
     "static/media/Hydro1.png": "/static/media/Hydro1.042cdf8ed266be7d598b.png",
     "static/media/Vent4.png": "/static/media/Vent4.fee91a08ceb174c60ab7.png",
+    "static/media/SirensCoverArt.jpg": "/static/media/SirensCoverArt.4a5c01298d466de4d103.jpg",
     "static/media/Vent3.png": "/static/media/Vent3.0a5b99a1bd46ae626b90.png",
     "static/media/Alphabite.png": "/static/media/Alphabite.4844ad8caa952242b1cb.png",
     "static/media/WNet1.png": "/static/media/WNet1.efba5377e75f6807a280.png",
@@ -33,7 +34,6 @@
     "static/media/IBMimg.jpg": "/static/media/IBMimg.c1519cedc09634639714.jpg",
     "static/media/Analogicimg.jpg": "/static/media/Analogicimg.e5d615cb872b8f6a21f3.jpg",
     "static/media/WNet2.png": "/static/media/WNet2.2db90087fc53a93933ed.png",
-    "static/media/CoverArt.png": "/static/media/CoverArt.9d970a17c22955857f64.png",
     "static/media/PortfolioBackground.jpg": "/static/media/PortfolioBackground.1eba7b69c3f370571a0e.jpg",
     "static/media/Broccimg.jpg": "/static/media/Broccimg.e744304aa209d5fffc50.jpg",
     "static/media/GoKart1.jpg": "/static/media/GoKart1.5fdae03fbd8831dfddc8.jpg",
@@ -47,7 +47,6 @@
     "static/media/GoKart4.jpg": "/static/media/GoKart4.c4f9162060cd0056a798.jpg",
     "static/media/MechEIcon.png": "/static/media/MechEIcon.10b8a9fdcdf020a78aad.png",
     "static/media/HummingFace.jpg": "/static/media/HummingFace.14460f985d9b6576f204.jpg",
-    "static/media/TT Neoris Trial Black.ttf": "/static/media/TT Neoris Trial Black.7415a9158f90216dd50b.ttf",
     "static/media/RandomIcon.png": "/static/media/RandomIcon.fc7fbde852e6778deb37.png",
     "static/media/Serenata.ttf": "/static/media/Serenata.bee2d98244d7b152137c.ttf",
     "static/media/PS6.png": "/static/media/PS6.8f5af3e541339737be7a.png",
@@ -80,11 +79,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.9ee62b4f.css.map": "/static/css/main.9ee62b4f.css.map",
-    "main.95519b25.js.map": "/static/js/main.95519b25.js.map"
+    "main.3014801d.css.map": "/static/css/main.3014801d.css.map",
+    "main.d1f46eef.js.map": "/static/js/main.d1f46eef.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ee62b4f.css",
-    "static/js/main.95519b25.js"
+    "static/css/main.3014801d.css",
+    "static/js/main.d1f46eef.js"
   ]
 }
