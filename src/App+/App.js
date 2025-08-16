@@ -23,7 +23,7 @@ function App() {
       </Helmet>
       <ScrollToTop />
       <Routes>
-        <Route path="/home" element={
+        <Route path="/" element={
           <div>
             <Home />
             {/* <Footer /> */}
@@ -47,7 +47,7 @@ function App() {
             {/* <Footer /> */}
           </div>
         } />
-        <Route path="/" element={
+        <Route path="/music" element={
           <div>
             <Music />
             {/* <Footer /> */}

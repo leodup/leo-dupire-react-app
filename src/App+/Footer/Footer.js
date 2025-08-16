@@ -1,5 +1,5 @@
 import './Footer.css';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
     const title1="Home"

@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import ReactDOM from 'react-dom'
 import { ExternalLink } from 'react-external-link';
 import { useEffect, useState } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.css';
@@ -263,7 +263,7 @@ const Home = () => {
                         {galleryCurrent}
                     </div>
                 </div>
-                <Tabs title1="About" link1="/home/#aboutme" page="Home"/>
+                <Tabs title1="About" link1="/#aboutme" page="Home"/>
             </div>
             <div className="body" id="Home">
                 <div className="bodiv">

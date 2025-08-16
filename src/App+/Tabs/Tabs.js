@@ -1,5 +1,5 @@
 import './Tabs.css';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const Tabs = (props) => {
     const title1 = props.title1;

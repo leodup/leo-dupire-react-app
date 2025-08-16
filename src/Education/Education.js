@@ -28,7 +28,7 @@ const Education = () => {
                 <div className="Head" id="Education">
                     <h1 id="Education">Education</h1>
                 </div>
-                <Tabs title1="Home" link1="/home" page="Education"/>
+                <Tabs title1="Home" link1="/" page="Education"/>
             </div>
             <div className="Education">
                 <div className="JoinNYU">
