@@ -127,8 +127,17 @@ h1#Work {
     }
 }
 
+a#COLText {
+    color: white !important;
+    text-decoration: underline;
+}
+
 a:visited#COLText {
-    color: rgb(183, 213, 255); /* Change color for visited links */
+    color: white !important; /* Change color for visited links */
+}
+
+a:hover#COLText {
+    color: #333 !important;
 }
 
 #IBMText1 {
@@ -159,7 +168,7 @@ a:visited#COLText {
 }
 
 #PS6Text1 {
-    color: black;
+    color: white;
 }
 @media only screen and (max-width: 1000px) {
     #PS6Text1 {

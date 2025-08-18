@@ -5,7 +5,7 @@ import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.js';
 import '../App+/Tabs/Tabs.css';
 
-import "./Portfolio.css";
+import "./Portfolio2.css";
 import "../Portfolio/PortfolioFiles/Sidebar.css";
 import "../Portfolio/PortfolioFiles/WNet.css";
 import "../Portfolio/PortfolioFiles/HummingFace.css";
@@ -66,7 +66,7 @@ import Music2 from "../images/PortfolioImg/Show.png";
 
 import Alphabite from "../images/PortfolioImg/Alphabite.png";
 
-const Portfolio = () => {
+const Portfolio2 = () => {
     const [isHidden, setIsHidden] = useState(true);
     const [isScrolling, setIsScrolling] = useState(false);
 
@@ -560,4 +560,4 @@ const Portfolio = () => {
     );
 }
 
-export default Portfolio;
+export default Portfolio2;

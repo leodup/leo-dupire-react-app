@@ -9,7 +9,9 @@ import Home from '../Home/Home.js';
 import Work from '../Work/Work.js';
 import Education from "../Education/Education.js";
 import Portfolio from "../Portfolio/Portfolio.js";
+import Portfolio2 from "../Portfolio2/Portfolio2.js";
 import Music from "../Music/Music.js";
+import Menu from '../Menu/Menu.js';
 
 
 function App() {
@@ -29,6 +31,12 @@ function App() {
             {/* <Footer /> */}
           </div>
         } />
+        <Route path="/menu" element={
+          <div>
+            <Menu />
+            {/* <Footer /> */}
+          </div>
+        } />
         <Route path="/work" element={
           <div>
             <Work />
@@ -44,6 +52,12 @@ function App() {
         <Route path="/portfolio" element={
           <div>
             <Portfolio />
+            {/* <Footer /> */}
+          </div>
+        } />
+        <Route path="/portfolio2" element={
+          <div>
+            <Portfolio2 />
             {/* <Footer /> */}
           </div>
         } />

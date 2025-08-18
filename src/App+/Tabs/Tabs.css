@@ -95,7 +95,14 @@ p#pText {
 }
 
 .Tab#Portfolio {
-    color: black;
+    background-image: url("../../images/Backgrounds/PortfolioBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-weight: 400;
 }
 .Tab#Portfolio:hover {

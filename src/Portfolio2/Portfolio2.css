@@ -1,24 +1,138 @@
 @import "../App+/App.css";
 
 .header#Portfolio {
-    background-image: url("../images/Backgrounds/PortfolioBackground.jpg");
-    background-repeat: no-repeat;
-
-    -moz-background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    background-attachment: fixed;
-
-    -webkit-background-size: var(--background-size);
-    -moz-background-size: var(--background-size);
-    -o-background-size: var(--background-size);
-    background-size: var(--background-size);
+    background-color: black !important;
+    background-image: none !important;
+    background: black !important;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
 }
 
 .Head#Portfolio {
-    position: relative;
-    height: var(--header-height);
+    text-align: center;
+    padding: 2rem;
 }
+
+.Head#Portfolio h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: clamp(3rem, 12vw, 8rem);
+    font-weight: 700;
+    margin: 0;
+    line-height: 0.8;
+    letter-spacing: 0.1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: fadeInPortfolio 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .Head#Portfolio h1 {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        letter-spacing: 0.05em;
+        line-height: 0.9;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .header#Portfolio {
+        min-height: 25vh;
+        padding: 1rem 0;
+    }
+    
+    .Head#Portfolio {
+        padding: 1rem;
+    }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 480px) {
+    .Head#Portfolio h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+        letter-spacing: 0.02em;
+        line-height: 1;
+    }
+    
+    .header#Portfolio {
+        min-height: 20vh;
+    }
+}
+
+@keyframes fadeInPortfolio {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Letter Styling */
+.Head#Portfolio h1 .letter {
+    display: inline-block;
+    opacity: 1;
+    background-image: url("../images/Backgrounds/PortfolioBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: transform 0.6s ease-out;
+}
+
+/* Continuous scroll-based rising animations */
+.Head#Portfolio h1 .letter:nth-child(1) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Portfolio h1 .letter:nth-child(2) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Portfolio h1 .letter:nth-child(3) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Portfolio h1 .letter:nth-child(4) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Portfolio h1 .letter:nth-child(5) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Portfolio h1 .letter:nth-child(6) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Portfolio h1 .letter:nth-child(7) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Portfolio h1 .letter:nth-child(8) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Portfolio h1 .letter:nth-child(9) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+
+
+
+
 
 h1#Portfolio {
     height: var(--portfolio-title-height);

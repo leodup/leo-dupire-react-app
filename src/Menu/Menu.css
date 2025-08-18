@@ -1,0 +1,193 @@
+.Menu {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+}
+
+/* Profile Picture Styling */
+.ProfilePictureContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.ProfilePicture {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.ProfilePicture:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.MenuContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.MenuWindow {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.MenuWindowLeft {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.MenuWindowRight {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Video Background Styling */
+.MenuVideoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.MenuWindowRight:hover .MenuVideoBackground {
+    opacity: 1;
+}
+
+/* Play video on hover */
+.MenuWindowRight:hover .MenuVideoBackground {
+    animation: playVideo 0.1s forwards;
+}
+
+@keyframes playVideo {
+    to {
+        opacity: 1;
+    }
+}
+
+.MenuWindowRight .MenuContent {
+    z-index: 2;
+    position: relative;
+}
+
+.MenuWindow:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.MenuWindowLeft:hover {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.MenuWindowRight:hover {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.MenuContent {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.MenuTitle {
+    font-family: 'Exo', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.MenuDescription {
+    font-family: 'Exo', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 300px;
+}
+
+.MenuButton {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.MenuWindow:hover .MenuButton {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .MenuContainer {
+        flex-direction: column;
+    }
+    
+    .MenuWindow {
+        height: 50vh;
+    }
+    
+    .MenuTitle {
+        font-size: 2.5rem;
+    }
+    
+    .MenuDescription {
+        font-size: 1rem;
+    }
+}
+
+/* Add some decorative elements */
+.MenuWindow::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.MenuWindow:hover::before {
+    opacity: 1;
+}

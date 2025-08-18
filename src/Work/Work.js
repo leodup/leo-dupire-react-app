@@ -15,7 +15,7 @@ import BROCC from "../images/WorkImg/BROCC.png";
 import ANALOGIC from "../images/WorkImg/ANALOGIC.png";
 import PS6 from "../images/WorkImg/PS6.png";
 
-import COLimg from "../images/WorkImg/Columbiaimg.png";
+import COLimg from "../images/WorkImg/Columbiaimg.jpg";
 import IBMimg from "../images/WorkImg/IBMimg.jpg";
 import BROCCimg from "../images/WorkImg/Broccimg.jpg";
 import ANALOGICimg from "../images/WorkImg/Analogicimg.jpg";
@@ -26,9 +26,11 @@ const Work = () => {
     const COLText1 = <p className="WorkText" id="COLText1">
         I am currently an AI research scientist in the Andrea Califano Laboratory at Columbia University's Department of Systems Biology. The lab is renowned for its achievements in pioneering cancer & disease research. <br></br> <br></br>
 
-        My work consists of developing methodologies, notably single-cell LLMs and Graph Neural Networks, to model complex networks of gene interactions. <br></br> <br></br>
+        My work consists of developing methodologies, notably single-cell foundation models, to generate meaningful cell and gene-level embeddings for therapeurtically relevant downstream tasks, informed by complex networks of gene interactions. <br></br> <br></br>
 
-        To learn more, please visit the <a href="https://califano.c2b2.columbia.edu/" target="_blank" id="COLText"><u>Califano Lab's website</u></a>.
+        The flagship project of this effort is <a href="/portfolio#GREmLN" target="_blank" id="COLText"><u>GREmLN</u></a>. <br></br> <br></br>
+
+        To learn more, please visit the <a href="https://califano.c2b2.columbia.edu/" target="_blank" id="COLText"><u>Califano Lab's website</u></a>. My work also includes a collaboration with the Chan Zuckerberg Initiative (CZI) / Chan Zuckerberg Biohub Network (CZB) in New York.
     </p>
 
     const IBMText1 = <p className="WorkText" id="IBMText1">

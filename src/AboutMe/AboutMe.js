@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import { ExternalLink } from 'react-external-link';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
+import './AboutMe.css';
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.css';
 import Disclaimer from "../Temp/Disclaimer.js"
@@ -12,7 +12,6 @@ import Tabs from '../App+/Tabs/Tabs.js';
 import Footer from '../App+/Footer/Footer.js';
 
 import LEO from "../images/LEO.jpg";
-import GREmLNImage from "../images/ExhibitImages/GREmLN.jpg";
 import WNetImage from "../images/ExhibitImages/WNet.jpg";
 import HummingFaceImage from "../images/ExhibitImages/HummingFace.jpg";
 import NLPImage from "../images/ExhibitImages/NLP.jpg";
@@ -29,29 +28,6 @@ const Home = () => {
                         <h4 className="LastName">Dupire</h4>
                     </div>
                 </>
-
-    const GREmLN = <>
-                    <div className="ExhibitImgDiv">
-                        <img
-                            className="ExhibitImg"
-                            src={GREmLNImage}
-                            alt="GREmLN Image"
-                        />
-                    </div>
-                    <div className="ExhibitTextAll">
-                        <div className="ExhibitText">
-                            <h5 id="ExhibitText">GREmLN</h5>
-                            <p id="ExhibitText">
-                                The first transformer-based single-cell <b>foundation model</b> for genomics to use gene regulatory network (GRN) priors. GREmLN generates meaningful <b>cell and gene-level embeddings</b> for downstream prediction tasks.
-                            </p>
-                        </div>
-                        <Link style={{textDecoration: 'none'}} to="/Portfolio/#WNet">
-                            <div className="ExhibitButton">
-                                <p id="ExhibitButton">Explore</p>
-                            </div>
-                        </Link>
-                    </div>
-                    </>
 
     const WNet = <>
                     <div className="ExhibitImgDiv">
@@ -174,7 +150,7 @@ const Home = () => {
                         </>
 
     const [count, setCount] = useState(0);
-    const gallery = [Leo, GREmLN , WNet, HummingFace, NLP, Website, Hyperloop]
+    const gallery = [Leo, WNet, HummingFace, NLP, Website, Hyperloop]
     const galleryCurrent = gallery[count];
 
     const ref = React.useRef(null);
@@ -254,31 +230,29 @@ const Home = () => {
     }, []);
 
     const whoAmI =  <p id="Home"> 
-                        Hello! I'm Léo Dupire, an AI researcher at the Califano Lab, Columbia University, with a background in computer science, data science, and mechanical engineering. I mainly work with developing transformer-based architectures for genomics modeling. I'm fortunate to have learned from and worked with great minds like <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank"><u>Yann LeCun</u></a>, <a href="https://karaletsos.com" target="_blank"><u>Theofanis Karaletsos</u></a>, and <a href="https://en.wikipedia.org/wiki/Andrea_Califano" target="_blank"><u>Andrea Califano</u></a>.<br></br> <br></br>
-
-                        I'm a self-motivated individual, embracing impactful challenges in science (and music in my personal life). I have a long portfolio of projects, largely composed of personal pursuits. These can be found at <a href="/portfolio" target="_blank"><u>leodupire.com/portfolio</u></a>.<br></br> <br></br>
-
-                        <b>Fun fact:</b> I spent my early years in a medieval village in the south of France, before moving to Manhattan. Througout my time in New York, I stayed close to my French and Swedish heritage, attending the Lycée Français de New York and speaking French & Swedish at home. I also learned some Spanish along the way. Now I am trying my hand at Italian, as many of my coworkers are Italian!<br></br> <br></br>
+                        Hello! My name is Léo Dupire. I have a joint bachelor's degree in Computer & Data Science from New York University and also a background in Mechanical Engineering. I fell in love with engineering from a young age, taking on increasingly ambitious projects throughout the years. Eventually, I found that I also had a great interest in Computer Science and Data Science, after which I changed my field of study accordingly. <br></br> <br></br>
+                        I spent my early years in a medieval village in the south of France, until moving to Manhattan. Througout my time in New York, I stayed close to my French and Swedish heritage and learned English as well as some Spanish along the way. I went to the Lycée Français de New York, graduating in 2018 and pursuing higher education at Northeastern University, followed by New York University. <br></br> <br></br>
+                        I love taking on new challenges, as can be seen in my portfolio. I'm always looking for opportunities to grow and exercise my creativity and perseverance. If you have any questions, please reach out!
                     </p>
     const whatIDo = <p id="Home">
-                        As an AI Research Scientist, I have worked in a variety of fields through professional experience and my academic studies, such as:
+                        As a Computer and Data Scientist, I have worked in a variety of fields through academic studies as well as professional experience. I have worked in fields such as:
                         <ul>
-                            <li>Design, development, & deployment of Deep Learning models</li>
-                            <li>Genomics Modeling</li>
                             <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
+                            <li>Predictive Analytics</li>
                             <li>Full Stack Development</li>
                             <li>Cloud Computing</li>
                         </ul>
-                        In addition to this, I have also gathered experience through my Mechanical Engineering background in fields such as:
+                        In addition to this, I have also gathered experience through my Mechanical Engineering background. This includes:
                         <ul>
                             <li>Robotics</li>
                             <li>Aerodynamics</li>
-                            <li>Advanced Imaging</li>
-                            <li>CAD & other 3D modeling tools</li>
+                            <li>Imaging</li>
+                            <li>CAD and other 3D modeling</li>
                             <li>Security</li>
                             <li>Sustainability</li>
                         </ul>
-                        In addition to this, I also play and compose music. I have played piano my whole life, picking up guitar in my mid-teens and having a brief stint as a drummer as well. My style is generally alternative rock, although I really try to stay versatile and grow into other genres. Music aside, I also enjoy tennis, squash, hands-on projects, sailing, among <i>many</i> others.
+                        Outside of school and work, I also love to play and compose music. I have played piano my whole life, picking up guitar in my mid-teens and having a brief stint as a drummer as well. My style is generally alternative rock, although I really try to stay versatile and grow into other genres. Music aside, I also enjoy tennis, squash, running, hands-on projects, sailing, among <i>many</i> others.
                     </p>
 
     return (
@@ -332,14 +306,14 @@ const Home = () => {
                             alt="LinkedIn Image"
                         />
                     </ExternalLink>
-                    {/* <ExternalLink href="https://github.com/leodup">
+                    <ExternalLink href="https://github.com/leodup">
                         <img
                             className="ContactIcon"
                             id="fix2"
                             src={GIT}
                             alt="Github Image"
                         />
-                    </ExternalLink> */}
+                    </ExternalLink>
                     <a href="mailto: leo@leodupire.com">
                         <img
                             className="ContactIcon"
