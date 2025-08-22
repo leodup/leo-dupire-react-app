@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './Education.css';
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.js';
@@ -12,6 +13,44 @@ import NEU from "../images/EducationImg/NEU.png"; // https://www.google.com/sear
 import LFNY from "../images/EducationImg/LFNY.png";
 
 const Education = () => {
+    const [isHidden, setIsHidden] = useState(true);
+    const [isScrolling, setIsScrolling] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight;
+            const scrollPosition = window.scrollY;
+
+            // Calculate the scroll position relative to 80vh
+            const scrollPositionVh = (scrollPosition / windowHeight) * 100;
+
+            // Logic to determine whether the elements should be hidden
+            const shouldHide = scrollPositionVh < 85; // Hide when scrolled 80% of the window height
+
+            setIsHidden(shouldHide);
+            
+            // Continuous letter movement based on scroll
+            const letters = document.querySelectorAll('.Head#Education h1 .letter');
+            if (letters.length > 0) {
+                // Mixed up letter speeds for more interesting movement
+                letters[0].style.transform = `translateY(-${scrollPosition * 0.3}px)`; // E
+                letters[1].style.transform = `translateY(-${scrollPosition * 0.8}px)`; // D - fastest
+                letters[2].style.transform = `translateY(-${scrollPosition * 0.2}px)`; // U
+                letters[3].style.transform = `translateY(-${scrollPosition * 0.7}px)`; // C
+                letters[4].style.transform = `translateY(-${scrollPosition * 0.1}px)`; // A - slowest
+                letters[5].style.transform = `translateY(-${scrollPosition * 0.6}px)`; // T
+                letters[6].style.transform = `translateY(-${scrollPosition * 0.4}px)`; // I
+                letters[7].style.transform = `translateY(-${scrollPosition * 0.5}px)`; // O
+                letters[8].style.transform = `translateY(-${scrollPosition * 0.9}px)`; // N - very fast
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const NYUDesc1 = "I completed my joint bachelor's degree of Computer and Data Science at NYU in 2023, after shifting from Mechancial Engineering in 2020. "
     const NYUDesc2 = "My studies triggered me, leading to me taking on several computer/data science projects in my free time with peers and solo. These include this website, music generation using Convolutional Neural Networks (CNNs), Kaggle competitions, among others. At NYU, I've also made a habbit of attending conferences with speakers such as Yann LeCun."
@@ -26,7 +65,17 @@ const Education = () => {
         <>
             <div className="header" id="Education">
                 <div className="Head" id="Education">
-                    <h1 id="Education">Education</h1>
+                    <h1 id="Education">
+                        <span className="letter">E</span>
+                        <span className="letter">D</span>
+                        <span className="letter">U</span>
+                        <span className="letter">C</span>
+                        <span className="letter">A</span>
+                        <span className="letter">T</span>
+                        <span className="letter">I</span>
+                        <span className="letter">O</span>
+                        <span className="letter">N</span>
+                    </h1>
                 </div>
                 <Tabs title1="Home" link1="/" page="Education"/>
             </div>

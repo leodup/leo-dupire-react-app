@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './Work.css';
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.js';
@@ -22,6 +23,39 @@ import ANALOGICimg from "../images/WorkImg/Analogicimg.jpg";
 import PS6img from "../images/WorkImg/PS6img.jpg";
 
 const Work = () => {
+    const [isHidden, setIsHidden] = useState(true);
+    const [isScrolling, setIsScrolling] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight;
+            const scrollPosition = window.scrollY;
+
+            // Calculate the scroll position relative to 80vh
+            const scrollPositionVh = (scrollPosition / windowHeight) * 100;
+
+            // Logic to determine whether the elements should be hidden
+            const shouldHide = scrollPositionVh < 85; // Hide when scrolled 80% of the window height
+
+            setIsHidden(shouldHide);
+            
+            // Continuous letter movement based on scroll
+            const letters = document.querySelectorAll('.Head#Work h1 .letter');
+            if (letters.length > 0) {
+                // Mixed up letter speeds for more interesting movement
+                letters[0].style.transform = `translateY(-${scrollPosition * 0.4}px)`; // W
+                letters[1].style.transform = `translateY(-${scrollPosition * 0.8}px)`; // O - fastest
+                letters[2].style.transform = `translateY(-${scrollPosition * 0.2}px)`; // R
+                letters[3].style.transform = `translateY(-${scrollPosition * 0.6}px)`; // K
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const COLText1 = <p className="WorkText" id="COLText1">
         I am currently an AI research scientist in the Andrea Califano Laboratory at Columbia University's Department of Systems Biology. The lab is renowned for its achievements in pioneering cancer & disease research. <br></br> <br></br>
@@ -76,7 +110,12 @@ const Work = () => {
         <div>
             <div className="header" id="Work">
                 <div className="Head" id="Work">
-                    <h1 id="Work">WORK</h1>
+                    <h1 id="Work">
+                        <span className="letter">W</span>
+                        <span className="letter">O</span>
+                        <span className="letter">R</span>
+                        <span className="letter">K</span>
+                    </h1>
                 </div>
                 <Tabs title1="Home" link1="/" page="Work"/>
             </div>

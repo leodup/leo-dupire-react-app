@@ -1,21 +1,15 @@
 .header#Education {
-    background-image: url("../images/Backgrounds/LibraryBackground.jpg"); /* https://www.weforum.org/agenda/2021/12/diversity-inclusion-human-library/ */
-    background-repeat: no-repeat;
-
-    -moz-background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    background-attachment: fixed;
-
-    -webkit-background-size: var(--background-size);
-    -moz-background-size: var(--background-size);
-    -o-background-size: var(--background-size);
-    background-size: var(--background-size);
+    background-color: black !important;
+    background-image: none !important;
+    background: black !important;
 }
 
 .Head#Education {
     position: relative;
     height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imageNYU {
@@ -47,19 +41,102 @@
 }
 
 h1#Education {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0;
-    background-color: transparent;
-
-    font-family: var(--text-font);
-    font-size: max(13vw, 4rem);
+    font-family: 'Exo', sans-serif;
+    font-size: clamp(3rem, 12vw, 8rem);
     font-weight: 700;
-    color: rgb(255, 243, 220);
+    margin: 0;
+    line-height: 0.8;
+    letter-spacing: 0.1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: fadeInEducation 2s ease-in-out forwards;
+    opacity: 0;
+}
 
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h1#Education {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        letter-spacing: 0.05em;
+        line-height: 0.9;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 480px) {
+    h1#Education {
+        font-size: clamp(2rem, 8vw, 3rem);
+        letter-spacing: 0.02em;
+        line-height: 1;
+    }
+}
+
+@keyframes fadeInEducation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Letter Styling */
+.Head#Education h1 .letter {
+    display: inline-block;
+    opacity: 1;
+    background-image: url("../images/Backgrounds/LibraryBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: transform 0.6s ease-out;
+}
+
+/* Continuous scroll-based rising animations */
+.Head#Education h1 .letter:nth-child(1) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Education h1 .letter:nth-child(2) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Education h1 .letter:nth-child(3) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Education h1 .letter:nth-child(4) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Education h1 .letter:nth-child(5) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Education h1 .letter:nth-child(6) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Education h1 .letter:nth-child(7) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Education h1 .letter:nth-child(8) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+.Head#Education h1 .letter:nth-child(9) { 
+    transform: translateY(0);
+    transition: transform 0.1s linear;
 }
 
 h2#NYU {

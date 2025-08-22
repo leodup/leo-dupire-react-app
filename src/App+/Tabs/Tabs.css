@@ -6,10 +6,10 @@
     justify-content: center;
 }
 .CenterTabs#Work {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
 }
 .CenterTabs#Education {
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: transparent;
 }
 
 .Tabs {
@@ -76,21 +76,34 @@ p#pText {
 }
 
 .Tab#Work {
-    color: black;
+    background-image: url("../../images/Backgrounds/WorkBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-weight: 400;
-    
 }
 .Tab#Work:hover {
-    text-shadow: 0 0 2px rgb(0, 0, 0);
+    text-shadow: none;
     /* font-weight: 800; */
 }
 
 .Tab#Education {
-    color: whitesmoke;
+    background-image: url("../../images/Backgrounds/LibraryBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-weight: 400;
 }
 .Tab#Education:hover {
-    text-shadow: 0 0 3px whitesmoke;
+    text-shadow: none;
     /* font-weight: 800; */
 }
 
