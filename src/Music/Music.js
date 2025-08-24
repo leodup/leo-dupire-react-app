@@ -18,7 +18,9 @@ import LeoDisk from "../images/MusicImg/Disk.png";
 import LeoName from "../images/MusicImg/Name.png";
 import Rusty from "../images/MusicImg/Rusty.jpeg";
 // import COVER from "../images/MusicImg/CoverArt1.png";
-import SIRENSCOVER from "../images/MusicImg/SirensCoverArt.jpg";
+import SIRENSCOVER from "../images/MusicImg/CoverArt/SirensCoverArt.jpg";
+import MADMANCOVER from "../images/MusicImg/CoverArt/MadManCoverArt.jpg";
+import NOTIMECOVER from "../images/MusicImg/CoverArt/NoTimeCoverArt.jpg";
 import VIDLand from "../videos/WebBackgroundLandscape.mp4";
 import VIDPort from "../videos/WebBackgroundPortrait.mp4";
 
@@ -50,6 +52,30 @@ const Music = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const liveSection = document.getElementById('live');
+            const bioSection = document.getElementById('bio');
+            const scrolled = window.pageYOffset;
+            
+            if (liveSection) {
+                const yPos = 160 - (scrolled * 0.06); // Start higher to prevent going too low
+                liveSection.style.backgroundPosition = `center ${yPos}%`;
+            }
+            
+            if (bioSection) {
+                const yPos = 600 - (scrolled * 0.2); // Same parallax effect for bio section
+                bioSection.style.backgroundPosition = `center ${yPos}%`;
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
             <div className='cont'>
@@ -74,46 +100,6 @@ const Music = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className='songs' style={{ bottom: "0rem", padding: "2rem" }}>
-                            <div className='SocialIcons'>
-                                <ExternalLink href="https://www.tiktok.com/@leodupire">
-                                    <img
-                                        className="SocialIcon"
-                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
-                                        id="fixB"
-                                        src={TIKTOK}
-                                        alt="LinkedIn Image"
-                                    />
-                                </ExternalLink>
-                                <ExternalLink href="https://www.instagram.com/leo_dupes/">
-                                    <img
-                                        className="SocialIcon"
-                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
-                                        id="fixB"
-                                        src={INSTA}
-                                        alt="Github Image"
-                                    />
-                                </ExternalLink>
-                                <ExternalLink href="https://www.youtube.com/@leo_dupire">
-                                    <img
-                                        className="SocialIcon"
-                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
-                                        id="fixB"
-                                        src={YOUTUBE}
-                                        alt="Github Image"
-                                    />
-                                </ExternalLink>
-                                <a href="mailto: leo@leodupire.com">
-                                    <img
-                                        className="SocialIcon"
-                                        style={{ backgroundColor: "rgb(255, 255, 255, 0.75)" }}
-                                        id="fixB"
-                                        src={EMAIL}
-                                        alt="Email Image"
-                                    />
-                                </a>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
@@ -125,38 +111,56 @@ const Music = () => {
                     <div className='releases'>
                         <h1>SINGLES</h1>
                         <div className='songs'>
-                            {/* <div className='divider'></div> */}
-                            <div className='song1' id="cover">
-                                <div className='PromoteRecord'>
-                                    <ExternalLink href="https://open.spotify.com/track/1fvVIymDuY9V5uymCozZJb">
-                                        <img
-                                            className="CoverArt"
-                                            src={SIRENSCOVER}
-                                            alt="Sirens Cover Art"
-                                        />
-                                    </ExternalLink>
-                                    <p className='recordTop'>SIRENS</p>
-                                    <p className='recRelease'>02/21</p>
+                            <div className='singles-stack-container'>
+                                <div className='singles-stack'>
+                                    <div className='song1 stacked-single' id="cover" data-index="0">
+                                        <div className='PromoteRecord'>
+                                            <ExternalLink href="https://open.spotify.com/track/[NO_TIME_TRACK_ID]">
+                                                <img
+                                                    className="CoverArt"
+                                                    src={NOTIMECOVER}
+                                                    alt="No Time Cover Art"
+                                                />
+                                            </ExternalLink>
+                                            <p className='recordTop'>NO TIME</p>
+                                            <p className='recRelease'>9/30 - UPCOMING !</p>
+                                        </div>
+                                    </div>
+                                    <div className='song1 stacked-single' id="cover" data-index="1">
+                                        <div className='PromoteRecord'>
+                                            <ExternalLink href="https://open.spotify.com/track/1MycBy7exqSxLafv4tr385?si=9f40f75292214912">
+                                                <img
+                                                    className="CoverArt"
+                                                    src={MADMANCOVER}
+                                                    alt="Mad Man Cover Art"
+                                                />
+                                            </ExternalLink>
+                                            <p className='recordTop'>MAD MAN</p>
+                                            <p className='recRelease'>4/18</p>
+                                        </div>
+                                    </div>
+                                    <div className='song1 stacked-single' id="cover" data-index="2">
+                                        <div className='PromoteRecord'>
+                                            <ExternalLink href="https://open.spotify.com/track/1fvVIymDuY9V5uymCozZJb">
+                                                <img
+                                                    className="CoverArt"
+                                                    src={SIRENSCOVER}
+                                                    alt="Sirens Cover Art"
+                                                />
+                                            </ExternalLink>
+                                            <p className='recordTop'>SIRENS</p>
+                                            <p className='recRelease'>2/21</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className='divider'></div>
-                            <div className='song1'>
-                                <p className='record'>MAD MAN</p>
-                                <p className='recStat'>----</p>
-                            </div>
-                            <div className='divider'></div>
-                            <div className='song1'>
-                                <p className='record'>NO TIME</p>
-                                <p className='recStat'>----</p>
-                            </div>
-                            <div className='divider'></div>
                         </div>
                     </div>
                 </div>
                 <div className='contCorpus' style={{ height: height2 }}>
                     <div className='top2' id="live" style={{ height: height2 }}>
                         <div className='releases'>
-                            <h1 style={{ color: "white" }}>LIVE</h1>
+                            <h1 style={{ color: "white" }}>Come see me LIVE !</h1>
                             {/* rgb(127 163 176) */}
                             <div className='songs'>
                                 <div className='divider2'></div>
@@ -180,64 +184,64 @@ const Music = () => {
                                     <p className='recStat' style={{ color: "white" }}>----</p>
                                 </div>
                                 <div className='divider2'></div>
-                                {/* <div className='song'>
-                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>YOUTUBE</p>
-                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>leodupire1293</p>
-                                </div>
-                                <div className='divider2'></div>
-                                <div className='song'>
-                                    <p className='record' style={{ color: "rgb(127 163 176)" }}>LINKEDIN</p>
-                                    <p className='recStat' style={{ color: "rgb(127 163 176)" }}>Léo Dupire</p>
-                                </div>
-                                <div className='divider2'></div> */}
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div className='contCorpus' style={{ height: '45rem' }}>
-                    <div className='top2' style={{ backgroundColor: "#882000"}}>
-                        <div className='releases' style={{ paddingBottom: "8rem"}}>
-                            <h1 style={{ color: "white" }}>STREAM</h1>
+                <div className='contCorpus' style={{ height: '27rem' }}>
+                    <div className='top2' style={{ backgroundColor: "rgb(39, 164, 210)"}}>
+                        <div className='releases' style={{ paddingTop: "1.5rem", paddingBottom: "3.5rem"}}>
+                            <h1 style={{ color: "white" }}>Are you even STREAMING ?!</h1>
                             {/* rgb(127 163 176) */}
                             <div className='songs' id='stream' style={{ padding: "0rem"}}>
                                 <div className='divider2' style={{ marginTop: "1rem"}}></div>
-                                <div className='SocialIcons' style={{ paddingTop: "3rem"}}>
-                                    <ExternalLink href="https://open.spotify.com/artist/6MWqDuBRRboYW6GSI5K0Up">
-                                        <img
-                                            className="SocialIcon2"
-                                            id="fixB"
-                                            src={SPOTIFY}
-                                            alt="LinkedIn Image"
-                                        />
-                                    </ExternalLink>
-                                    <ExternalLink href="https://music.apple.com/us/new">
-                                        <img
-                                            className="SocialIcon2"
-                                            id="fixB"
-                                            src={APPLEMUSIC}
-                                            alt="Github Image"
-                                        />
-                                    </ExternalLink>
-                                </div>
-                                <div className='SocialIcons' style={{ paddingTop: "4rem", paddingBottom: "3rem"}}>
-                                    <ExternalLink href="https://www.deezer.com/us/">
-                                        <img
-                                            className="SocialIcon2"
-                                            id="fixB"
-                                            src={AMAZONMUSIC}
-                                            alt="Github Image"
-                                        />
-                                    </ExternalLink>
-                                    <ExternalLink href="https://music.amazon.com/">
-                                        <img
-                                            className="SocialIcon2"
-                                            id="fixB"
-                                            src={DEEZER}
-                                            alt="Email Image"
-                                        />
-                                    </ExternalLink>
+                                <div className='SocialIcons' style={{ paddingTop: "3rem", paddingBottom: "3rem"}}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                        <ExternalLink href="https://open.spotify.com/artist/6MWqDuBRRboYW6GSI5K0Up">
+                                            <img
+                                                className="SocialIcon2"
+                                                id="fixB"
+                                                src={SPOTIFY}
+                                                alt="Spotify"
+                                            />
+                                        </ExternalLink>
+                                        <p style={{ color: "white", fontSize: "1.1rem", fontFamily: "serenata", marginTop: "0.5rem", marginBottom: "0" }}>Spotify</p>
+                                    </div>
+                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                        <ExternalLink href="https://music.apple.com/us/new">
+                                            <img
+                                                className="SocialIcon2"
+                                                id="fixB"
+                                                src={APPLEMUSIC}
+                                                alt="Apple Music"
+                                            />
+                                        </ExternalLink>
+                                        <p style={{ color: "white", fontSize: "1.1rem", fontFamily: "serenata", marginTop: "0.5rem", marginBottom: "0" }}>Apple Music</p>
+                                    </div>
+                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                        <ExternalLink href="https://music.amazon.com/">
+                                            <img
+                                                className="SocialIcon2"
+                                                id="fixB"
+                                                src={AMAZONMUSIC}
+                                                alt="Amazon Music"
+                                            />
+                                        </ExternalLink>
+                                        <p style={{ color: "white", fontSize: "1.1rem", fontFamily: "serenata", marginTop: "0.5rem", marginBottom: "0" }}>Amazon Music</p>
+                                    </div>
+                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                                        <ExternalLink href="https://www.deezer.com/us/">
+                                            <img
+                                                className="SocialIcon2"
+                                                id="fixB"
+                                                src={DEEZER}
+                                                alt="Deezer"
+                                            />
+                                        </ExternalLink>
+                                        <p style={{ color: "white", fontSize: "1.1rem", fontFamily: "serenata", marginTop: "0.5rem", marginBottom: "0" }}>Deezer</p>
+                                    </div>
                                 </div>
                                 <div className='divider2'></div>
                             </div>
@@ -254,8 +258,10 @@ const Music = () => {
                             <div className='songs'>
                                 <div className='divider2'></div>
                                 <p className='bioText'>Originally from a medieval village on the French Riviera before moving to NYC, Léo Dupire grew up in a multicultural setting (his father a musically inclined French mathematician and his mother a Swedish force of creative & artistic expression). <br></br><br></br>
-                                    Léo Dupire’s music is grounded in self-reflection, rebellion, and authenticity, exploring the depths of alternative & soft rock. His style is often compared to that of Hozier, Radiohead, Queen, Jeff Buckley, and Cold Play - to name a few. That being said, you’ll never know what to expect next; Léo loves to explore different sounds and goes where he finds meaning. Join him in this thoughtful exploration. <br></br><br></br>
-                                    Alongside music, Léo is a passionate scientist in the field of Artificial Intelligence applied to Cancer Research.
+
+                                                       Dupire’s music is grounded in self-reflection, nostalgia, and rebellion, exploring the depths of alternative & indie rock. His varying style is often compared to that of Hozier, Radiohead, Jeff Buckley, Queen - to name a few. That being said, you’ll never know what to expect next; Léo Dupire loves to explore different sounds and goes where he finds meaning. <br></br><br></br>
+
+                                                       Léo Dupire is also a passionate scientist, applying Artificial Intelligence to Cancer Research. Learn more at <a href="https://leodupire.com" target="_blank" style={{ color: "rgb(39, 164, 210)" }}>leodupire.com</a>.
                                 </p>
                                 <div className='divider2'></div>
                             </div>

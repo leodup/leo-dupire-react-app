@@ -61,9 +61,10 @@
   width: 100%;
   height: auto;
   background-image: url('../images/MusicImg/ArtistHeaderExtended.jpg');
-  background-size: cover;      /* Makes the image cover the entire div */
+  background-size: auto 120%;  /* Makes the image 120% of original height, maintaining proportions */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;/* Prevents tiling */
+  background-attachment: fixed; /* Makes the background image fixed */
 }
 #live::before {
   content: '';
@@ -80,7 +81,7 @@
   width: 100%;
   height: auto;
   background-image: url('../images/MusicImg/HeadshotExtended.jpg');
-  background-size: cover;      /* Makes the image cover the entire div */
+  background-size: auto 120%;  /* Makes the image 120% of original height, maintaining proportions */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;/* Prevents tiling */
 }
@@ -688,7 +689,7 @@ video {
 }
 .SocialIcon2:hover {
   /* width: 8rem; */
-  background-color: #882000;
+  filter: brightness(0) saturate(100%) invert(45%) sepia(100%) saturate(1500%) hue-rotate(-5deg) brightness(95%) contrast(90%);
   transition: 1s;
 }
 
@@ -705,7 +706,7 @@ video {
   }
 
   .releases {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -716,7 +717,7 @@ video {
   }
 
   .songs {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -784,7 +785,7 @@ video {
 
 .bioText {
   position: relative;
-  left: 2rem;
+  /* left: 2rem; */
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: serenata;
@@ -794,3 +795,198 @@ video {
 
   color: white;
 }
+
+/* Stacked Singles Effect */
+.singles-stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  overflow: visible;
+  position: relative;
+}
+
+.singles-stack {
+  position: relative;
+  width: 380px;
+  height: 450px;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.stacked-single {
+  position: absolute !important;
+  width: 380px;
+  height: 450px;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Initial stacked positions */
+.stacked-single[data-index="0"] {
+  z-index: 3;
+  transform: translateY(0px) rotate(-2deg);
+}
+
+.stacked-single[data-index="1"] {
+  z-index: 2;
+  transform: translateY(10px) rotate(1deg);
+}
+
+.stacked-single[data-index="2"] {
+  z-index: 1;
+  transform: translateY(20px) rotate(-1deg);
+}
+
+/* Hover state - expand horizontally */
+.singles-stack:hover {
+  width: 1300px;
+}
+
+.singles-stack:hover .stacked-single {
+  transform: translateY(0px) rotate(0deg);
+}
+
+.singles-stack:hover .stacked-single[data-index="0"] {
+  transform: translateX(0px) translateY(0px) rotate(0deg);
+  border: 3px solid #c25908;
+}
+
+.singles-stack:hover .stacked-single[data-index="0"] .recRelease {
+  color: #c25908;
+}
+
+.singles-stack:hover .stacked-single[data-index="1"] {
+  transform: translateX(420px) translateY(0px) rotate(0deg);
+}
+
+.singles-stack:hover .stacked-single[data-index="2"] {
+  transform: translateX(840px) translateY(0px) rotate(0deg);
+}
+
+/* Adjust existing cover art styles for stacked layout */
+.stacked-single .CoverArt {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.stacked-single .PromoteRecord {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 100%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.stacked-single .recordTop {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem 0 0.8rem 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.stacked-single .recRelease {
+  color: rgb(39, 164, 210);
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-weight: 500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .singles-stack-container {
+    height: 500px;
+    padding: 2rem 0;
+    overflow: visible;
+  }
+  
+  .singles-stack {
+    width: 300px;
+    height: 380px;
+  }
+  
+  .stacked-single {
+    width: 300px;
+    height: 380px;
+  }
+  
+  .stacked-single .CoverArt {
+    height: 220px;
+  }
+  
+  .stacked-single .recordTop {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+  
+  .stacked-single .recRelease {
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .singles-stack:hover {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .singles-stack:hover .stacked-single[data-index="0"] {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    border: 3px solid #c25908;
+  }
+  
+  .singles-stack:hover .stacked-single[data-index="0"] .recRelease {
+    color: #c25908;
+  }
+  
+  .singles-stack:hover .stacked-single[data-index="1"] {
+    transform: translateX(320px) translateY(0px) rotate(0deg);
+  }
+  
+      .singles-stack:hover .stacked-single[data-index="2"] {
+      transform: translateX(640px) translateY(0px) rotate(0deg);
+    }
+    
+    /* Mobile streaming services text */
+    .releases h1 {
+      font-size: 2.5rem !important;
+      line-height: 3rem !important;
+    }
+    
+    /* Mobile streaming service captions */
+    .SocialIcons p {
+      font-size: 0.9rem !important;
+      margin-top: 0.3rem !important;
+    }
+    
+    /* Mobile bio section text */
+    .releases p, .conText p {
+      font-size: 0.9rem !important;
+      line-height: 1.4 !important;
+      padding-left: 0.5rem !important;
+      padding-right: 1rem !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+    
+    /* Mobile bio section container */
+    .releases {
+      padding-left: 0.5rem !important;
+      padding-right: 1rem !important;
+    }
+    
+    /* Mobile streaming section height */
+    .contCorpus {
+      height: 24rem !important;
+    }
+  }
