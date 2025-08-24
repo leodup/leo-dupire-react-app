@@ -82,7 +82,7 @@
   height: auto;
   background-image: url('../images/MusicImg/HeadshotExtended.jpg');
   background-size: auto 120%;  /* Makes the image 120% of original height, maintaining proportions */
-  background-position: center; /* Centers the image */
+  background-position: center 60%; /* Moves the image down */
   background-repeat: no-repeat;/* Prevents tiling */
 }
 #bio::before {
@@ -188,11 +188,20 @@
 }
 
 .releases {
-  width: min(100%, 1200px);
+  width: 60vw;
   padding-top: 5rem;
   padding-bottom: 5rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  height: auto;
+  min-height: fit-content;
+}
+
+/* Keep singles section full width */
+.black .releases {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .releases h1{
@@ -227,8 +236,8 @@
 .songs {
   padding-top: 1rem;
   padding-bottom: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 #stream:hover{
   background-color: rgba(0, 0, 0, 0.75);
@@ -803,23 +812,40 @@ video {
   align-items: center;
   width: 100%;
   height: 600px;
-  overflow: visible;
+  overflow-x: hidden;
   position: relative;
+  padding: 0; /* Remove any padding to help center */
+}
+
+.singles-stack-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to left, rgb(39, 164, 210) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 5;
 }
 
 .singles-stack {
   position: relative;
   width: 380px;
   height: 450px;
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s ease-in-out;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(0px);
 }
 
 .stacked-single {
   position: absolute !important;
   width: 380px;
   height: 450px;
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), border 0.6s ease;
   transform-origin: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
@@ -844,7 +870,13 @@ video {
 
 /* Hover state - expand horizontally */
 .singles-stack:hover {
-  width: 1300px;
+  width: min(1300px, 95vw);
+  animation: centerStack 1.2s ease-in-out 0.6s forwards;
+}
+
+/* Reverse animation when hover ends */
+.singles-stack {
+  animation: uncenterStack 1.2s ease-in-out forwards;
 }
 
 .singles-stack:hover .stacked-single {
@@ -866,6 +898,26 @@ video {
 
 .singles-stack:hover .stacked-single[data-index="2"] {
   transform: translateX(840px) translateY(0px) rotate(0deg);
+}
+
+/* Keyframe animation for centering the entire stack */
+@keyframes centerStack {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-420px);
+  }
+}
+
+/* Reverse keyframe animation for returning to center */
+@keyframes uncenterStack {
+  0% {
+    transform: translateX(-420px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 /* Adjust existing cover art styles for stacked layout */
@@ -901,6 +953,7 @@ video {
   text-align: center;
   margin: 0 0 2rem 0;
   font-weight: 500;
+  transition: color 0.6s ease;
 }
 
 /* Mobile responsiveness */
@@ -908,17 +961,49 @@ video {
   .singles-stack-container {
     height: 500px;
     padding: 2rem 0;
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
   }
   
   .singles-stack {
-    width: 300px;
+    width: 1000px;
     height: 380px;
+    transform: translateX(-210px);
   }
   
   .stacked-single {
     width: 300px;
     height: 380px;
+  }
+  
+  /* Mobile - singles already expanded */
+  .singles-stack .stacked-single[data-index="0"] {
+    transform: translateX(0px) translateY(0px) rotate(0deg) !important;
+    border: 3px solid #c25908;
+  }
+  
+  .singles-stack .stacked-single[data-index="0"] .recRelease {
+    color: #c25908 !important;
+  }
+  
+  .singles-stack .stacked-single[data-index="1"] {
+    transform: translateX(350px) translateY(0px) rotate(0deg) !important;
+  }
+  
+  .singles-stack .stacked-single[data-index="2"] {
+    transform: translateX(700px) translateY(0px) rotate(0deg) !important;
+  }
+  
+  /* Remove fade-out effect on mobile */
+  .singles-stack-container::after {
+    display: none;
+  }
+  
+  /* Remove horizontal padding from singles songs div on mobile */
+  .black .songs {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   
   .stacked-single .CoverArt {
@@ -969,6 +1054,18 @@ video {
       margin-top: 0.3rem !important;
     }
     
+    /* Split streaming logos into two lines on mobile */
+    .SocialIcons {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      gap: 1rem !important;
+    }
+    
+    .SocialIcons > div {
+      flex-basis: calc(50% - 0.5rem) !important;
+      max-width: calc(50% - 0.5rem) !important;
+    }
+    
     /* Mobile bio section text */
     .releases p, .conText p {
       font-size: 0.9rem !important;
@@ -987,6 +1084,92 @@ video {
     
     /* Mobile streaming section height */
     .contCorpus {
-      height: 24rem !important;
+      height: auto !important;
+      min-height: 24rem !important;
+    }
+    
+    /* Fix bio section overlapping streaming section on mobile */
+    .top2 {
+      position: relative !important;
+    }
+    
+    /* Mobile live section - NUCLEAR OPTION */
+    
+    /* Force all song2 containers to be exactly the same */
+    .contCorpus .top2 .releases .songs .song2 {
+      display: grid !important;
+      grid-template-columns: 4fr 1fr 1.5fr !important;
+      gap: 1rem !important;
+      align-items: center !important;
+      padding: 1rem !important;
+      height: 60px !important;
+      width: 100% !important;
+      position: relative !important;
+      left: 0 !important;
+      box-sizing: border-box !important;
+    }
+    
+    /* Force all children to behave */
+    .contCorpus .top2 .releases .songs .song2 > * {
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1 !important;
+      position: relative !important;
+      left: auto !important;
+      right: auto !important;
+      top: auto !important;
+      bottom: auto !important;
+    }
+    
+    .contCorpus .top2 .releases .songs .song2 .record {
+      text-align: left !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      grid-column: 1 !important;
+    }
+    
+    .contCorpus .top2 .releases .songs .song2 .recMid {
+      text-align: center !important;
+      grid-column: 2 !important;
+    }
+    
+    .contCorpus .top2 .releases .songs .song2 .recStat {
+      text-align: right !important;
+      grid-column: 3 !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+    }
+    
+    /* ABSOLUTELY DESTROY ALL LINK STYLING */
+    .contCorpus .top2 .releases .songs a,
+    .contCorpus .top2 .releases .songs a *,
+    .contCorpus .top2 .releases .songs a:link,
+    .contCorpus .top2 .releases .songs a:visited,
+    .contCorpus .top2 .releases .songs a:hover,
+    .contCorpus .top2 .releases .songs a:active {
+      text-decoration: none !important;
+      text-decoration-line: none !important;
+      text-decoration-style: none !important;
+      text-decoration-color: transparent !important;
+      text-underline-offset: 0 !important;
+      color: white !important;
+      background: transparent !important;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    
+    /* Mobile releases width */
+    .releases {
+      width: 100vw !important;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+    }
+    
+    /* Keep singles section full width on mobile */
+    .black .releases {
+      width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
   }

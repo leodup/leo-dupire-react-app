@@ -64,7 +64,7 @@ const Music = () => {
             }
             
             if (bioSection) {
-                const yPos = 600 - (scrolled * 0.2); // Same parallax effect for bio section
+                const yPos = 600 - (scrolled * 0.2); // Start lower - moved down from 600 to 700
                 bioSection.style.backgroundPosition = `center ${yPos}%`;
             }
         };
@@ -160,13 +160,13 @@ const Music = () => {
                 <div className='contCorpus' style={{ height: height2 }}>
                     <div className='top2' id="live" style={{ height: height2 }}>
                         <div className='releases'>
-                            <h1 style={{ color: "white" }}>Come see me LIVE !</h1>
+                            <h1 style={{ color: "white" }}>Come see me LIVE!</h1>
                             {/* rgb(127 163 176) */}
                             <div className='songs'>
                                 <div className='divider2'></div>
                                 <ExternalLink href="https://wl.seetickets.us/event/davinia/623039?afflky=TheCuttingRoom">
                                     <div className='song2'>
-                                        <p className='record' style={{ color: "white" }}>The Cutting Room w. Davinia</p>
+                                        <p className='record' style={{ color: "white" }}>The Cutting Room</p>
                                         <p className='recMid' style={{ color: "white" }}>NYC</p>
                                         <p className='recStat' style={{ color: "white" }}>10/25/24</p>
                                     </div>
@@ -175,13 +175,13 @@ const Music = () => {
                                 <div className='song2'>
                                     <p className='record' style={{ color: "white" }}>TBD</p>
                                     <p className='recMid' style={{ color: "white" }}>NYC</p>
-                                    <p className='recStat' style={{ color: "white" }}>----</p>
+                                    <p className='recStat' style={{ color: "white" }}>--/--/--</p>
                                 </div>
                                 <div className='divider2'></div>
                                 <div className='song2'>
                                     <p className='record' style={{ color: "white" }}>TBD</p>
                                     <p className='recMid' style={{ color: "white" }}>NYC</p>
-                                    <p className='recStat' style={{ color: "white" }}>----</p>
+                                    <p className='recStat' style={{ color: "white" }}>--/--/--</p>
                                 </div>
                                 <div className='divider2'></div>
                             </div>
@@ -250,8 +250,8 @@ const Music = () => {
                 </div>
 
 
-                <div className='contCorpus' style={{ height: height2 }}>
-                    <div className='top2' id="bio" style={{ height: height2 }}>
+                <div className='contCorpus' style={{ height: "auto", minHeight: height2 }}>
+                    <div className='top2' id="bio" style={{ height: "auto", minHeight: height2 }}>
                         <div className='releases'>
                             <h1 style={{ color: "white" }}>BIO</h1>
                             {/* rgb(127 163 176) */}
