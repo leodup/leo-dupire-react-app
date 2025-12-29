@@ -115,7 +115,7 @@ const Music = () => {
                                 <div className='singles-stack'>
                                     <div className='song1 stacked-single' id="cover" data-index="0">
                                         <div className='PromoteRecord'>
-                                            <ExternalLink href="https://open.spotify.com/track/[NO_TIME_TRACK_ID]">
+                                            <ExternalLink href="https://open.spotify.com/track/6ziJxHVuroi2iWlevrweWa?si=c3272f62d2d24eab">
                                                 <img
                                                     className="CoverArt"
                                                     src={NOTIMECOVER}
@@ -123,7 +123,7 @@ const Music = () => {
                                                 />
                                             </ExternalLink>
                                             <p className='recordTop'>NO TIME</p>
-                                            <p className='recRelease'>9/30 - UPCOMING !</p>
+                                            <p className='recRelease'>9/30</p>
                                         </div>
                                     </div>
                                     <div className='song1 stacked-single' id="cover" data-index="1">
@@ -161,8 +161,37 @@ const Music = () => {
                     <div className='top2' id="live" style={{ height: height2 }}>
                         <div className='releases'>
                             <h1 style={{ color: "white" }}>Come see me LIVE!</h1>
-                            {/* rgb(127 163 176) */}
                             <div className='songs'>
+                                <div className='divider2'></div>
+                                <div className='song2'>
+                                    <p className='record' style={{ color: "white" }}>TBD</p>
+                                    <p className='recMid' style={{ color: "white" }}>--</p>
+                                    <p className='recStat' style={{ color: "white" }}>--/--/--</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song2'>
+                                    <p className='record' style={{ color: "white" }}>Lucinda's</p>
+                                    <p className='recMid' style={{ color: "white" }}>NYC</p>
+                                    <p className='recStat' style={{ color: "white" }}>11/16/25</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song2'>
+                                    <p className='record' style={{ color: "white" }}>Pete's Candy Store</p>
+                                    <p className='recMid' style={{ color: "white" }}>Brooklyn</p>
+                                    <p className='recStat' style={{ color: "white" }}>10/05/25</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song2'>
+                                    <p className='record' style={{ color: "white" }}>'No Time' Release Party</p>
+                                    <p className='recMid' style={{ color: "white" }}>NYC</p>
+                                    <p className='recStat' style={{ color: "white" }}>10/03/25</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song2'>
+                                    <p className='record' style={{ color: "white" }}>'Sirens' Release Party</p>
+                                    <p className='recMid' style={{ color: "white" }}>NYC</p>
+                                    <p className='recStat' style={{ color: "white" }}>03/08/25</p>
+                                </div>
                                 <div className='divider2'></div>
                                 <ExternalLink href="https://wl.seetickets.us/event/davinia/623039?afflky=TheCuttingRoom">
                                     <div className='song2'>
@@ -171,18 +200,6 @@ const Music = () => {
                                         <p className='recStat' style={{ color: "white" }}>10/25/24</p>
                                     </div>
                                 </ExternalLink>
-                                <div className='divider2'></div>
-                                <div className='song2'>
-                                    <p className='record' style={{ color: "white" }}>TBD</p>
-                                    <p className='recMid' style={{ color: "white" }}>NYC</p>
-                                    <p className='recStat' style={{ color: "white" }}>--/--/--</p>
-                                </div>
-                                <div className='divider2'></div>
-                                <div className='song2'>
-                                    <p className='record' style={{ color: "white" }}>TBD</p>
-                                    <p className='recMid' style={{ color: "white" }}>NYC</p>
-                                    <p className='recStat' style={{ color: "white" }}>--/--/--</p>
-                                </div>
                                 <div className='divider2'></div>
                             </div>
                         </div>
