@@ -13,7 +13,7 @@ const Links = () => {
                         <img src={HEADSHOT} alt="Profile" />
                     </div>
                     <h1 className="ProfileName">Léo Dupire</h1>
-                    <p className="ProfileBio">Inquisitive Rock</p>
+                    <p className="ProfileBio">'No Time' Out Now</p>
                 </div>
 
                 {/* Links Grid */}

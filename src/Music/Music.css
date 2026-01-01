@@ -235,7 +235,7 @@
 
 .songs {
   padding-top: 1rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
   padding-left: 0;
   padding-right: 0;
 }
@@ -727,7 +727,7 @@ video {
 
   .songs {
     /* padding-top: 5rem; */
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -783,11 +783,11 @@ video {
   }
 
   .SocialIcon2 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 2px;
     border-radius: 50%;
-    width: 3rem;
+    width: 5rem;
   }
 }
 
@@ -808,18 +808,51 @@ video {
 /* Stacked Singles Effect */
 .singles-stack-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 600px;
-  overflow-x: hidden;
+  max-width: 100vw; /* Prevent extending beyond viewport */
+  height: 700px;
+  overflow-x: auto;
+  overflow-y: hidden;
   position: relative;
-  padding: 0; /* Remove any padding to help center */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  overscroll-behavior-x: contain; /* Prevents scroll chaining to parent */
+  overscroll-behavior-y: none; /* Prevents vertical scroll bounce */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.singles-stack-container::after {
+/* Spacer element to center the first card */
+.singles-stack-container::before {
   content: '';
-  position: absolute;
+  flex-shrink: 0;
+  width: calc(50vw - 190px); /* Centers the first card - half viewport minus half card width */
+  height: 100%;
+}
+
+/* Hide scrollbar but keep functionality */
+.singles-stack-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.singles-stack-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.singles-stack-container::-webkit-scrollbar-thumb {
+  background: rgba(39, 164, 210, 0.5);
+  border-radius: 10px;
+}
+
+.singles-stack-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(39, 164, 210, 0.8);
+}
+
+/* Gradient fade on the right side */
+/* .singles-stack-container::after {
+  content: '';
+  position: sticky;
   top: 0;
   right: 0;
   width: 150px;
@@ -827,25 +860,28 @@ video {
   background: linear-gradient(to left, rgb(39, 164, 210) 0%, transparent 100%);
   pointer-events: none;
   z-index: 5;
-}
+  flex-shrink: 0;
+} */
 
 .singles-stack {
   position: relative;
   width: 380px;
   height: 450px;
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s ease-in-out;
+  flex-shrink: 0; /* Prevent shrinking in flex container */
+  transition: width 0.6s ease-out, transform 0.6s ease-out;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: translateX(0px);
+  margin-right: 100px; /* Space between card stacks */
 }
 
 .stacked-single {
   position: absolute !important;
   width: 380px;
   height: 450px;
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), border 0.6s ease;
+  transition: transform 0.6s ease-out, border 0.3s ease;
   transform-origin: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
@@ -868,15 +904,15 @@ video {
   transform: translateY(20px) rotate(-1deg);
 }
 
+.stacked-single[data-index="3"] {
+  z-index: 1;
+  transform: translateY(30px) rotate(-1deg);
+}
+
 /* Hover state - expand horizontally */
 .singles-stack:hover {
   width: min(1300px, 95vw);
-  animation: centerStack 1.2s ease-in-out 0.6s forwards;
-}
-
-/* Reverse animation when hover ends */
-.singles-stack {
-  animation: uncenterStack 1.2s ease-in-out forwards;
+  transform: translateX(-420px);
 }
 
 .singles-stack:hover .stacked-single {
@@ -900,25 +936,11 @@ video {
   transform: translateX(840px) translateY(0px) rotate(0deg);
 }
 
-/* Keyframe animation for centering the entire stack */
-@keyframes centerStack {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-420px);
-  }
+.singles-stack:hover .stacked-single[data-index="3"] {
+  transform: translateX(1260px) translateY(0px) rotate(0deg);
 }
 
-/* Reverse keyframe animation for returning to center */
-@keyframes uncenterStack {
-  0% {
-    transform: translateX(-420px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
+/* Removed keyframe animations - now using smooth transitions instead */
 
 /* Adjust existing cover art styles for stacked layout */
 .stacked-single .CoverArt {
@@ -953,23 +975,29 @@ video {
   text-align: center;
   margin: 0 0 2rem 0;
   font-weight: 500;
-  transition: color 0.6s ease;
+  transition: color 0.6s ease-out;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .singles-stack-container {
-    height: 500px;
-    padding: 2rem 0;
+    height: 550px;
     overflow-x: auto;
     overflow-y: hidden;
     justify-content: flex-start;
+    overscroll-behavior-x: contain;
+    overscroll-behavior-y: none;
   }
-  
+
+  .singles-stack-container::before {
+    width: calc(50vw - 500px); /* Centers the No Time card on mobile - decreased spacer to pull card left */
+  }
+
   .singles-stack {
-    width: 1000px;
+    /* width: 1000px; */
     height: 380px;
-    transform: translateX(-210px);
+    transform: translateX(0px);
+    margin-right: 100px;
   }
   
   .stacked-single {
@@ -980,11 +1008,11 @@ video {
   /* Mobile - singles already expanded */
   .singles-stack .stacked-single[data-index="0"] {
     transform: translateX(0px) translateY(0px) rotate(0deg) !important;
-    border: 3px solid #c25908;
+    /* border: 3px solid #c25908; */
   }
   
   .singles-stack .stacked-single[data-index="0"] .recRelease {
-    color: #c25908 !important;
+    /* color: #c25908 !important; */
   }
   
   .singles-stack .stacked-single[data-index="1"] {
@@ -993,6 +1021,10 @@ video {
   
   .singles-stack .stacked-single[data-index="2"] {
     transform: translateX(700px) translateY(0px) rotate(0deg) !important;
+  }
+
+  .singles-stack .stacked-single[data-index="3"] {
+    transform: translateX(1050px) translateY(0px) rotate(0deg) !important;
   }
   
   /* Remove fade-out effect on mobile */
@@ -1019,28 +1051,32 @@ video {
     font-size: 1rem;
     margin: 0 0 1.5rem 0;
   }
-  
+
+  /* Remove hover effects on mobile - cards are always expanded */
   .singles-stack:hover {
-    width: 100%;
-    overflow-x: auto;
+    width: 1000px;
   }
-  
+
   .singles-stack:hover .stacked-single[data-index="0"] {
-    transform: translateX(0px) translateY(0px) rotate(0deg);
+    transform: translateX(0px) translateY(0px) rotate(0deg) !important;
     border: 3px solid #c25908;
   }
-  
+
   .singles-stack:hover .stacked-single[data-index="0"] .recRelease {
-    color: #c25908;
+    color: #c25908 !important;
   }
-  
+
   .singles-stack:hover .stacked-single[data-index="1"] {
-    transform: translateX(320px) translateY(0px) rotate(0deg);
+    transform: translateX(350px) translateY(0px) rotate(0deg) !important;
   }
-  
-      .singles-stack:hover .stacked-single[data-index="2"] {
-      transform: translateX(640px) translateY(0px) rotate(0deg);
-    }
+
+  .singles-stack:hover .stacked-single[data-index="2"] {
+    transform: translateX(700px) translateY(0px) rotate(0deg) !important;
+  }
+
+  .singles-stack:hover .stacked-single[data-index="3"] {
+    transform: translateX(1050px) translateY(0px) rotate(0deg) !important;
+  }
     
     /* Mobile streaming services text */
     .releases h1 {

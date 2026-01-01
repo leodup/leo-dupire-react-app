@@ -57,12 +57,12 @@ const Music = () => {
             const liveSection = document.getElementById('live');
             const bioSection = document.getElementById('bio');
             const scrolled = window.pageYOffset;
-            
+
             if (liveSection) {
                 const yPos = 160 - (scrolled * 0.06); // Start higher to prevent going too low
                 liveSection.style.backgroundPosition = `center ${yPos}%`;
             }
-            
+
             if (bioSection) {
                 const yPos = 600 - (scrolled * 0.2); // Start lower - moved down from 600 to 700
                 bioSection.style.backgroundPosition = `center ${yPos}%`;
@@ -73,6 +73,43 @@ const Music = () => {
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        const singlesContainer = document.querySelector('.singles-stack-container');
+
+        const handleWheel = (e) => {
+            const hasHorizontalScroll = singlesContainer.scrollWidth > singlesContainer.clientWidth;
+
+            if (!hasHorizontalScroll) return;
+
+            const scrollLeft = singlesContainer.scrollLeft;
+            const maxScroll = singlesContainer.scrollWidth - singlesContainer.clientWidth;
+
+            // Determine scroll delta - prefer horizontal, fall back to vertical
+            const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+
+            // Check if we're at scroll boundaries
+            const atStart = scrollLeft <= 0 && delta < 0;
+            const atEnd = scrollLeft >= maxScroll && delta > 0;
+
+            // Only prevent default if we're not at boundaries (allow page scroll when at edges)
+            if (!atStart && !atEnd) {
+                e.preventDefault();
+                e.stopPropagation();
+                singlesContainer.scrollLeft += delta;
+            }
+        };
+
+        if (singlesContainer) {
+            singlesContainer.addEventListener('wheel', handleWheel, { passive: false });
+        }
+
+        return () => {
+            if (singlesContainer) {
+                singlesContainer.removeEventListener('wheel', handleWheel);
+            }
         };
     }, []);
 
@@ -123,7 +160,7 @@ const Music = () => {
                                                 />
                                             </ExternalLink>
                                             <p className='recordTop'>NO TIME</p>
-                                            <p className='recRelease'>9/30</p>
+                                            <p className='recRelease'>Sep. 30 2025</p>
                                         </div>
                                     </div>
                                     <div className='song1 stacked-single' id="cover" data-index="1">
@@ -136,7 +173,7 @@ const Music = () => {
                                                 />
                                             </ExternalLink>
                                             <p className='recordTop'>MAD MAN</p>
-                                            <p className='recRelease'>4/18</p>
+                                            <p className='recRelease'>Apr. 18 2025</p>
                                         </div>
                                     </div>
                                     <div className='song1 stacked-single' id="cover" data-index="2">
@@ -149,10 +186,24 @@ const Music = () => {
                                                 />
                                             </ExternalLink>
                                             <p className='recordTop'>SIRENS</p>
-                                            <p className='recRelease'>2/21</p>
+                                            <p className='recRelease'>Feb. 21 2025</p>
                                         </div>
                                     </div>
+                                    {/* <div className='song1 stacked-single' id="cover" data-index="3">
+                                        <div className='PromoteRecord'>
+                                            <ExternalLink href="https://open.spotify.com/track/6ziJxHVuroi2iWlevrweWa?si=c3272f62d2d24eab">
+                                                <img
+                                                    className="CoverArt"
+                                                    src={NOTIMECOVER}
+                                                    alt="No Time Cover Art"
+                                                />
+                                            </ExternalLink>
+                                            <p className='recordTop'>NO TIME</p>
+                                            <p className='recRelease'>Sep. 30 2025</p>
+                                        </div>
+                                    </div> */}
                                 </div>
+                                {/* Add more .singles-stack divs here for additional card groups */}
                             </div>
                         </div>
                     </div>
@@ -178,19 +229,19 @@ const Music = () => {
                                 <div className='song2'>
                                     <p className='record' style={{ color: "white" }}>Pete's Candy Store</p>
                                     <p className='recMid' style={{ color: "white" }}>Brooklyn</p>
-                                    <p className='recStat' style={{ color: "white" }}>10/05/25</p>
+                                    <p className='recStat' style={{ color: "white" }}>10/5/25</p>
                                 </div>
                                 <div className='divider2'></div>
                                 <div className='song2'>
-                                    <p className='record' style={{ color: "white" }}>'No Time' Release Party</p>
+                                    <p className='record' style={{ color: "white" }}>'No Time' Release</p>
                                     <p className='recMid' style={{ color: "white" }}>NYC</p>
-                                    <p className='recStat' style={{ color: "white" }}>10/03/25</p>
+                                    <p className='recStat' style={{ color: "white" }}>10/3/25</p>
                                 </div>
                                 <div className='divider2'></div>
                                 <div className='song2'>
-                                    <p className='record' style={{ color: "white" }}>'Sirens' Release Party</p>
+                                    <p className='record' style={{ color: "white" }}>'Sirens' Release</p>
                                     <p className='recMid' style={{ color: "white" }}>NYC</p>
-                                    <p className='recStat' style={{ color: "white" }}>03/08/25</p>
+                                    <p className='recStat' style={{ color: "white" }}>03/8/25</p>
                                 </div>
                                 <div className='divider2'></div>
                                 <ExternalLink href="https://wl.seetickets.us/event/davinia/623039?afflky=TheCuttingRoom">
