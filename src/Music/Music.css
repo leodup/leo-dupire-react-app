@@ -1203,11 +1203,14 @@ video {
       position: relative !important;
     }
 
-    /* Fix live section background image size on mobile */
+    /* Make live section match bio section on mobile - no parallax effect */
     #live {
-      background-size: auto 120% !important;
       background-attachment: scroll !important;
-      background-position: center !important;
+      will-change: transform;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
     }
 
     /* Mobile live section - NUCLEAR OPTION */

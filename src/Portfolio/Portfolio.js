@@ -215,9 +215,19 @@ const Portfolio = () => {
                         <div className="NLPPosition">
                             <iframe src="https://drive.google.com/file/d/1ug-uSk85cmlE5ngnNzu0i0AxUhF9o_FA/preview" allow="autoplay" className="NLPPDF"></iframe>
                         </div>
-                        <p className="Section">I was honored to present our new foundation model, GREmLN, at the American Association for Cancer Research (AACR) AI & ML conference in Montreal last week. I’m grateful to have represented my team and introduce GREmLN to world leaders in cancer research at this first edition of the conference.</p>
+                        <p className="Section"><strong>GREmLN at AACR:</strong> <br></br>I was honored to present our new foundation model, GREmLN, at the American Association for Cancer Research (AACR) AI & ML conference in Montreal. I’m grateful to have represented my team and introduce GREmLN to world leaders in cancer research at this first edition of the conference.</p>
                         <div className="NLPPosition">
                             <iframe className="GREmLNVideo1" width="560" height="315" src="https://www.youtube.com/embed/uYal_RN0G6E?si=pTCeEOrcnVJH5gMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen="allowfullscreen"
+                            mozallowfullscreen="mozallowfullscreen" 
+                            msallowfullscreen="msallowfullscreen" 
+                            oallowfullscreen="oallowfullscreen" 
+                            webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                        </div>
+
+                        <p className="Section"><strong>GREmLN keynote at AstraZeneca:</strong> <br></br>I was invited to give a talk on GREmLN at the AstraZeneca AIxBio Frontiers seminar series, hosted by the Applied Data Science team within Oncology Data Science & AI.</p>
+                        <div className="NLPPosition">
+                            <iframe className="GREmLNVideo1" width="560" height="315" src="https://www.youtube.com/embed/YYxP8ZFk-Aw?si=ATDoPj645Xnfvmir" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen="allowfullscreen"
                             mozallowfullscreen="mozallowfullscreen" 
                             msallowfullscreen="msallowfullscreen" 

@@ -205,8 +205,7 @@ const Portfolio2 = () => {
             </div>
             <div className="PortfolioBody">
                 <div className="DataScience" ref={SidebarSecDS}>
-                    <h2 className="Section" id="DataScience">Machine Learning & AI
-                    </h2>
+                    <h2 className="Section" id="DataScience">Machine Learning & AI</h2>
                     <div className='Project'>
                         <h3 className="Section" id="PDF">GREmLN</h3>
                         <p className="Section">We released GREmLN, the first transformer-based foundation model for single-cell genomics that uses gene regulatory networks (GRNs) for inference. GREmLN can be used to accelerate research in areas such as prevention and treatment of diseases like cancer and Alzheimer's.</p>
@@ -224,6 +223,8 @@ const Portfolio2 = () => {
                             oallowfullscreen="oallowfullscreen" 
                             webkitallowfullscreen="webkitallowfullscreen"></iframe>
                         </div>
+
+
                     </div>
                     <div className='Project'>
                         <h3 className="Section" id="WNet">Collision Prediction (WNet)</h3>

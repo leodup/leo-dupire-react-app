@@ -308,6 +308,9 @@ const Home = () => {
                     {whatIDo}
 
                     <h2 className="Home" id="fix">Additional Resources</h2>
+                    <h3 id="Home">Talks</h3>
+                    <p id="Home"><b>AstraZeneca (</b><a href="/portfolio" target="_blank">recording</a><b>):</b> AIxBio Frontiers seminar series, hosted by the Applied Data Science team within Oncology Data Science & AI (2025).</p>
+                    <p id="Home"><b>AACR (</b><a href="/portfolio" target="_blank">recording</a><b>):</b> American Association for Cancer Research AI & ML conference (2025).</p>
                     <h3 id="Home">Résumé</h3>
                     <div className="ResumePosition">
                         <iframe src="https://drive.google.com/file/d/1nks36wwjVsh8qz4xs2vzo-QOeEp7c1kZ/preview" allow="autoplay" className="ResumePDF"></iframe>
