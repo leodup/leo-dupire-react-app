@@ -294,7 +294,7 @@ const Home = () => {
             <div className="body" id="Home">
                 <div className="bodiv">
                     <h2 className="Home" id="aboutme">About me</h2>
-                    <h3 id="Home">Who I am</h3>
+                    {/* <h3 id="Home">Who I am</h3> */}
                     <div className="CenterLeo">
                         <img
                             className="LeoImg"

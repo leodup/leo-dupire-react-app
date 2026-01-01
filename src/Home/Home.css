@@ -221,9 +221,10 @@ h3#Home {
 }
 
 .LeoImg {
-    padding: min(0.75vw, 0.5rem);
+    /* padding: min(0.75vw, 0.5rem); */
     border-radius: 50%;
-    width: calc(var(--exhibit-height)/1.25);
+    /* width: calc(var(--exhibit-height)/1.25); */
+    width: calc(var(--exhibit-height)/1.125);
 }
 
 p#Home {

@@ -12,6 +12,7 @@ import Portfolio from "../Portfolio/Portfolio.js";
 import Portfolio2 from "../Portfolio2/Portfolio2.js";
 import Music from "../Music/Music.js";
 import Menu from '../Menu/Menu.js';
+import Links from '../Links/Links.js';
 
 
 function App() {
@@ -64,6 +65,12 @@ function App() {
         <Route path="/music" element={
           <div>
             <Music />
+            {/* <Footer /> */}
+          </div>
+        } />
+        <Route path="/links" element={
+          <div>
+            <Links />
             {/* <Footer /> */}
           </div>
         } />

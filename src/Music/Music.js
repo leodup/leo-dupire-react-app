@@ -274,11 +274,11 @@ const Music = () => {
                             {/* rgb(127 163 176) */}
                             <div className='songs'>
                                 <div className='divider2'></div>
-                                <p className='bioText'>Originally from a medieval village on the French Riviera before moving to NYC, Léo Dupire grew up in a multicultural setting (his father a musically inclined French mathematician and his mother a Swedish force of creative & artistic expression). <br></br><br></br>
+                                <p className='bioText'>Emerging from a French medieval village and plunged into NYC at a young age, this French-Swedish artist brings a world of musical diversity to his earthy rock flavor. Léo Dupire is a playful experimentalist, creating immersive atmospheres for rebellious inquisition with a philosophical tang. <br></br><br></br>
 
-                                                       Dupire’s music is grounded in self-reflection, nostalgia, and rebellion, exploring the depths of alternative & indie rock. His varying style is often compared to that of Hozier, Radiohead, Jeff Buckley, Queen - to name a few. That being said, you’ll never know what to expect next; Léo Dupire loves to explore different sounds and goes where he finds meaning. <br></br><br></br>
+                                                        Dupire's work is reminiscent of artists like Hozier, Jeff Buckley, and Radiohead, keeping sincerity at the forefront of his work. <br></br><br></br>
 
-                                                       Léo Dupire is also a passionate scientist, applying Artificial Intelligence to Cancer Research. Learn more at <a href="https://leodupire.com" target="_blank" style={{ color: "rgb(39, 164, 210)" }}>leodupire.com</a>.
+                                                        Léo Dupire is also a passionate scientist, applying AI to Cancer Research. Learn more at <a href="https://leodupire.com" target="_blank" style={{ color: "rgb(39, 164, 210)" }}>leodupire.com</a>.
                                 </p>
                                 <div className='divider2'></div>
                             </div>
@@ -328,6 +328,9 @@ const Music = () => {
                                         alt="Email Image"
                                     />
                                 </a>
+                            </div>
+                            <div className="LinksFooter" style={{marginTop: 0}}>
+                                <p>© 2026 Léo Dupire</p>
                             </div>
                         </div>
                     </div>
