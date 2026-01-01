@@ -104,6 +104,14 @@ const Music = () => {
 
         if (singlesContainer) {
             singlesContainer.addEventListener('wheel', handleWheel, { passive: false });
+
+            // Set initial scroll position on mobile to center the first card
+            if (window.innerWidth <= 768) {
+                // Small delay to ensure layout is complete
+                setTimeout(() => {
+                    singlesContainer.scrollLeft = 0;
+                }, 100);
+            }
         }
 
         return () => {
@@ -113,6 +121,51 @@ const Music = () => {
         };
     }, []);
 
+    // Force video playback on mobile devices
+    useEffect(() => {
+        const playVideo = () => {
+            const video = document.getElementById('background-video');
+            if (video) {
+                video.muted = true; // Ensure muted
+                const playPromise = video.play();
+
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        console.log('Video autoplay succeeded');
+                    }).catch(error => {
+                        console.log('Video autoplay prevented:', error);
+                        // Fallback: try again on user interaction
+                        setupInteractionListeners();
+                    });
+                }
+            }
+        };
+
+        const setupInteractionListeners = () => {
+            const playOnInteraction = () => {
+                const video = document.getElementById('background-video');
+                if (video) {
+                    video.play();
+                }
+                document.removeEventListener('touchstart', playOnInteraction);
+                document.removeEventListener('click', playOnInteraction);
+                document.removeEventListener('scroll', playOnInteraction);
+            };
+
+            document.addEventListener('touchstart', playOnInteraction, { once: true });
+            document.addEventListener('click', playOnInteraction, { once: true });
+            document.addEventListener('scroll', playOnInteraction, { once: true });
+        };
+
+        // Try playing immediately
+        playVideo();
+
+        // Try again after short delays to ensure it works
+        setTimeout(playVideo, 50);
+        setTimeout(playVideo, 200);
+        setTimeout(playVideo, 500);
+    }, []);
+
     return (
         <>
             <div className='cont'>
@@ -120,8 +173,15 @@ const Music = () => {
                     <div className='Cont'> 
                         <div className='crt' id='head'>
                             <div className='vid'>
-                                <video autoPlay muted loop playsInline>
-                                    <source src={VID} type='video/mp4' />
+                                <video
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    preload="auto"
+                                    id="background-video"
+                                    src={VID}
+                                >
                                     Your browser does not support the video tag.
                                 </video>
                             </div>

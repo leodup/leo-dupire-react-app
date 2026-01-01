@@ -18,7 +18,7 @@ const Links = () => {
 
                 {/* Links Grid */}
                 <div className="LinksGrid">
-                    <ExternalLink href="https://www.leodupire.com/music" className="LinkCard">
+                    <ExternalLink href="/music" className="LinkCard">
                         <div className="LinkCardContent">
                             <span className="LinkTitle">leodupire.com</span>
                         </div>

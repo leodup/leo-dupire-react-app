@@ -822,11 +822,11 @@ video {
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
-/* Spacer element to center the first card */
+/* Spacer element to center the first card on desktop */
 .singles-stack-container::before {
   content: '';
   flex-shrink: 0;
-  width: calc(50vw - 190px); /* Centers the first card - half viewport minus half card width */
+  width: calc(50vw - 190px); /* Centers the first card - half viewport minus half card width (380px/2 = 190px) */
   height: 100%;
 }
 
@@ -865,30 +865,47 @@ video {
 
 .singles-stack {
   position: relative;
-  width: 380px;
+  width: 380px; /* Desktop: stacked width */
   height: 450px;
   flex-shrink: 0; /* Prevent shrinking in flex container */
-  transition: width 0.6s ease-out, transform 0.6s ease-out;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: translateX(0px);
-  margin-right: 100px; /* Space between card stacks */
+  margin-right: 100px; /* Space between card stacks on desktop */
+}
+
+/* Desktop-only transitions and cursor for singles-stack (only on hover-capable devices) */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+  .singles-stack {
+    transition: width 0.6s ease-out, transform 0.6s ease-out;
+    cursor: pointer;
+  }
 }
 
 .stacked-single {
   position: absolute !important;
   width: 380px;
   height: 450px;
-  transition: transform 0.6s ease-out, border 0.3s ease;
   transform-origin: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   overflow: hidden;
 }
 
+/* Desktop-only transitions for stacked-single (only on hover-capable devices) */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+  .stacked-single {
+    transition: transform 0.6s ease-out, border 0.3s ease;
+  }
+}
+
 /* Initial stacked positions */
+.stacked-single[data-index="-1"] {
+  z-index: 0;
+  transform: translateY(0px) rotate(-2deg);
+}
+
 .stacked-single[data-index="0"] {
   z-index: 3;
   transform: translateY(0px) rotate(-2deg);
@@ -909,35 +926,38 @@ video {
   transform: translateY(30px) rotate(-1deg);
 }
 
-/* Hover state - expand horizontally */
-.singles-stack:hover {
-  width: min(1300px, 95vw);
-  transform: translateX(-420px);
-}
+/* Hover state - expand horizontally (desktop only - requires both screen size AND hover capability) */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+  .singles-stack:hover {
+    width: min(1300px, 95vw);
+    transform: translateX(-420px);
+  }
 
-.singles-stack:hover .stacked-single {
-  transform: translateY(0px) rotate(0deg);
-}
+  .singles-stack:hover .stacked-single {
+    transform: translateY(0px) rotate(0deg);
+  }
 
-/* .singles-stack:hover .stacked-single[data-index="0"] {
-  transform: translateX(0px) translateY(0px) rotate(0deg);
-  border: 3px solid #c25908;
-}
+  /* Desktop hover effects for individual cards */
+  /* .singles-stack:hover .stacked-single[data-index="0"] {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+    border: 3px solid #c25908;
+  }
 
-.singles-stack:hover .stacked-single[data-index="0"] .recRelease {
-  color: #c25908;
-} */
+  .singles-stack:hover .stacked-single[data-index="0"] .recRelease {
+    color: #c25908;
+  } */
 
-.singles-stack:hover .stacked-single[data-index="1"] {
-  transform: translateX(420px) translateY(0px) rotate(0deg);
-}
+  .singles-stack:hover .stacked-single[data-index="1"] {
+    transform: translateX(420px) translateY(0px) rotate(0deg);
+  }
 
-.singles-stack:hover .stacked-single[data-index="2"] {
-  transform: translateX(840px) translateY(0px) rotate(0deg);
-}
+  .singles-stack:hover .stacked-single[data-index="2"] {
+    transform: translateX(840px) translateY(0px) rotate(0deg);
+  }
 
-.singles-stack:hover .stacked-single[data-index="3"] {
-  transform: translateX(1260px) translateY(0px) rotate(0deg);
+  .singles-stack:hover .stacked-single[data-index="3"] {
+    transform: translateX(1260px) translateY(0px) rotate(0deg);
+  }
 }
 
 /* Removed keyframe animations - now using smooth transitions instead */
@@ -975,13 +995,21 @@ video {
   text-align: center;
   margin: 0 0 2rem 0;
   font-weight: 500;
-  transition: color 0.6s ease-out;
+}
+
+/* Desktop-only color transition for recRelease (only on hover-capable devices) */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+  .stacked-single .recRelease {
+    transition: color 0.6s ease-out;
+  }
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .singles-stack-container {
+    width: calc(500vw);
     height: 550px;
+    /* margin-right: 2rem; */
     overflow-x: auto;
     overflow-y: hidden;
     justify-content: flex-start;
@@ -989,31 +1017,49 @@ video {
     overscroll-behavior-y: none;
   }
 
+  .stacked-single {
+    left: calc(50vw - 300px/2);
+  }
+
   .singles-stack-container::before {
-    width: calc(50vw - 500px); /* Centers the No Time card on mobile - decreased spacer to pull card left */
+    margin: 0;
+    width: 0;
+    /* width: calc(50vw); Centers the first card - half viewport minus half card width (300px/2 = 150px)
+    min-width: 0; Allow negative values to become 0 */
+  }
+
+  /* Add spacing after the last card on mobile */
+  .singles-stack-container::after {
+    content: '';
+    flex-shrink: 0;
+    width: calc(50vw - 150px); /* Match the left padding for symmetry */
+    height: 100%;
   }
 
   .singles-stack {
-    /* width: 1000px; */
+    width: 1000px; 
     height: 380px;
     transform: translateX(0px);
-    margin-right: 100px;
+    margin-right: 0; /* Remove margin since we're using ::after for spacing */
   }
   
   .stacked-single {
     width: 300px;
-    height: 380px;
+    height: 350px; /* Reduced height for better proportions on mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
+
   /* Mobile - singles already expanded */
   .singles-stack .stacked-single[data-index="0"] {
     transform: translateX(0px) translateY(0px) rotate(0deg) !important;
     /* border: 3px solid #c25908; */
   }
   
-  .singles-stack .stacked-single[data-index="0"] .recRelease {
-    /* color: #c25908 !important; */
-  }
+  /* .singles-stack .stacked-single[data-index="0"] .recRelease {
+    color: #c25908 !important;
+  } */
   
   .singles-stack .stacked-single[data-index="1"] {
     transform: translateX(350px) translateY(0px) rotate(0deg) !important;
@@ -1026,44 +1072,72 @@ video {
   .singles-stack .stacked-single[data-index="3"] {
     transform: translateX(1050px) translateY(0px) rotate(0deg) !important;
   }
-  
-  /* Remove fade-out effect on mobile */
-  .singles-stack-container::after {
-    display: none;
-  }
-  
+
   /* Remove horizontal padding from singles songs div on mobile */
   .black .songs {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
   
+  .stacked-single .PromoteRecord {
+    width: 230px; /* 300px - 20px margins on each side */
+    height: 410px; /* 350px - 20px margins on top and bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
   .stacked-single .CoverArt {
-    height: 220px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    padding-bottom: 40px;
   }
   
   .stacked-single .recordTop {
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem 0;
-  }
-  
-  .stacked-single .recRelease {
-    font-size: 1rem;
-    margin: 0 0 1.5rem 0;
+    font-size: 1.8rem !important;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
   }
 
-  /* Remove hover effects on mobile - cards are always expanded */
-  .singles-stack:hover {
-    width: 1000px;
+  .stacked-single .recRelease {
+    font-size: 1.25rem !important;
+    margin: 0;
+    padding: 0.25rem 1rem 0.5rem 1rem;
+    text-align: center;
+  }
+
+  /* Completely disable hover effects on mobile - no interactions except scrolling */
+  .singles-stack {
+    margin-right: 5rem;
+    pointer-events: auto; /* Allow scrolling */
+    cursor: default !important; /* Remove pointer cursor */
+    transition: none !important; /* Disable all transitions */
+  }
+
+  /* .singles-stack:hover {
+    width: auto !important;
+    transform: translateX(0px) !important; 
+    transition: none !important;
+  } */
+
+  .stacked-single {
+    transition: none !important; /* Disable card transitions too */
   }
 
   .singles-stack:hover .stacked-single[data-index="0"] {
     transform: translateX(0px) translateY(0px) rotate(0deg) !important;
-    border: 3px solid #c25908;
-  }
-
-  .singles-stack:hover .stacked-single[data-index="0"] .recRelease {
-    color: #c25908 !important;
   }
 
   .singles-stack:hover .stacked-single[data-index="1"] {
@@ -1128,7 +1202,14 @@ video {
     .top2 {
       position: relative !important;
     }
-    
+
+    /* Fix live section background image size on mobile */
+    #live {
+      background-size: auto 120% !important;
+      background-attachment: scroll !important;
+      background-position: center !important;
+    }
+
     /* Mobile live section - NUCLEAR OPTION */
     
     /* Force all song2 containers to be exactly the same */
@@ -1181,7 +1262,7 @@ video {
     .contCorpus .top2 .releases .songs a *,
     .contCorpus .top2 .releases .songs a:link,
     .contCorpus .top2 .releases .songs a:visited,
-    .contCorpus .top2 .releases .songs a:hover,
+    /* .contCorpus .top2 .releases .songs a:hover, */
     .contCorpus .top2 .releases .songs a:active {
       text-decoration: none !important;
       text-decoration-line: none !important;
