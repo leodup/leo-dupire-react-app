@@ -309,6 +309,7 @@ const Home = () => {
 
                     <h2 className="Home" id="fix">Additional Resources</h2>
                     <h3 id="Home">Talks</h3>
+                    <p id="Home"><b>ICLR MLGenX Workshop:</b> The GREmLN paper was accepted into this ICLR workshop. I represented my team at the ICLR conference in Rio de Janeiro.</p>
                     <p id="Home"><b>AstraZeneca (</b><a href="/portfolio" target="_blank">recording</a><b>):</b> AIxBio Frontiers seminar series, hosted by the Applied Data Science team within Oncology Data Science & AI (2025).</p>
                     <p id="Home"><b>AACR (</b><a href="/portfolio" target="_blank">recording</a><b>):</b> American Association for Cancer Research AI & ML conference (2025).</p>
                     <h3 id="Home">Résumé</h3>

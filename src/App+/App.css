@@ -10,7 +10,7 @@
 :root {
     --title-font: 'Proxima-Nova', sans-serif; /* Montserrat Alternates */
     --text-font: 'proxima-nova', sans-serif;
-    --text-font-size: max(min(2vw, 2vh), 1rem);;
+    --text-font-size: max(min(2vw, 1.85vh), 1rem);;
     --header-height: 85vh;
 
     --body-width: min(90vw, 800px);
