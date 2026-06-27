@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6cad2646.css",
-    "main.js": "/static/js/main.7dcd2ff7.js",
+    "main.css": "/static/css/main.ff1886b0.css",
+    "main.js": "/static/js/main.c86cb993.js",
     "static/media/Show.png": "/static/media/Show.47a0adc76a4a5bae2f97.png",
     "static/media/WebBackgroundLandscape.mp4": "/static/media/WebBackgroundLandscape.45a3ed6f01b9573917fe.mp4",
     "static/media/DAC3.png": "/static/media/DAC3.60d587a5e5d81d42cf94.png",
@@ -24,8 +24,11 @@
     "static/media/Alphabite.png": "/static/media/Alphabite.4844ad8caa952242b1cb.png",
     "static/media/WNet1.png": "/static/media/WNet1.efba5377e75f6807a280.png",
     "static/media/WNet3.png": "/static/media/WNet3.a8a613cc3152be181426.png",
+    "static/media/MadManCoverArt.jpg": "/static/media/MadManCoverArt.130b5704a959c9b5f4c4.jpg",
     "static/media/GoKart3.png": "/static/media/GoKart3.86e4d531fde938a44ce7.png",
+    "static/media/ArtistHeaderExtended.jpg": "/static/media/ArtistHeaderExtended.c08416abde1bdda46589.jpg",
     "static/media/LibraryBackground.jpg": "/static/media/LibraryBackground.5be2b231fa426a05808e.jpg",
+    "static/media/NoTimeCoverArt.jpg": "/static/media/NoTimeCoverArt.c2c8127c466740646df2.jpg",
     "static/media/HeadshotExtended.jpg": "/static/media/HeadshotExtended.514cc3ad461ac15bcfbb.jpg",
     "static/media/HomeBackground.jpg": "/static/media/HomeBackground.4897b70a24d1bd90bd72.jpg",
     "static/media/Spectrogram.png": "/static/media/Spectrogram.41afa02445c975224642.png",
@@ -33,17 +36,19 @@
     "static/media/WorkBackground.jpg": "/static/media/WorkBackground.f3bb4c3ef4761735ff14.jpg",
     "static/media/Recreate-KV0aW.ttf": "/static/media/Recreate-KV0aW.3cf8845a3612889043fa.ttf",
     "static/media/IBMimg.jpg": "/static/media/IBMimg.c1519cedc09634639714.jpg",
+    "static/media/GREmLN.jpg": "/static/media/GREmLN.bfc0ebf0cbcb5d2a46e5.jpg",
     "static/media/Analogicimg.jpg": "/static/media/Analogicimg.e5d615cb872b8f6a21f3.jpg",
     "static/media/WNet2.png": "/static/media/WNet2.2db90087fc53a93933ed.png",
     "static/media/PortfolioBackground.jpg": "/static/media/PortfolioBackground.1eba7b69c3f370571a0e.jpg",
-    "static/media/ArtistHeaderExtended.jpg": "/static/media/ArtistHeaderExtended.5c529ec41607ce470060.jpg",
+    "static/media/LeoHeadshot.jpg": "/static/media/LeoHeadshot.6b5e90b6e248faf250d7.jpg",
     "static/media/Broccimg.jpg": "/static/media/Broccimg.e744304aa209d5fffc50.jpg",
     "static/media/GoKart1.jpg": "/static/media/GoKart1.5fdae03fbd8831dfddc8.jpg",
     "static/media/GoKart2.jpg": "/static/media/GoKart2.891ece74df311d03623d.jpg",
     "static/media/GoKart5.jpg": "/static/media/GoKart5.ebd2fd06b28768e1690d.jpg",
+    "static/media/Columbiaimg.jpg": "/static/media/Columbiaimg.62ec1943fc51e5542105.jpg",
     "static/media/Hydro4.png": "/static/media/Hydro4.f526e178fe623adffdd7.png",
     "static/media/PS6img.jpg": "/static/media/PS6img.d3a0c1bcd712a5983f20.jpg",
-    "static/media/Columbiaimg.png": "/static/media/Columbiaimg.c88d30e23e91b05269ea.png",
+    "static/media/LEO.jpg": "/static/media/LEO.caa9062f7f562ba94737.jpg",
     "static/media/DataScienceIcon.png": "/static/media/DataScienceIcon.1ed73cca21b6959932ac.png",
     "static/media/ComputerScienceIcon.png": "/static/media/ComputerScienceIcon.9c54f968b9a4cf7c38bf.png",
     "static/media/GoKart4.jpg": "/static/media/GoKart4.c4f9162060cd0056a798.jpg",
@@ -57,7 +62,6 @@
     "static/media/MechEText.png": "/static/media/MechEText.f0bbed766b63f4f7f633.png",
     "static/media/ComputerScienceText.png": "/static/media/ComputerScienceText.1549d83bd02ce952ab14.png",
     "static/media/RandomText.png": "/static/media/RandomText.dfef22c12be377f99928.png",
-    "static/media/LEO.jpg": "/static/media/LEO.7bb58316c39631fd9a13.jpg",
     "static/media/DataScienceText.png": "/static/media/DataScienceText.aa8afe663779ffea50b5.png",
     "static/media/BROCC.png": "/static/media/BROCC.16c672e630c011d99eb1.png",
     "static/media/Insta.png": "/static/media/Insta.872cc6e577bbcce3fd24.png",
@@ -81,11 +85,11 @@
     "static/media/NYU.png": "/static/media/NYU.c70f1f4041ad3caa349c.png",
     "static/media/ANALOGIC.png": "/static/media/ANALOGIC.352454d34db857217553.png",
     "index.html": "/index.html",
-    "main.6cad2646.css.map": "/static/css/main.6cad2646.css.map",
-    "main.7dcd2ff7.js.map": "/static/js/main.7dcd2ff7.js.map"
+    "main.ff1886b0.css.map": "/static/css/main.ff1886b0.css.map",
+    "main.c86cb993.js.map": "/static/js/main.c86cb993.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cad2646.css",
-    "static/js/main.7dcd2ff7.js"
+    "static/css/main.ff1886b0.css",
+    "static/js/main.c86cb993.js"
   ]
 }
