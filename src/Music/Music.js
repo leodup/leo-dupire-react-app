@@ -275,17 +275,45 @@ const Music = () => {
                             <div className='songs'>
                                 <div className='divider2'></div>
                                 <div className='song2'>
-                                    <p className='record' style={{ color: "white" }}>TBD</p>
-                                    <p className='recMid' style={{ color: "white" }}>--</p>
-                                    <p className='recStat' style={{ color: "white" }}>--/--/--</p>
+                                    <p className='record' style={{ color: "white" }}>Basilica di Santo Stefano</p>
+                                    <p className='recMid' style={{ color: "white" }}>Lavagna, Italy</p>
+                                    <p className='recStat' style={{ color: "white" }}>07/27/26</p>
                                 </div>
                                 <div className='divider2'></div>
+                                <ExternalLink href="https://grattacielo.org/season/beyond-opera-law-of-desire-after-dark">
+                                    <div className='song2'>
+                                        <p className='record' style={{ color: "white" }}>Teatro Grattacielo</p>
+                                        <p className='recMid' style={{ color: "white" }}>La Mama, NYC</p>
+                                        <p className='recStat' style={{ color: "white" }}>07/18/26</p>
+                                    </div>
+                                </ExternalLink>
+                                <div className='divider2'></div>
+                                <ExternalLink href="https://bitterend.com/#/events/188041">
+                                    <div className='song2'>
+                                        <p className='record' style={{ color: "white" }}>NY Songwriters Circle</p>
+                                        <p className='recMid' style={{ color: "white" }}>The Bitter End, NYC</p>
+                                        <p className='recStat' style={{ color: "white" }}>07/13/26</p>
+                                    </div>
+                                </ExternalLink>
+                                <div className='divider2'></div>
+                                <div className='song2'>
+                                    <p className='record' style={{ color: "white" }}>Cuckoo's Feature</p>
+                                    <p className='recMid' style={{ color: "white" }}>Soho Playhouse, NYC</p>
+                                    <p className='recStat' style={{ color: "white" }}>07/08/26</p>
+                                </div>
+                                <div className='divider2'></div>
+                                <div className='song2'>
+                                    <p className='record' style={{ color: "white" }}>Showcase</p>
+                                    <p className='recMid' style={{ color: "white" }}>Austrian Cultural Forum, NYC</p>
+                                    <p className='recStat' style={{ color: "white" }}>07/08/26</p>
+                                </div>
+                                {/* <div className='divider2'></div>
                                 <div className='song2'>
                                     <p className='record' style={{ color: "white" }}>Lucinda's</p>
                                     <p className='recMid' style={{ color: "white" }}>NYC</p>
                                     <p className='recStat' style={{ color: "white" }}>11/16/25</p>
-                                </div>
-                                <div className='divider2'></div>
+                                </div> */}
+                                {/* <div className='divider2'></div>
                                 <div className='song2'>
                                     <p className='record' style={{ color: "white" }}>Pete's Candy Store</p>
                                     <p className='recMid' style={{ color: "white" }}>Brooklyn</p>
@@ -310,7 +338,7 @@ const Music = () => {
                                         <p className='recMid' style={{ color: "white" }}>NYC</p>
                                         <p className='recStat' style={{ color: "white" }}>10/25/24</p>
                                     </div>
-                                </ExternalLink>
+                                </ExternalLink> */}
                                 <div className='divider2'></div>
                             </div>
                         </div>
