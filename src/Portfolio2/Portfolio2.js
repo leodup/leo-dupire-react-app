@@ -109,7 +109,7 @@ const Portfolio2 = () => {
     const [SecDS, setDS] = useState(false);
     const [SecCS, setCS] = useState(false);
     const [SecME, setME] = useState(false);
-    const [SecR, setR] = useState(false);
+    const SecR = false;
 
     const SidebarSecDS = useRef(null);
     const SidebarSecCS = useRef(null);
@@ -212,7 +212,7 @@ const Portfolio2 = () => {
                         <p className="Section">This was a substantial endeavor, one that we are excited to now share. I feel fortunate to have worked with remarkable people from the Andrea Califano Lab at Columbia University as well as our collaborators at Stanford University and the Chan Zuckerberg Initiative (CZI) / Chan Zuckerberg Biohub Network (CZB) in New York. I encourage you to read the blog post below to learn more about the future of this biological modeling and how this fits into the larger Virtual Cell Project at CZI.</p>
                         <p className="Section"><strong>Blog:</strong> <a href="https://lnkd.in/gc9567jT" target="_blank" rel="noopener noreferrer">https://lnkd.in/gc9567jT</a></p>
                         <div className="NLPPosition">
-                            <iframe src="https://drive.google.com/file/d/1ug-uSk85cmlE5ngnNzu0i0AxUhF9o_FA/preview" allow="autoplay" className="NLPPDF"></iframe>
+                            <iframe src="https://drive.google.com/file/d/1ug-uSk85cmlE5ngnNzu0i0AxUhF9o_FA/preview" allow="autoplay" className="NLPPDF" title="GREmLN paper"></iframe>
                         </div>
                         <p className="Section">I was honored to present our new foundation model, GREmLN, at the American Association for Cancer Research (AACR) AI & ML conference in Montreal last week. I’m grateful to have represented my team and introduce GREmLN to world leaders in cancer research at this first edition of the conference.</p>
                         <div className="NLPPosition">
@@ -234,7 +234,7 @@ const Portfolio2 = () => {
                         msallowfullscreen="msallowfullscreen" 
                         oallowfullscreen="oallowfullscreen" 
                         webkitallowfullscreen="webkitallowfullscreen"></iframe>
-                        <p className="Section">In my final undergraduate semester, I wanted to join arguably the most sought after CS course at NYU,&nbsp; <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank"><u>Yann LeCun</u></a>'s graduate Deep Learning course. As an undergrad, I had to apply and interview to join the selective class and was one of few to be accepted into the class of masters and PhD students. The course was intensive and covered myriad ML architectures, theory, and practical applications.</p>
+                        <p className="Section">In my final undergraduate semester, I wanted to join arguably the most sought after CS course at NYU,&nbsp; <a href="https://en.wikipedia.org/wiki/Yann_LeCun" target="_blank" rel="noreferrer"><u>Yann LeCun</u></a>'s graduate Deep Learning course. As an undergrad, I had to apply and interview to join the selective class and was one of few to be accepted into the class of masters and PhD students. The course was intensive and covered myriad ML architectures, theory, and practical applications.</p>
                         <p className="Section">I'm proud to say that I lead my team, consisting of myself and teammate Dhruv Shetty, to placing <b>2nd out of 31 teams in Yann LeCun's final competition.</b></p>
                         <div className='Gallery3'>
                             <div className='image-container2' id="WNet1">
@@ -268,7 +268,7 @@ const Portfolio2 = () => {
                         <p className="Section">By placing in the top 5 teams, we were able to present and defend our project in front of Yann LeCun, co-professor Alfredo Canziani, and the rest of the 90-person class.</p>
                         <p className="Section">The report Dhruv and I wrote is displayed below. It covers a detailed explanation of our approach and implementation.</p>
                         <div className="NLPPosition">
-                            <iframe src="https://drive.google.com/file/d/1HHzgNbPPx2atbquay9NcA4ivRYsn8w7C/preview" allow="autoplay" className="NLPPDF"></iframe>
+                            <iframe src="https://drive.google.com/file/d/1HHzgNbPPx2atbquay9NcA4ivRYsn8w7C/preview" allow="autoplay" className="NLPPDF" title="WNet report"></iframe>
                         </div>
                     </div>
                     <div className='Project'>
@@ -288,7 +288,7 @@ const Portfolio2 = () => {
                         <h3 className="Section" id="NLP">Natural Language Processing (NLP)</h3>
                         <p className="Section">I performed a set of experiments in Natural Language Understanding along with teammates Yara Kyrychenko and Carla García Medina. We trained four separate Transformer/LSTM models (two English and two multilingual): RoBERTa, XLM-RoBERTa, T5, and mT5. Our goal was to identify the best performing model for identifying missinformation in multilingual Twitter posts sourced from the MuMiN dataset. The English-only models were trained and tested on multilingual tweets that were translated to english in pre-processing using the Google Translate API.</p>
                         <div className="NLPPosition">
-                            <iframe src="https://drive.google.com/file/d/1f_OGk0sSn4joooqS0PryteYdc_8Xkln8/preview" allow="autoplay" className="NLPPDF"></iframe>
+                            <iframe src="https://drive.google.com/file/d/1f_OGk0sSn4joooqS0PryteYdc_8Xkln8/preview" allow="autoplay" className="NLPPDF" title="NLP paper"></iframe>
                         </div>
                         <p className="Section"></p>
                     </div>

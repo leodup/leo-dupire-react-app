@@ -1,5 +1,4 @@
 import './Disclaimer.css';
-import { useEffect } from "react";
 
 const Disclaimer = () => {
   return (

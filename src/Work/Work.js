@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './Work.css';
 import '../App+/Footer/Footer.css';
 import '../App+/Tabs/Tabs.js';
 import '../App+/Tabs/Tabs.css';
 
-import Disclaimer from "../Temp/Disclaimer.js"
 import Tabs from '../App+/Tabs/Tabs.js';
 import Footer from '../App+/Footer/Footer.js';
 
@@ -23,8 +21,6 @@ import ANALOGICimg from "../images/WorkImg/Analogicimg.jpg";
 import PS6img from "../images/WorkImg/PS6img.jpg";
 
 const Work = () => {
-    const [isHidden, setIsHidden] = useState(true);
-    const [isScrolling, setIsScrolling] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,10 +31,6 @@ const Work = () => {
             const scrollPositionVh = (scrollPosition / windowHeight) * 100;
 
             // Logic to determine whether the elements should be hidden
-            const shouldHide = scrollPositionVh < 85; // Hide when scrolled 80% of the window height
-
-            setIsHidden(shouldHide);
-            
             // Continuous letter movement based on scroll
             const letters = document.querySelectorAll('.Head#Work h1 .letter');
             if (letters.length > 0) {
@@ -62,9 +54,9 @@ const Work = () => {
 
         My work consists of developing methodologies, notably single-cell foundation models, to generate meaningful cell and gene-level embeddings for therapeurtically relevant downstream tasks, informed by complex networks of gene interactions. <br></br> <br></br>
 
-        The flagship project of this effort is <a href="/portfolio#GREmLN" target="_blank" id="COLText"><u>GREmLN</u></a>. <br></br> <br></br>
+        The flagship project of this effort is <a href="/portfolio#GREmLN" target="_blank" rel="noreferrer" id="COLText"><u>GREmLN</u></a>. <br></br> <br></br>
 
-        To learn more, please visit the <a href="https://califano.c2b2.columbia.edu/" target="_blank" id="COLText"><u>Califano Lab's website</u></a>. My work also includes a collaboration with the Chan Zuckerberg Initiative (CZI) / Chan Zuckerberg Biohub Network (CZB) in New York.
+        To learn more, please visit the <a href="https://califano.c2b2.columbia.edu/" target="_blank" rel="noreferrer" id="COLText"><u>Califano Lab's website</u></a>. My work also includes a collaboration with the Chan Zuckerberg Initiative (CZI) / Chan Zuckerberg Biohub Network (CZB) in New York.
     </p>
 
     const IBMText1 = <p className="WorkText" id="IBMText1">
@@ -94,18 +86,6 @@ const Work = () => {
         I worked at my highschool in an afterschool workshop where I mentored students on 3D modeling and 3D printing. We worked on several projects. A project I completed independently with these facilities was a service learning project for school in Haiti. This product, called Alphabite, is an intuitive alphabet puzzle for students to learn how to read and write more efficiently. This project is listed in my Portfolio page. (This topic will be elaborated on with the site's development)
     </p>
 
-    const Tab = (props) => {
-        return (
-            <div className="FillerWork">
-                    <Link to={props.link} style={{ textDecoration: 'none' }}>
-                        <div className="TabWork">
-                            <p>{props.title}</p>
-                        </div>
-                    </Link>
-            </div>
-        );
-    }
-    
     return (
         <div>
             <div className="header" id="Work">
@@ -130,7 +110,7 @@ const Work = () => {
                     <img
                         className="WorkImage"
                         src={COLimg}
-                        alt="Columbia Image"
+                        alt="Columbia campus"
                     />
                 </div>
             </div>
@@ -145,7 +125,7 @@ const Work = () => {
                     <img
                         className="WorkImage"
                         src={IBMimg}
-                        alt="IBM Image"
+                        alt="IBM office"
                     />
                 </div>
             </div>
@@ -160,7 +140,7 @@ const Work = () => {
                     <img
                         className="WorkImage"
                         src={BROCCimg}
-                        alt="Brocc Image"
+                        alt="Brocc office"
                     />
                 </div>
             </div>
@@ -175,7 +155,7 @@ const Work = () => {
                     <img
                         className="WorkImage"
                         src={ANALOGICimg}
-                        alt="Analogic Image"
+                        alt="Analogic facility"
                     />
                 </div>
             </div>
@@ -190,7 +170,7 @@ const Work = () => {
                     <img
                         className="WorkImage"
                         src={PS6img}
-                        alt="PS6 Image"
+                        alt="PS6 school"
                     />
                 </div>
             </div>

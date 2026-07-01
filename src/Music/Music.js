@@ -275,7 +275,7 @@ const Music = () => {
                             <div className='songs'>
                                 <div className='divider2'></div>
                                 <div className='song2'>
-                                    <p className='record' style={{ color: "white" }}>Basilica di Santo Stefano</p>
+                                    <p className='record' style={{ color: "white" }}>Porticato del Brignardello</p>
                                     <p className='recMid' style={{ color: "white" }}>Lavagna, Italy</p>
                                     <p className='recStat' style={{ color: "white" }}>07/27/26</p>
                                 </div>
