@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 
 import '../App+/Footer/Footer.css';
@@ -17,19 +16,8 @@ import "../Portfolio/PortfolioFiles/Alphabite.css";
 import "../Portfolio/PortfolioFiles/DAC.css";
 import "../Portfolio/PortfolioFiles/Vent.css";
 
-import Disclaimer from "../Temp/Disclaimer.js"
 import Tabs from '../App+/Tabs/Tabs.js';
 import Footer from '../App+/Footer/Footer.js';
-
-import DataScienceText from "../images/PortfolioImg/Blocks/DataScienceText.png";
-import ComputerScienceText from "../images/PortfolioImg/Blocks/ComputerScienceText.png";
-import MechEText from "../images/PortfolioImg/Blocks/MechEText.png";
-import RandomText from "../images/PortfolioImg/Blocks/RandomText.png";
-
-import DataScienceIcon from "../images/PortfolioImg/Blocks/DataScienceIcon.png";
-import ComputerScienceIcon from "../images/PortfolioImg/Blocks/ComputerScienceIcon.png";
-import MechEIcon from "../images/PortfolioImg/Blocks/MechEIcon.png";
-import RandomIcon from "../images/PortfolioImg/Blocks/RandomIcon.png";
 
 import WNet_Scores from "../images/PortfolioImg/WNet1.png";
 import WNet2 from "../images/PortfolioImg/WNet2.png";
@@ -68,7 +56,6 @@ import Alphabite from "../images/PortfolioImg/Alphabite.png";
 
 const Portfolio = () => {
     const [isHidden, setIsHidden] = useState(true);
-    const [isScrolling, setIsScrolling] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -106,9 +93,9 @@ const Portfolio = () => {
         };
     }, []);
 
-    const [SecDS, setDS] = useState(false);
-    const [SecCS, setCS] = useState(false);
-    const [SecME, setME] = useState(false);
+    const SecDS = false;
+    const SecCS = false;
+    const SecME = false;
     const SecR = false;
 
     const SidebarSecDS = useRef(null);

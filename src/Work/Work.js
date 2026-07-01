@@ -24,13 +24,8 @@ const Work = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const windowHeight = window.innerHeight;
             const scrollPosition = window.scrollY;
 
-            // Calculate the scroll position relative to 80vh
-            const scrollPositionVh = (scrollPosition / windowHeight) * 100;
-
-            // Logic to determine whether the elements should be hidden
             // Continuous letter movement based on scroll
             const letters = document.querySelectorAll('.Head#Work h1 .letter');
             if (letters.length > 0) {
